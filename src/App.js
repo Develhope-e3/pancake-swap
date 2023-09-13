@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import "./styles/index.scss";
 import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
+import Link from "./componentes/Link/Link";
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+
         <div className="flex-col-center">
           {/**
            * Manera de invocar a mi componente reutilizable
@@ -38,6 +40,12 @@ function App() {
             onClick={() => console.log("click en el boton disabled")}
             texto={"Boton secundario"}
           />
+          <Link
+            label={"Un link"}
+            className={"primary"}
+            href={"https://facebook.com"}
+          />
+          <h1 className="title-lg">{"The moon is made of pancakes."}</h1>
         </div>
       </header>
     </div>
