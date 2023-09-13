@@ -1,0 +1,21 @@
+
+
+.primaryAnchor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+
+    font-size: var(--font-size-md);
+    line-height: 1.5;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.anchorSVG {
+    align-self: center;
+    fill: var(--color-primary);
+    color: var(--color-primary);
+    flex-shrink: 0;
+    margin-left: 4px;
+}
