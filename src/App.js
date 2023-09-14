@@ -1,7 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
 import "./styles/index.scss";
-import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
+import PuntosVerdes from "./puntosVerdes/puntosVerdes";
+
+
+
 function App() {
   return (
     <div className="App">
@@ -22,22 +25,9 @@ function App() {
           {/**
            * Manera de invocar a mi componente reutilizable
            */}
-          <EjemploComponente
-            esPrimario={true}
-            texto={"Boton primario"}
-            onClick={() => console.log("click en el boton primario")}
-          />
-          <EjemploComponente
-            esPrimario={false}
-            texto={"Boton secundario"}
-            onClick={() => console.log("click en el boton secundario")}
-          />
-          <EjemploComponente
-            esPrimario={false}
-            disabled={true}
-            onClick={() => console.log("click en el boton disabled")}
-            texto={"Boton secundario"}
-          />
+
+          <PuntosVerdes className="puntos-verdes" />
+
         </div>
       </header>
     </div>
