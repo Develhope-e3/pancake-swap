@@ -1,8 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
 import "./styles/index.scss";
+<<<<<<< HEAD
 import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
 import ButtonPrimary from "./componentes/BotonPrimary/ButtonPrimary";
+=======
+import PuntosVerdes from "./puntosVerdes/puntosVerdes";
+
+
+
+>>>>>>> 4478762 (feat: cree el punto verde)
 function App() {
   return (
     <div className="App">
@@ -41,6 +48,9 @@ function App() {
           />
 
           <ButtonPrimary esPrimario={true} label={"button-wallet"} texto={"connect wallet"} onClick={()=> console.log("click en el boton connect wallet")} />
+
+          <PuntosVerdes className="puntos-verdes" />
+
         </div>
       </header>
     </div>
