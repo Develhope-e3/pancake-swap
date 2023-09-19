@@ -1,4 +1,4 @@
-import "./puntosVerdes.scss";
+import "./puntos.scss";
 
 /**
  *
@@ -7,8 +7,8 @@ import "./puntosVerdes.scss";
  * @returns Estructura HTML
  */
 
-const PuntosVerdes = ({ className }) => {
+const Puntos = ({ className }) => {
   return <div className={className}></div>;
 };
 
-export default PuntosVerdes;
+export default Puntos;
