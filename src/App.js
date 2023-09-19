@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import "./styles/index.scss";
-import PuntosVerdes from "./puntosVerdes/puntosVerdes";
+import Puntos from "./puntos/puntos";
 
 
 
@@ -26,7 +26,8 @@ function App() {
            * Manera de invocar a mi componente reutilizable
            */}
 
-          <PuntosVerdes className="puntos-verdes" />
+          <Puntos className="punto-verde" />
+          <Puntos className="punto-rosa" />
 
         </div>
       </header>
