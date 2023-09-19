@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { PrimaryCard } from "./components/primary-card.js";
 
 function App() {
   return (
@@ -17,8 +18,10 @@ function App() {
         >
           Learn React
         </a>
-
       </header>
+      <div>
+        <PrimaryCard/>
+      </div>
     </div>
   );
 }
