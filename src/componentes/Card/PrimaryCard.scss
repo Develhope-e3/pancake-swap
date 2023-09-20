@@ -1,0 +1,23 @@
+.flex-row-container {
+  display: flex;
+
+  gap: 1rem;
+}
+
+.primary-card {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1;
+
+  padding: 1.5rem;
+
+  overflow: inherit;
+
+  background-color: var(--background-color-secondary);
+  border-radius: var(--radius-card);
+}
+
+.primary-card-icon {
+  display: flex;
+  justify-content: flex-end;
+}

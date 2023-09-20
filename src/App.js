@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import "./styles/index.scss";
 import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
-import { PrimaryCard } from "./components/primary-card.js";
+import { PrimaryCard } from "./componentes/Card/PrimaryCard.js";
 import { cardData } from "./data/cardData.js";
 
 function App() {
@@ -17,8 +17,7 @@ function App() {
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           Learn React
         </a>
         <div className="flex-col-center">
@@ -42,15 +41,58 @@ function App() {
             texto={"Boton secundario"}
           />
         </div>
+
+        <div className="flex-row-container">
+          <PrimaryCard
+            className="primary-card"
+            iconClassName="primary-card-icon"
+            icon={cardData.map((element, index) =>
+              index === 0 ? element.icon : null,
+            )}
+            title={cardData.map((element, index) =>
+              index === 0 ? element.title : null,
+            )}
+            subtitle={cardData.map((element, index) =>
+              index === 0 ? element.subtitle : null,
+            )}
+            body={cardData.map((element, index) =>
+              index === 0 ? element.body : null,
+            )}
+          />
+          <PrimaryCard
+            className="primary-card"
+            iconClassName="primary-card-icon"
+            icon={cardData.map((element, index) =>
+              index === 1 ? element.icon : null,
+            )}
+            title={cardData.map((element, index) =>
+              index === 1 ? element.title : null,
+            )}
+            subtitle={cardData.map((element, index) =>
+              index === 1 ? element.subtitle : null,
+            )}
+            body={cardData.map((element, index) =>
+              index === 1 ? element.body : null,
+            )}
+          />
+          <PrimaryCard
+            className="primary-card"
+            iconClassName="primary-card-icon"
+            icon={cardData.map((element, index) =>
+              index === 2 ? element.icon : null,
+            )}
+            title={cardData.map((element, index) =>
+              index === 2 ? element.title : null,
+            )}
+            subtitle={cardData.map((element, index) =>
+              index === 2 ? element.subtitle : null,
+            )}
+            body={cardData.map((element, index) =>
+              index === 2 ? element.body : null,
+            )}
+          />
+        </div>
       </header>
-      <div>
-        <PrimaryCard
-          className="primaryCard"
-          icon={cardData.map((element) => element.icon)}
-          title={cardData.map((element) => element.title)}
-          subtitle={cardData.map((element) => element.subtitle)}
-        />
-      </div>
     </div>
   );
 }
