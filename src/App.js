@@ -3,23 +3,12 @@ import "./App.css";
 import "./styles/index.scss";
 import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
 import Link from "./componentes/Link/Link";
+import Texto from "./componentes/Texto/Texto";
+import { CardsData } from "./data/Cards";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-
         <div className="flex-col-center">
           {/**
            * Manera de invocar a mi componente reutilizable
@@ -45,7 +34,25 @@ function App() {
             className={"primary"}
             href={"https://facebook.com"}
           />
-          <h1 className="title-lg">{"The moon is made of pancakes."}</h1>
+          <Texto
+            size={"title-large"}
+            label={"Texto"}
+            color={"--color-subtitulo-lila"}
+          />
+          <Texto
+            size={"title-large"}
+            label={"Texto"}
+            color={"--color-secondary"}
+          />
+
+          {CardsData &&
+            CardsData.map((card) => (
+              <div className="card">
+                <Texto label={card.titulo} size={"title-large-bold"} />
+                <Texto label={card.subitulo} size={"title-large-bold"} />
+                <Texto label={card.body} size={"title-large-bold"} />
+              </div>
+            ))}
         </div>
       </header>
     </div>
