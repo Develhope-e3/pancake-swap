@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import "./styles/index.scss";
 import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
+import ButtonPrimary from "./componentes/boton-primary/ButtonPrimary";
 function App() {
   return (
     <div className="App">
@@ -38,6 +39,8 @@ function App() {
             onClick={() => console.log("click en el boton disabled")}
             texto={"Boton secundario"}
           />
+
+          <ButtonPrimary esPrimario={true} label={"button-wallet"} texto={"connect wallet"} onClick={()=> console.log("click en el boton connect wallet")} />
         </div>
       </header>
     </div>
