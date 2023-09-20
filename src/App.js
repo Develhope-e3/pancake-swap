@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { PrimaryCard } from "./components/primary-card.js";
+import { cardData } from "./data/cardData.js";
 
 function App() {
   return (
@@ -20,7 +21,12 @@ function App() {
         </a>
       </header>
       <div>
-        <PrimaryCard/>
+        <PrimaryCard
+          className="primaryCard"
+          icon={cardData.map((element) => element.icon)}
+          title={cardData.map((element) => element.title)}
+          subtitle={cardData.map((element) => element.subtitle)}
+        />
       </div>
     </div>
   );
