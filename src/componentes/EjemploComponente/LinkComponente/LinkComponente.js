@@ -5,14 +5,13 @@ import "./LinkComponente.scss";
  * @param {string} className - clase del link (primaryAnchor, secondaryAnchor, tertiaryAnchor)
  * @param {string} href - URL del link
  * @param {object} svg - imagen SVG del link
- * @param {string} color - variable del color del link
  *
  * @returns Estructura HTML
  */
 
-const LinkComponente = ({ label, className, href, svg, color }) => {
+const LinkComponente = ({ label, className, href, svg, }) => {
   return (
-    <a class={className} style={color var({color})} href={href}>
+    <a class={className} href={href}>
       {label} {svg && svg}
     </a>
   );
