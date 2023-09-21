@@ -41,6 +41,7 @@ function App() {
             texto={"Boton secundario"}
           />
         </div>
+        <br />
         <div className="flex-row-container">
           {cardData.map((card) => {
             return (
@@ -53,6 +54,7 @@ function App() {
             );
           })}
         </div>
+        <br />
       </header>
     </div>
   );
