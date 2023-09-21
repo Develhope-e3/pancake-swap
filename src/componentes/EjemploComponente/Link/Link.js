@@ -1,10 +1,10 @@
-import "./LinkComponente.scss";
+import "./Link.scss";
 
 /**
  * @param {string} label - Texto que va a llevar el link
  * @param {string} className - clase del link (primaryAnchor, secondaryAnchor, tertiaryAnchor)
  * @param {string} href - URL del link
- * @param {object} svg - imagen SVG del link
+ * @param {svgImage} svg - imagen SVG del link
  *
  * @returns Estructura HTML
  */

@@ -1,7 +1,7 @@
 import "./App.css";
 import "./styles/index.scss";
 import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
-import Link from "./componentes/EjemploComponente/LinkComponente/LinkComponente";
+import Link from "./componentes/EjemploComponente/Link/Link";
 import Puntos from "./puntos/puntos";
 import Button from "./componentes/Button/Button";
 
