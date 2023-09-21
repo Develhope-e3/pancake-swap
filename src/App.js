@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import "./styles/index.scss";
 import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
-import ButtonPrimary from "./componentes/boton-primary/ButtonPrimary";
+import ButtonPrimary from "./componentes/BotonPrimary/ButtonPrimary";
 function App() {
   return (
     <div className="App">
