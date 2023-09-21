@@ -1,7 +1,9 @@
 .primario {
 
   background-color: var(--color-primary);
-
+  color: var(--color-button-primary);
+  
+  
   border-radius: var(--radius-default);
   border-width: var(--borderwidths-0);
   border: none;
@@ -14,7 +16,7 @@
 
   width: 148px;
   height: 33px;
-  padding:0px 16px;
+  padding: 0px 16px;
 
   white-space: nowrap;
 
@@ -23,9 +25,9 @@
   align-items: center;
 
   &:hover {
-      background-color: #228f99;
+    background-color: #228f99;
 
-      transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
 
   }
 }
