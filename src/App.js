@@ -4,6 +4,7 @@ import "./styles/index.scss";
 import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
 import Puntos from "./puntos/puntos";
 import Button from "./componentes/Button/Button";
+
 function App() {
   return (
     <div className="App">
@@ -40,8 +41,6 @@ function App() {
             onClick={() => console.log("click en el boton disabled")}
             texto={"Boton secundario"}
           />
-          <Puntos className="punto-verde" />
-          <Puntos className="punto-rosa" />
 
           <Button
             esPrimario={true}
@@ -49,6 +48,9 @@ function App() {
             texto={"connect wallet"}
             onClick={() => console.log("click en el boton connect wallet")}
           />
+
+          <Puntos className="punto-verde" />
+          <Puntos className="punto-rosa" />
         </div>
       </header>
     </div>
