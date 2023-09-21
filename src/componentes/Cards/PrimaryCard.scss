@@ -1,7 +1,7 @@
 .flex-row-container {
   display: flex;
 
-  gap: 1rem;
+  gap: var(--space-rem);
 }
 
 .primary-card {
@@ -14,10 +14,19 @@
   overflow: inherit;
 
   background-color: var(--background-color-secondary);
+
   border-radius: var(--radius-card);
 }
 
-.primary-card-icon {
+.primary-icon {
   display: flex;
   justify-content: flex-end;
+}
+
+.primary-body {
+  font-size: var(--font-size-xs);
+}
+
+.secondary-button {
+  display: none;
 }

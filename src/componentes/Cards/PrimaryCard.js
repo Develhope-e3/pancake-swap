@@ -1,26 +1,28 @@
 import "./PrimaryCard.scss";
 
 /**
+ * @param {Boolean} esPrimaryCard - Boolean para indicar si es card primary-card, secondary-card
  * @param {object} icon - Icono .svg de la card
  * @param {object} title - Título principal de la card
  * @param {object} subtitle - Subtítulo coloreado de la card
- * @param {color}  violet - Color del primer subtítulo en la card
- * @param {color}  acqua - Color del segundo subtítulo en la card
- * @param {color}  rose - Color del tercer subtítulo en la card
  * @param {object} body - Texto del cuerpo de la card
  *
  * @returns Estructura HTML
  */
 
-export const PrimaryCard = ({ icon, title, subtitle, body }) => {
+export const PrimaryCard = ({ esPrimaryCard, icon, title, subtitle, body }) => {
+
+  const selectClass = esPrimaryCard ? "primary-card" : "secondary-card";
+
   return (
-    <div className="primary-card">
-      <div className="primary-card-icon">{icon}</div>
+    <div className={selectClass}>
+      <div className="primary-icon">{icon}</div>
       <div>
         <h2>{title}</h2>
         <h2>{subtitle}</h2>
       </div>
-      <span>{body}</span>
+      <span className="primary-body">{body}</span>
+      <button className="secondary-button"></button>
     </div>
   );
 };

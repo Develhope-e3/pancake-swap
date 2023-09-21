@@ -45,6 +45,7 @@ function App() {
           {cardData.map((card) => {
             return (
               <PrimaryCard
+                esPrimaryCard={true}
                 icon={card.icon}
                 title={card.title}
                 subtitle={card.subtitle}
