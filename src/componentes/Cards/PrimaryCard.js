@@ -14,8 +14,8 @@ export const PrimaryCard = ({ icon, title, subtitle, body }) => {
     <div className="primary-card">
       <div className="primary-icon">{icon}</div>
       <div>
-        <h2>{title}</h2>
-        <h2>{subtitle}</h2>
+        <h2 className="primary-title">{title}</h2>
+        <h2 className="primary-subtitle">{subtitle}</h2>
       </div>
       <span className="primary-body">{body}</span>
     </div>

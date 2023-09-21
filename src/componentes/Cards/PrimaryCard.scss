@@ -1,28 +1,63 @@
 .flex-row-container {
   display: flex;
 
+  font-family: sans-serif;
+
   gap: var(--space-rem);
 }
 
 .primary-card {
   display: flex;
   flex-flow: column wrap;
+  justify-content: flex-start;
   flex: 1;
 
-  padding: 1.5rem;
+  width: 260px;
+
+  padding: 24px;
 
   overflow: inherit;
 
+  color: var(--color-text);
   background-color: var(--background-color-secondary);
 
   border-radius: var(--radius-card);
+  border: var(--borderWidths-1) solid #383241;
+  border-bottom: var(--space-3xs) solid #383241;
+
+  font: inherit;
 }
 
 .primary-icon {
   display: flex;
   justify-content: flex-end;
+
+  height: auto;
+}
+
+.primary-title {
+  display: flex;
+  justify-content: flex-start;
+
+  margin-top: var(--space-4xl);
+  margin-bottom: 0px;
+
+  font-size: var(--font-size-lg);
+}
+
+.primary-subtitle {
+  display: flex;
+  justify-content: flex-start;
+
+  margin: 0px 0px 24px;
+
+  font-size: var(--font-size-lg);
 }
 
 .primary-body {
-  font-size: var(--font-size-xs);
+  display: flex;
+
+  color: var(--color-subtitulo-lila);
+
+  font-size: var(--font-size-ms);
 }

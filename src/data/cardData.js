@@ -4,6 +4,7 @@ export const cardData = [
       <svg
         viewBox="0 0 24 24"
         color={"var(--color-titulo-lila)"}
+        fill={"var(--color-titulo-lila)"}
         width="36px"
         xmlns="http://www.w3.org/2000/svg"
         class="sc-bcPKhP kHFuOR">
@@ -19,6 +20,7 @@ export const cardData = [
       <svg
         viewBox="0 0 24 24"
         color={"var(--color-primary)"}
+        fill={"var(--color-primary)"}
         width="36px"
         xmlns="http://www.w3.org/2000/svg"
         class="sc-bcPKhP bIlHZF">
@@ -39,6 +41,7 @@ export const cardData = [
       <svg
         viewBox="0 0 24 24"
         color="var(--color-failure)"
+        fill="var(--color-failure)"
         width="36px"
         xmlns="http://www.w3.org/2000/svg"
         class="sc-bcPKhP kDAtXN">
