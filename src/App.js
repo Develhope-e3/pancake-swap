@@ -1,9 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
 import "./styles/index.scss";
+import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
 import Puntos from "./puntos/puntos";
-
-
+import Button from "./componentes/Button/Button";
 
 function App() {
   return (
@@ -25,10 +25,32 @@ function App() {
           {/**
            * Manera de invocar a mi componente reutilizable
            */}
+          <EjemploComponente
+            esPrimario={true}
+            texto={"Boton primario"}
+            onClick={() => console.log("click en el boton primario")}
+          />
+          <EjemploComponente
+            esPrimario={false}
+            texto={"Boton secundario"}
+            onClick={() => console.log("click en el boton secundario")}
+          />
+          <EjemploComponente
+            esPrimario={false}
+            disabled={true}
+            onClick={() => console.log("click en el boton disabled")}
+            texto={"Boton secundario"}
+          />
+
+          <Button
+            esPrimario={true}
+            label={"button-wallet"}
+            texto={"connect wallet"}
+            onClick={() => console.log("click en el boton connect wallet")}
+          />
 
           <Puntos className="punto-verde" />
           <Puntos className="punto-rosa" />
-
         </div>
       </header>
     </div>
