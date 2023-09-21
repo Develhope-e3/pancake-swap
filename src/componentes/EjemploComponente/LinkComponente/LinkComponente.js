@@ -9,7 +9,7 @@ import "./LinkComponente.scss";
  * @returns Estructura HTML
  */
 
-const LinkComponente = ({ label, className, href, svg, }) => {
+const Link = ({ label, className, href, svg, }) => {
   return (
     <a class={className} href={href}>
       {label} {svg && svg}
@@ -17,4 +17,4 @@ const LinkComponente = ({ label, className, href, svg, }) => {
   );
 };
 
-export default LinkComponente;
+export default Link;
