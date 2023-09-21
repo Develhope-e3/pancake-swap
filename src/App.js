@@ -43,16 +43,27 @@ function App() {
         </div>
         <br />
         <div className="flex-row-container">
-          {cardData.map((card) => {
-            return (
-              <PrimaryCard
-                icon={card.icon}
-                title={card.title}
-                subtitle={card.subtitle}
-                body={card.body}
-              />
-            );
-          })}
+          {cardData &&
+            cardData.map((card) => {
+              return (
+                <PrimaryCard
+                  icon={card.icon}
+                  title={card.title}
+                  subtitle={card.subtitle}
+                  body={card.body}
+                />
+              );
+            })}
+          <br />
+          {/*           
+          {cardData &&
+            cardData.map((card) => (
+              <div className="card">
+                <Texto label={card.titulo} size={"title-large-bold"} />
+                <Texto label={card.subitulo} size={"title-large-bold"} />
+                <Texto label={card.body} size={"title-large-bold"} />
+              </div>
+          ))} */}
         </div>
         <br />
       </header>
