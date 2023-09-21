@@ -3,7 +3,7 @@ export const cardData = [
     icon: (
       <svg
         viewBox="0 0 24 24"
-        color="secondary"
+        color={"var(--color-titulo-lila)"}
         width="36px"
         xmlns="http://www.w3.org/2000/svg"
         class="sc-bcPKhP kHFuOR">
@@ -18,7 +18,7 @@ export const cardData = [
     icon: (
       <svg
         viewBox="0 0 24 24"
-        color="primary"
+        color={"var(--color-primary)"}
         width="36px"
         xmlns="http://www.w3.org/2000/svg"
         class="sc-bcPKhP bIlHZF">
@@ -38,7 +38,7 @@ export const cardData = [
     icon: (
       <svg
         viewBox="0 0 24 24"
-        color="failure"
+        color="var(--color-failure)"
         width="36px"
         xmlns="http://www.w3.org/2000/svg"
         class="sc-bcPKhP kDAtXN">
