@@ -35,29 +35,3 @@
   height: auto;
 }
 
-.primary-card-title {
-  display: flex;
-  justify-content: flex-start;
-
-  margin-top: var(--space-4xl);
-  margin-bottom: 0px;
-
-  font-size: var(--font-size-lg);
-}
-
-.primary-card-subtitle {
-  display: flex;
-  justify-content: flex-start;
-
-  margin: 0px 0px 24px;
-
-  font-size: var(--font-size-lg);
-}
-
-.primary-card-body {
-  display: flex;
-
-  color: var(--color-subtitulo-lila);
-
-  font-size: var(--font-size-ms);
-}

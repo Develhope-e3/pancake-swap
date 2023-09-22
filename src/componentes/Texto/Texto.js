@@ -59,13 +59,7 @@ const Texto = ({ size, color, label }) => {
       {size === "primary-card-subtitle" && (
         <h2
           className="primary-card-subtitle"
-          style={{
-            color: `var(${color})`,
-            display: "flex",
-            justifyContent: "flex-start",
-            margin: "0px 0px 24px",
-            fontSize: "var(--font-size-lg)",
-          }}
+          style={{ color: `var(${color})` }}
         >
           {label}
         </h2>
