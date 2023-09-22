@@ -1,5 +1,5 @@
-import React from "react";
 import "./Texto.scss";
+
 /**
  *
  * @param {string} size - Tamaño para renderizar el tipo de texto

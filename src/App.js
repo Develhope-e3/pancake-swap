@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "./styles/index.scss";
 import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
