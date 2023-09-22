@@ -69,11 +69,6 @@ const Texto = ({ size, color, label }) => {
           {label}
         </h2>
       )}
-      {size === "medium" && <h2>{label}</h2>}
-      {size === "small" && <h3>{label}</h3>}
-      {size === "extra-small" && <h4>{label}</h4>}
-      {size === "body" && <p>{label}</p>}
-      {/* {size === "primary-card-subtitle" && <h2>{label}</h2>} */}
     </>
   );
 };
