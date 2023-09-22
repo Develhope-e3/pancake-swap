@@ -28,14 +28,14 @@
   font: inherit;
 }
 
-.primary-icon {
+.primary-card-icon {
   display: flex;
   justify-content: flex-end;
 
   height: auto;
 }
 
-.primary-title {
+.primary-card-title {
   display: flex;
   justify-content: flex-start;
 
@@ -45,7 +45,7 @@
   font-size: var(--font-size-lg);
 }
 
-.primary-subtitle {
+.primary-card-subtitle {
   display: flex;
   justify-content: flex-start;
 
@@ -54,7 +54,7 @@
   font-size: var(--font-size-lg);
 }
 
-.primary-body {
+.primary-card-body {
   display: flex;
 
   color: var(--color-subtitulo-lila);

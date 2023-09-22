@@ -3,7 +3,6 @@ export const cardData = [
     icon: (
       <svg
         viewBox="0 0 24 24"
-        color={"var(--color-titulo-lila)"}
         fill={"var(--color-titulo-lila)"}
         width="36px"
         xmlns="http://www.w3.org/2000/svg"
@@ -12,14 +11,13 @@ export const cardData = [
       </svg>
     ),
     title: "960 thousand",
-    subtitle: "users",
+    subtitle: { text: "users", color: "var(--color-titulo-lila)"},
     body: "in the las 30 days",
   },
   {
     icon: (
       <svg
         viewBox="0 0 24 24"
-        color={"var(--color-primary)"}
         fill={"var(--color-primary)"}
         width="36px"
         xmlns="http://www.w3.org/2000/svg"
@@ -33,15 +31,14 @@ export const cardData = [
       </svg>
     ),
     title: "13 million",
-    subtitle: "trades",
+    subtitle: { text: "trades", color: "var(--color-primary)"},
     body: "made in the last 30 days",
   },
   {
     icon: (
       <svg
         viewBox="0 0 24 24"
-        color="var(--color-failure)"
-        fill="var(--color-failure)"
+        fill={"var(--color-failure)"}
         width="36px"
         xmlns="http://www.w3.org/2000/svg"
         class="sc-bcPKhP kDAtXN">
@@ -53,7 +50,7 @@ export const cardData = [
       </svg>
     ),
     title: "$1.3 billion",
-    subtitle: "staked",
+    subtitle: { text: "staked", color: "var(--color-failure)"},
     body: "Total value Locked",
   },
 ];

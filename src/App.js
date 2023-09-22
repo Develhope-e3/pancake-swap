@@ -49,21 +49,12 @@ function App() {
                 <PrimaryCard
                   icon={card.icon}
                   title={card.title}
-                  subtitle={card.subtitle}
+                  subtitle={card.subtitle.text}
+                  subtitleColor={card.subtitle.color}
                   body={card.body}
                 />
               );
             })}
-          <br />
-          {/*           
-          {cardData &&
-            cardData.map((card) => (
-              <div className="card">
-                <Texto label={card.titulo} size={"title-large-bold"} />
-                <Texto label={card.subitulo} size={"title-large-bold"} />
-                <Texto label={card.body} size={"title-large-bold"} />
-              </div>
-          ))} */}
         </div>
         <br />
       </header>
