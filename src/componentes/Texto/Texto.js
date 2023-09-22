@@ -48,10 +48,24 @@ const Texto = ({ size, color, label }) => {
           {label}
         </p>
       )}
+      {size === "primary-card-subtitle" && (
+        <h2
+          className="primary-card-subtitle"
+          style={{
+            color: `var(${color})`,
+            display: "flex",
+            justifyContent: "flex-start",
+            margin: "0px 0px 24px",
+            fontSize: "var(--font-size-lg)",
+          }}>
+          {label}
+        </h2>
+      )}
       {size === "medium" && <h2>{label}</h2>}
       {size === "small" && <h3>{label}</h3>}
       {size === "extra-small" && <h4>{label}</h4>}
       {size === "body" && <p>{label}</p>}
+      {size === "primary-card-subtitle" && <h2>{label}</h2>}
     </>
   );
 };
