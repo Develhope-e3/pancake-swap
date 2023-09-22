@@ -5,21 +5,12 @@ import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente
 import { PrimaryCard } from "./componentes/Cards/PrimaryCard.js";
 import { cardData } from "./data/cardData.js";
 
+import Link from "./componentes/Link/Link";
+import Texto from "./componentes/Texto/Texto";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          Learn React
-        </a>
         <div className="flex-col-center">
           {/**
            * Manera de invocar a mi componente reutilizable
@@ -39,6 +30,21 @@ function App() {
             disabled={true}
             onClick={() => console.log("click en el boton disabled")}
             texto={"Boton secundario"}
+          />
+          <Link
+            label={"Un link"}
+            className={"primary"}
+            href={"https://facebook.com"}
+          />
+          <Texto
+            size={"title-large"}
+            label={"Texto"}
+            color={"--color-subtitulo-lila"}
+          />
+          <Texto
+            size={"title-large"}
+            label={"Texto"}
+            color={"--color-secondary"}
           />
         </div>
         <br />
