@@ -1,4 +1,5 @@
 import "./PrimaryCard.scss";
+import { Texto } from "../Texto/Texto.js";
 
 /**
  * @param {object} icon - Icono .svg de la card
