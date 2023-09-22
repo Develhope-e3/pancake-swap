@@ -11,14 +11,13 @@
   flex-flow: column wrap;
   justify-content: flex-start;
   flex: 1;
+  text-align: start;
 
   width: 260px;
 
   padding: 24px;
 
   overflow: inherit;
-
-  color: var(--color-text);
   background-color: var(--background-color-secondary);
 
   border-radius: var(--radius-card);
@@ -35,3 +34,6 @@
   height: auto;
 }
 
+.card-texto {
+  margin-bottom: 24px;
+}
