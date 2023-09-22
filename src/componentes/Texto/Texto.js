@@ -26,7 +26,7 @@ const Texto = ({ size, color, label }) => {
           {label}
         </h2>
       )}
-      {size === "title-medium" && (
+      {size === "title-md" && (
         <h2 className="title-md" style={{ color: `var(${color})` }}>
           {label}
         </h2>
@@ -52,9 +52,9 @@ const Texto = ({ size, color, label }) => {
         </h4>
       )}
       {size === "body" && (
-        <p className="body" style={{ color: `var(${color})` }}>
+        <span className="body" style={{ color: `var(${color})` }}>
           {label}
-        </p>
+        </span>
       )}
       {size === "primary-card-subtitle" && (
         <h2

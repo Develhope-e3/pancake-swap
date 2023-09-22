@@ -15,15 +15,13 @@ export const PrimaryCard = ({ icon, title, subtitle, subtitleColor, body }) => {
   return (
     <div className="primary-card">
       <div className="primary-card-icon">{icon}</div>
-      <div>
+      {/* @TODO Agregar margen al div y sacarlo de la class texto */}
+      <div className="card-texto">
         <h2 className="primary-card-title">{title}</h2>
-        <Texto
-          label={subtitle}
-          size={"primary-card-subtitle"}
-          color={subtitleColor}
-        />
+        <Texto label={subtitle} size={"title-md"} color={subtitleColor} />
       </div>
-      <span className="primary-card-body">{body}</span>
+      {/* @TODO cambiar por elemento texto */}
+      <Texto label={body} size={"body"} />
     </div>
   );
 };

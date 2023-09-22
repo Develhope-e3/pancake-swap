@@ -8,19 +8,29 @@
   font-size: var(--font-size-lg);
 }
 
-.primary-card-subtitle {
-  display: flex;
-  justify-content: flex-start;
+.title-lg-bold {
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+}
 
-  margin: 0px 0px 24px;
+.title-md-bold {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+}
 
+.title-md {
   font-size: var(--font-size-lg);
 }
 
-.primary-card-body {
-  display: flex;
+.title-link {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+}
 
-  color: var(--color-subtitulo-lila);
+.body-lg {
+  font-size: var(--font-size-md);
+}
 
+.body {
   font-size: var(--font-size-ms);
 }
