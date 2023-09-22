@@ -1,5 +1,5 @@
 import "./PrimaryCard.scss";
-import { Texto } from "../Texto/Texto.js";
+import Texto from "../Texto/Texto.js";
 
 /**
  * @param {object} icon - Icono .svg de la card
@@ -25,33 +25,5 @@ export const PrimaryCard = ({ icon, title, subtitle, subtitleColor, body }) => {
       </div>
       <span className="primary-card-body">{body}</span>
     </div>
-
-   /* {cardData &&
-        cardData.map((card) => (
-          <div className="card">
-            <Texto label={card.titulo} size={"title-large-bold"} color={card.color} />
-            <Texto label={card.subitulo} size={"title-large-bold"} color={card.color} />
-            <Texto label={card.body} size={"title-large-bold"} color={card.color} />
-          </div>
-      ))} */
-
-   /* const Texto = ({ size, color, label }) => {
-        return (
-          <>
-            {size === "primary-card-subtitle" && (
-            <h2 className="primary-card-subtitle" style={{ color: `var(${color});` display: "flex;" justify-content: "flex-start;" margin: "0px 0px 24px;" font-size: "var(--font-size-lg);" }}>
-            {label}
-            </h2>
-            )} 
-          </> */
-
-   /* .primary-card-subtitle {
-          display: flex;
-          justify-content: flex-start;
-
-          margin: 0px 0px 24px;
-
-          font-size: var(--font-size-lg);
-        } */
   );
 };

@@ -11,7 +11,7 @@ export const cardData = [
       </svg>
     ),
     title: "960 thousand",
-    subtitle: { text: "users", color: "var(--color-titulo-lila)"},
+    subtitle: { text: "users", color: "--color-titulo-lila"},
     body: "in the las 30 days",
   },
   {
@@ -31,7 +31,7 @@ export const cardData = [
       </svg>
     ),
     title: "13 million",
-    subtitle: { text: "trades", color: "var(--color-primary)"},
+    subtitle: { text: "trades", color: "--color-primary"},
     body: "made in the last 30 days",
   },
   {
@@ -50,7 +50,7 @@ export const cardData = [
       </svg>
     ),
     title: "$1.3 billion",
-    subtitle: { text: "staked", color: "var(--color-failure)"},
+    subtitle: { text: "staked", color: "--color-failure"},
     body: "Total value Locked",
   },
 ];

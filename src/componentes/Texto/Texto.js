@@ -1,5 +1,12 @@
 import React from "react";
-
+/**
+ *
+ * @param {string} size - Tamaño para renderizar el tipo de texto
+ * @param {string} color - Variable color, identica a las variables en styles/variables.scss
+ * @param {string} label - Texto
+ *
+ * @returns Elemento HTML para el texto
+ */
 const Texto = ({ size, color, label }) => {
   return (
     <>
@@ -57,7 +64,8 @@ const Texto = ({ size, color, label }) => {
             justifyContent: "flex-start",
             margin: "0px 0px 24px",
             fontSize: "var(--font-size-lg)",
-          }}>
+          }}
+        >
           {label}
         </h2>
       )}
@@ -65,7 +73,7 @@ const Texto = ({ size, color, label }) => {
       {size === "small" && <h3>{label}</h3>}
       {size === "extra-small" && <h4>{label}</h4>}
       {size === "body" && <p>{label}</p>}
-      {size === "primary-card-subtitle" && <h2>{label}</h2>}
+      {/* {size === "primary-card-subtitle" && <h2>{label}</h2>} */}
     </>
   );
 };
