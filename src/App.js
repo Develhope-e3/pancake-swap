@@ -1,11 +1,16 @@
 import "./App.css";
 import "./styles/index.scss";
 import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
+
 import { PrimaryCard } from "./componentes/Cards/PrimaryCard.js";
 import { cardData } from "./data/cardData.js";
 
 import Link from "./componentes/Link/Link";
 import Texto from "./componentes/Texto/Texto";
+
+import Puntos from "./puntos/puntos";
+import Button from "./componentes/Button/Button";
+
 function App() {
   return (
     <div className="App">
@@ -30,6 +35,7 @@ function App() {
             onClick={() => console.log("click en el boton disabled")}
             texto={"Boton secundario"}
           />
+
           <Link
             label={"Un link"}
             className={"primary"}
@@ -60,6 +66,17 @@ function App() {
                 />
               );
             })}
+
+
+          <Button
+            esPrimario={true}
+            label={"button-wallet"}
+            texto={"connect wallet"}
+            onClick={() => console.log("click en el boton connect wallet")}
+          />
+
+          <Puntos className="punto-verde" />
+          <Puntos className="punto-rosa" />
         </div>
         <br />
       </header>
