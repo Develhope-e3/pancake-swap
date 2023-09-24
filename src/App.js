@@ -81,16 +81,7 @@ function App() {
             label={"title-extra-small"}
             color={"--color-secondary"}
           />
-           <Texto
-            size={"body"}
-            label={"body"}
-            color={"--color-secondary"}
-          />
-           <Texto
-            size={"primary-card-subtitle"}
-            label={"primary-card-subtitle"}
-            color={"--color-secondary"}
-          />
+          <Texto size={"body"} label={"body"} color={"--color-secondary"} />
         </div>
         <br />
         <div className="flex-row-container">
@@ -106,7 +97,6 @@ function App() {
                 />
               );
             })}
-
 
           <Button
             esPrimario={true}
