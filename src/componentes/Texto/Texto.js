@@ -11,17 +11,17 @@ import "./Texto.scss";
 const Texto = ({ size, color, label }) => {
   return (
     <>
-      {size === "title-lg-bold" && (
+      {size === "title-large-bold" && (
         <h1 className="title-lg-bold" style={{ color: `var(${color})` }}>
           {label}
         </h1>
       )}
-      {size === "title-lg" && (
+      {size === "title-large" && (
         <h1 className="title-lg" style={{ color: `var(${color})` }}>
           {label}
         </h1>
       )}
-      {size === "title-md-bold" && (
+      {size === "title-medium-bold" && (
         <h2 className="title-md-bold" style={{ color: `var(${color})` }}>
           {label}
         </h2>
@@ -55,6 +55,16 @@ const Texto = ({ size, color, label }) => {
         <span className="body" style={{ color: `var(${color})` }}>
           {label}
         </span>
+      )}
+      {size === "title-link-bold" && (
+        <a className="title-link-bold" style={{ color: `var(${color})` }}>
+          {label}
+        </a>
+      )}
+      {size === "title-link" && (
+        <a className="title-link" style={{ color: `var(${color})` }}>
+          {label}
+        </a>
       )}
     </>
   );
