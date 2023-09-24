@@ -1,13 +1,10 @@
 import "./App.css";
 import "./styles/index.scss";
 import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
-
 import { PrimaryCard } from "./componentes/Cards/PrimaryCard.js";
 import { cardData } from "./data/cardData.js";
-
 import Link from "./componentes/Link/Link";
 import Texto from "./componentes/Texto/Texto";
-
 import Puntos from "./puntos/puntos";
 import Button from "./componentes/Button/Button";
 
@@ -92,7 +89,7 @@ function App() {
                   icon={card.icon}
                   title={card.title}
                   subtitle={card.subtitle.text}
-                  subtitleColor={card.subtitle.color}
+                  color={card.subtitle.color}
                   body={card.body}
                 />
               );
