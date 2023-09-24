@@ -16,9 +16,8 @@ export const PrimaryCard = ({ icon, title, subtitle, color, body }) => {
     <div className="primary-card">
       <div className="primary-card-icon">{icon}</div>
       <div>
-        {/* @TODO Modificar h2 por un componente Texto */}
-        <h2 className="primary-card-title">{title}</h2>
-        <Texto label={subtitle} size={"title-md"} color={color} />
+        <Texto label={title} size={"title-card"} />
+        <Texto label={subtitle} size={"title-card"} color={color} />
         <div className="primary-card-body">
           <Texto label={body} size={"body"} />
         </div>

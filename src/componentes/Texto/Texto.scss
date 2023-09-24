@@ -18,12 +18,12 @@
 }
 
 .title-md-bold {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   font-weight: 600;
 }
 
 .title-md {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
 }
 
 .title-s-bold {
@@ -48,9 +48,19 @@
   font-size: var(--font-size-ms);
 }
 
+.title-link {
+  font-size: var(--font-size-md);
+}
+
 .title-link-bold {
   font-size: var(--font-size-md);
   font-weight: 600;
+}
+
+.title-card-bold {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  line-height: 1.1;
 }
 
 a,

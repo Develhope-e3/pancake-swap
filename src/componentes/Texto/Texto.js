@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./Texto.scss";
 
 /**
@@ -11,42 +12,42 @@ import "./Texto.scss";
 const Texto = ({ size, color, label }) => {
   return (
     <>
-      {size === "title-large-bold" && (
+      {size === "title-lg-bold" && (
         <h1 className="title-lg-bold" style={{ color: `var(${color})` }}>
           {label}
         </h1>
       )}
-      {size === "title-large" && (
+      {size === "title-lg" && (
         <h1 className="title-lg" style={{ color: `var(${color})` }}>
           {label}
         </h1>
       )}
-      {size === "title-medium-bold" && (
+      {size === "title-md-bold" && (
         <h2 className="title-md-bold" style={{ color: `var(${color})` }}>
           {label}
         </h2>
       )}
-      {size === "title-medium" && (
+      {size === "title-md" && (
         <h2 className="title-md" style={{ color: `var(${color})` }}>
           {label}
         </h2>
       )}
-      {size === "title-small-bold" && (
+      {size === "title-s-bold" && (
         <h3 className="title-s-bold" style={{ color: `var(${color})` }}>
           {label}
         </h3>
       )}
-      {size === "title-small" && (
+      {size === "title-s" && (
         <h3 className="title-s" style={{ color: `var(${color})` }}>
           {label}
         </h3>
       )}
-      {size === "title-extra-small-bold" && (
+      {size === "title-xs-bold" && (
         <h4 className="title-xs-bold" style={{ color: `var(${color})` }}>
           {label}
         </h4>
       )}
-      {size === "title-extra-small" && (
+      {size === "title-xs" && (
         <h4 className="title-xs" style={{ color: `var(${color})` }}>
           {label}
         </h4>
@@ -65,6 +66,16 @@ const Texto = ({ size, color, label }) => {
         <a className="title-link" style={{ color: `var(${color})` }}>
           {label}
         </a>
+      )}
+      {size === "title-card-bold" && (
+        <h2 className="title-card-bold" style={{ color: `var(${color})` }}>
+          {label}
+        </h2>
+      )}
+      {size === "title-card" && (
+        <h2 className="title-card" style={{ color: `var(${color})` }}>
+          {label}
+        </h2>
       )}
     </>
   );

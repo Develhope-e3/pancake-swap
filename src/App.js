@@ -39,43 +39,43 @@ function App() {
             href={"https://facebook.com"}
           />
           <Texto
-            size={"title-large-bold"}
-            label={"title-large-bold"}
+            size={"title-lg-bold"}
+            label={"title-lg-bold"}
             color={"--color-secondary"}
           />
           <Texto
-            size={"title-large"}
-            label={"title-large"}
+            size={"title-lg"}
+            label={"title-lg"}
             color={"--color-secondary"}
           />
           <Texto
-            size={"title-medium-bold"}
-            label={"title-medium-bold"}
+            size={"title-md-bold"}
+            label={"title-md-bold"}
             color={"--color-secondary"}
           />
           <Texto
-            size={"title-medium"}
-            label={"title-medium"}
+            size={"title-md"}
+            label={"title-md"}
             color={"--color-secondary"}
           />
           <Texto
-            size={"title-small-bold"}
-            label={"title-small-bold"}
+            size={"title-s-bold"}
+            label={"title-s-bold"}
             color={"--color-secondary"}
           />
           <Texto
-            size={"title-small"}
-            label={"title-small"}
+            size={"title-s"}
+            label={"title-s"}
             color={"--color-secondary"}
           />
           <Texto
-            size={"title-extra-small-bold"}
-            label={"title-extra-small-bold"}
+            size={"title-xs-bold"}
+            label={"title-xs-bold"}
             color={"--color-secondary"}
           />
           <Texto
-            size={"title-extra-small"}
-            label={"title-extra-small"}
+            size={"title-xs"}
+            label={"title-xs"}
             color={"--color-secondary"}
           />
           <Texto size={"body"} label={"body"} color={"--color-secondary"} />
