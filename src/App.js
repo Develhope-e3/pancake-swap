@@ -42,13 +42,53 @@ function App() {
             href={"https://facebook.com"}
           />
           <Texto
-            size={"title-large"}
-            label={"Texto"}
-            color={"--color-subtitulo-lila"}
+            size={"title-large-bold"}
+            label={"title-large-bold"}
+            color={"--color-secondary"}
           />
           <Texto
             size={"title-large"}
-            label={"Texto"}
+            label={"title-large"}
+            color={"--color-secondary"}
+          />
+          <Texto
+            size={"title-medium-bold"}
+            label={"title-medium-bold"}
+            color={"--color-secondary"}
+          />
+          <Texto
+            size={"title-medium"}
+            label={"title-medium"}
+            color={"--color-secondary"}
+          />
+          <Texto
+            size={"title-small-bold"}
+            label={"title-small-bold"}
+            color={"--color-secondary"}
+          />
+          <Texto
+            size={"title-small"}
+            label={"title-small"}
+            color={"--color-secondary"}
+          />
+          <Texto
+            size={"title-extra-small-bold"}
+            label={"title-extra-small-bold"}
+            color={"--color-secondary"}
+          />
+          <Texto
+            size={"title-extra-small"}
+            label={"title-extra-small"}
+            color={"--color-secondary"}
+          />
+           <Texto
+            size={"body"}
+            label={"body"}
+            color={"--color-secondary"}
+          />
+           <Texto
+            size={"primary-card-subtitle"}
+            label={"primary-card-subtitle"}
             color={"--color-secondary"}
           />
         </div>

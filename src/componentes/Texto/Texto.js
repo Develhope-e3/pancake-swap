@@ -26,7 +26,7 @@ const Texto = ({ size, color, label }) => {
           {label}
         </h2>
       )}
-      {size === "title-md" && (
+      {size === "title-medium" && (
         <h2 className="title-md" style={{ color: `var(${color})` }}>
           {label}
         </h2>

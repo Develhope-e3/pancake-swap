@@ -18,7 +18,7 @@ export const PrimaryCard = ({ icon, title, subtitle, subtitleColor, body }) => {
       {/* @TODO Agregar margen al div y sacarlo de la class texto */}
       <div className="card-texto">
         <h2 className="primary-card-title">{title}</h2>
-        <Texto label={subtitle} size={"title-md"} color={subtitleColor} />
+        <Texto label={subtitle} size={"title-medium"} color={subtitleColor} />
       </div>
       {/* @TODO cambiar por elemento texto */}
       <Texto label={body} size={"body"} />
