@@ -2,11 +2,11 @@ import "./PrimaryCard.scss";
 import Texto from "../Texto/Texto.js";
 
 /**
- * @param {object} icon - Icono .svg de la card
- * @param {object} title - Título principal de la card
- * @param {object} subtitle - Subtítulo coloreado de la card
- * @param {object} color - Variable que se introducirá para modificar el color de las fuentes
- * @param {object} body - Texto del cuerpo de la card
+ * @param {JSX.Element} icon - Icono .svg de la card
+ * @param {String} title - Título principal de la card
+ * @param {String} subtitle - Subtítulo coloreado de la card
+ * @param {String} color - Variable que se introducirá para modificar el color de las fuentes
+ * @param {String} body - Texto del cuerpo de la card
  *
  * @returns Estructura HTML
  */
