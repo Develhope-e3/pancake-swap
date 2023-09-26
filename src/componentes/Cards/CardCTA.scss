@@ -1,0 +1,29 @@
+.cta-card {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  flex: 1;
+  text-align: start;
+
+  width: 260px;
+
+  padding: 24px;
+
+  overflow: inherit;
+  background-color: rgb(124, 55, 55);
+
+  border-radius: var(--radius-card);
+  border: var(--borderWidths-1) solid #383241;
+  border-bottom: var(--space-3xs) solid #383241;
+
+  color: var(--color-text);
+
+  font: inherit;
+}
+
+.cta-card-icon {
+  display: flex;
+  justify-content: flex-end;
+
+  height: auto;
+}
