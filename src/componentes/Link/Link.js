@@ -1,23 +1,20 @@
 import "./Link.scss";
 
 /**
- *
  * @param {string} label - Texto que va a llevar el link
- * @param {string} href - URL de navegacion para el link
- * @param {string} className - Clase del link
+ * @param {string} className - clase del link (primaryAnchor, secondaryAnchor, tertiaryAnchor)
+ * @param {string} href - URL del link
+ * @param {svgImage} svg - imagen SVG del link
  *
  * @returns Estructura HTML
  */
 
-const Link = ({ href, label, className }) => {
+const Link = ({ label, className, href, svg, }) => {
   return (
-    <a href={href} className={className} >
-      {label}
+    <a class={className} href={href}>
+      {label} {svg && svg}
     </a>
   );
 };
 
-/**
- * Siempre va al final del componente, para poder importarlo en mi aplicacion
- */
 export default Link;
