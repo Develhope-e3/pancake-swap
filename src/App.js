@@ -2,7 +2,9 @@ import "./App.css";
 import "./styles/index.scss";
 import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
 import { PrimaryCard } from "./componentes/Cards/PrimaryCard.js";
-import { cardData } from "./data/cardData.js";
+import { dataPrimaryCard } from "./data/dataPrimaryCard.js";
+import { CardCTA } from "./componentes/Cards/CardCTA";
+import { dataCardCTA } from "./data/dataCardCTA";
 import Link from "./componentes/Link/Link";
 import Texto from "./componentes/Texto/Texto";
 import Puntos from "./puntos/puntos";
@@ -82,8 +84,8 @@ function App() {
         </div>
         <br />
         <div className="flex-row-container">
-          {cardData &&
-            cardData.map((card) => {
+          {dataPrimaryCard &&
+            dataPrimaryCard.map((card) => {
               return (
                 <PrimaryCard
                   icon={card.icon}
@@ -99,11 +101,22 @@ function App() {
             esPrimario={true}
             label={"button-wallet"}
             texto={"connect wallet"}
-            onClick={() => console.log("click en el boton connect wallet")}
+            onClick={() => console.log("click en el botón connect wallet")}
           />
-
           <Puntos className="punto-verde" />
           <Puntos className="punto-rosa" />
+          {dataCardCTA &&
+            dataCardCTA.map((card) => {
+              return (
+                <CardCTA
+                  icon={card.icon}
+                  title={card.title}
+                  subtitle={card.subtitle.text}
+                  color={card.subtitle.color}
+                  body={card.body}
+                />
+              );
+            })}
         </div>
         <br />
       </header>

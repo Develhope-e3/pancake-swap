@@ -12,11 +12,12 @@ import "./Button.scss";
  * @returns Estructura HTML
  */
 
-export const Button = ({ texto, esPrimario, onClick, svg }) => {
+export const Button = ({ texto, esPrimario, onClick, svg, disabled }) => {
   const className = esPrimario ? "primario" : "secundario";
+  const funcionalidad = disabled ? true : false;
 
   return (
-    <button className={className} onclick={onClick}>
+    <button className={className} onclick={onClick} disable={funcionalidad} >
       {texto}
       {svg && svg}
     </button>
