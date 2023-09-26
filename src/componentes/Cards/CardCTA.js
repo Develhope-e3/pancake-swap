@@ -13,7 +13,6 @@ import Button from "../Button/Button";
  */
 
 /**
- * TODO crear data para conectar los datos del texto de los botones al componente <Button/>
  * TODO crear una variable para ver si es una card transform o no, así le agregamos el siguiente style: transform: rotate(-2.36deg);
  */
 
@@ -28,7 +27,6 @@ export const CardCTA = ({icon, title, subtitle, subtitleColor, body}) => {
       <Texto label={body} size={"body"} />
       <div className="cta-card-button">
         <Button
-          disable={false}
           esPrimario={"primario"}
           texto={"Play"}
           svg={

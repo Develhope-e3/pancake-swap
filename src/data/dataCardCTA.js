@@ -1,3 +1,6 @@
+/**
+ * TODO crear data para conectar los datos del texto de los botones al componente <Button/>
+ */
 export const dataCardCTA = [
   {
     icon: (
@@ -19,6 +22,7 @@ export const dataCardCTA = [
     title: "$870 million",
     subtitle: { text: "in BNB + CAKE won so far", color: "--color-card-text" },
     body: "Predict the price rend of BNB or CAKE to win",
+    button: { text: "Play"},
   },
   {
     icon: (
