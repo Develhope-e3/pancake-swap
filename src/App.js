@@ -1,11 +1,15 @@
 import "./App.css";
 import "./styles/index.scss";
 import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
+import Link from "./componentes/Link/Link";
+import Texto from "./componentes/Texto/Texto";
+import { CardsData } from "./data/Cards";
 import Link from "./componentes/EjemploComponente/Link/Link";
 import Puntos from "./puntos/puntos";
 import Button from "./componentes/Button/Button";
 import { ButtonPrimary } from "./componentes/ButtonPrimary/ButtonPrimary";
 import ButtonSecondary from "./componentes/ButtonSecondary/ButtonSecondary";
+
 
 
 function App() {
@@ -32,6 +36,31 @@ function App() {
             onClick={() => console.log("click en el boton disabled")}
             texto={"Boton secundario"}
           />
+
+          <Link
+            label={"Un link"}
+            className={"primary"}
+            href={"https://facebook.com"}
+          />
+          <Texto
+            size={"title-large"}
+            label={"Texto"}
+            color={"--color-subtitulo-lila"}
+          />
+          <Texto
+            size={"title-large"}
+            label={"Texto"}
+            color={"--color-secondary"}
+          />
+
+          {CardsData &&
+            CardsData.map((card) => (
+              <div className="card">
+                <Texto label={card.titulo} size={"title-large-bold"} />
+                <Texto label={card.subitulo} size={"title-large-bold"} />
+                <Texto label={card.body} size={"title-large-bold"} />
+              </div>
+            ))}
 
           <Button
             esPrimario={true}
