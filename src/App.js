@@ -4,8 +4,7 @@ import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente
 import Link from "./componentes/Link/Link";
 import Texto from "./componentes/Texto/Texto";
 import { CardsData } from "./data/Cards";
-import Link from "./componentes/EjemploComponente/Link/Link";
-import Puntos from "./puntos/puntos";
+import Puntos from "./componentes/Puntos/Puntos";
 import Button from "./componentes/Button/Button";
 import { ButtonPrimary } from "./componentes/ButtonPrimary/ButtonPrimary";
 import ButtonSecondary from "./componentes/ButtonSecondary/ButtonSecondary";

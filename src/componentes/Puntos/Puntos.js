@@ -1,4 +1,4 @@
-import "./puntos.scss";
+import "./Puntos.scss";
 
 /**
  *
