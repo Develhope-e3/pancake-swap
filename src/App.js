@@ -4,6 +4,9 @@ import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente
 import Link from "./componentes/EjemploComponente/Link/Link";
 import Puntos from "./puntos/puntos";
 import Button from "./componentes/Button/Button";
+import { ButtonPrimary } from "./componentes/ButtonPrimary/ButtonPrimary";
+import ButtonSecondary from "./componentes/ButtonSecondary/ButtonSecondary";
+
 
 function App() {
   return (
@@ -35,6 +38,19 @@ function App() {
             label={"button-wallet"}
             texto={"connect wallet"}
             onClick={() => console.log("click en el boton connect wallet")}
+          />
+          <ButtonPrimary
+          className="button-primary"
+          label={"button-primary"}
+          texto={"primary"}
+          onClick={()=>console.log("click en el boton primario")}
+          />
+
+          <ButtonSecondary
+          className="button-secondary"
+          label={"button-secondary"}
+          texto={"secondary"}
+          onClick={()=>console.log("click en el boton secundario")}
           />
 
           <Puntos className="punto-verde" />
