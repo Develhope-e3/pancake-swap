@@ -2,10 +2,11 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
-  flex: 1 1 0%;
+  flex: 1;
   text-align: start;
 
-  width: 260px;
+  width: 288px;
+  height: 369px;
 
   box-sizing: border-box;
 
@@ -33,10 +34,11 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
-  flex: 1 1 0%;
+  flex: 1;
   text-align: start;
 
-  width: 260px;
+  width: 288px;
+  height: 369px;
 
   box-sizing: border-box;
 
@@ -63,6 +65,6 @@
 .cta-card-icon {
   display: flex;
   justify-content: flex-end;
-  
+
   height: auto;
 }

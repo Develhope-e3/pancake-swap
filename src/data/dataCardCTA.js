@@ -45,6 +45,6 @@ export const dataCardCTA = [
     subtitle: { text: "in CAKE prizes this round", color: "--color-card-text" },
     body: "Buy tickets with CAKE, win CAKE if your numbers match",
     button: { text: "Buy Tickets" },
-    style: "cta-card-yellow",
+    style: "cta-card-violet",
   },
 ];

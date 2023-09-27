@@ -6,7 +6,7 @@ import { dataPrimaryCard } from "./data/dataPrimaryCard.js";
 import { CardCTA } from "./componentes/Cards/CardCTA";
 import { dataCardCTA } from "./data/dataCardCTA.js";
 import { Button } from "./componentes/Button/Button.js";
-import { ButtonPrimary } from "./componentes/ButtonPrimary/ButtonPrimary.js"
+import { ButtonPrimary } from "./componentes/ButtonPrimary/ButtonPrimary.js";
 import { ButtonSecondary } from "./componentes/ButtonSecondary/ButtonSecondary.js";
 import Link from "./componentes/Link/Link.js";
 import Texto from "./componentes/Texto/Texto.js";
@@ -107,36 +107,25 @@ function App() {
           />
           <Puntos className="punto-verde" />
           <Puntos className="punto-rosa" />
-          {dataCardCTA &&
-            dataCardCTA.map((card) => {
-              return (
-                <CardCTA
-                  isTransform={"cta-card-yellow"}
-                  icon={card.icon}
-                  prelude={card.prelude}
-                  title={card.title}
-                  subtitle={card.subtitle.text}
-                  subtitleColor={card.subtitle.color}
-                  body={card.body}
-                  button={card.button.text}
-                  buttonColor={card.button.color}
-                />
-              );
-            })}
-{/*           {dataCardCTA &&
-            dataCardCTA.map((card) => {
-              return (
-                <CardCTA
-                  isTransform={"cta-card-violet"}
-                  icon={card.icon}
-                  title={card.title}
-                  subtitle={card.subtitle.text}
-                  color={card.subtitle.color}
-                  body={card.body}
-                />
-              );
-            })} */}
         </div>
+        <br />
+        {dataCardCTA &&
+          dataCardCTA.map((card) => {
+            return (
+              <CardCTA
+                style={card.style}
+                icon={card.icon}
+                prelude={card.prelude}
+                title={card.title}
+                subtitle={card.subtitle.text}
+                subtitleColor={card.subtitle.color}
+                body={card.body}
+                button={card.button.text}
+                buttonColor={card.button.color}
+              />
+            );
+          })}
+        <br />
         <br />
         <Button
           esPrimario={true}

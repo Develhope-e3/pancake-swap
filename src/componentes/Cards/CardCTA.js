@@ -1,4 +1,5 @@
 import "./CardCTA.scss";
+import "../Cards/PrimaryCard.scss";
 import Texto from "../Texto/Texto.js";
 import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
 
@@ -15,7 +16,7 @@ import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
 /**
  * TODO crear una variable para ver si es una card transform o no, así le agregamos el siguiente style: transform: rotate(-2.36deg); y fijarse cómo conectarlo a la data para asignarle el className
  * 
- *                isTransform={"cta-card-yellow"}
+                  style={card.style}
                   icon={card.icon}
                   prelude={card.prelude}
                   title={card.title}
@@ -27,7 +28,7 @@ import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
  */
 
 export const CardCTA = ({
-  isTransform,
+  style,
   icon,
   prelude,
   title,
@@ -35,38 +36,37 @@ export const CardCTA = ({
   subtitleColor,
   body,
   button,
-  buttonColor
+  buttonColor,
 }) => {
-  const className = isTransform ? "cta-card-yellow" : "cta-card-violet";
-
   return (
-    <div className={className}>
-      <div className="cta-card-icon">{icon}</div>
-      <Texto label={prelude} size={"title-md-bold"} />
-      <div>
-        <Texto label={title} size={"title-card"} />
-        {/* <h2 className="cta-card-title">{title}</h2> */}
-        <Texto label={subtitle} size={"title-md"} color={subtitleColor} />
-      </div>
-      <Texto label={body} size={"body"} />
-      <div className="cta-card-button">
-        <ButtonPrimary
-          className={"button-primary-card"}
-          texto={button}
-          svg={
-            <svg
-              viewBox="0 0 24 24"
-              ml="4px"
-              color="invertedContrast"
-              width="20px"
-              xmlns="http://www.w3.org/2000/svg"
-              class="sc-bcPKhP ysQgM">
-              <path d="M5 13H16.17L11.29 17.88C10.9 18.27 10.9 18.91 11.29 19.3C11.68 19.69 12.31 19.69 12.7 19.3L19.29 12.71C19.68 12.32 19.68 11.69 19.29 11.3L12.71 4.7C12.32 4.31 11.69 4.31 11.3 4.7C10.91 5.09 10.91 5.72 11.3 6.11L16.17 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13Z"></path>
-            </svg>
-          }
-          onClick={""}
-        />
-        
+    <div className="flex-row-container">
+      <div className={style}>
+        <div className="cta-card-icon">{icon}</div>
+        <Texto label={prelude} size={"title-md-bold"} />
+        <div>
+          <Texto label={title} size={"title-card"} />
+          <Texto label={subtitle} size={"title-md"} color={subtitleColor} />
+        </div>
+        <Texto label={body} size={"body"} />
+        <div className="cta-card-button">
+          <ButtonPrimary
+            className={"button-primary-card"}
+            texto={button}
+            color={buttonColor}
+            svg={
+              <svg
+                viewBox="0 0 24 24"
+                ml="4px"
+                color="invertedContrast"
+                width="20px"
+                xmlns="http://www.w3.org/2000/svg"
+                class="sc-bcPKhP ysQgM">
+                <path d="M5 13H16.17L11.29 17.88C10.9 18.27 10.9 18.91 11.29 19.3C11.68 19.69 12.31 19.69 12.7 19.3L19.29 12.71C19.68 12.32 19.68 11.69 19.29 11.3L12.71 4.7C12.32 4.31 11.69 4.31 11.3 4.7C10.91 5.09 10.91 5.72 11.3 6.11L16.17 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13Z"></path>
+              </svg>
+            }
+            onClick={""}
+          />
+        </div>
       </div>
     </div>
   );

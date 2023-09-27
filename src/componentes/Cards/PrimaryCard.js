@@ -16,8 +16,8 @@ export const PrimaryCard = ({ icon, title, subtitle, color, body }) => {
     <div className="primary-card">
       <div className="primary-card-icon">{icon}</div>
       <div>
-        <Texto label={title} size={"title-card"} />
-        <Texto label={subtitle} size={"title-card"} color={color} />
+        <Texto label={title} size={"title-card-bold"} />
+        <Texto label={subtitle} size={"title-card-bold"} color={color} />
         <div className="primary-card-body">
           <Texto label={body} size={"body"} />
         </div>
