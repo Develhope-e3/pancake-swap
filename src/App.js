@@ -11,6 +11,8 @@ import { ButtonSecondary } from "./componentes/ButtonSecondary/ButtonSecondary.j
 import Link from "./componentes/Link/Link.js";
 import Texto from "./componentes/Texto/Texto.js";
 import Puntos from "./componentes/Puntos/Puntos.js";
+import Dropdown from "./componentes/Dropdown/Dropdown";
+import Trade from "./componentes/Dropdown/NavbarDropdown/Trade";
 
 function App() {
   return (
@@ -143,6 +145,9 @@ function App() {
         <br />
         <Puntos className="punto-verde" />
         <Puntos className="punto-rosa" />
+
+
+        <Dropdown dropdownItem={<Trade/>} label={"Trade"} href={"www.google.com"} className={"navbar-anchor"}/>
 
         <br></br>
         <Link
