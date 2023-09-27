@@ -23,6 +23,7 @@ const Dev = () => {
         <div className="flex-row">
           <Dropdown label={"Trade"} dropdownItems={trade} />
           <Dropdown label={"Earn"} dropdownItems={earn} />
+          <Dropdown label={"Win"} dropdownItems={earn} />
         </div>
         <Link
           label={"Un link"}
