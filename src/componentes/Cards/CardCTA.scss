@@ -16,7 +16,7 @@
   overflow: inherit;
 
   color: var(--color-text);
-  background: linear-gradient(var(--color-start-gradient-card-CTA-yellow) 0%, var(--color-start-gradient-card-CTA-yellow) 100%);
+  background: linear-gradient(#ffb237 0%, #ffcd51 100%);
 
   border-radius: var(--radius-card);
   border: var(--borderWidths-1) solid #383241;
@@ -46,10 +46,10 @@
 
   padding: 24px;
 
-  overflow: inherit;
+  overflow: initial;
 
   color: var(--color-text);
-  background: linear-gradient(var(--color-start-gradient-card-CTA-violet) 0%, var(--color-start-gradient-card-CTA-violet) 100%);
+  background: linear-gradient(#7645d9 0%, #5121b1 100%);
 
   border-radius: var(--radius-card);
   border: var(--borderWidths-1) solid #383241;
