@@ -39,3 +39,33 @@ export const earn = [
     href: "www.google.com",
   },
 ];
+
+export const win = [
+  {
+    label: "Trading Reward",
+    href: "www.google.com",
+  },
+  {
+    label: "Trading Competition",
+    href: "www.google.com",
+  },
+  {
+    label: "Prediction (BETA)",
+    href: "www.google.com",
+  },
+  {
+    label: "Lottery",
+    href: "www.google.com",
+  },
+  {
+    label: "Pottery (BETA)",
+    href: "www.google.com",
+  },
+];
+
+export const game = [
+  {
+    label: "Pancake Protectors",
+    href: "www.google.com",
+  }
+];

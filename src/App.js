@@ -12,7 +12,7 @@ import Link from "./componentes/Link/Link.js";
 import Texto from "./componentes/Texto/Texto.js";
 import Puntos from "./componentes/Puntos/Puntos.js";
 import Dropdown from "./componentes/Dropdown/Dropdown";
-import { earn, trade } from "./data/dropdownItems";
+import { earn, trade, win, game } from "./data/dropdownItems";
 
 function App() {
   return (
@@ -33,6 +33,20 @@ function App() {
             <Dropdown
               dropdownItems={earn}
               label={"Earn"}
+              href={"www.google.com"}
+              className={"navbar-anchor"}
+            />
+
+            <Dropdown
+              dropdownItems={win}
+              label={"Win"}
+              href={"www.google.com"}
+              className={"navbar-anchor"}
+            />
+
+            <Dropdown
+              dropdownItems={game}
+              label={"Game"}
               href={"www.google.com"}
               className={"navbar-anchor"}
             />
