@@ -1,16 +1,18 @@
 import Link from "../Link/Link";
 import React, { useState } from "react";
+import DropdownItem from "./DropdownItems/DropdownItems";
+import "./Dropdown.scss";
 /**
- * 
+ *
  * @param {string} label - Texto que va a llevar el encabezado del Dropdown
- * @param {componente} dropdownItem -Contenido Dropdown 
+ * @param {componente} dropdownItems -Contenido Dropdown
  * @param {string} href - URL del encabezado
  * @param {string} className - Clase del encabezado del Dropdown
  *
  * @returns Estructura HTML
  */
 
-function Dropdown({dropdownItem, label , href, className}) {
+function Dropdown({ dropdownItems, label, href, className }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleMouseEnter = () => {
@@ -22,22 +24,16 @@ function Dropdown({dropdownItem, label , href, className}) {
   };
 
   return (
-    <div
-      className="dropdown"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-           <Link
-        label={label}
-        className={className}
-        href={href}
-      />
-      {isOpen && (
-     <ul>
-      {dropdownItem}
-     </ul>
-      )}
-    </div>
+    <>
+      <div
+        className="dropdown"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <Link label={label} className={className} href={href} />
+      {isOpen && <DropdownItem options={dropdownItems} />}
+      </div>
+    </>
   );
 }
 
