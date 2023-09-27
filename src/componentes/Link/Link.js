@@ -9,7 +9,7 @@ import "./Link.scss";
  * @returns Estructura HTML
  */
 
-const Link = ({ label, className, href, svg, }) => {
+const Link = ({ label, className, href, svg }) => {
   return (
     <a class={className} href={href}>
       {label} {svg && svg}
