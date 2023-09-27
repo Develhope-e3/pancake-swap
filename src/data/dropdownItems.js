@@ -1,6 +1,4 @@
 import { RxExit } from "react-icons/rx";
-import { IoMdExit } from "react-icons/io";
-import NuevoIcono from "../componentes/Icono/NuevoIcono";
 export const trade = [
   {
     label: "Swap",
