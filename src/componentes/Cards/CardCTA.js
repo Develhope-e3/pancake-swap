@@ -32,6 +32,7 @@ export const CardCTA = ({
   style,
   icon,
   prelude,
+  preludeColor,
   title,
   titleColor,
   subtitle,
@@ -44,7 +45,7 @@ export const CardCTA = ({
     <div className="flex-row-container">
       <div className={style}>
         <div className="cta-card-icon">{icon}</div>
-        <Texto label={prelude} size={"title-md-bold"} />
+        <Texto label={prelude} size={"title-md-bold"} color={preludeColor}/>
         <div>
           <Texto label={title} size={"title-card"} color={titleColor} />
           <Texto label={subtitle} size={"title-md"} color={subtitleColor} />

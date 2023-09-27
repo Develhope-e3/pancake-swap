@@ -115,7 +115,8 @@ function App() {
               <CardCTA
                 style={card.style}
                 icon={card.icon}
-                prelude={card.prelude}
+                prelude={card.prelude.text}
+                preludeColor={card.prelude.color}
                 title={card.title.text}
                 titleColor={card.title.color}
                 subtitle={card.subtitle.text}

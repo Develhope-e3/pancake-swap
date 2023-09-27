@@ -1,12 +1,13 @@
 .cta-card-yellow {
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex: 1;
   text-align: start;
 
-  width: 288px;
-  height: 369px;
+  width: 280px;
+  height: 360px;
+  gap: var(--space-rem);
 
   box-sizing: border-box;
 
@@ -33,12 +34,13 @@
 .cta-card-violet {
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex: 1;
   text-align: start;
 
-  width: 288px;
-  height: 369px;
+  width: 280px;
+  height: 360px;
+  gap: var(--space-rem);
 
   box-sizing: border-box;
 
@@ -67,4 +69,20 @@
   justify-content: flex-end;
 
   height: auto;
+}
+
+.cta-card-button{
+  display: flex;
+  justify-content: center;  
+  text-align: center;
+  
+  margin-top: 20px;
+  
+  > button {
+    display: flex;
+    flex: 1;
+    padding: 0px 24px;
+
+    gap: 5px;
+  }
 }
