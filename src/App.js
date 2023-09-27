@@ -116,7 +116,8 @@ function App() {
                 style={card.style}
                 icon={card.icon}
                 prelude={card.prelude}
-                title={card.title}
+                title={card.title.text}
+                titleColor={card.title.color}
                 subtitle={card.subtitle.text}
                 subtitleColor={card.subtitle.color}
                 body={card.body}

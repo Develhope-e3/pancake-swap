@@ -19,7 +19,7 @@ export const dataCardCTA = [
       </svg>
     ),
     prelude: "Prediction",
-    title: "$870 million",
+    title: { text: "$870 million", color: "--color-card-text" },
     subtitle: { text: "in BNB + CAKE won so far", color: "--color-card-text" },
     body: "Predict the price rend of BNB or CAKE to win",
     button: { text: "Play" },
@@ -41,8 +41,11 @@ export const dataCardCTA = [
       </svg>
     ),
     prelude: "Lottery",
-    title: "$32,031",
-    subtitle: { text: "in CAKE prizes this round", color: "--color-card-text" },
+    title: { text: "$32,031", color: "--color-card-text" },
+    subtitle: {
+      text: "in CAKE prizes this round",
+      color: "--color-secondary",
+    },
     body: "Buy tickets with CAKE, win CAKE if your numbers match",
     button: { text: "Buy Tickets" },
     style: "cta-card-violet",

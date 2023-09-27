@@ -19,7 +19,8 @@ import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
                   style={card.style}
                   icon={card.icon}
                   prelude={card.prelude}
-                  title={card.title}
+                  title={card.title.text}
+                  titleColor={card.title.color}
                   subtitle={card.subtitle.text}
                   subtitleColor={card.subtitle.color}
                   body={card.body}
@@ -32,6 +33,7 @@ export const CardCTA = ({
   icon,
   prelude,
   title,
+  titleColor,
   subtitle,
   subtitleColor,
   body,
@@ -44,7 +46,7 @@ export const CardCTA = ({
         <div className="cta-card-icon">{icon}</div>
         <Texto label={prelude} size={"title-md-bold"} />
         <div>
-          <Texto label={title} size={"title-card"} />
+          <Texto label={title} size={"title-card"} color={titleColor} />
           <Texto label={subtitle} size={"title-md"} color={subtitleColor} />
         </div>
         <Texto label={body} size={"body"} />
