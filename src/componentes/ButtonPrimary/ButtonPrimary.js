@@ -9,12 +9,13 @@ import "./ButtonPrimary.scss";
  * @returns Estructura HTML
  */
 
-export const ButtonPrimary = ({ texto, onClick, className }) => {
+export const ButtonPrimary = ({ texto, onClick, className, svg }) => {
 //   const className = esPrimario ? "primario" : "secundario";
 
   return (
     <button className={className} onclick={onClick}>
       {texto}
+      {svg && svg}
     </button>
   );
 };

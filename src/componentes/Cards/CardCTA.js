@@ -1,6 +1,6 @@
 import "./CardCTA.scss";
 import Texto from "../Texto/Texto.js";
-import Button from "../Button/Button";
+import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
 
 /**
  * @param {JSX.Element} icon - Icono .svg de la card
@@ -26,8 +26,8 @@ export const CardCTA = ({icon, title, subtitle, subtitleColor, body}) => {
       </div>
       <Texto label={body} size={"body"} />
       <div className="cta-card-button">
-        <Button
-          esPrimario={"primario"}
+        <ButtonPrimary
+          className={"button-primary"}
           texto={"Play"}
           svg={
             <svg
