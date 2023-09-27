@@ -5,21 +5,20 @@ export const trade = [
   {
     label: "Swap",
     href: "www.google.com",
-    icono: <RxExit />,
   },
   {
     label: "Liquidity",
     href: "www.google.com",
-    icono: <IoMdExit />,
   },
   {
     label: "Perpetual",
     href: "www.google.com",
-    icono: <NuevoIcono />,
+    icono: <RxExit />,
   },
   {
     label: "Bridge",
     href: "www.google.com",
+    icono: <RxExit />,
   },
   {
     label: "Limit",
@@ -73,5 +72,6 @@ export const game = [
   {
     label: "Pancake Protectors",
     href: "www.google.com",
+    icono: <RxExit />,
   },
 ];
