@@ -42,6 +42,9 @@ export const CardCTA = ({
   buttonColor,
 }) => {
   return (
+    /**
+     * TODO modificar container y agregarlo a secciones
+     */
     <div className="flex-row-container">
       <div className={style}>
         <div className="cta-card-icon">{icon}</div>

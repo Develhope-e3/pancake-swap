@@ -16,7 +16,7 @@
   overflow: inherit;
 
   color: var(--color-text);
-  background: linear-gradient(#ffb237 0%, #ffcd51 100%);
+  background: var(--color-gradient-yellow);
 
   border-radius: var(--radius-card);
   border: var(--borderWidths-1) solid #383241;
@@ -49,7 +49,7 @@
   overflow: initial;
 
   color: var(--color-text);
-  background: linear-gradient(#7645d9 0%, #5121b1 100%);
+  background: var(--color-gradient-violet);
 
   border-radius: var(--radius-card);
   border: var(--borderWidths-1) solid #383241;
@@ -71,14 +71,14 @@
   height: auto;
 }
 
-.cta-card-button{
+.cta-card-button {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   text-align: center;
-  
+
   margin-top: 20px;
-  
-  > button {
+
+  >button {
     display: flex;
     flex: 1;
     padding: 0px 24px;
