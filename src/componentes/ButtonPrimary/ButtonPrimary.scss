@@ -33,6 +33,10 @@
 }
 
 .button-primary-card {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: var(--color-primary);
   color: var(--color-button-primary);
 

@@ -27,7 +27,7 @@ export const CardCTA = ({icon, title, subtitle, subtitleColor, body}) => {
       <Texto label={body} size={"body"} />
       <div className="cta-card-button">
         <ButtonPrimary
-          className={"button-primary"}
+          className={"button-primary-card"}
           texto={"Play"}
           svg={
             <svg
