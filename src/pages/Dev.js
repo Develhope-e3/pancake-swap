@@ -10,6 +10,8 @@ import { ButtonSecondary } from "../componentes/ButtonSecondary/ButtonSecondary.
 import Link from "../componentes/Link/Link.js";
 import Texto from "../componentes/Texto/Texto.js";
 import Puntos from "../componentes/Puntos/Puntos.js";
+import Dropdown from "../componentes/Dropdown/Dropdown.jsx";
+import { earn, trade } from "../data/dropdownItems.js";
 
 const Dev = () => {
   return (
@@ -18,23 +20,10 @@ const Dev = () => {
         {/**
          * Manera de invocar a mi componente reutilizable
          */}
-        <EjemploComponente
-          esPrimario={true}
-          texto={"Boton primario"}
-          onClick={() => console.log("click en el boton primario")}
-        />
-        <EjemploComponente
-          esPrimario={false}
-          texto={"Boton secundario"}
-          onClick={() => console.log("click en el boton secundario")}
-        />
-        <EjemploComponente
-          esPrimario={false}
-          disabled={true}
-          onClick={() => console.log("click en el boton disabled")}
-          texto={"Boton secundario"}
-        />
-
+        <div className="flex-row">
+          <Dropdown label={"Trade"} dropdownItems={trade} />
+          <Dropdown label={"Earn"} dropdownItems={earn} />
+        </div>
         <Link
           label={"Un link"}
           className={"primary"}

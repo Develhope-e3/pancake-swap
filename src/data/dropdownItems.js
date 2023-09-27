@@ -1,11 +1,15 @@
+import { RxExit } from "react-icons/rx";
+import { IoMdExit } from "react-icons/io";
 export const trade = [
   {
     label: "Swap",
     href: "www.google.com",
+    icono: <RxExit />,
   },
   {
     label: "Liquidity",
     href: "www.google.com",
+    icono: <IoMdExit />,
   },
   {
     label: "Perpetual",
@@ -67,5 +71,5 @@ export const game = [
   {
     label: "Pancake Protectors",
     href: "www.google.com",
-  }
+  },
 ];

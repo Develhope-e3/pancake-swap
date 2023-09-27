@@ -12,7 +12,7 @@ import "./Dropdown.scss";
  * @returns Estructura HTML
  */
 
-function Dropdown({ dropdownItems, label, href, className }) {
+const Dropdown = ({ dropdownItems, label, href, className }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleMouseEnter = () => {
@@ -31,10 +31,10 @@ function Dropdown({ dropdownItems, label, href, className }) {
         onMouseLeave={handleMouseLeave}
       >
         <Link label={label} className={className} href={href} />
-      {isOpen && <DropdownItem options={dropdownItems} />}
+        {isOpen && <DropdownItem options={dropdownItems} />}
       </div>
     </>
   );
-}
+};
 
 export default Dropdown;

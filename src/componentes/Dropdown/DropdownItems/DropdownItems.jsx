@@ -1,7 +1,8 @@
 import React from "react";
 import "./DropdownItem.scss";
 import Texto from "../../Texto/Texto";
-const DropdownItem = ({ options }) => {
+import Icono from "../../Icono/Icono";
+const DropdownItem = ({ options, icono }) => {
   return (
     <ul className="dropdown-list">
       {options.map((option, index) => (
@@ -12,7 +13,7 @@ const DropdownItem = ({ options }) => {
             color={"--color-subtitulo-lila"}
             key={index}
           />
-          <p>Icono</p>
+          {option.icono && <Icono icono={option.icono} />}
         </div>
       ))}
     </ul>
