@@ -10,6 +10,8 @@ import { ButtonSecondary } from "../componentes/ButtonSecondary/ButtonSecondary.
 import Link from "../componentes/Link/Link.js";
 import Texto from "../componentes/Texto/Texto.js";
 import Puntos from "../componentes/Puntos/Puntos.js";
+import Dropdown from "../componentes/Dropdown/Dropdown.jsx";
+import { earn, trade } from "../data/dropdownItems.js";
 
 const Dev = () => {
   return (
@@ -35,6 +37,11 @@ const Dev = () => {
           texto={"Boton secundario"}
         />
 
+        <div className="flex-row">
+          <Dropdown label={"Trade"} dropdownItems={trade} />
+          <Dropdown label={"Earn"} dropdownItems={earn} />
+          <Dropdown label={"Win"} dropdownItems={earn} />
+        </div>
         <Link
           label={"Un link"}
           className={"primary"}
