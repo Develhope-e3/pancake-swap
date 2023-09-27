@@ -1,7 +1,6 @@
-import "./puntos.scss";
+import "./Puntos.scss";
 
 /**
- *
  * @param {string} className - Clase que va a llevar el boton
  *
  * @returns Estructura HTML

@@ -9,6 +9,7 @@ import "./Texto.scss";
  *
  * @returns Elemento HTML para el texto
  */
+
 const Texto = ({ size, color, label }) => {
   return (
     <>

@@ -1,0 +1,38 @@
+.button-secondary {
+
+    background-color:transparent;
+    color: var(--color-primary);
+    
+    
+    border-radius: var(--radius-default);
+    border-width: var(--borderwidths-2);
+    border-color: var(--color-primary);
+    border-style: solid;
+    border-image: initial;
+    box-shadow: none;
+  
+    font-size: var(--font-size-md);
+    font-family: var(--font-normal);
+    font-weight: 600;
+  
+    letter-spacing: 0.03em;
+
+    line-height: 1;
+    outline: 0;
+  
+    width: 132px;
+    height: 48px;
+    padding: 0px 24px;
+  
+    white-space: nowrap;
+  
+    cursor: pointer;
+  
+    
+  
+    &:hover {
+  
+      transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  
+    }
+  }
