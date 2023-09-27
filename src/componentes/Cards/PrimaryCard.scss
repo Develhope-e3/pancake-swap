@@ -1,0 +1,43 @@
+.flex-row-container {
+  display: flex;
+
+  font-family: sans-serif;
+
+  gap: var(--space-rem);
+}
+
+.primary-card {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  flex: 1;
+  text-align: start;
+
+  width: 260px;
+
+  padding: 24px;
+
+  overflow: inherit;
+  background-color: var(--background-color-secondary);
+
+  border-radius: var(--radius-card);
+  border: var(--borderWidths-1) solid #383241;
+  border-bottom: var(--space-3xs) solid #383241;
+
+  color: var(--color-text);
+
+  font: inherit;
+}
+
+.primary-card-icon {
+  display: flex;
+  justify-content: flex-end;
+
+  height: auto;
+}
+
+.primary-card-body {
+  margin-top: 24px;
+
+  color: var(--color-subtitulo-lila);
+}
