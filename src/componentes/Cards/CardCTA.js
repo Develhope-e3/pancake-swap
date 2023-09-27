@@ -2,6 +2,7 @@ import "./CardCTA.scss";
 import "../Cards/PrimaryCard.scss";
 import Texto from "../Texto/Texto.js";
 import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
+import NuevoIcono from "../Icono/NuevoIcono.jsx";
 
 /**
  * @param {JSX.Element} icon - Icono .svg de la card
@@ -11,21 +12,6 @@ import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
  * @param {String} body - Texto del cuerpo de la card
  *
  * @returns Estructura HTML
- */
-
-/**
- * TODO crear una variable para ver si es una card transform o no, así le agregamos el siguiente style: transform: rotate(-2.36deg); y fijarse cómo conectarlo a la data para asignarle el className
- * 
-                  style={card.style}
-                  icon={card.icon}
-                  prelude={card.prelude}
-                  title={card.title.text}
-                  titleColor={card.title.color}
-                  subtitle={card.subtitle.text}
-                  subtitleColor={card.subtitle.color}
-                  body={card.body}
-                  button={card.button.text}
-                  buttonColor={card.button.color}
  */
 
 export const CardCTA = ({
@@ -39,7 +25,6 @@ export const CardCTA = ({
   subtitleColor,
   body,
   button,
-  buttonColor,
 }) => {
   return (
     /**
@@ -48,7 +33,7 @@ export const CardCTA = ({
     <div className="flex-row-container">
       <div className={style}>
         <div className="cta-card-icon">{icon}</div>
-        <Texto label={prelude} size={"title-md-bold"} color={preludeColor}/>
+        <Texto label={prelude} size={"title-md-bold"} color={preludeColor} />
         <div>
           <Texto label={title} size={"title-card"} color={titleColor} />
           <Texto label={subtitle} size={"title-md"} color={subtitleColor} />
@@ -58,7 +43,6 @@ export const CardCTA = ({
           <ButtonPrimary
             className={"button-primary-card"}
             texto={button}
-            color={buttonColor}
             svg={
               <svg
                 viewBox="0 0 24 24"
@@ -72,6 +56,7 @@ export const CardCTA = ({
             }
             onClick={""}
           />
+          <NuevoIcono />
         </div>
       </div>
     </div>
