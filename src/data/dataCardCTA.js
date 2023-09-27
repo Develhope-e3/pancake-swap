@@ -22,7 +22,8 @@ export const dataCardCTA = [
     title: "$870 million",
     subtitle: { text: "in BNB + CAKE won so far", color: "--color-card-text" },
     body: "Predict the price rend of BNB or CAKE to win",
-    button: { text: "Play"},
+    button: { text: "Play" },
+    style: "cta-card-yellow",
   },
   {
     icon: (
@@ -43,5 +44,7 @@ export const dataCardCTA = [
     title: "$32,031",
     subtitle: { text: "in CAKE prizes this round", color: "--color-card-text" },
     body: "Buy tickets with CAKE, win CAKE if your numbers match",
+    button: { text: "Buy Tickets" },
+    style: "cta-card-yellow",
   },
 ];

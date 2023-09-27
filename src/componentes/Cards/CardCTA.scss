@@ -1,29 +1,68 @@
-.cta-card {
+.cta-card-yellow {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
-  flex: 1;
+  flex: 1 1 0%;
   text-align: start;
 
   width: 260px;
 
+  box-sizing: border-box;
+
   padding: 24px;
 
   overflow: inherit;
-  background-color: rgb(124, 55, 55);
+
+  color: var(--color-text);
+  background: linear-gradient(var(--color-start-gradient-card-CTA-yellow) 0%, var(--color-start-gradient-card-CTA-yellow) 100%);
 
   border-radius: var(--radius-card);
   border: var(--borderWidths-1) solid #383241;
   border-bottom: var(--space-3xs) solid #383241;
-
-  color: var(--color-text);
+  -webkit-border-radius: var(--radius-card);
+  -moz-border-radius: var(--radius-card);
+  -ms-border-radius: var(--radius-card);
+  -o-border-radius: var(--radius-card);
 
   font: inherit;
+
+  transform: rotate(-2.36deg);
+}
+
+.cta-card-violet {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  flex: 1 1 0%;
+  text-align: start;
+
+  width: 260px;
+
+  box-sizing: border-box;
+
+  padding: 24px;
+
+  overflow: inherit;
+
+  color: var(--color-text);
+  background: linear-gradient(var(--color-start-gradient-card-CTA-violet) 0%, var(--color-start-gradient-card-CTA-violet) 100%);
+
+  border-radius: var(--radius-card);
+  border: var(--borderWidths-1) solid #383241;
+  border-bottom: var(--space-3xs) solid #383241;
+  -webkit-border-radius: var(--radius-card);
+  -moz-border-radius: var(--radius-card);
+  -ms-border-radius: var(--radius-card);
+  -o-border-radius: var(--radius-card);
+
+  font: inherit;
+
+  transform: rotate(1.43deg);
 }
 
 .cta-card-icon {
   display: flex;
   justify-content: flex-end;
-
+  
   height: auto;
 }

@@ -13,22 +13,46 @@ import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
  */
 
 /**
- * TODO crear una variable para ver si es una card transform o no, así le agregamos el siguiente style: transform: rotate(-2.36deg);
+ * TODO crear una variable para ver si es una card transform o no, así le agregamos el siguiente style: transform: rotate(-2.36deg); y fijarse cómo conectarlo a la data para asignarle el className
+ * 
+ *                isTransform={"cta-card-yellow"}
+                  icon={card.icon}
+                  prelude={card.prelude}
+                  title={card.title}
+                  subtitle={card.subtitle.text}
+                  subtitleColor={card.subtitle.color}
+                  body={card.body}
+                  button={card.button.text}
+                  buttonColor={card.button.color}
  */
 
-export const CardCTA = ({icon, title, subtitle, subtitleColor, body}) => {
+export const CardCTA = ({
+  isTransform,
+  icon,
+  prelude,
+  title,
+  subtitle,
+  subtitleColor,
+  body,
+  button,
+  buttonColor
+}) => {
+  const className = isTransform ? "cta-card-yellow" : "cta-card-violet";
+
   return (
-    <div className="cta-card">
+    <div className={className}>
       <div className="cta-card-icon">{icon}</div>
+      <Texto label={prelude} size={"title-md-bold"} />
       <div>
-        <h2 className="cta-card-title">{title}</h2>
+        <Texto label={title} size={"title-card"} />
+        {/* <h2 className="cta-card-title">{title}</h2> */}
         <Texto label={subtitle} size={"title-md"} color={subtitleColor} />
       </div>
       <Texto label={body} size={"body"} />
       <div className="cta-card-button">
         <ButtonPrimary
           className={"button-primary-card"}
-          texto={"Play"}
+          texto={button}
           svg={
             <svg
               viewBox="0 0 24 24"
@@ -42,6 +66,7 @@ export const CardCTA = ({icon, title, subtitle, subtitleColor, body}) => {
           }
           onClick={""}
         />
+        
       </div>
     </div>
   );

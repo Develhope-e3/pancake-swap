@@ -111,6 +111,23 @@ function App() {
             dataCardCTA.map((card) => {
               return (
                 <CardCTA
+                  isTransform={"cta-card-yellow"}
+                  icon={card.icon}
+                  prelude={card.prelude}
+                  title={card.title}
+                  subtitle={card.subtitle.text}
+                  subtitleColor={card.subtitle.color}
+                  body={card.body}
+                  button={card.button.text}
+                  buttonColor={card.button.color}
+                />
+              );
+            })}
+{/*           {dataCardCTA &&
+            dataCardCTA.map((card) => {
+              return (
+                <CardCTA
+                  isTransform={"cta-card-violet"}
                   icon={card.icon}
                   title={card.title}
                   subtitle={card.subtitle.text}
@@ -118,7 +135,7 @@ function App() {
                   body={card.body}
                 />
               );
-            })}
+            })} */}
         </div>
         <br />
         <Button
