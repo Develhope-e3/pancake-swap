@@ -12,11 +12,11 @@ import "./Button.scss";
  * @returns Estructura HTML
  */
 
-export const Button = ({ texto, esPrimario, onClick, svg }) => {
+export const Button = ({ texto, esPrimario, onClick, svg ,widthValue,heightValue}) => {
   const className = esPrimario ? "primario" : "secundario";
 
   return (
-    <button className={className} onclick={onClick}>
+    <button className={className} onclick={onClick} style={{width:widthValue, height:heightValue}}>
       {texto}
       {svg && svg}
     </button>
