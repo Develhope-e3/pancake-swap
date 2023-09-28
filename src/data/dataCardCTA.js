@@ -1,9 +1,7 @@
 import ArrowRight from "../assets/iconos/ArrowRight";
 import CrystallBall from "../assets/iconos/CrystalBall";
 import { IoTicketSharp } from "react-icons/io5";
-/**
- * TODO crear data para conectar los datos del texto de los botones al componente <Button/>
- */
+
 export const dataCardCTA = [
   {
     style: "cta-card-yellow",

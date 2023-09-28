@@ -1,5 +1,6 @@
 import { RxExit } from "react-icons/rx";
 import NuevoIcono from "../assets/iconos/CrystalBall";
+
 export const trade = [
   {
     label: "Swap",
