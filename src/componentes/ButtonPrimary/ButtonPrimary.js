@@ -13,7 +13,7 @@ export const ButtonPrimary = ({ texto, onClick, className }) => {
 //   const className = esPrimario ? "primario" : "secundario";
 
   return (
-    <button className={className} onclick={onClick}>
+    <button className={className} onClick={onClick}>
       {texto}
     </button>
   );
