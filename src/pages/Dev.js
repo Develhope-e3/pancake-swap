@@ -12,6 +12,7 @@ import Puntos from "../componentes/Puntos/Puntos.js";
 import Dropdown from "../componentes/Dropdown/Dropdown.jsx";
 import { earn, trade, win, game } from "../data/dropdownItems.js";
 
+
 const Dev = () => {
   return (
     <div>
@@ -19,12 +20,14 @@ const Dev = () => {
         {/**
          * Manera de invocar a mi componente reutilizable
          */}
+
         <div className="flex-row">
           <Dropdown label={"Trade"} dropdownItems={trade} />
           <Dropdown label={"Earn"} dropdownItems={earn} />
           <Dropdown label={"Win"} dropdownItems={win} />
           <Dropdown label={"Game"} dropdownItems={game} />
         </div>
+
         <Link
           label={"Un link"}
           className={"primary"}
