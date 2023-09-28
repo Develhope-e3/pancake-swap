@@ -15,7 +15,7 @@ export const ButtonPrimary = ({ texto, onClick, className, svg }) => {
 //   const className = esPrimario ? "primario" : "secundario";
 
   return (
-    <button className={className} onclick={onClick}>
+    <button className={className} onClick={onClick}>
       {texto}
       {svg && svg}
     </button>

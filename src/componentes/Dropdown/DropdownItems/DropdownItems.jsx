@@ -14,12 +14,11 @@ const DropdownItem = ({ options }) => {
   return (
     <ul className="dropdown-list">
       {options.map((option, index) => (
-        <div className="dropdown-item">
+        <div className="dropdown-item" key={index}>
           <Texto
             label={option.label}
             size={"title-md"}
             color={"--color-subtitulo-lila"}
-            key={index}
           />
           {option.icono && <Icono icono={option.icono} />}
         </div>
