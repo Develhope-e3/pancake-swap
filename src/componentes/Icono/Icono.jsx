@@ -8,7 +8,7 @@ import "./Icono.scss";
  * @returns Estructura HTML
  */
 
-const Icono = ({ icono }) => {
+const Icono = ({ icono, color }) => {
   return <div>{icono}</div>;
 };
 
