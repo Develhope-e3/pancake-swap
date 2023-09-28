@@ -14,17 +14,6 @@ import Icono from "../Icono/Icono";
  * @returns Estructura HTML
  */
 
-/**
- *              style={card.style}
-                icon={card.icon}
-                prelude={card.prelude}
-                title={card.title}
-                subtitle={card.subtitle}
-                body={card.body}
-                onClick={card.onClick}
-                key={index}
- */
-
 export const CardCTA = ({
   style,
   icon,
