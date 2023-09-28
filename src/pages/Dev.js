@@ -102,6 +102,7 @@ const Dev = () => {
                 title={card.title}
                 subtitle={card.subtitle}
                 body={card.body}
+                button={card.button}
                 onClick={card.onClick}
                 key={index}
               />

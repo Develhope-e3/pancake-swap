@@ -8,8 +8,8 @@ import "./Icono.scss";
  * @returns Estructura HTML
  */
 
-const Icono = ({ icono, color }) => {
-  return <div>{icono}</div>;
+const Icono = ({ icono, className }) => {
+  return <div className={className && className}>{icono}</div>;
 };
 
 export default Icono;
