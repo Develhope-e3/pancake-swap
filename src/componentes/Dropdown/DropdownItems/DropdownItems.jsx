@@ -21,6 +21,7 @@ const DropdownItem = ({ options }) => {
             color={"--color-subtitulo-lila"}
           />
           {option.icono && <Icono icono={option.icono} />}
+          {option.punto && option.punto}
         </div>
       ))}
     </ul>

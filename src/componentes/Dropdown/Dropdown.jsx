@@ -13,7 +13,7 @@ import "./Dropdown.scss";
  * @returns Estructura HTML
  */
 
-const Dropdown = ({ dropdownItems, label, href, className }) => {
+const Dropdown = ({ dropdownItems, label, href, className, punto }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleMouseEnter = () => {
@@ -33,7 +33,10 @@ const Dropdown = ({ dropdownItems, label, href, className }) => {
       >
         <Link label={label} className={className} href={href} />
         {isOpen && <DropdownItem options={dropdownItems} />}
+        {punto && punto}
       </div>
+
+  
     </>
   );
 };
