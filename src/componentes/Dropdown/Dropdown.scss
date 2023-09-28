@@ -2,7 +2,10 @@
   padding: var(--space-md) var(--space-sm);
 
   position: relative;
+  display: flex;
+  align-items: center;
 
+  color: var(--color-subtitulo-lila);
   background-color: var(--background-color-secondary);
   border-radius: var(--radius-ms);
 

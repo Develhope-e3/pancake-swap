@@ -63,6 +63,7 @@ export const win = [
   {
     label: "Pottery (BETA)",
     href: "www.google.com",
+
   },
 ];
 
@@ -73,3 +74,10 @@ export const game = [
     icono: <RxExit />,
   },
 ];
+
+export const birthday = [
+  {
+    label: "Uranus Communities",
+    href: "www.google.com",
+  }
+]

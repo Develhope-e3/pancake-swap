@@ -10,7 +10,7 @@ import Link from "../componentes/Link/Link.js";
 import Texto from "../componentes/Texto/Texto.js";
 import Puntos from "../componentes/Puntos/Puntos.js";
 import Dropdown from "../componentes/Dropdown/Dropdown.jsx";
-import { earn, trade, win, game } from "../data/dropdownItems.js";
+import { earn, trade, win, game, birthday } from "../data/dropdownItems.js";
 
 const Dev = () => {
   return (
@@ -25,6 +25,7 @@ const Dev = () => {
           <Dropdown label={"Earn"} dropdownItems={earn} />
           <Dropdown label={"Win"} dropdownItems={win} />
           <Dropdown label={"Game"} dropdownItems={game} />
+          <Dropdown label={"Birthday"} dropdownItems={birthday} punto={<Puntos className="punto-verde"/>}/>
         </div>
 
         <Link
