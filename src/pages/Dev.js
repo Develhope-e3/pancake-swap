@@ -104,7 +104,7 @@ const Dev = () => {
                 subtitle={card.subtitle.color}
                 subtitleColor={card.subtitle.color}
                 body={card.body}
-                button={card.button.text}
+                button={card.button}
               />
             );
           })}

@@ -22,7 +22,7 @@ export const dataCardCTA = [
     title: { text: "$870 million", color: "--color-card-text" },
     subtitle: { text: "in BNB + CAKE won so far", color: "--color-card-text" },
     body: "Predict the price rend of BNB or CAKE to win",
-    button: { text: "Play", color: "" },
+    button: "Play",
     style: "cta-card-yellow",
   },
   {
@@ -47,7 +47,7 @@ export const dataCardCTA = [
       color: "--text-color",
     },
     body: "Buy tickets with CAKE, win CAKE if your numbers match",
-    button: { text: "Buy Tickets", color: "" },
+    button: "Buy Tickets",
     style: "cta-card-violet",
   },
 ];

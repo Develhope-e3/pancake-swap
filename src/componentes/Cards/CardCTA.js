@@ -2,6 +2,7 @@ import "./CardCTA.scss";
 import "../Cards/PrimaryCard.scss";
 import Texto from "../Texto/Texto.js";
 import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
+import { RxExit } from "react-icons/rx";
 import NuevoIcono from "../Icono/NuevoIcono.jsx";
 
 /**
@@ -56,7 +57,7 @@ export const CardCTA = ({
             }
             onClick={""}
           />
-          <NuevoIcono />
+          <NuevoIcono color={"red"} svg={<RxExit />} />
         </div>
       </div>
     </div>
