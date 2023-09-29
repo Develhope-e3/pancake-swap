@@ -47,7 +47,22 @@
 .body {
   font-size: var(--font-size-ms);
 }
-
+.body-warningv1{
+  font-size: var(--font-size-ms);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.body-warningv2{
+  font-size: var(--font-size-ms);
+  font-weight: 400;
+  line-height: 1.5;
+}
+.body-warningv3{
+  font-size: var(--font-size-ms);
+  font-weight: 600;
+  line-height: 1.5;
+}
 .title-link {
   font-size: var(--font-size-md);
 }
@@ -62,6 +77,8 @@
   font-weight: 600;
   line-height: 1.1;
 }
+
+
 
 a,
 p,

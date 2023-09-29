@@ -78,6 +78,21 @@ const Texto = ({ size, color, label }) => {
           {label}
         </h2>
       )}
+      {size === "body-warningv1" && (
+        <span className="body-warningv1">
+          {label}
+        </span>
+      )}
+      {size === "body-warningv2" && (
+        <span className="body-warningv2">
+          {label}
+        </span>
+      )}
+      {size === "body-warningv3" && (
+        <span className="body-warningv3">
+          {label}
+        </span>
+      )}
     </>
   );
 };
