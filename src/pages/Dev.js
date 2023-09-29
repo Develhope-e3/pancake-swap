@@ -31,6 +31,7 @@ const Dev = () => {
          */}
 
         <div className="flex-row">
+          <Icono icono={<PancakeSwapIcono style />} />
           <Dropdown
             label={"Trade"}
             dropdownItems={trade}
@@ -195,7 +196,7 @@ const Dev = () => {
         className={"footer-anchor-secondary"}
         href={"www.google.es"}
       ></Link>
-      <Icono icono={<PancakeSwapIcono style />} />
+      
     </div>
   );
 };
