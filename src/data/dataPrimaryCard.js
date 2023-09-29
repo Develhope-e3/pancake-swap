@@ -3,7 +3,7 @@ import { MdOutlineGroups2 } from "react-icons/md";
 export const dataPrimaryCard = [
   {
     icon: <MdOutlineGroups2 color="var(--color-titulo-lila)" />,
-    title: { text: "960 thousand", color: "" },
+    title: { text: "1.1 million", color: "" },
     subtitle: { text: "users", color: "--color-titulo-lila" },
     body: "in the las 30 days",
   },

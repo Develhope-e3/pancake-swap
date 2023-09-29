@@ -1,19 +1,20 @@
-.flex-row-container {
+/* .flex-row-container {
   display: flex;
 
   font-family: sans-serif;
 
   gap: var(--space-rem);
-}
+} */
 
 .primary-card {
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-start;
-  flex: 1;
+  justify-content: space-between;
   text-align: start;
 
-  width: 260px;
+  width: 310px;
+
+  box-sizing: border-box;
 
   padding: 24px;
 
@@ -33,7 +34,7 @@
   display: flex;
   justify-content: flex-end;
 
-  height: auto;
+  margin-bottom: 70px;
 }
 
 .primary-card-body {

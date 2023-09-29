@@ -2,12 +2,10 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  flex: 1;
   text-align: start;
 
-  width: 290px;
-  height: auto;
-  gap: var(--space-rem);
+  width: 300px;
+  height: 380px;
 
   box-sizing: border-box;
 
@@ -28,25 +26,23 @@
 
   font: inherit;
 
-  transform: rotate(-2.36deg);
+  /* transform: rotate(-2.36deg); */
 }
 
 .cta-card-violet {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  flex: 1;
   text-align: start;
 
-  width: 280px;
-  height: auto;
-  gap: var(--space-rem);
+  width: 300px;
+  height: 380px;
 
   box-sizing: border-box;
 
   padding: 24px;
 
-  overflow: initial;
+  overflow: inherit;
 
   color: var(--color-text);
   background: var(--color-gradient-violet);
@@ -61,7 +57,7 @@
 
   font: inherit;
 
-  transform: rotate(1.43deg);
+  /* transform: rotate(1.43deg); */
 }
 
 .cta-card-icon {
@@ -74,9 +70,10 @@
 .cta-card-button {
   display: flex;
   justify-content: center;
+  align-items: end;
   text-align: center;
 
-  margin-top: 20px;
+  height: 60px;
 
   >button {
     display: flex;

@@ -7,7 +7,7 @@ export const dataCardCTA = [
     style: "cta-card-yellow",
     icon: <CrystallBall color={"var(--text-color-black)"} />,
     prelude: { text: "Prediction", color: "--color-card-text" },
-    title: { text: "$870 million", color: "--color-card-text" },
+    title: { text: "$880 million", color: "--color-card-text" },
     subtitle: { text: "in BNB + CAKE won so far", color: "--color-card-text" },
     body: {
       text: "Predict the price rend of BNB or CAKE to win",
