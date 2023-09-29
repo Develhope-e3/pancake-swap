@@ -10,7 +10,8 @@ import Link from "../componentes/Link/Link.js";
 import Texto from "../componentes/Texto/Texto.js";
 import Puntos from "../componentes/Puntos/Puntos.js";
 import Dropdown from "../componentes/Dropdown/Dropdown.jsx";
-import { earn, trade, win, game, birthday } from "../data/dropdownItems.js";
+import { earn, trade, win, game, birthday, tresPuntos } from "../data/dropdownItems.js";
+import { BsThreeDots } from "react-icons/bs";
 
 const Dev = () => {
   return (
@@ -19,13 +20,14 @@ const Dev = () => {
         {/**
          * Manera de invocar a mi componente reutilizable
          */}
-
+       
         <div className="flex-row">
-          <Dropdown label={"Trade"} dropdownItems={trade} />
+          <Dropdown label={"Trade"} dropdownItems={trade} punto= {<Puntos className="punto-rosa"/>}/>
           <Dropdown label={"Earn"} dropdownItems={earn} />
           <Dropdown label={"Win"} dropdownItems={win} />
           <Dropdown label={"Game"} dropdownItems={game} />
-          <Dropdown label={"Birthday"} dropdownItems={birthday} punto={<Puntos className="punto-verde"/>}/>
+          <Dropdown label={"Birthday"} dropdownItems={birthday} punto={<Puntos className="punto-verde"/>} className={"birthday"}/>
+          <Dropdown label={<BsThreeDots />} dropdownItems={tresPuntos} punto={<Puntos className="punto-verde"/>} className={"three-dots"} />
         </div>
 
         <Link
