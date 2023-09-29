@@ -1,3 +1,6 @@
+*{
+  font-family: var(--font-normal)
+}
 .flex-col-center {
   display: flex;
   flex-direction: column;
@@ -7,3 +10,9 @@
   gap: var(--spacing-xs);
 }
 
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}

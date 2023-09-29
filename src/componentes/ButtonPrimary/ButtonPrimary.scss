@@ -1,33 +1,70 @@
 .button-primary {
 
-    background-color: var(--color-primary);
-    color: var(--color-button-primary);
-    
-    
-    border-radius: var(--radius-default);
-    border-width: var(--borderwidths-0);
-    border: none;
-  
-    font-size: var(--font-size-md);
-    font-family: var(--font-normal);
-    font-weight: 600;
-  
-    letter-spacing: 0.03em;
-  
-    width: 166px;
-    height: 46px;
-    padding: 0px 16px;
-  
-    white-space: nowrap;
-  
-    cursor: pointer;
-  
-    align-items: center;
-  
-    &:hover {
-      background-color: #228f99;
-  
-      transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-  
-    }
+  background-color: var(--color-primary);
+  color: var(--color-primary);
+
+
+  border-radius: var(--radius-default);
+  border-width: var(--borderwidths-0);
+  border: none;
+
+  font-size: var(--font-size-md);
+  font-family: var(--font-normal);
+  font-weight: 600;
+
+  letter-spacing: 0.03em;
+
+  width: 166px;
+  height: 46px;
+  padding: 0px 16px;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  align-items: center;
+
+  &:hover {
+    background-color: #228f99;
+
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+
   }
+}
+
+.button-primary-card {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-primary);
+  color: var(--color-primary);
+
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  border-radius: var(--radius-default);
+  border-width: var(--borderwidths-0);
+  border: none;
+
+  font-size: var(--font-size-md);
+  font-family: var(--font-normal);
+  font-weight: 600;
+
+  letter-spacing: 0.03em;
+
+  width: 166px;
+  height: 48px;
+  padding: 0px 24px;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  align-items: center;
+
+  &:hover {
+    background-color: #228f99;
+
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+
+  }
+}
