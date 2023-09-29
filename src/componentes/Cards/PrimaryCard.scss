@@ -1,10 +1,10 @@
-/* .flex-row-container {
+.flex-row-container {
   display: flex;
 
   font-family: sans-serif;
 
   gap: var(--space-rem);
-} */
+}
 
 .primary-card {
   display: flex;
@@ -12,7 +12,7 @@
   justify-content: space-between;
   text-align: start;
 
-  width: 310px;
+  min-width: 310px;
   height: 290px;
 
   box-sizing: border-box;
