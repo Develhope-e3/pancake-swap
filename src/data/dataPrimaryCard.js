@@ -10,13 +10,13 @@ export const dataPrimaryCard = [
     body: "in the las 30 days",
   },
   {
-    icon: <BreakPoints />,
+    icon: <BreakPoints color={"var(--color-primary)"} />,
     title: { text: "13 million", color: "" },
     subtitle: { text: "trades", color: "--color-primary" },
     body: "made in the last 30 days",
   },
   {
-    icon: <ChartBar />,
+    icon: <ChartBar color={"var(--color-failure)"} />,
     title: { text: "$1.3 billion", color: "" },
     subtitle: { text: "staked", color: "--color-failure" },
     body: "Total value Locked",

@@ -1,10 +1,17 @@
-import React from 'react'
+import React from "react";
 
-const ChartBar = () => {
+/**
+ * @param {string} color - color asignado al icono
+ * @param {JSX.Element} svg - SVG element o React-Icon
+ *
+ * @returns Estructura HTML
+ */
+
+const ChartBar = ({ color }) => {
   return (
     <svg
       viewBox="3 0 20 22"
-      fill={"var(--color-failure)"}
+      fill={color}
       width="36px"
       xmlns="http://www.w3.org/2000/svg"
       className="sc-bcPKhP kDAtXN">
@@ -12,6 +19,6 @@ const ChartBar = () => {
       <path d="M19 17H7C6.44772 17 6 16.5523 6 16V12C6 11.4477 6.44772 11 7 11H10V10C10 9.44772 10.4477 9 11 9H14V7C14 6.44772 14.4477 6 15 6H19C19.5523 6 20 6.44772 20 7V16C20 16.5523 19.5523 17 19 17ZM16 8H18V15H16V8ZM12 15H14V11H12V15ZM10 13H8V15H10V13Z"></path>
     </svg>
   );
-}
+};
 
-export default ChartBar
+export default ChartBar;
