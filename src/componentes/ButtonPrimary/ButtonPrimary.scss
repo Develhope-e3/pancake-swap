@@ -1,7 +1,7 @@
 .button-primary {
 
   background-color: var(--color-primary);
-  color: var(--color-primary);
+  color: var(--color-button-primary);
 
 
   border-radius: var(--radius-default);
@@ -25,11 +25,13 @@
   align-items: center;
 
   &:hover {
-    background-color: #228f99;
-
-    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-
-  }
+    background-color: var(--color-bg-button-hover);
+    transition: all 0.2s ease 0.2s;
+    -webkit-transition: all 0.2s ease 0.2s;
+    -moz-transition: all 0.2s ease 0.2s;
+    -ms-transition: all 0.2s ease 0.2s;
+    -o-transition: all 0.2s ease 0.2s;
+}
 }
 
 .button-primary-card {
@@ -40,7 +42,7 @@
   background-color: var(--color-primary);
   color: var(--color-primary);
 
-  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  box-shadow: #0e0e2c66 0px -1px 0px 0px inset;
   border-radius: var(--radius-default);
   border-width: var(--borderwidths-0);
   border: none;
@@ -62,7 +64,7 @@
   align-items: center;
 
   &:hover {
-    background-color: #228f99;
+    background-color: var(--colo-bg-button-hover);
 
     transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
 
