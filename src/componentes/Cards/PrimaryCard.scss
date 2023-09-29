@@ -9,11 +9,13 @@
 .primary-card {
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-start;
-  flex: 1;
+  justify-content: space-between;
   text-align: start;
 
-  width: 260px;
+  min-width: 310px;
+  height: 290px;
+
+  box-sizing: border-box;
 
   padding: 24px;
 
@@ -33,7 +35,12 @@
   display: flex;
   justify-content: flex-end;
 
-  height: auto;
+  margin-bottom: 60px;
+
+  >svg {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .primary-card-body {
