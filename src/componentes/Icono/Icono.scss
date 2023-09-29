@@ -1,10 +1,11 @@
-svg {
-  fill-rule: nonzero;
-  stroke: none;
-  fill-opacity: 1;
-  width: 30px;
-  height: 30px;
+.container {
+  svg {
+    fill-rule: nonzero;
+    stroke: none;
+    fill-opacity: 1;
+  }
 }
+
 .otro:hover {
   transform: scale(1.2, 1.2);
   fill: var(--color-secundary);

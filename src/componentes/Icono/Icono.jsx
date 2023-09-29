@@ -9,7 +9,7 @@ import "./Icono.scss";
  */
 
 const Icono = ({ icono }) => {
-  return <div>{icono}</div>;
+  return <div className="container">{icono}</div>;
 };
 
 export default Icono;
