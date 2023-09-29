@@ -26,7 +26,7 @@
 
   font: inherit;
 
-  /* transform: rotate(-2.36deg); */
+  transform: rotate(-2.36deg);
 }
 
 .cta-card-violet {
@@ -57,7 +57,7 @@
 
   font: inherit;
 
-  /* transform: rotate(1.43deg); */
+  transform: rotate(1.43deg);
 }
 
 .cta-card-icon {
@@ -70,7 +70,7 @@
 .cta-card-button {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   text-align: center;
 
   height: 60px;

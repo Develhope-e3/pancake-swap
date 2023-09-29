@@ -13,6 +13,7 @@
   text-align: start;
 
   width: 310px;
+  height: 290px;
 
   box-sizing: border-box;
 
@@ -34,7 +35,12 @@
   display: flex;
   justify-content: flex-end;
 
-  margin-bottom: 70px;
+  margin-bottom: 60px;
+
+  >svg {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .primary-card-body {
