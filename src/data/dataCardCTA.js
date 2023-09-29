@@ -1,6 +1,7 @@
 import ArrowRight from "../assets/iconos/ArrowRight";
 import CrystallBall from "../assets/iconos/CrystalBall";
 import { IoTicketSharp } from "react-icons/io5";
+import CakeSum from "../componentes/Cake-sum/Cake-sum";
 
 export const dataCardCTA = [
   {
@@ -26,7 +27,7 @@ export const dataCardCTA = [
     style: "cta-card-violet",
     icon: <IoTicketSharp color={"var(--text-color)"} />,
     prelude: { text: "Lottery", color: "--text-color" },
-    title: { text: "$32,031", color: "--color-secondary" },
+    title: { text: <CakeSum className={"title-card"} numero={32000} limite={32429} />, color: "--color-secondary" },
     subtitle: {
       text: "in CAKE prizes this round",
       color: "--text-color",
