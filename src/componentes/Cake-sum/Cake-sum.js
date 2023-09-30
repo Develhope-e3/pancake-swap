@@ -7,7 +7,7 @@ const CakeSum = ({ numero, limite, className }) => {
     let acumulador = numero;
 
     const intervalID = setInterval(() => {
-      if (acumulador <= limite) {
+      if (acumulador < limite) {
         acumulador++;
         setSuma(acumulador);
       } else {

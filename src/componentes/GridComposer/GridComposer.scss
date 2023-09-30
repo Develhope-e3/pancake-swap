@@ -1,0 +1,36 @@
+.grid-container {
+  display: flex;
+  justify-content: center;
+
+  >.grid-component1 {
+
+    >div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      width: 9rem;
+
+      padding-left: var(--space-s);
+
+      border-left: 1px solid var(--color-subtitulo-lila);
+    }
+  }
+
+  >.grid-component2 {
+
+    >div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      
+      padding-left: var(--space-s);
+      
+      border-left: 1px solid var(--color-subtitulo-lila);
+    }
+
+    >.border-none {
+      border: none;
+    }
+  }
+}
