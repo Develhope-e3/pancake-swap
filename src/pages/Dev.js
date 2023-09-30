@@ -11,7 +11,7 @@ import Texto from "../componentes/Texto/Texto.js";
 import Puntos from "../componentes/Puntos/Puntos.js";
 import Dropdown from "../componentes/Dropdown/Dropdown.jsx";
 import { earn, trade, win, game, birthday } from "../data/dropdownItems.js";
-import { GridComposer1 } from "../componentes/GridComposer/GridComposer.js";
+import { GridComposer1, GridComposer2 } from "../componentes/GridComposer/GridComposer.js";
 
 const Dev = () => {
   return (
@@ -175,7 +175,15 @@ const Dev = () => {
           className={"grid-component1"}
           col={3}
           remRowSpacing={2}
-          remColSpacing={10}
+          remColSpacing={9}
+        />
+        <br />
+        <br />
+        <GridComposer2
+          className={"grid-component2"}
+          col={5}
+          remRowSpacing={2}
+          remColSpacing={0}
         />
         <br />
       </div>
