@@ -175,7 +175,7 @@ const Dev = () => {
       <br />
       <div>
         <GridComposer1
-          className={"grid-component1"}
+          className={"theme1"}
           col={3}
           remRowSpacing={2}
           remColSpacing={9}
@@ -183,10 +183,8 @@ const Dev = () => {
         <br />
         <br />
         <GridComposer2
-          className={"grid-component2"}
+          className={"theme2"}
           col={5}
-          remRowSpacing={2}
-          remColSpacing={0}
         />
         <br />
       </div>

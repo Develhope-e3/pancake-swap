@@ -4,7 +4,7 @@ import CakeSum from "../Cake-sum/Cake-sum";
 
 /**
  * @param {string} className - clase para elegir qué theme de la Grid tendrá la tabla
- * @param {string} col - Para elegir la cantidad de columnas que tendrá el componente Grid
+ * @param {string} col - Para elegir la cantidad de columnas que tendrá el componente
  * @param {string} remRowSpacing - Espacio entre las filas de la tabla
  * @param {string} remColSpacing - Espacio entre las columnas de la tabla
  *
