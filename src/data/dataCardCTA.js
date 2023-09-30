@@ -27,7 +27,10 @@ export const dataCardCTA = [
     style: "cta-card-violet",
     icon: <IoTicketSharp color={"var(--text-color)"} />,
     prelude: { text: "Lottery", color: "--text-color" },
-    title: { text: <CakeSum className={"title-card"} limite={32429} />, color: "--color-secondary" },
+    title: {
+      text: <CakeSum className={"title-card"} limite={32429} />,
+      color: "--color-secondary",
+    },
     subtitle: {
       text: "in CAKE prizes this round",
       color: "--text-color",

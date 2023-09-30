@@ -11,7 +11,10 @@ import Texto from "../componentes/Texto/Texto.js";
 import Puntos from "../componentes/Puntos/Puntos.js";
 import Dropdown from "../componentes/Dropdown/Dropdown.jsx";
 import { earn, trade, win, game, birthday } from "../data/dropdownItems.js";
-import { GridComposer1, GridComposer2 } from "../componentes/GridComposer/GridComposer.js";
+import {
+  GridComposer1,
+  GridComposer2,
+} from "../componentes/GridComposer/GridComposer.js";
 
 const Dev = () => {
   return (
