@@ -3,16 +3,16 @@ import ButtonWarning  from "../ButtonWarning/ButtonWarning";
 import Texto from "../Texto/Texto";
 
 
-export function WarningHeader({img}){
+export function WarningHeader(){
     return(
         <div className={"warning-header"}>
             <div className="main-container">
-                {img}
-                <div className="text-cantainer">
-                    <Texto size={""} /*color={}*/ label={"Phishing warning: "}/>
-                    <Texto size={""} /*color={}*/ label={"please make sure you're visiting "}/> 
-                    <Texto size={""} /*color={}*/ label={"https://pancakeswap.finance"}/> 
-                    <Texto size={""} /*color={}*/ label={" - check the URL carefully."}/>   
+                <img src=""></img>
+                <div className="text-container">
+                    <Texto size={"body-warningv1"} color={--color-secondary} label={"Phishing warning: "}/>
+                    <Texto size={"body-warningv2"} color={--color-secondary} label={"please make sure you're visiting "}/> 
+                    <Texto size={"body-warningv1"} color={--color-secondary} label={"https://pancakeswap.finance"}/> 
+                    <Texto size={"body-warningv2"} color={--color-secondary} label={" - check the URL carefully."}/>   
                 </div>
             </div>
             <ButtonWarning 

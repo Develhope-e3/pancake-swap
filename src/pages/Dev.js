@@ -19,6 +19,7 @@ import {
 const Dev = () => {
   return (
     <div>
+      
       <div className="flex-col-center">
         {/**
          * Manera de invocar a mi componente reutilizable
