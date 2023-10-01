@@ -9,4 +9,4 @@ export const ButtonWarning = ({className,onClick,svg}) => {
     );
 };
 
-export default ButtonSecondary;
+export default ButtonWarning;

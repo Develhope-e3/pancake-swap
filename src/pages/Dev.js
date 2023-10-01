@@ -15,11 +15,14 @@ import {
   GridComposer1,
   GridComposer2,
 } from "../componentes/GridComposer/GridComposer.js";
+import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 
 const Dev = () => {
   return (
     <div>
-      
+      <div className="flex-header">
+        <WarningHeader />
+      </div>
       <div className="flex-col-center">
         {/**
          * Manera de invocar a mi componente reutilizable
@@ -183,10 +186,7 @@ const Dev = () => {
         />
         <br />
         <br />
-        <GridComposer2
-          className={"theme2"}
-          col={5}
-        />
+        <GridComposer2 className={"theme2"} col={5} />
         <br />
       </div>
     </div>
