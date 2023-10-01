@@ -11,6 +11,7 @@ import Texto from "../componentes/Texto/Texto.js";
 import Puntos from "../componentes/Puntos/Puntos.js";
 import Dropdown from "../componentes/Dropdown/Dropdown.jsx";
 import { earn, trade, win, game, birthday } from "../data/dropdownItems.js";
+import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 
 const Dev = () => {
   return (

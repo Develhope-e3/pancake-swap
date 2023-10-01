@@ -9,10 +9,10 @@ export function WarningHeader(){
             <div className="main-container">
                 <img src=""></img>
                 <div className="text-container">
-                    <Texto size={"body-warningv1"} color={--color-secondary} label={"Phishing warning: "}/>
-                    <Texto size={"body-warningv2"} color={--color-secondary} label={"please make sure you're visiting "}/> 
-                    <Texto size={"body-warningv1"} color={--color-secondary} label={"https://pancakeswap.finance"}/> 
-                    <Texto size={"body-warningv2"} color={--color-secondary} label={" - check the URL carefully."}/>   
+                    <Texto size={"body-warningv1"} color={"--color-secondary"} label={"Phishing warning: "}/>
+                    <Texto size={"body-warningv2"} color={"--color-warning-text"} label={"please make sure you're visiting "}/> 
+                    <Texto size={"body-warningv1"} color={"--text-color"} label={"https://pancakeswap.finance"}/> 
+                    <Texto size={"body-warningv2"} color={"--color-warning-text"} label={" - check the URL carefully."}/>   
                 </div>
             </div>
             <ButtonWarning 
