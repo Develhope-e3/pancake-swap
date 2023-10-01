@@ -16,7 +16,7 @@ import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 const Dev = () => {
   return (
     <div>
-      <div>
+      <div className="flex-header">
         <WarningHeader />
       </div>
       <div className="flex-col-center">

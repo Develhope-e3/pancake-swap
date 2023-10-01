@@ -27,7 +27,11 @@
     display: inline-flex;
 
     transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-  
+
+    >svg{
+      width: 18px;
+    }
+    
     &:hover {
       opacity: 0.65;
     }
