@@ -15,6 +15,7 @@ import { earn, trade, win, game, birthday } from "../data/dropdownItems.js";
 const Dev = () => {
   return (
     <div>
+      
       <div className="flex-col-center">
         {/**
          * Manera de invocar a mi componente reutilizable
