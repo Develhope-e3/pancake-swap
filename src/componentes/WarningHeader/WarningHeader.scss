@@ -1,4 +1,6 @@
 .warning-header {
+  display: block;
+
   height: 70px;
   min-height: 70px;
   max-height: 70px;
@@ -52,6 +54,11 @@
         align-items: center;
         flex-wrap: wrap;
       }
+    }
+
+    .button-container {
+      width: 55px;
+      height: auto;
     }
   }
 }
