@@ -11,10 +11,10 @@ import "./ButtonSecondary.scss";
  */
 
 export const ButtonSecondary = ({ texto, onClick, svg, className }) => {
-//   const className = esPrimario ? "primario" : "secundario";
+  //   const className = esPrimario ? "primario" : "secundario";
 
   return (
-    <button className={className} onclick={onClick}>
+    <button className={className} onClick={onClick}>
       {texto}
       {svg && svg}
     </button>
