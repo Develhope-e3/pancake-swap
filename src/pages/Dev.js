@@ -16,7 +16,9 @@ import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 const Dev = () => {
   return (
     <div>
-      
+      <div>
+        <WarningHeader />
+      </div>
       <div className="flex-col-center">
         {/**
          * Manera de invocar a mi componente reutilizable
