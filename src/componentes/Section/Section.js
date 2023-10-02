@@ -11,20 +11,8 @@ import "./Section.scss";
  * @returns Estructura HTML
  */
 
-const Section = ({
-  className,
-  headSVG,
-  footSVG,
-  headSection,
-  bodySection,
-  footSection,
-}) => {
-  return (
-    <div className={className}>
-      {headSVG && headSVG};{headSection && headSection};
-      {bodySection && bodySection};{footSVG && footSVG};
-    </div>
-  );
+const Section = ({ children }) => {
+  return <div className={"main-section"}>{children}</div>;
 };
 
 export default Section;
