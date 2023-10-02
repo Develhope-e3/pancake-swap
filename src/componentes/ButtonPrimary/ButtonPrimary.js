@@ -21,12 +21,12 @@ export const ButtonPrimary = ({
   texto,
   svg,
 }) => {
-
   return (
     <button
       className={className}
       onClick={onClick}
-      style={{ width: widthValue, heightValue }}>
+      style={{ width: widthValue, height: heightValue }}
+    >
       {texto}
       {svg && svg}
     </button>

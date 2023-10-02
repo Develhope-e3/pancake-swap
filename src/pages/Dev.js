@@ -8,7 +8,6 @@ import Link from "../componentes/Link/Link.js";
 import Texto from "../componentes/Texto/Texto.js";
 import Puntos from "../componentes/Puntos/Puntos.js";
 import Dropdown from "../componentes/Dropdown/Dropdown.jsx";
-import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 import {
   earn,
   trade,
@@ -26,6 +25,7 @@ import {
   GridComposer1,
   GridComposer2,
 } from "../componentes/GridComposer/GridComposer.js";
+import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 import ArrowUp from "../assets/iconos/ArrowUp.jsx";
 import Footer from "../componentes/Footer/Footer.js";
 
@@ -220,10 +220,10 @@ const Dev = () => {
       </div>
       <div className="flex-sidebuton">
         <ButtonPrimary
-          esPrimario={"primario"}
-          widthValue={50}
-          heightValue={50}
-          svg={<ArrowUp/>}
+          className={"button-primary"}
+          widthValue={"50px"}
+          heightValue={"50px"}
+          svg={<ArrowUp />}
         />
       </div>
       <Footer />

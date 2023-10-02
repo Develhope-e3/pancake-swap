@@ -10,8 +10,8 @@ import React from "react";
 const ArrowUp = ({ color }) => {
   return (
     <svg
-      viewBox="0 0 24 24"
-      fill="invertedContrast"
+      viewBox="0 -3 24 24"
+      fill={color}
       width="20px"
       xmlns="http://www.w3.org/2000/svg"
     >
