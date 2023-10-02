@@ -27,7 +27,6 @@ import {
   GridComposer2,
 } from "../componentes/GridComposer/GridComposer.js";
 import ArrowUp from "../assets/iconos/ArrowUp.jsx";
-import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 import Footer from "../componentes/Footer/Footer.js";
 
 const Dev = () => {
