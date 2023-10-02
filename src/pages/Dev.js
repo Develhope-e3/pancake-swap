@@ -29,6 +29,8 @@ import {
   GridComposer2,
 } from "../componentes/GridComposer/GridComposer.js";
 import ArrowUp from "../assets/iconos/ArrowUp.jsx";
+import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
+import Footer from "../componentes/Footer/Footer.js";
 
 const Dev = () => {
   return (
@@ -236,13 +238,14 @@ const Dev = () => {
         <br />
       </div>
       <div className="flex-sidebuton">
-        <Button
+        <ButtonPrimary
           esPrimario={"primario"}
           widthValue={50}
           heightValue={50}
           svg={<ArrowUp/>}
         />
       </div>
+      <Footer />
     </div>
   );
 };

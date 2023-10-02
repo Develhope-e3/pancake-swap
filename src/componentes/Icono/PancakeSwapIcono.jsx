@@ -5,7 +5,6 @@ const PancakeSwapIcono = () => {
     <div>
       <svg
         viewBox="0 0 1281 1990"
-        class="sc-bcPKhP cvmRst desktop-icon"
         color="text"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -28,7 +27,6 @@ const PancakeSwapIcono = () => {
           fill="#FEDC90"
         ></path>
         <path
-          class="eye"
           d="M74.85 117.896c0 9.718-4.546 14.779-10.154 14.779s-10.154-5.061-10.154-14.779 4.546-14.779 10.154-14.779 10.154 5.061 10.154 14.779zM140.851 117.896c0 9.718-4.546 14.779-10.154 14.779s-10.154-5.061-10.154-14.779 4.546-14.779 10.154-14.779 10.154 5.061 10.154 14.779z"
           fill="#633001"
         ></path>
