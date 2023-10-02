@@ -10,10 +10,7 @@ import Link from "../componentes/Link/Link.js";
 import Texto from "../componentes/Texto/Texto.js";
 import Puntos from "../componentes/Puntos/Puntos.js";
 import Dropdown from "../componentes/Dropdown/Dropdown.jsx";
-<<<<<<< HEAD
-import { earn, trade, win, game, birthday } from "../data/dropdownItems.js";
 import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
-=======
 import {
   earn,
   trade,
@@ -27,7 +24,6 @@ import { BsThreeDots } from "react-icons/bs";
 import Icono from "../componentes/Icono/Icono.jsx";
 import PancakeSwapIcono from "../componentes/Icono/PancakeSwapIcono.jsx";
 import { TbWorld } from "react-icons/tb";
->>>>>>> origin/feat/dropdown
 import {
   GridComposer1,
   GridComposer2,
