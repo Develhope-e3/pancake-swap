@@ -28,6 +28,7 @@ import {
   GridComposer1,
   GridComposer2,
 } from "../componentes/GridComposer/GridComposer.js";
+import ArrowUp from "../assets/iconos/ArrowUp.jsx";
 
 const Dev = () => {
   return (
@@ -233,6 +234,14 @@ const Dev = () => {
         <br />
         <GridComposer2 className={"theme2"} col={5} />
         <br />
+      </div>
+      <div className="flex-sidebuton">
+        <Button
+          esPrimario={"primario"}
+          widthValue={50}
+          heightValue={50}
+          svg={<ArrowUp/>}
+        />
       </div>
     </div>
   );
