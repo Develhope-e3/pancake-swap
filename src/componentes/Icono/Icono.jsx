@@ -9,7 +9,8 @@ import "./Icono.scss";
  */
 
 const Icono = ({ icono }) => {
-  return <div className="container">{icono}</div>;
+  // eslint-disable-next-line jsx-a11y/anchor-is-valid
+  return <a>{icono}</a>;
 };
 
 export default Icono;

@@ -17,21 +17,22 @@ import {
   game,
   birthday,
   tresPuntos,
+  idiomas,
 } from "../data/dropdownItems.js";
 import { BsThreeDots } from "react-icons/bs";
 import Icono from "../componentes/Icono/Icono.jsx";
 import PancakeSwapIcono from "../componentes/Icono/PancakeSwapIcono.jsx";
+import { TbWorld } from "react-icons/tb";
 
 const Dev = () => {
   return (
     <div>
       <div className="flex-col-center">
-        {/**
-         * Manera de invocar a mi componente reutilizable
-         */}
-
         <div className="flex-row">
-          <Icono icono={<PancakeSwapIcono style />} />
+          <div className="pancakeswap-icon">
+            <Icono icono={<PancakeSwapIcono />} />
+          </div>
+
           <Dropdown
             label={"Trade"}
             dropdownItems={trade}
@@ -51,6 +52,18 @@ const Dev = () => {
             dropdownItems={tresPuntos}
             punto={<Puntos className="punto-verde" />}
             className={"three-dots"}
+          />
+          <Dropdown
+            label={<TbWorld />}
+            dropdownItems={idiomas}
+            className={"idiomas"}
+          />
+
+          <Button
+            esPrimario={true}
+            label={"button-wallet"}
+            texto={"connect wallet"}
+            onClick={() => console.log("click en el boton connect wallet")}
           />
         </div>
 
@@ -196,7 +209,6 @@ const Dev = () => {
         className={"footer-anchor-secondary"}
         href={"www.google.es"}
       ></Link>
-      
     </div>
   );
 };
