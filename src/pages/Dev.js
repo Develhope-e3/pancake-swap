@@ -28,6 +28,7 @@ import {
 import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 import ArrowUp from "../assets/iconos/ArrowUp.jsx";
 import Footer from "../componentes/Footer/Footer.js";
+import { IoSettingsSharp } from "react-icons/io5";
 
 const Dev = () => {
   return (
@@ -43,7 +44,6 @@ const Dev = () => {
           <div className="pancakeswap-icon">
             <Icono icono={<PancakeSwapIcono />} />
           </div>
-
           <Dropdown
             label={"Trade"}
             dropdownItems={trade}
@@ -68,6 +68,18 @@ const Dev = () => {
             label={<TbWorld />}
             dropdownItems={idiomas}
             className={"idiomas"}
+          />
+          <ButtonPrimary
+            className="button-setting"
+            svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
+            onClick={() => console.log("click en el boton setting")}
+          />
+
+          <Button
+            esPrimario={true}
+            label={"button-wallet"}
+            texto={"connect wallet"}
+            onClick={() => console.log("click en el boton connect wallet")}
           />
         </div>
         <Link
