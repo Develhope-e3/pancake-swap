@@ -1,5 +1,5 @@
 import React from "react";
-import "../WarningHeader/WarningHeader.scss"
+import "../WarningHeader/WarningHeader.scss";
 import ButtonWarning from "../ButtonWarning/ButtonWarning";
 import Texto from "../Texto/Texto";
 import PhishingWarningBunny from "../../assets/imagenes/PhishingWarningBunny.png";
@@ -7,7 +7,7 @@ import CrossDelete from "../../assets/iconos/CrossDelete";
 
 export function WarningHeader() {
   return (
-    <div className={"warning-header"}>
+    <div name="warning" className={"warning-header"}>
       <div className="main-container">
         <div className="box-container">
           <img src={PhishingWarningBunny} alt="bunny" />
@@ -34,12 +34,12 @@ export function WarningHeader() {
             />
           </div>
         </div>
-        <ButtonWarning
-          className={"button-warning"}
-          svg={
-            <CrossDelete color={"var(--text-color)"}/>
-          }
-        />
+        <div className="button-container">
+          <ButtonWarning
+            className={"button-warning"}
+            svg={<CrossDelete color={"var(--text-color)"} />}
+          />
+        </div>
       </div>
     </div>
   );
