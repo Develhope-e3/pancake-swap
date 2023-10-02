@@ -19,7 +19,10 @@ import classNames from "classnames";
 
 /**
  * 
- * TODO -> refactorizar buttons agregando el componente TEXTO 
+ * TODO -> refactorizar buttons agregando el componente TEXTO
+ * ? Cómo hacemos?
+ * ! Ayuda
+ * 
  */
 
 export const Button = ({
