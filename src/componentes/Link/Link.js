@@ -11,7 +11,7 @@ import "./Link.scss";
 
 const Link = ({ label, className, href, svg }) => {
   return (
-    <a class={className} href={href}>
+    <a className={className} href={href}>
       {label} {svg && svg}
     </a>
   );
