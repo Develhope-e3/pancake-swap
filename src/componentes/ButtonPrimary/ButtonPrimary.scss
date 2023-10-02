@@ -70,3 +70,21 @@
 
   }
 }
+.button-setting{
+  padding: var(--space-md) var(--space-sm);
+  color: var(--color-subtitulo-lila);
+  background-color: var(--background-color-secondary);
+  border: none;
+  align-content: center;
+  .setting{
+    display: flex;
+    svg{
+      width: 22px;;
+      height: 22px;
+      &:hover{
+        color: var(--background-dropdown-hover);
+      }
+    }
+  }
+}
+

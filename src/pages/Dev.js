@@ -29,6 +29,7 @@ import {
 } from "../componentes/GridComposer/GridComposer.js";
 import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 import Footer from "../componentes/Footer/Footer.js";
+import {IoSettingsSharp} from "react-icons/io5"
 
 const Dev = () => {
   return (
@@ -70,7 +71,12 @@ const Dev = () => {
             dropdownItems={idiomas}
             className={"idiomas"}
           />
-
+          <ButtonPrimary
+          className="button-setting"
+          svg={<Icono className="setting" icono={<IoSettingsSharp/>}/>}
+          onClick={() => console.log("click en el boton setting")}
+          />
+          
           <Button
             esPrimario={true}
             label={"button-wallet"}
