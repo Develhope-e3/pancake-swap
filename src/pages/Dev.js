@@ -74,13 +74,6 @@ const Dev = () => {
             svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
             onClick={() => console.log("click en el boton setting")}
           />
-
-          <Button
-            esPrimario={true}
-            label={"button-wallet"}
-            texto={"connect wallet"}
-            onClick={() => console.log("click en el boton connect wallet")}
-          />
         </div>
         <Link
           label={"Un link"}
