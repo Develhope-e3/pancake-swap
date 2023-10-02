@@ -1,23 +1,14 @@
 import React, { useState, useEffect } from "react";
 
-/**
- *
- * @param {numero} numero - Número para inicializar el componente
- * @param {string} ClassName - texto para indicar la ClassName para adjuntar en css
- * @param {numero} limite - Número para indicar el final del crecimiento de "número"
- *
- * @returns Estructura HTML
- */
-
-const CakeSum = ({ numero, limite, className }) => {
-  const [suma, setSuma] = useState(numero);
+const CakeSum = ({ limite, className }) => {
+  const [suma, setSuma] = useState(limite);
 
   useEffect(() => {
-    let acumulador = numero;
+    let acumulador = limite - 793;
 
     const intervalID = setInterval(() => {
-      if (acumulador <= limite) {
-        acumulador++;
+      if (acumulador < limite) {
+        acumulador ++;
         setSuma(acumulador);
       } else {
         clearInterval(intervalID);
@@ -25,7 +16,7 @@ const CakeSum = ({ numero, limite, className }) => {
     }, 0.5);
 
     return () => clearInterval(intervalID);
-  }, [numero, limite]);
+  }, [limite]);
 
   return <span className={className}>{`$${suma}`}</span>;
 };
