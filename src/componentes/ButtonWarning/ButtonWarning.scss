@@ -1,0 +1,38 @@
+//Esto va a ButtonPrimary
+.button-warning{
+    background-color: transparent;
+    color: var(--color-success);
+    opacity: 1;
+    
+    border-radius: var(--radius-default);
+    border: 0px;
+  
+    font-size: var(--font-size-md);
+    font-family: var(--font-normal);
+    font-weight: 600;
+  
+    letter-spacing: 0.03em;
+    line-height: 1;
+    outline: 0px;
+
+    height: 48px;
+    width: 48px;
+    padding: 2px;
+  
+    cursor: pointer;
+  
+    align-items: center;
+    justify-content: center;
+
+    display: inline-flex;
+
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+
+    >svg{
+      width: 18px;
+    }
+    
+    &:hover {
+      opacity: 0.65;
+    }
+}
