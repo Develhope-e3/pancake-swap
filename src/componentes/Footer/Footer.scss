@@ -1,37 +1,60 @@
-
 footer {
-    background-color:var(--backgroundcolor-secondary);
+    background-color: var(--backgroundcolor-secondary);
     width: 100%;
     height: 100vh;
 
-    .div-padre-1{
+    .div-padre-1 {
         display: flex;
         justify-content: space-around;
-        
+
         padding: 56px 40px 32px;
 
-        .columnas-footer{
+        .columnas-footer {
             display: flex;
             flex-direction: column;
 
             align-items: flex-start;
             margin-bottom: 30px;
-            gap:var(--space-ms);
-            
+            gap: var(--space-ms);
+
             cursor: pointer;
-            
+
         }
 
-        .raya-blanca{
+        .raya-blanca {
             width: 14px;
             height: 1.3px;
 
             background-color: white;
 
         }
-       
+
+
 
     }
-    
+
+
+    .parte-abajo-footer {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .raya-divisora {
+            width: 81%;
+            border-top: solid 1px var(--color-subtitulo-lila);
+
+        }
+    }
+
+    .iconos-padre{
+        display: flex;
+    gap: 25px;
+      margin-left: 146px;
+
+
+
+       
+    }
 
 }
