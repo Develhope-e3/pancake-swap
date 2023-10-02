@@ -1,11 +1,12 @@
-
-
 .main-section {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    vertical-align: baseline;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  vertical-align: baseline;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
+
 }

@@ -8197,6 +8197,7 @@
     "klona" "^2.0.4"
     "neo-async" "^2.6.2"
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 "sass@^1.3.0", "sass@^1.66.1":
   "integrity" "sha512-50c+zTsZOJVgFfTgwwEzkjA3/QACgdNsKueWPyAR0mRINIvLAStVQBbPg14iuqEQ74NPDbXzJARJ/O4SI1zftA=="
@@ -8208,6 +8209,12 @@ sass@^1.3.0, sass@^1.68.0:
   resolved "https://registry.npmjs.org/sass/-/sass-1.68.0.tgz"
   integrity sha512-Lmj9lM/fef0nQswm1J2HJcEsBUba4wgNx2fea6yJHODREoMFnwRpZydBnX/RjyXw2REIwdkbqE4hrTo4qfDBUA==
 >>>>>>> development
+=======
+"sass@^1.3.0", "sass@^1.68.0":
+  "integrity" "sha512-Lmj9lM/fef0nQswm1J2HJcEsBUba4wgNx2fea6yJHODREoMFnwRpZydBnX/RjyXw2REIwdkbqE4hrTo4qfDBUA=="
+  "resolved" "https://registry.npmjs.org/sass/-/sass-1.68.0.tgz"
+  "version" "1.68.0"
+>>>>>>> Stashed changes
   dependencies:
     "chokidar" ">=3.0.0 <4.0.0"
     "immutable" "^4.0.0"
