@@ -11,6 +11,8 @@ import Texto from "../componentes/Texto/Texto.js";
 import Puntos from "../componentes/Puntos/Puntos.js";
 import Dropdown from "../componentes/Dropdown/Dropdown.jsx";
 import { earn, trade, win, game } from "../data/dropdownItems.js";
+import Footer from "../componentes/Footer/Footer.js";
+
 
 const Dev = () => {
   return (
@@ -19,23 +21,6 @@ const Dev = () => {
         {/**
          * Manera de invocar a mi componente reutilizable
          */}
-        <EjemploComponente
-          esPrimario={true}
-          texto={"Boton primario"}
-          onClick={() => console.log("click en el boton primario")}
-        />
-        <EjemploComponente
-          esPrimario={false}
-          texto={"Boton secundario"}
-          onClick={() => console.log("click en el boton secundario")}
-        />
-        <EjemploComponente
-          esPrimario={false}
-          disabled={true}
-          onClick={() => console.log("click en el boton disabled")}
-          texto={"Boton secundario"}
-        />
-
         <div className="flex-row">
           <Dropdown label={"Trade"} dropdownItems={trade} />
           <Dropdown label={"Earn"} dropdownItems={earn} />
@@ -181,6 +166,8 @@ const Dev = () => {
         className={"footer-anchor-secondary"}
         href={"www.google.es"}
       ></Link>
+
+      <Footer/>
     </div>
   );
 };
