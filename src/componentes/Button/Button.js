@@ -17,6 +17,11 @@ import classNames from "classnames";
  * @returns Estructura HTML
  */
 
+/**
+ * 
+ * TODO -> refactorizar buttons agregando el componente TEXTO 
+ */
+
 export const Button = ({
   isPrimary,
   className,
