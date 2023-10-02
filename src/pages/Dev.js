@@ -27,6 +27,7 @@ import {
 } from "../componentes/GridComposer/GridComposer.js";
 import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 import Footer from "../componentes/Footer/Footer.js";
+import ArrowUp from "../assets/iconos/ArrowUp.jsx";
 
 const Dev = () => {
   return (
@@ -42,7 +43,6 @@ const Dev = () => {
           <div className="pancakeswap-icon">
             <Icono icono={<PancakeSwapIcono />} />
           </div>
-
           <Dropdown
             label={"Trade"}
             dropdownItems={trade}
@@ -166,7 +166,6 @@ const Dev = () => {
       <br />
       <Puntos className="punto-verde" />
       <Puntos className="punto-rosa" />
-
       <br></br>
       <Link
         label={"Learn"}
@@ -218,6 +217,14 @@ const Dev = () => {
         <br />
       </div>
       <Footer />
+      <div className="flex-sidebuton">
+        <ButtonPrimary
+          className={"button-primary"}
+          widthValue={"50px"}
+          heightValue={"50px"}
+          svg={<ArrowUp/>}
+        />
+      </div>
     </div>
   );
 };

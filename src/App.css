@@ -35,3 +35,10 @@
     transform: rotate(360deg);
   }
 }
+
+.side-button{
+  position: fixed;
+  right: 18px;
+  bottom: 84px;
+  display: inline;
+}
