@@ -3,9 +3,7 @@ import { PrimaryCard } from "../componentes/Cards/PrimaryCard.js";
 import { dataPrimaryCard } from "../data/dataPrimaryCard.js";
 import { CardCTA } from "../componentes/Cards/CardCTA";
 import { dataCardCTA } from "../data/dataCardCTA.js";
-import { Button } from "../componentes/Button/Button.js";
 import { ButtonPrimary } from "../componentes/ButtonPrimary/ButtonPrimary.js";
-import { ButtonSecondary } from "../componentes/ButtonSecondary/ButtonSecondary.js";
 import Link from "../componentes/Link/Link.js";
 import Texto from "../componentes/Texto/Texto.js";
 import Puntos from "../componentes/Puntos/Puntos.js";
@@ -128,13 +126,6 @@ const Dev = () => {
               />
             );
           })}
-
-        <Button
-          esPrimario={true}
-          label={"button-wallet"}
-          texto={"connect wallet"}
-          onClick={() => console.log("click en el botón connect wallet")}
-        />
         <Puntos className="punto-verde" />
         <Puntos className="punto-rosa" />
         {dataCardCTA &&
