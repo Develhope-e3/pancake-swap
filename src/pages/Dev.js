@@ -70,13 +70,6 @@ const Dev = () => {
             dropdownItems={idiomas}
             className={"idiomas"}
           />
-
-          <Button
-            esPrimario={true}
-            label={"button-wallet"}
-            texto={"connect wallet"}
-            onClick={() => console.log("click en el boton connect wallet")}
-          />
         </div>
         <Link
           label={"Un link"}
@@ -162,10 +155,9 @@ const Dev = () => {
           })}
       </div>
       <br />
-      <Button
-        esPrimario={true}
-        label={"button-wallet"}
-        texto={"connect wallet"}
+      <ButtonPrimary
+        className={"button-wallet"}
+        texto={"Connect Wallet"}
         onClick={() => console.log("click en el boton connect wallet")}
       />
       <ButtonPrimary
@@ -174,8 +166,7 @@ const Dev = () => {
         texto={"primary"}
         onClick={() => console.log("click en el boton primario")}
       />
-
-      <ButtonSecondary
+      <ButtonPrimary
         className="button-secondary"
         label={"button-secondary"}
         texto={"secondary"}
