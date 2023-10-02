@@ -8,9 +8,8 @@ import "./Icono.scss";
  * @returns Estructura HTML
  */
 
-const Icono = ({ icono }) => {
-  // eslint-disable-next-line jsx-a11y/anchor-is-valid
-  return <a>{icono}</a>;
+const Icono = ({ icono, className }) => {
+  return <div className={className && className}>{icono}</div>;
 };
 
 export default Icono;

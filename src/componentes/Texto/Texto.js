@@ -33,6 +33,16 @@ const Texto = ({ size, color, label }) => {
           {label}
         </h2>
       )}
+      {size === "title-ml-bold" && (
+        <h2 className="title-ml-bold" style={{ color: `var(${color})` }}>
+          {label}
+        </h2>
+      )}
+      {size === "title-ml" && (
+        <h2 className="title-ml" style={{ color: `var(${color})` }}>
+          {label}
+        </h2>
+      )}
       {size === "title-s-bold" && (
         <h3 className="title-s-bold" style={{ color: `var(${color})` }}>
           {label}
@@ -77,6 +87,16 @@ const Texto = ({ size, color, label }) => {
         <h2 className="title-card" style={{ color: `var(${color})` }}>
           {label}
         </h2>
+      )}
+      {size === "body-warningv1" && (
+        <span className="body-warningv1" style={{ color: `var(${color})` }}>
+          {label}
+        </span>
+      )}
+      {size === "body-warningv2" && (
+        <span className="body-warningv2" style={{ color: `var(${color})` }}>
+          {label}
+        </span>
       )}
     </>
   );

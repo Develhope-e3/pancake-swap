@@ -11,13 +11,21 @@ import Texto from "../Texto/Texto.js";
  * @returns Estructura HTML
  */
 
-export const PrimaryCard = ({ icon, title, subtitle, color, body }) => {
+export const PrimaryCard = ({ icon, title, subtitle, body }) => {
   return (
     <div className="primary-card">
       <div className="primary-card-icon">{icon}</div>
       <div>
-        <Texto label={title} size={"title-card"} />
-        <Texto label={subtitle} size={"title-card"} color={color} />
+        <Texto
+          label={title.text}
+          color={title.color}
+          size={"title-card-bold"}
+        />
+        <Texto
+          label={subtitle.text}
+          size={"title-card-bold"}
+          color={subtitle.color}
+        />
         <div className="primary-card-body">
           <Texto label={body} size={"body"} />
         </div>

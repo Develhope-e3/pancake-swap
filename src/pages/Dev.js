@@ -23,11 +23,22 @@ import { BsThreeDots } from "react-icons/bs";
 import Icono from "../componentes/Icono/Icono.jsx";
 import PancakeSwapIcono from "../componentes/Icono/PancakeSwapIcono.jsx";
 import { TbWorld } from "react-icons/tb";
+import {
+  GridComposer1,
+  GridComposer2,
+} from "../componentes/GridComposer/GridComposer.js";
+import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 
 const Dev = () => {
   return (
     <div>
+      <div className="flex-header">
+        <WarningHeader />
+      </div>
       <div className="flex-col-center">
+        {/**
+         * Manera de invocar a mi componente reutilizable
+         */}
         <div className="flex-row">
           <div className="pancakeswap-icon">
             <Icono icono={<PancakeSwapIcono />} />
@@ -66,7 +77,6 @@ const Dev = () => {
             onClick={() => console.log("click en el boton connect wallet")}
           />
         </div>
-
         <Link
           label={"Un link"}
           className={"primary"}
@@ -118,8 +128,7 @@ const Dev = () => {
               <PrimaryCard
                 icon={card.icon}
                 title={card.title}
-                subtitle={card.subtitle.text}
-                color={card.subtitle.color}
+                subtitle={card.subtitle}
                 body={card.body}
                 key={index}
               />
@@ -138,11 +147,13 @@ const Dev = () => {
           dataCardCTA.map((card, index) => {
             return (
               <CardCTA
+                style={card.style}
                 icon={card.icon}
+                prelude={card.prelude}
                 title={card.title}
-                subtitle={card.subtitle.text}
-                color={card.subtitle.color}
+                subtitle={card.subtitle}
                 body={card.body}
+                button={card.button}
                 onClick={card.onClick}
                 key={index}
               />
@@ -209,6 +220,20 @@ const Dev = () => {
         className={"footer-anchor-secondary"}
         href={"www.google.es"}
       ></Link>
+      <br />
+      <br />
+      <div>
+        <GridComposer1
+          className={"theme1"}
+          col={3}
+          remRowSpacing={2}
+          remColSpacing={9}
+        />
+        <br />
+        <br />
+        <GridComposer2 className={"theme2"} col={5} />
+        <br />
+      </div>
     </div>
   );
 };

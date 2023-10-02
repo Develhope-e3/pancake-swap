@@ -1,8 +1,7 @@
 import Link from "../Link/Link";
 import React, { useState } from "react";
-import DropdownItem from "./DropdownItems/DropdownItems";
+import DropdownItem from "./DropdownItems/DropdownItems.jsx";
 import "./Dropdown.scss";
-
 
 /**
  *

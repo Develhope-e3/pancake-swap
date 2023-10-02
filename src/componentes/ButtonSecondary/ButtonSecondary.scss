@@ -1,38 +1,42 @@
 .button-secondary {
 
-    background-color:transparent;
-    color: var(--color-primary);
-    
-    
-    border-radius: var(--radius-default);
-    border-width: var(--borderwidths-2);
-    border-color: var(--color-primary);
-    border-style: solid;
-    border-image: initial;
-    box-shadow: none;
-  
-    font-size: var(--font-size-md);
-    font-family: var(--font-normal);
-    font-weight: 600;
-  
-    letter-spacing: 0.03em;
+  background-color: transparent;
+  color: var(--color-primary);
 
-    line-height: 1;
-    outline: 0;
-  
-    width: 132px;
-    height: 48px;
-    padding: 0px 24px;
-  
-    white-space: nowrap;
-  
-    cursor: pointer;
-  
-    
-  
-    &:hover {
-  
-      transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-  
-    }
+
+  border-radius: var(--radius-default);
+  border-width: var(--borderwidths-2);
+  border-color: var(--color-primary);
+  border-style: solid;
+  border-image: initial;
+  box-shadow: none;
+
+  font-size: var(--font-size-md);
+  font-family: var(--font-normal);
+  font-weight: 600;
+
+  letter-spacing: 0.03em;
+
+  line-height: 1;
+  outline: 0;
+
+  width: 132px;
+  height: 48px;
+  padding: 0px 24px;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+
+
+  &:hover {
+    color: var(--color-bg-button-hover);
+    border-color: var(--color-bg-button-hover);
+    transition: all 0.2s ease 0.2s;
+    -webkit-transition: all 0.2s ease 0.2s;
+    -moz-transition: all 0.2s ease 0.2s;
+    -ms-transition: all 0.2s ease 0.2s;
+    -o-transition: all 0.2s ease 0.2s;
   }
+}
