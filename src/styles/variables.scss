@@ -9,6 +9,7 @@
   --space-3xs: 4px;
   --space-xxs: 6px;
   --space-xs: 8px;
+  --space-s: 10px;
   --space-sm: 12px;
   --space-ms: 14px;
   --space-md: 16px;
@@ -28,7 +29,6 @@
   --borderWidths-0: 0px;
   --borderWidths-1: 1px;
   --borderWidths-2: 2px;
-
 
   --radius-0: 0px;
   --radius-sm: 4px;
@@ -65,6 +65,9 @@
   --color-gradient-violet: linear-gradient(#8040ff 0%, #5121b1 100%);
   --color-gradient-yellow: linear-gradient(#fcac2d 0%, #fdcf5b 100%);
   --background-dropdown-hover: #353547;
+  --color-warning-text: #bdc2c4;
+  --color-warning-gradient-violet: linear-gradient(#8051d6 0%, #492286 100%);
+  --color-warning-background: #27262c66;
 
   --background-color-secondary: #27262c;
   --background-color-card-title: #08060b;
