@@ -1,0 +1,19 @@
+
+
+.main-body {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    max-width: 1200px;
+    padding-top: var(--space-xxl);
+    padding-bottom: var(--space-xxl);
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+}
+
+.main-imagen {
+    position: relative;
+    width: 648px;
+    height: 648px;
+}

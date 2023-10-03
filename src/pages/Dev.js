@@ -30,6 +30,8 @@ import ArrowUp from "../assets/iconos/ArrowUp.jsx";
 import Footer from "../componentes/Footer/Footer.js";
 import { IoSettingsSharp } from "react-icons/io5";
 import { MainSection } from "../componentes/Section/Section.js";
+import MainSectionBody from "../componentes/MainSectionBody/MainSectionBody.jsx";
+import ImageMainSection from "../assets/iconos/MainSection.jsx";
 
 const Dev = () => {
   return (
@@ -229,14 +231,12 @@ const Dev = () => {
       <Footer />
       <MainSection
         className={"main-section"}
-        headSection={
+        children={
           <div>
-            <GridComposer1
-              className={"theme1"}
-              col={3}
-              remRowSpacing={2}
-              remColSpacing={9}
-            />
+            <MainSectionBody 
+              componente1={<Link label={"Hola"}/>}
+              image={<ImageMainSection/>}
+              />
           </div>
         }></MainSection>
     </div>

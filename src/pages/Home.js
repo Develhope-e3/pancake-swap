@@ -6,10 +6,7 @@ const Home = () => {
   return (
     <div>
       <MainSection>
-        <Section></Section>
-        <MiddleSection isColCenter={true}>
 
-        </MiddleSection>
       </MainSection>
     </div>
   );
