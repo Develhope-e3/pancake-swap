@@ -1,23 +1,49 @@
 import React from "react";
 import "./Button.scss";
+import classNames from "classnames";
+import Texto from "../Texto/Texto";
 
 /**
  *
- * @param {string} texto - Texto que va a llevar el boton
- * @param {Boolean} esPrimario - Boolean para indicar si el boton es primario o secundario
- * @param {Boolean} disabled - Boolean para indicar si el boton esta desactivado. Se asigna directamente
+ * @param {Boolean} isPrimary - Texto para indicar si el botón es Primary
+ * @param {Boolean} isSecondary - Texto para indicar si el botón es Secondary
+ * @param {Boolean} isCTA - Texto para indicar si el botón es CTA
+ * @param {Boolean} isWallet - Texto para indicar si el botón es Wallet
+ * @param {Boolean} isWarning - Texto para indicar si el botón es Warning
  * @param {Callback} onClick - Callback que se ejecuta cada vez que el usuario hace click en el boton
- * @param {JSX.Element} svg - Elemento SVG o Icono de react-icons
+ * @param {String} widthValue - Valor para modificar el ancho del botón
+ * @param {String} heightValue - Valor para modificar el alto del botón
+ * @param {String} texto - Texto que va a llevar el boton
+ * @param {String} colorTexto - Color del texto que va a llevar el boton
+ * @param {JSX.Element} svg - SVG element o Icon-React
  *
  * @returns Estructura HTML
  */
 
-export const Button = ({ texto, esPrimario, onClick, svg }) => {
-  const className = esPrimario ? "primario" : "secundario";
+export const Button = ({
+  isPrimary,
+  isSecondary,
+  isWarning,
+  onClick,
+  widthValue,
+  heightValue,
+  texto,
+  colorTexto,
+  svg,
+}) => {
+  const givenClassName = classNames({
+    button: true,
+    "button-primary": isPrimary,
+    "button-secondary": isSecondary,
+    "button-warning": isWarning,
+  });
 
   return (
-    <button className={className} onClick={onClick}>
-      {texto}
+    <button
+      className={givenClassName}
+      onClick={onClick}
+      style={{ width: widthValue, height: heightValue }}>
+      {<Texto size={"text-button"} label={texto} color={`${colorTexto}`} />}
       {svg && svg}
     </button>
   );

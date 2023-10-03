@@ -16,3 +16,11 @@
   justify-content: center;
   flex-direction: row;
 }
+
+.flex-sidebuton{
+  display: inline;
+
+  position: fixed;
+  right: 18px;
+  bottom: calc(82px + env(safe-area-inset-bottom));
+}
