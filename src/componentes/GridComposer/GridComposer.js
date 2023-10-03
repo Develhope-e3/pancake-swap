@@ -11,6 +11,12 @@ import CakeSum from "../Cake-sum/Cake-sum";
  * @returns Estructura HTML
  */
 
+/**
+ * 
+ * TODO agregar data para hacer el componente más pequeño
+ * 
+ */
+
 export const GridComposer1 = ({
   className,
   col,
@@ -31,12 +37,12 @@ export const GridComposer1 = ({
           <>
             <Texto
               size={"title-s"}
-              color={"--color-subtitulo-lila"}
+              color={"var(--color-subtitulo-lila)"}
               label={"Circulating Supply"}
             />
             <Texto
               size={"title-ml"}
-              color={"--text-color"}
+              color={"var(--text-color)"}
               label={<CakeSum limite={22456392} />}
             />
           </>
@@ -45,12 +51,12 @@ export const GridComposer1 = ({
           <>
             <Texto
               size={"title-s"}
-              color={"--color-subtitulo-lila"}
+              color={"var(--color-subtitulo-lila)"}
               label={"Total Supply"}
             />
             <Texto
               size={"title-ml"}
-              color={"--text-color"}
+              color={"var(--text-color)"}
               label={<CakeSum limite={398513365} />}
             />
           </>
@@ -59,12 +65,12 @@ export const GridComposer1 = ({
           <>
             <Texto
               size={"title-s"}
-              color={"--color-subtitulo-lila"}
+              color={"var(--color-subtitulo-lila)"}
               label={"Max Supply"}
             />
             <Texto
               size={"title-ml"}
-              color={"--text-color"}
+              color={"var(--text-color)"}
               label={<CakeSum limite={750000000} />}
             />
           </>
@@ -73,12 +79,12 @@ export const GridComposer1 = ({
           <>
             <Texto
               size={"title-s"}
-              color={"--color-subtitulo-lila"}
+              color={"var(--color-subtitulo-lila)"}
               label={"Market Cap"}
             />
             <Texto
               size={"title-ml"}
-              color={"--text-color"}
+              color={"var(--text-color)"}
               label={"$280 million"}
             />
           </>
@@ -87,12 +93,12 @@ export const GridComposer1 = ({
           <>
             <Texto
               size={"title-s"}
-              color={"--color-subtitulo-lila"}
+              color={"var(--color-subtitulo-lila)"}
               label={"Burned to date"}
             />
             <Texto
               size={"title-ml"}
-              color={"--text-color"}
+              color={"var(--text-color)"}
               label={<CakeSum limite={952660681} />}
             />
           </>
@@ -101,12 +107,12 @@ export const GridComposer1 = ({
           <>
             <Texto
               size={"title-s"}
-              color={"--color-subtitulo-lila"}
+              color={"var(--color-subtitulo-lila)"}
               label={"Current Emissions"}
             />
             <Texto
               size={"title-ml"}
-              color={"--text-color"}
+              color={"var(--text-color)"}
               label={"$2,93/block"}
             />
           </>
@@ -136,12 +142,12 @@ export const GridComposer2 = ({
           <>
             <Texto
               size={"title-s"}
-              color={"--color-text"}
+              color={"var(--color-text)"}
               label={"Circulating Supply"}
             />
             <Texto
               size={"title-ml"}
-              color={"--color-titulo-lila"}
+              color={"var(--color-titulo-lila)"}
               label={<CakeSum limite={227026415} />}
             />
           </>
@@ -150,12 +156,12 @@ export const GridComposer2 = ({
           <>
             <Texto
               size={"title-s"}
-              color={"--color-text"}
+              color={"var(--color-text)"}
               label={"Total Supply"}
             />
             <Texto
               size={"title-ml"}
-              color={"--color-titulo-lila"}
+              color={"var(--color-titulo-lila)"}
               label={<CakeSum limite={398171116} />}
             />
           </>
@@ -164,12 +170,12 @@ export const GridComposer2 = ({
           <>
             <Texto
               size={"title-s"}
-              color={"--color-text"}
+              color={"var(--color-text)"}
               label={"Market Cap"}
             />
             <Texto
               size={"title-ml"}
-              color={"--color-titulo-lila"}
+              color={"var(--color-titulo-lila)"}
               label={"$260 million"}
             />
           </>
@@ -178,12 +184,12 @@ export const GridComposer2 = ({
           <>
             <Texto
               size={"title-s"}
-              color={"--color-text"}
+              color={"var(--color-text)"}
               label={"Token Burn"}
             />
             <Texto
               size={"title-ml"}
-              color={"--color-titulo-lila"}
+              color={"var(--color-titulo-lila)"}
               label={<CakeSum limite={987196236} />}
             />
           </>
@@ -192,12 +198,12 @@ export const GridComposer2 = ({
           <>
             <Texto
               size={"title-s"}
-              color={"--color-text"}
+              color={"var(--color-text)"}
               label={"Curren Emissions"}
             />
             <Texto
               size={"title-ml"}
-              color={"--color-titulo-lila"}
+              color={"var(--color-titulo-lila)"}
               label={"1.88/block"}
             />
           </>

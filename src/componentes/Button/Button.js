@@ -24,6 +24,7 @@ export const Button = ({
   isPrimary,
   isSecondary,
   isWarning,
+  isSetting,
   onClick,
   widthValue,
   heightValue,
@@ -36,6 +37,7 @@ export const Button = ({
     "button-primary": isPrimary,
     "button-secondary": isSecondary,
     "button-warning": isWarning,
+    "": isSetting,
   });
 
   return (

@@ -83,40 +83,40 @@ const Dev = () => {
         <Texto
           size={"title-lg-bold"}
           label={"title-lg-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-lg"}
           label={"title-lg"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-md-bold"}
           label={"title-md-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-md"}
           label={"title-md"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-s-bold"}
           label={"title-s-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
-        <Texto size={"title-s"} label={"title-s"} color={"--color-secondary"} />
+        <Texto size={"title-s"} label={"title-s"} color={"var(--color-secondary)"} />
         <Texto
           size={"title-xs-bold"}
           label={"title-xs-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-xs"}
           label={"title-xs"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
-        <Texto size={"body"} label={"body"} color={"--color-secondary"} />
+        <Texto size={"body"} label={"body"} color={"var(--color-secondary)"} />
       </div>
       <br />
       <div className="flex-row-container">
