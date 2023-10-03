@@ -1,7 +1,9 @@
 import React from "react";
 import { Section, MainSection } from "../componentes/Section/Section";
-import { MiddleSection } from "../componentes/Section/middleSection/middleSection";
 import MainSectionBody from "../componentes/MainSectionBody/MainSectionBody";
+import NuevoIcono from "../componentes/Icono/NuevoIcono.jsx";
+import Texto from "../componentes/Texto/Texto.js";
+import { Section2, Box } from "../componentes/Section/Section2/Section2.js";
 
 const Home = () => {
   return (
@@ -12,8 +14,17 @@ const Home = () => {
           <div>
             <MainSectionBody />
           </div>
-        }
-      ></MainSection>
+        }></MainSection>
+      <MainSection></MainSection>
+      <Section></Section>
+      <div>
+        <Section2>
+          <Box isFlexRow={true}>
+            <NuevoIcono />
+          </Box>
+          <Texto size={"title-lg-bold"} />
+        </Section2>
+      </div>
     </div>
   );
 };
