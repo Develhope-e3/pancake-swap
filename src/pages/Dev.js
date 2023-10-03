@@ -26,9 +26,9 @@ import {
   GridComposer2,
 } from "../componentes/GridComposer/GridComposer.js";
 import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
-import ArrowUp from "../assets/iconos/ArrowUp.jsx";
 import Footer from "../componentes/Footer/Footer.js";
 import { IoSettingsSharp } from "react-icons/io5";
+import { ButtonScroll } from "../componentes/ButtonScroll/ButtonScroll.js";
 
 const Dev = () => {
   return (
@@ -223,14 +223,7 @@ const Dev = () => {
         <GridComposer2 className={"theme2"} col={5} />
         <br />
       </div>
-      <div className="flex-sidebuton">
-        <ButtonPrimary
-          className={"button-primary"}
-          widthValue={"50px"}
-          heightValue={"50px"}
-          svg={<ArrowUp />}
-        />
-      </div>
+      <ButtonScroll/>
       <Footer />
     </div>
   );
