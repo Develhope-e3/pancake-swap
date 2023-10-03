@@ -2,7 +2,7 @@ import React from "react";
 import "./Section.scss";
 
 
-export const mainSection = ({ children }) => {
+export const MainSection = ({ children }) => {
   return <div className={"main-section"}>{children}</div>;
 };
 

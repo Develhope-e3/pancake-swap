@@ -1,10 +1,16 @@
 import React from "react";
-import { Section } from "../componentes/Section/Section";
+import { Section, MainSection } from "../componentes/Section/Section";
+import { MiddleSection } from "../componentes/Section/middleSection/middleSection";
 
 const Home = () => {
   return (
     <div>
-      <mainSection></mainSection>
+      <MainSection>
+        <Section></Section>
+        <MiddleSection isColCenter={true}>
+
+        </MiddleSection>
+      </MainSection>
     </div>
   );
 };

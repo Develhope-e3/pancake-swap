@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-export const middleSection = (isFlexRow, isFlexColCenter) => {
+export const MiddleSection = (isFlexRow, isFlexColCenter) => {
   const dataSections = classNames({
     section: true,
     "flex-row": isFlexRow,
