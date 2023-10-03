@@ -26,8 +26,9 @@ import {
   GridComposer2,
 } from "../componentes/GridComposer/GridComposer.js";
 import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
-import Footer from "../componentes/Footer/Footer.js";
 import ArrowUp from "../assets/iconos/ArrowUp.jsx";
+import Footer from "../componentes/Footer/Footer.js";
+import { IoSettingsSharp } from "react-icons/io5";
 
 const Dev = () => {
   return (
@@ -67,6 +68,11 @@ const Dev = () => {
             label={<TbWorld />}
             dropdownItems={idiomas}
             className={"idiomas"}
+          />
+          <Button
+            className="button-setting"
+            svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
+            onClick={() => console.log("click en el boton setting")}
           />
         </div>
         <Link

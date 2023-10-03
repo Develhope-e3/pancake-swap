@@ -12,25 +12,23 @@
   &:hover {
     background-color: var(--background-dropdown-hover);
   }
-
 }
-.three-dots{
+.three-dots {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 24px;
   height: 24px;
 }
-.birthday{
+.birthday {
   font-weight: 600;
-  color:var(--color-titulo-lila);
+  color: var(--color-titulo-lila);
 }
 
-.idiomas{
-  font-weight: 600;
+.idiomas {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
+  svg {
+    width: 22px;
+    height: 22px;
+  }
 }
