@@ -35,7 +35,6 @@ const MainSectionBody = () => {
             texto={"Trade Now"}
             onClick={""}
           />
-
         </div>
       </div>
       <ImageMainSection />
