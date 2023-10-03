@@ -37,15 +37,23 @@ footer {
     .parte-abajo-footer {
 
         display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .raya-divisora {
-            width: 81%;
-            border-top: solid 1px var(--color-subtitulo-lila);
-
-        }
+        padding-top: 30px;
+       
+ 
     }
+
+
+
+
+
+    .raya-divisora {
+        width: 81%;
+        border-top: solid 1px var(--color-subtitulo-lila);
+       margin-left: 140px;
+
+    }
+
+
 
     .iconos-padre{
         display: flex;
