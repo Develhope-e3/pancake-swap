@@ -1,6 +1,12 @@
 *{
   font-family: var(--font-normal)
 }
+
+.section {
+  max-width: 936px;
+  padding: 48px 16px;
+}
+
 .flex-col-center {
   display: flex;
   flex-direction: column;

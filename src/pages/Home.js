@@ -1,18 +1,10 @@
 import React from "react";
-import { mainSection } from "../componentes/Section/Section";
-import ButtonPrimary from "../componentes/ButtonPrimary/ButtonPrimary";
+import { Section } from "../componentes/Section/Section";
+
 const Home = () => {
   return (
     <div>
-      <mainSection>
-        <ButtonPrimary
-          className={"asdas"}
-          onClick={() => console.log("asdasd")}
-          widthValue={200}
-          heightValue={400}
-          texto={"TExtoooo"}
-        />
-      </mainSection>
+      <mainSection></mainSection>
     </div>
   );
 };
