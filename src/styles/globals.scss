@@ -18,6 +18,11 @@
   padding: 0px 16px;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .flex-col-center {
   display: inline-flex;
   flex-flow: column wrap;
@@ -28,11 +33,27 @@
   gap: var(--spacing-xs);
 }
 
+.flex-col-start {
+  display: inline-flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
 .flex-row {
   display: flex;
 }
 
 .flex-row-center {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-row-start {
   display: inline-flex;
   flex-flow: row wrap;
   justify-content: flex-start;

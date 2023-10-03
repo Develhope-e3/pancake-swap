@@ -13,13 +13,14 @@ export const Section2 = () => {
   );
 };
 
-export const Box = (isFlexRow, isFlexColCenter, isFlexRowCenter) => {
+export const Box = (isFlexRow, isFlexCol, isFlexColCenter, isFlexRowCenter) => {
   const boxSection = classNames({
     box: true,
     "flex-row": isFlexRow,
-    "flex-col-center": isFlexColCenter,
+    "flex-col": isFlexCol,
     "flex-row-center": isFlexRowCenter,
-    "flex-row-Start": isFlexRowCenter,
+    "flex-col-center": isFlexColCenter,
+    "flex-row-start": isFlexRowCenter,
   });
   return <Box className={boxSection}></Box>;
 };
