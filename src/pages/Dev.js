@@ -168,6 +168,8 @@ const Dev = () => {
       />
       <br />
       <Puntos className="punto-verde" />
+      <Puntos className="punto-verde" />
+      <Puntos className="punto-rosa" />
       <Puntos className="punto-rosa" />
       <br></br>
       <Link
