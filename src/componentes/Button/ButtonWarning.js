@@ -1,7 +1,7 @@
 import React from "react";
-import "./ButtonWarning.scss";
+import "./Button.scss";
 import { useState } from "react";
-import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
+import Button from "./Button";
 
 export const ButtonWarning = ({ className, svg }) => {
   const [isShow, setIsShow] = useState(true);
@@ -22,8 +22,10 @@ export const ButtonWarning = ({ className, svg }) => {
   return (
     <>
       {isShow && (
-        <ButtonPrimary
-          className={className}
+        <Button
+          isWarning={true}
+          widthValue={"49px"}
+          heightValue={"49px"}
           onClick={handleClickHiddenWarning}
           svg={svg}
         />
