@@ -27,12 +27,8 @@ import {
 } from "../componentes/GridComposer/GridComposer.js";
 import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 import Footer from "../componentes/Footer/Footer.js";
-<<<<<<< HEAD
 import { IoSettingsSharp } from "react-icons/io5";
 import { ButtonScroll } from "../componentes/ButtonScroll/ButtonScroll.js";
-=======
-import ArrowUp from "../assets/iconos/ArrowUp.jsx";
->>>>>>> origin/feat/grid-cake-sum
 
 const Dev = () => {
   return (
@@ -221,20 +217,8 @@ const Dev = () => {
         <GridComposer2 className={"theme2"} col={5} />
         <br />
       </div>
-<<<<<<< HEAD
       <ButtonScroll/>
       <Footer />
-=======
-      <Footer />
-      <div className="flex-sidebuton">
-        <Button
-          isPrimary={true}
-          widthValue={"50px"}
-          heightValue={"50px"}
-          svg={<ArrowUp />}
-        />
-      </div>
->>>>>>> origin/feat/grid-cake-sum
     </div>
   );
 };
