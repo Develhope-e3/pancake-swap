@@ -7,7 +7,7 @@ import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
 const MainSectionBody = () => {
   return (
     <div className="main-body">
-      <div>
+      <div className="text-section">
         <Texto
           size={"title-lg-bold"}
           color={"--color-titulo-lila"}
@@ -21,7 +21,21 @@ const MainSectionBody = () => {
           }
         />
         <div className="buttons-section">
-          
+          <ButtonPrimary
+            className={"button-primary"}
+            widthValue={"165px"}
+            heightValue={"48px"}
+            texto={"Connect Wallet"}
+            onClick={""}
+          />
+          <ButtonPrimary
+            className={"button-secondary"}
+            widthValue={"132px"}
+            heightValue={"48px"}
+            texto={"Trade Now"}
+            onClick={""}
+          />
+
         </div>
       </div>
       <ImageMainSection />
