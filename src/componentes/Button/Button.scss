@@ -1,141 +1,78 @@
-.button-primary {
+.button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
-  background-color: var(--color-primary);
-  color: var(--color-button-primary);
+  text-align: center;
 
   border-radius: var(--radius-default);
   border-width: var(--borderwidths-0);
   border: none;
 
-  font-size: var(--font-size-md);
-  font-family: var(--font-normal);
-  font-weight: 600;
+  cursor: pointer;
 
   letter-spacing: 0.03em;
 
-  width: 166px;
-  height: 46px;
-  padding: 0px 16px;
-
   white-space: nowrap;
 
-  cursor: pointer;
+  outline: 0;
+
+  line-height: 1.1;
+
+  box-shadow: #0e0e2c66 0px -1px 0px 0px inset;
 
   &:hover {
-    background-color: var(--color-bg-button-hover);
-
     transition: all 0.2s ease 0.2s;
     -webkit-transition: all 0.2s ease 0.2s;
     -moz-transition: all 0.2s ease 0.2s;
     -ms-transition: all 0.2s ease 0.2s;
     -o-transition: all 0.2s ease 0.2s;
+  }
+}
+
+.button-primary {
+  background-color: var(--color-primary);
+
+  padding: 0px 16px;
+
+  &:hover {
+    background-color: var(--color-bg-button-hover);
   }
 }
 
 .button-secondary {
   background-color: transparent;
-  color: var(--color-primary);
 
-  border-radius: var(--radius-default);
   border-width: var(--borderwidths-2);
   border-color: var(--color-primary);
   border-style: solid;
   border-image: initial;
+
   box-shadow: none;
-
-  font-size: var(--font-size-md);
-  font-family: var(--font-normal);
-  font-weight: 600;
-
-  letter-spacing: 0.03em;
-
-  line-height: 1.1;
-  outline: 0;
 
   width: 132px;
   height: 48px;
   padding: 0px 24px;
-
-  white-space: nowrap;
-
-  cursor: pointer;
-
+  
   &:hover {
-    color: var(--color-bg-button-hover);
-    border-color: var(--color-bg-button-hover);
-
-    transition: all 0.2s ease 0.2s;
-    -webkit-transition: all 0.2s ease 0.2s;
-    -moz-transition: all 0.2s ease 0.2s;
-    -ms-transition: all 0.2s ease 0.2s;
-    -o-transition: all 0.2s ease 0.2s;
+    opacity: 0.75;
   }
 }
 
-.button-primary-card {
-  box-shadow: #0e0e2c66 0px -1px 0px 0px inset;
-  border-radius: var(--radius-default);
-  border-width: var(--borderwidths-0);
-  border: none;
+.button-warning {
+  background-color: transparent;
 
-  font-size: var(--font-size-md);
-  font-family: var(--font-normal);
-  font-weight: 600;
+  opacity: 1;
 
-  letter-spacing: 0.03em;
+  box-shadow: none;
 
-  width: 166px;
-  height: 48px;
-  padding: 0px 24px;
+  outline: 0px;
+  padding: 2px;
 
-  white-space: nowrap;
-
-  cursor: pointer;
-
-  align-items: center;
+  >svg {
+    width: 18px;
+  }
 
   &:hover {
-    background-color: var(--colo-bg-button-hover);
-
-    transition: all 0.2s ease 0.2s;
-    -webkit-transition: all 0.2s ease 0.2s;
-    -moz-transition: all 0.2s ease 0.2s;
-    -ms-transition: all 0.2s ease 0.2s;
-    -o-transition: all 0.2s ease 0.2s;
-  }
-}
-.button-wallet {
-  border-radius: var(--radius-default);
-  border-width: var(--borderwidths-0);
-  border: none;
-
-  font-size: var(--font-size-md);
-  font-family: var(--font-normal);
-  font-weight: 600;
-
-  letter-spacing: 0.03em;
-
-  width: 148px;
-  height: 33px;
-  padding: 0px 16px;
-}
-.button-setting {
-  padding: var(--space-md) var(--space-sm);
-  color: var(--color-subtitulo-lila);
-  background-color: var(--background-color-secondary);
-  border: none;
-  align-content: center;
-  .setting {
-    display: flex;
-    svg {
-      width: 22px;
-      height: 22px;
-      &:hover {
-        color: var(--background-dropdown-hover);
-      }
-    }
+    opacity: 0.65;
   }
 }

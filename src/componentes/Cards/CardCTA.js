@@ -48,7 +48,8 @@ export const CardCTA = ({
         <div className="cta-card-button">
           <Button
             isPrimary={true}
-            className={"button-primary-card"}
+            widthValue={"166px"}
+            heightValue={"48px"}
             texto={
               <Texto
                 label={button.text}

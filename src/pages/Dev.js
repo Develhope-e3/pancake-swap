@@ -28,7 +28,10 @@ import {
 import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 import Footer from "../componentes/Footer/Footer.js";
 import { IoSettingsSharp } from "react-icons/io5";
+<<<<<<< HEAD
 import { ButtonScroll } from "../componentes/ButtonScroll/ButtonScroll.js";
+=======
+>>>>>>> origin/feat/grid-cake-sum
 
 const Dev = () => {
   return (
@@ -69,7 +72,7 @@ const Dev = () => {
             dropdownItems={idiomas}
             className={"idiomas"}
           />
-          <ButtonPrimary
+          <Button
             className="button-setting"
             svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
             onClick={() => console.log("click en el boton setting")}
@@ -83,40 +86,40 @@ const Dev = () => {
         <Texto
           size={"title-lg-bold"}
           label={"title-lg-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-lg"}
           label={"title-lg"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-md-bold"}
           label={"title-md-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-md"}
           label={"title-md"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-s-bold"}
           label={"title-s-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
-        <Texto size={"title-s"} label={"title-s"} color={"--color-secondary"} />
+        <Texto size={"title-s"} label={"title-s"} color={"var(--color-secondary)"} />
         <Texto
           size={"title-xs-bold"}
           label={"title-xs-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-xs"}
           label={"title-xs"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
-        <Texto size={"body"} label={"body"} color={"--color-secondary"} />
+        <Texto size={"body"} label={"body"} color={"var(--color-secondary)"} />
       </div>
       <br />
       <div className="flex-row-container">
@@ -153,25 +156,29 @@ const Dev = () => {
       </div>
       <br />
       <Button
-        isPrimary={true}
-        className={"button-wallet"}
-        texto={"Connect Wallet"}
-        onClick={() => console.log("click en el boton connect wallet")}
+        widthValue={"145px"}
+        heightValue={"33px"}
+        texto={"Normal"}
+        onClick={() => console.log("click en el boton normal")}
       />
       <Button
         isPrimary={true}
-        className={"button-primary"}
-        texto={"primary"}
+        widthValue={"166px"}
+        heightValue={"46px"}
+        texto={"Primary"}
+        colorTexto={"var(--text-color-black)"}
         onClick={() => console.log("click en el boton primario")}
       />
       <Button
-        isPrimary={false}
-        className="button-secondary"
-        texto={"secondary"}
+        isSecondary={true}
+        texto={"Secondary"}
+        colorTexto={"var(--color-primary)"}
         onClick={() => console.log("click en el boton secundario")}
       />
       <br />
       <Puntos className="punto-verde" />
+      <Puntos className="punto-verde" />
+      <Puntos className="punto-rosa" />
       <Puntos className="punto-rosa" />
       <br></br>
       <Link
@@ -217,8 +224,15 @@ const Dev = () => {
         <GridComposer2 className={"theme2"} col={5} />
         <br />
       </div>
-      <ButtonScroll/>
       <Footer />
+      <div className="flex-sidebuton">
+        <Button
+          isPrimary={true}
+          widthValue={"50px"}
+          heightValue={"50px"}
+          svg={<ArrowUp />}
+        />
+      </div>
     </div>
   );
 };

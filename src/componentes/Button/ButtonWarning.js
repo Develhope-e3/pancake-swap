@@ -1,7 +1,7 @@
 import React from "react";
-import "./ButtonWarning.scss";
+import "./Button.scss";
 import { useState } from "react";
-import Button from "../Button/Button";
+import Button from "./Button";
 
 export const ButtonWarning = ({ className, svg }) => {
   const [isShow, setIsShow] = useState(true);
@@ -23,7 +23,9 @@ export const ButtonWarning = ({ className, svg }) => {
     <>
       {isShow && (
         <Button
-          className={className}
+          isWarning={true}
+          widthValue={"49px"}
+          heightValue={"49px"}
           onClick={handleClickHiddenWarning}
           svg={svg}
         />
