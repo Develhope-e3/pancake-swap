@@ -147,21 +147,23 @@ const Dev = () => {
       </div>
       <br />
       <Button
-        isPrimary={true}
-        className={"button-wallet"}
-        texto={"Connect Wallet"}
-        onClick={() => console.log("click en el boton connect wallet")}
+        widthValue={"145px"}
+        heightValue={"33px"}
+        texto={"Normal"}
+        onClick={() => console.log("click en el boton normal")}
       />
       <Button
         isPrimary={true}
-        className={"button-primary"}
-        texto={"primary"}
+        widthValue={"166px"}
+        heightValue={"46px"}
+        texto={"Primary"}
+        colorTexto={"var(--text-color-black)"}
         onClick={() => console.log("click en el boton primario")}
       />
       <Button
-        isPrimary={false}
-        className="button-secondary"
-        texto={"secondary"}
+        isSecondary={true}
+        texto={"Secondary"}
+        colorTexto={"var(--color-primary)"}
         onClick={() => console.log("click en el boton secundario")}
       />
       <br />
