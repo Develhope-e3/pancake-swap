@@ -1,5 +1,11 @@
 import { RxExit } from "react-icons/rx";
 import BnbSmartChain from "../assets/iconos/BnbSmartChain";
+import Ethereum from "../assets/iconos/Ethereum";
+import Polygon from "../assets/iconos/Polygon";
+import ZkSyncEra from "../assets/iconos/ZkSyncEra";
+import ArbitrumOne from "../assets/iconos/ArbitrumOne";
+import LineaMainnet from "../assets/iconos/LineaMainnet";
+import Aptos from "../assets/iconos/Aptos";
 
 export const trade = [
   {
@@ -290,20 +296,54 @@ export const idiomas = [
 
 export const bnb = [
   {
-    icono: <BnbSmartChain/>,
-    label: "Mercury Misteries",
+    iconoinicio: <BnbSmartChain/>,
+    label: "BNB Smart Chain",
     href: "www.google.com",
     
   },
   { 
-    icono: <BnbSmartChain/>,
-    label: "Venus Protectors",
+    iconoinicio: <Ethereum/>,
+    label: "Ethereum",
     href: "www.google.com",
     
   },
   { 
-    icono: <BnbSmartChain/>,
-    label: "Uranus Unity Rain",
+    iconoinicio: <Polygon />,
+    label: "Polygon zkEVM",
+    href: "www.google.com",
+  },
+  {
+    iconoinicio: <ZkSyncEra/>,
+    label: "zkSync Era",
+    href: "www.google.com",
+    
+  },
+  { 
+    iconoinicio: <ArbitrumOne/>,
+    label: "Arbitrum One",
+    href: "www.google.com",
+    
+  },
+  { 
+    iconoinicio: <LineaMainnet />,
+    label: "Linea Mainnet",
+    href: "www.google.com",
+  },
+  {
+    iconoinicio: <Ethereum/>,
+    label: "Base",
+    href: "www.google.com",
+    
+  },
+  { 
+    iconoinicio: <BnbSmartChain/>,
+    label: "opBNB Mainnet",
+    href: "www.google.com",
+    
+  },
+  { 
+    iconoinicio: <Aptos />,
+    label: "Aptos",
     href: "www.google.com",
   },
 ];

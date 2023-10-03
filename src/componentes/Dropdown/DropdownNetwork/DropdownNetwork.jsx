@@ -4,6 +4,7 @@ import DropdownItem from "../DropdownItems/DropdownItems";
 import Icono from "../../Icono/Icono";
 import Link from "../../Link/Link";
 
+
 /**
  *
  * @param {string} label - Texto que va a llevar el encabezado del Dropdown
@@ -36,7 +37,7 @@ const DropdownNetwork = ({ dropdownItems, label, href, className, icono1, icono2
           <Icono icono={icono1}/>
           <Link label={label} className={className} href={href} />
           <Icono icono={icono2}/>
-          {isOpen && <DropdownItem options={dropdownItems} />}
+          {isOpen && <DropdownItem options={dropdownItems} isNetwork={true}/>}
         </div>
   
     

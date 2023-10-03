@@ -22,9 +22,9 @@ import Texto from "../Texto/Texto";
 
 export const Button = ({
   isPrimary,
-  isSetting,
   isSecondary,
   isWarning,
+  isSetting,
   onClick,
   widthValue,
   heightValue,

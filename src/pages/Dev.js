@@ -35,6 +35,7 @@ import BnbSmartChain from "../assets/iconos/BnbSmartChain.jsx";
 import {IoIosArrowDown} from 'react-icons/io'
 
 
+
 const Dev = () => {
   return (
     <div>
@@ -80,11 +81,12 @@ const Dev = () => {
             onClick={() => console.log("click en el boton setting")}
           />
          <DropdownNetwork
-            icono1={<BnbSmartChain/>}
+            icono1={<BnbSmartChain />}
             label={"BNB Smart Chain"}
             dropdownItems={bnb}
             className={"bnb"}
             icono2={<IoIosArrowDown/>}
+            isNetwork={true}
           />
 
         </div>
