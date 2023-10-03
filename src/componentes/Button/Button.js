@@ -18,30 +18,36 @@ import classNames from "classnames";
  */
 
 /**
- * 
+ *
  * TODO -> refactorizar buttons agregando el componente TEXTO
  * ? Cómo hacemos?
  * ! Ayuda
- * 
+ *
  */
 
 export const Button = ({
   isPrimary,
-  className,
+  isSetting,
+  isWallet,
   onClick,
   widthValue,
   heightValue,
   texto,
   svg,
 }) => {
-
-  const givenClassName = isPrimary ? "button-primary " : "button-secondary ";
+  const givenClassName = classNames({
+    "button-primary": isPrimary,
+    "button-secondary": !isPrimary,
+    "button-setting": isSetting,
+    "button-wallet": isWallet,
+  });
 
   return (
     <button
-      className={classNames(givenClassName, className)}
+      className={classNames(givenClassName)}
       onClick={onClick}
-      style={{ width: widthValue, height: heightValue }}>
+      style={{ width: widthValue, height: heightValue }}
+    >
       {texto && texto}
       {svg && svg}
     </button>

@@ -71,7 +71,7 @@ const Dev = () => {
             className={"idiomas"}
           />
           <Button
-            className="button-setting"
+            isSetting= {true}
             svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
             onClick={() => console.log("click en el boton setting")}
           />
@@ -154,7 +154,7 @@ const Dev = () => {
       </div>
       <br />
       <Button
-        isPrimary={true}
+        isWallet={true}
         className={"button-wallet"}
         texto={"Connect Wallet"}
         onClick={() => console.log("click en el boton connect wallet")}
@@ -227,7 +227,6 @@ const Dev = () => {
           svg={<ArrowUp/>}
         />
       </div>
-      <Footer />
     </div>
   );
 };
