@@ -1,10 +1,10 @@
 import React from "react";
-import Section from "../componentes/Section/Section";
+import { mainSection } from "../componentes/Section/Section";
 import ButtonPrimary from "../componentes/ButtonPrimary/ButtonPrimary";
 const Home = () => {
   return (
     <div>
-      <Section>
+      <mainSection>
         <ButtonPrimary
           className={"asdas"}
           onClick={() => console.log("asdasd")}
@@ -12,11 +12,7 @@ const Home = () => {
           heightValue={400}
           texto={"TExtoooo"}
         />
-      </Section>
-      <Section>
-        <h1>asdasdasjdk</h1>
-        <h1>asdasdasjdk</h1>
-      </Section>
+      </mainSection>
     </div>
   );
 };

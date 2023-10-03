@@ -29,7 +29,7 @@ import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 import ArrowUp from "../assets/iconos/ArrowUp.jsx";
 import Footer from "../componentes/Footer/Footer.js";
 import { IoSettingsSharp } from "react-icons/io5";
-import Section from "../componentes/Section/Section.js";
+import { mainSection } from "../componentes/Section/Section.js";
 
 const Dev = () => {
   return (
@@ -233,7 +233,7 @@ const Dev = () => {
         />
       </div>
       <Footer />
-      <Section
+      <mainSection
         className={"main-section"}
         headSection={
           <div><GridComposer1
