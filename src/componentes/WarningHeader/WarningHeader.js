@@ -1,6 +1,6 @@
 import React from "react";
 import "../WarningHeader/WarningHeader.scss";
-import ButtonWarning from "../ButtonWarning/ButtonWarning";
+import ButtonWarning from "../Button/ButtonWarning";
 import Texto from "../Texto/Texto";
 import PhishingWarningBunny from "../../assets/imagenes/PhishingWarningBunny.png";
 import CrossDelete from "../../assets/iconos/CrossDelete";
