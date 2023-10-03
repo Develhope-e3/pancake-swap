@@ -16,6 +16,7 @@ import {
   birthday,
   tresPuntos,
   idiomas,
+  bnb
 } from "../data/dropdownItems.js";
 import { BsThreeDots } from "react-icons/bs";
 import Icono from "../componentes/Icono/Icono.jsx";
@@ -29,6 +30,9 @@ import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 import ArrowUp from "../assets/iconos/ArrowUp.jsx";
 import Footer from "../componentes/Footer/Footer.js";
 import { IoSettingsSharp } from "react-icons/io5";
+import DropdownNetwork from "../componentes/Dropdown/DropdownNetwork/DropdownNetwork.jsx";
+import BnbSmartChain from "../assets/iconos/BnbSmartChain.jsx";
+import {IoIosArrowDown} from 'react-icons/io'
 
 
 const Dev = () => {
@@ -75,6 +79,14 @@ const Dev = () => {
             svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
             onClick={() => console.log("click en el boton setting")}
           />
+         <DropdownNetwork
+            icono1={<BnbSmartChain/>}
+            label={"BNB Smart Chain"}
+            dropdownItems={bnb}
+            className={"bnb"}
+            icono2={<IoIosArrowDown/>}
+          />
+
         </div>
         <Link
           label={"Un link"}

@@ -1,4 +1,5 @@
 import { RxExit } from "react-icons/rx";
+import BnbSmartChain from "../assets/iconos/BnbSmartChain";
 
 export const trade = [
   {
@@ -8,7 +9,7 @@ export const trade = [
   {
     label: "Liquidity",
     href: "www.google.com",
-    icono: <RxExit />
+    icono: <RxExit />,
   },
   {
     label: "Perpetual",
@@ -65,7 +66,6 @@ export const win = [
   {
     label: "Pottery (BETA)",
     href: "www.google.com",
-
   },
 ];
 
@@ -130,7 +130,7 @@ export const birthday = [
     href: "www.google.com",
     icono: <RxExit />,
   },
-]
+];
 export const tresPuntos = [
   {
     label: "Uranus Communities",
@@ -172,7 +172,7 @@ export const tresPuntos = [
     href: "www.google.com",
     icono: <RxExit />,
   },
-]
+];
 export const idiomas = [
   {
     label: "العربية",
@@ -193,7 +193,6 @@ export const idiomas = [
   {
     label: "Ελληνικά",
     href: "www.google.com",
-
   },
   {
     label: "Español",
@@ -287,4 +286,24 @@ export const idiomas = [
     label: "繁體中文",
     href: "www.google.com",
   },
-]
+];
+
+export const bnb = [
+  {
+    icono: <BnbSmartChain/>,
+    label: "Mercury Misteries",
+    href: "www.google.com",
+    
+  },
+  { 
+    icono: <BnbSmartChain/>,
+    label: "Venus Protectors",
+    href: "www.google.com",
+    
+  },
+  { 
+    icono: <BnbSmartChain/>,
+    label: "Uranus Unity Rain",
+    href: "www.google.com",
+  },
+];
