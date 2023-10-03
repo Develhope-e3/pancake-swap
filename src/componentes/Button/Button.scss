@@ -1,4 +1,8 @@
 .button-primary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: var(--color-primary);
   color: var(--color-button-primary);
 
@@ -19,8 +23,6 @@
   white-space: nowrap;
 
   cursor: pointer;
-
-  align-items: center;
 
   &:hover {
     background-color: var(--color-bg-button-hover);
@@ -50,7 +52,7 @@
 
   letter-spacing: 0.03em;
 
-  line-height: 1;
+  line-height: 1.1;
   outline: 0;
 
   width: 132px;
@@ -74,13 +76,6 @@
 }
 
 .button-primary-card {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: var(--color-primary);
-  color: var(--color-primary);
-
   box-shadow: #0e0e2c66 0px -1px 0px 0px inset;
   border-radius: var(--radius-default);
   border-width: var(--borderwidths-0);
@@ -112,11 +107,7 @@
     -o-transition: all 0.2s ease 0.2s;
   }
 }
-
 .button-wallet {
-  background-color: var(--color-primary);
-  color: var(--color-button-primary);
-
   border-radius: var(--radius-default);
   border-width: var(--borderwidths-0);
   border: none;
@@ -130,21 +121,6 @@
   width: 148px;
   height: 33px;
   padding: 0px 16px;
-
-  white-space: nowrap;
-
-  cursor: pointer;
-
-  align-items: center;
-
-  &:hover {
-    background-color: var(--color-bg-button-hover);
-    transition: all 0.2s ease 0.2s;
-    -webkit-transition: all 0.2s ease 0.2s;
-    -moz-transition: all 0.2s ease 0.2s;
-    -ms-transition: all 0.2s ease 0.2s;
-    -o-transition: all 0.2s ease 0.2s;
-  }
 }
 .button-setting {
   padding: var(--space-md) var(--space-sm);
