@@ -12,7 +12,14 @@ import "./Home.scss";
 import { SectionThree } from "../componentes/SectionThree/SectionThree";
 import { SectionFour } from "../componentes/SectionFour/SectionFour";
 import { SectionSix } from "../componentes/SectionSix/SectionSix";
+<<<<<<< HEAD
 import { useTheme } from "../context/ThemeContext";
+=======
+import { GridComposer1 } from "../componentes/GridComposer/GridComposer";
+import { CardCTA } from "../componentes/Cards/CardCTA";
+import { dataCardCTA } from "../data/dataCardCTA";
+
+>>>>>>> 316bcf1 (refactor: update)
 const Home = () => {
   const { theme } = useTheme();
   return (
@@ -68,6 +75,7 @@ const Home = () => {
             })}
         </Box>
       </MainSection>
+      <MainSection></MainSection>
       <MainSection>
         <SectionThree />
       </MainSection>
@@ -75,7 +83,33 @@ const Home = () => {
         <SectionFour />
       </MainSection>
       <MainSection>
+        <Box isFlexRowCenter={true}>
+          {dataCardCTA &&
+            dataCardCTA.map((card, index) => {
+              return (
+                <CardCTA
+                  style={card.style}
+                  icon={card.icon}
+                  prelude={card.prelude}
+                  title={card.title}
+                  subtitle={card.subtitle}
+                  body={card.body}
+                  button={card.button}
+                  onClick={card.onClick}
+                  key={index}
+                />
+              );
+            })}
+        </Box>
+      </MainSection>
+      <MainSection>
         <SectionSix />
+        <GridComposer1
+          className={"theme1"}
+          col={3}
+          remRowSpacing={2}
+          remColSpacing={9}
+        />
       </MainSection>
     </BasePage>
   );

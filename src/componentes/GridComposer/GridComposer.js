@@ -24,7 +24,6 @@ export const GridComposer1 = ({
   remColSpacing,
 }) => {
   return (
-    <div className="grid-container">
       <div
         className={className}
         style={{
@@ -118,7 +117,6 @@ export const GridComposer1 = ({
           </>
         </div>
       </div>
-    </div>
   );
 };
 
