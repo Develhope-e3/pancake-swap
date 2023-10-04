@@ -13,13 +13,7 @@ import {
 } from "../componentes/GridComposer/GridComposer.js";
 import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 import Footer from "../componentes/Footer/Footer.js";
-
-// import { MainSection } from "../componentes/Section/Section.js";
-// import MainSectionBody from "../componentes/MainSectionBody/MainSectionBody.jsx";
-// import ImageMainSection from "../assets/iconos/MainSection.jsx";
 import "../styles/globals.scss";
-// import { Section2, Box } from "../componentes/Section/Section2/Section2.js";
-// import NuevoIcono from "../componentes/Icono/NuevoIcono.jsx";
 import { ButtonScroll } from "../componentes/Button/ButtonScroll.js";
 import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny.js";
 import Navbar from "../componentes/Navbar/Navbar.jsx";
@@ -32,14 +26,6 @@ const Dev = () => {
         <Navbar />
       </div>
       <div className="flex-col-center">
-        {/**
-         * Manera de invocar a mi componente reutilizable
-         */}
-
-       
-         
-       
-
         <Texto
           size={"title-lg-bold"}
           label={"title-lg-bold"}
@@ -190,29 +176,6 @@ const Dev = () => {
       <SlideBunny />
       <ButtonScroll />
       <Footer />
-      {/* <MainSection
-        className={"main-section"}
-        children={
-          <div>
-            <MainSectionBody />
-          </div>
-        }></MainSection>
-      <br />
-      <MainSection>
-        <Section2>
-          <Box>
-            <Link
-              label={"Contact"}
-              className={"footer-anchor-secondary"}
-              href={"www.google.es"}
-            />
-          </Box>
-        </Section2>
-      </MainSection>
-      <br />
-      <ImageMainSection>
-        <NuevoIcono />
-      </ImageMainSection> */}
     </div>
   );
 };
