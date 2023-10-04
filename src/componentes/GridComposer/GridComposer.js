@@ -13,7 +13,7 @@ import CakeSum from "../Cake-sum/Cake-sum";
 
 /**
  * 
- * TODO agregar data para hacer el componente más pequeño
+ * TODO agregar data para hacer el componente más intuitivo y que reciba distintas cantidades de elementos y distintos styles "theme"
  * 
  */
 

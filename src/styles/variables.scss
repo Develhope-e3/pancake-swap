@@ -16,16 +16,17 @@
   --space-ml: 20px;
   --space-lg: 24px;
   --space-xl: 32px;
+  --space-xll: 40px;
   --space-xxl: 48px;
   --space-3xl: 56px;
   --space-4xl: 64px;
 
-  --text-color-black: #202020;
   --text-color: #ffffff;
 
   --border-radius-sm: 5px;
   --border-radius-m: 10px;
   --border-radius-ml: 20px;
+  --border-radius-xxl: 72px;
   --borderWidths-0: 0px;
   --borderWidths-1: 1px;
   --borderWidths-2: 2px;
@@ -59,6 +60,7 @@
   --color-failure: #ed4b9e;
   --color-success: #31d0aa;
   --color-card-text: #280d5f;
+  --color-border-item: #383241;
   --color-text-swiper: #ffe437;
   --color-button-primary: #191326;
   --color-bg-button-hover: #228f99;
@@ -70,5 +72,6 @@
   --color-warning-background: #27262c66;
 
   --background-color-secondary: #27262c;
+  --background-color-tertiary: #000000cc;
   --background-color-card-title: #08060b;
 }

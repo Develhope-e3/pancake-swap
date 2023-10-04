@@ -1,4 +1,11 @@
 import { RxExit } from "react-icons/rx";
+import BnbSmartChain from "../assets/iconos/BnbSmartChain";
+import Ethereum from "../assets/iconos/Ethereum";
+import Polygon from "../assets/iconos/Polygon";
+import ZkSyncEra from "../assets/iconos/ZkSyncEra";
+import ArbitrumOne from "../assets/iconos/ArbitrumOne";
+import LineaMainnet from "../assets/iconos/LineaMainnet";
+import Aptos from "../assets/iconos/Aptos";
 
 export const trade = [
   {
@@ -8,7 +15,7 @@ export const trade = [
   {
     label: "Liquidity",
     href: "www.google.com",
-    icono: <RxExit />
+    icono: <RxExit />,
   },
   {
     label: "Perpetual",
@@ -28,6 +35,10 @@ export const trade = [
     label: "Buy Cripto",
     href: "www.google.com",
   },
+  {
+    label: "Trading Reward",
+    href: "www.google.com",
+  }
 ];
 
 export const earn = [
@@ -65,7 +76,6 @@ export const win = [
   {
     label: "Pottery (BETA)",
     href: "www.google.com",
-
   },
 ];
 
@@ -130,7 +140,7 @@ export const birthday = [
     href: "www.google.com",
     icono: <RxExit />,
   },
-]
+];
 export const tresPuntos = [
   {
     label: "Uranus Communities",
@@ -172,7 +182,7 @@ export const tresPuntos = [
     href: "www.google.com",
     icono: <RxExit />,
   },
-]
+];
 export const idiomas = [
   {
     label: "العربية",
@@ -193,7 +203,6 @@ export const idiomas = [
   {
     label: "Ελληνικά",
     href: "www.google.com",
-
   },
   {
     label: "Español",
@@ -287,4 +296,58 @@ export const idiomas = [
     label: "繁體中文",
     href: "www.google.com",
   },
-]
+];
+
+export const bnb = [
+  {
+    iconoinicio: <BnbSmartChain/>,
+    label: "BNB Smart Chain",
+    href: "www.google.com",
+    
+  },
+  { 
+    iconoinicio: <Ethereum/>,
+    label: "Ethereum",
+    href: "www.google.com",
+    
+  },
+  { 
+    iconoinicio: <Polygon />,
+    label: "Polygon zkEVM",
+    href: "www.google.com",
+  },
+  {
+    iconoinicio: <ZkSyncEra/>,
+    label: "zkSync Era",
+    href: "www.google.com",
+    
+  },
+  { 
+    iconoinicio: <ArbitrumOne/>,
+    label: "Arbitrum One",
+    href: "www.google.com",
+    
+  },
+  { 
+    iconoinicio: <LineaMainnet />,
+    label: "Linea Mainnet",
+    href: "www.google.com",
+  },
+  {
+    iconoinicio: <Ethereum/>,
+    label: "Base",
+    href: "www.google.com",
+    
+  },
+  { 
+    iconoinicio: <BnbSmartChain/>,
+    label: "opBNB Mainnet",
+    href: "www.google.com",
+    
+  },
+  { 
+    iconoinicio: <Aptos />,
+    label: "Aptos",
+    href: "www.google.com",
+  },
+];

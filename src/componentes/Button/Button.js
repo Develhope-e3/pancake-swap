@@ -5,11 +5,11 @@ import Texto from "../Texto/Texto";
 
 /**
  *
- * @param {Boolean} isPrimary - Texto para indicar si el botón es Primary
+ * @param {Boolean} isNotHover - Texto para indicar si el botón no tiene Hover
  * @param {Boolean} isSecondary - Texto para indicar si el botón es Secondary
- * @param {Boolean} isCTA - Texto para indicar si el botón es CTA
- * @param {Boolean} isWallet - Texto para indicar si el botón es Wallet
  * @param {Boolean} isWarning - Texto para indicar si el botón es Warning
+ * @param {Boolean} isSetting - Texto para indicar si el botón es Setting
+ * @param {Boolean} isScroll - Texto para indicar si el botón es Scroll
  * @param {Callback} onClick - Callback que se ejecuta cada vez que el usuario hace click en el boton
  * @param {String} widthValue - Valor para modificar el ancho del botón
  * @param {String} heightValue - Valor para modificar el alto del botón
@@ -21,10 +21,11 @@ import Texto from "../Texto/Texto";
  */
 
 export const Button = ({
-  isPrimary,
+  isNotHover,
   isSecondary,
   isWarning,
   isSetting,
+  isScroll,
   onClick,
   widthValue,
   heightValue,
@@ -34,10 +35,11 @@ export const Button = ({
 }) => {
   const givenClassName = classNames({
     button: true,
-    "button-primary": isPrimary,
+    "button-not-hover": isNotHover,
     "button-secondary": isSecondary,
     "button-warning": isWarning,
     "button-setting": isSetting,
+    "button-scroll": isScroll,
   });
 
   return (

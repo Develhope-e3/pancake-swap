@@ -78,13 +78,15 @@
   align-items: flex-end;
   text-align: center;
 
-  height: 60px;
+  background-color: #282c34;
+
+  border-radius: var(--radius-default);
+  border-width: var(--borderwidths-0);
+  border: none;
+
+  margin-top: 30px;
 
   >button {
-    display: flex;
-    flex: 1;
-    padding: 0px 24px;
-
     gap: 5px;
   }
 }

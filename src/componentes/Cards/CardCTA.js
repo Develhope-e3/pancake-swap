@@ -47,9 +47,6 @@ export const CardCTA = ({
         <Texto label={body.text} size={"body"} color={body.color} />
         <div className="cta-card-button">
           <Button
-            isPrimary={true}
-            widthValue={"166px"}
-            heightValue={"48px"}
             texto={
               <Texto
                 label={button.text}
