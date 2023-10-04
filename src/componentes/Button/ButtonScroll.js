@@ -1,23 +1,23 @@
 import "./Button.scss";
 import { Button } from "./Button";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useMemo } from "react";
 import ArrowUp from "../../assets/iconos/ArrowUp";
 
 export function ButtonScroll() {
   const [visible, setVisible] = useState(true);
-  const scroll = useCallback(() => {
+  const scroll = useMemo(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     })
-  },)
+  }, [])
 
   useEffect(() => {
     const scrollDone = document.documentElement.scrollTop;
     if(scrollDone <= 500) {
       setVisible(true);
     }
-  },)
+  }, [])
   
   return (
     <div
