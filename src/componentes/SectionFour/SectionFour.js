@@ -6,7 +6,7 @@ export function SectionFour() {
   return (
     <div className="section-four">
       <div>
-        <img src={SectionFourData} alt="coins"></img>
+        <img src={SectionFourData} alt="data"></img>
       </div>
       <Subsection
         labelTexto1={"Earn"}
