@@ -1,22 +1,31 @@
 import React from "react";
 import classNames from "classnames";
 
-export const Section2 = () => {
+export const Section2 = ({children}) => {
   const classSection = classNames({
     section: true,
   });
 
-  return <section className={classSection}></section>;
+  return <section className={classSection}>{children}</section>;
 };
 
-export const Box = (isFlexRow, isFlexCol, isFlexColCenter, isFlexRowCenter) => {
+export const Box = ({
+  children,
+  isFlexCol,
+  isFlexColCenter,
+  isFlexColStart,
+  isFlexRow,
+  isFlexRowCenter,
+  isFlexRowStart
+}) => {
   const boxSection = classNames({
     box: true,
-    "flex-row": isFlexRow,
     "flex-col": isFlexCol,
-    "flex-row-center": isFlexRowCenter,
     "flex-col-center": isFlexColCenter,
-    "flex-row-start": isFlexRowCenter,
+    "flex-col-start": isFlexColStart,
+    "flex-row": isFlexRow,
+    "flex-row-center": isFlexRowCenter,
+    "flex-row-start": isFlexRowStart,
   });
-  return <div className={boxSection}></div>;
+  return <div className={boxSection}>{children}</div>;
 };
