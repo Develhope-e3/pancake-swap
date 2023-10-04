@@ -37,7 +37,7 @@ export const Button = ({
     "button-primary": isPrimary,
     "button-secondary": isSecondary,
     "button-warning": isWarning,
-    "": isSetting,
+    "button-setting":isSetting,
   });
 
   return (

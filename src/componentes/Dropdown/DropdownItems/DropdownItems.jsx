@@ -2,6 +2,7 @@ import React from "react";
 import "./DropdownItem.scss";
 import Texto from "../../Texto/Texto.js";
 import Icono from "../../Icono/Icono.jsx";
+import classNames from "classnames";
 
 /**
  * 
@@ -10,11 +11,19 @@ import Icono from "../../Icono/Icono.jsx";
  * @returns Estructura HTML
  */
 
-const DropdownItem = ({ options }) => {
+const DropdownItem = ({ options, isNetwork, isIdiomas }) => {
+
+  const givenClassName = classNames({
+    "dropdown-item": true,
+    "dropdown-bnb": isNetwork,
+    "dropdown-idiomas": isIdiomas,
+    
+  });
   return (
-    <ul className="dropdown-list">
+    <ul className={"dropdown-list"}>
       {options.map((option, index) => (
-        <div className="dropdown-item" key={index}>
+        <div className={givenClassName} key={index}>
+          {option.iconoinicio && <Icono icono={option.iconoinicio}/>}
           <Texto
             label={option.label}
             size={"title-md"}

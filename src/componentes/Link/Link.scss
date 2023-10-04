@@ -85,3 +85,16 @@
   transition: all 0.2s ease 0s;
   bottom: calc(146px + env(safe-area-inset-bottom));
 }
+
+.button-bunny{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  color: var(--color-subtitulo-lila);
+  font-weight: bold;
+  .bunny{
+    display: flex;
+    margin-right: 10px;
+  }
+}
