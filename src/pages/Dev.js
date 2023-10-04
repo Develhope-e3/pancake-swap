@@ -40,6 +40,7 @@ import "../styles/globals.scss";
 // import NuevoIcono from "../componentes/Icono/NuevoIcono.jsx";
 import { ButtonScroll } from "../componentes/Button/ButtonScroll.js";
 import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny.js";
+import BunnySmall from "../assets/iconos/BunnySmall.jsx";
 
 const Dev = () => {
   return (
@@ -88,6 +89,8 @@ const Dev = () => {
             svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
             onClick={() => console.log("click en el boton setting")}
           />
+          <Link className={"button-bunny"} svg={<BunnySmall/>} label={'$1.184'} href={"www.google.com"}/>
+
           <DropdownNetwork
             icono1={<BnbSmartChain />}
             label={"BNB Smart Chain"}
@@ -96,6 +99,7 @@ const Dev = () => {
             icono2={<IoIosArrowDown />}
             isNetwork={true}
           />
+
           <Button
             isPrimary={true}
             widthValue={"149px"}
