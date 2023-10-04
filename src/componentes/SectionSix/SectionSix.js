@@ -1,7 +1,6 @@
 import "./SectionSix.scss";
 import { Subsection } from "../Subsection/Subsection";
 import SectionSixCoins from "../../assets/imagenes/SectionSixCoins.png";
-import { GridComposer1 } from "../GridComposer/GridComposer";
 
 export function SectionSix() {
   return (
