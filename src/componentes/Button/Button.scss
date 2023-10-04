@@ -1,0 +1,84 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  border-radius: var(--radius-default);
+  border-width: var(--borderwidths-0);
+  border: none;
+
+  cursor: pointer;
+
+  letter-spacing: 0.03em;
+
+  white-space: nowrap;
+
+  outline: 0;
+
+  line-height: 1.1;
+
+  box-shadow: #0e0e2c66 0px -1px 0px 0px inset;
+
+  &:hover {
+    transition: all 0.2s ease 0.2s;
+    -webkit-transition: all 0.2s ease 0.2s;
+    -moz-transition: all 0.2s ease 0.2s;
+    -ms-transition: all 0.2s ease 0.2s;
+    -o-transition: all 0.2s ease 0.2s;
+  }
+}
+
+.button-primary {
+  background-color: var(--color-primary);
+
+  padding: 0px 16px;
+
+  &:hover {
+    background-color: var(--color-bg-button-hover);
+  }
+}
+
+.button-secondary {
+  background-color: transparent;
+
+  border-width: var(--borderwidths-2);
+  border-color: var(--color-primary);
+  border-style: solid;
+  border-image: initial;
+
+  box-shadow: none;
+
+  width: 132px;
+  height: 48px;
+  padding: 0px 24px;
+  
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.button-warning {
+  background-color: transparent;
+
+  opacity: 1;
+
+  box-shadow: none;
+
+  outline: 0px;
+  padding: 2px;
+
+  >svg {
+    width: 18px;
+  }
+
+  &:hover {
+    opacity: 0.65;
+  }
+}
+
+.button-scroll{
+  position: fixed;
+  right: 18px;
+  bottom: calc(82px + env(safe-area-inset-bottom));
+}

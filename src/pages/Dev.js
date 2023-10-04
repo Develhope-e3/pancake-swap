@@ -3,7 +3,7 @@ import { PrimaryCard } from "../componentes/Cards/PrimaryCard.js";
 import { dataPrimaryCard } from "../data/dataPrimaryCard.js";
 import { CardCTA } from "../componentes/Cards/CardCTA";
 import { dataCardCTA } from "../data/dataCardCTA.js";
-import { ButtonPrimary } from "../componentes/ButtonPrimary/ButtonPrimary.js";
+import { Button } from "../componentes/Button/Button.js";
 import Link from "../componentes/Link/Link.js";
 import Texto from "../componentes/Texto/Texto.js";
 import Puntos from "../componentes/Puntos/Puntos.js";
@@ -26,7 +26,6 @@ import {
   GridComposer2,
 } from "../componentes/GridComposer/GridComposer.js";
 import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
-import ArrowUp from "../assets/iconos/ArrowUp.jsx";
 import Footer from "../componentes/Footer/Footer.js";
 import { IoSettingsSharp } from "react-icons/io5";
 import { MainSection } from "../componentes/Section/Section.js";
@@ -35,6 +34,8 @@ import ImageMainSection from "../assets/iconos/MainSection.jsx";
 import "../styles/globals.scss";
 import { Section2, Box } from "../componentes/Section/Section2/Section2.js";
 import NuevoIcono from "../componentes/Icono/NuevoIcono.jsx";
+import { ButtonScroll } from "../componentes/Button/ButtonScroll.js";
+import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny.js";
 
 const Dev = () => {
   return (
@@ -75,7 +76,7 @@ const Dev = () => {
             dropdownItems={idiomas}
             className={"idiomas"}
           />
-          <ButtonPrimary
+          <Button
             className="button-setting"
             svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
             onClick={() => console.log("click en el boton setting")}
@@ -89,40 +90,44 @@ const Dev = () => {
         <Texto
           size={"title-lg-bold"}
           label={"title-lg-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-lg"}
           label={"title-lg"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-md-bold"}
           label={"title-md-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-md"}
           label={"title-md"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-s-bold"}
           label={"title-s-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
-        <Texto size={"title-s"} label={"title-s"} color={"--color-secondary"} />
+        <Texto
+          size={"title-s"}
+          label={"title-s"}
+          color={"var(--color-secondary)"}
+        />
         <Texto
           size={"title-xs-bold"}
           label={"title-xs-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-xs"}
           label={"title-xs"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
-        <Texto size={"body"} label={"body"} color={"--color-secondary"} />
+        <Texto size={"body"} label={"body"} color={"var(--color-secondary)"} />
       </div>
       <br />
       <div className="flex-row-container">
@@ -158,27 +163,31 @@ const Dev = () => {
           })}
       </div>
       <br />
-      <ButtonPrimary
-        className={"button-wallet"}
-        texto={"Connect Wallet"}
-        onClick={() => console.log("click en el boton connect wallet")}
+      <Button
+        widthValue={"145px"}
+        heightValue={"33px"}
+        texto={"Normal"}
+        onClick={() => console.log("click en el boton normal")}
       />
-      <ButtonPrimary
-        className="button-primary"
-        label={"button-primary"}
-        texto={"primary"}
+      <Button
+        isPrimary={true}
+        widthValue={"166px"}
+        heightValue={"46px"}
+        texto={"Primary"}
+        colorTexto={"var(--text-color-black)"}
         onClick={() => console.log("click en el boton primario")}
       />
-      <ButtonPrimary
-        className="button-secondary"
-        label={"button-secondary"}
-        texto={"secondary"}
+      <Button
+        isSecondary={true}
+        texto={"Secondary"}
+        colorTexto={"var(--color-primary)"}
         onClick={() => console.log("click en el boton secundario")}
       />
       <br />
       <Puntos className="punto-verde" />
+      <Puntos className="punto-verde" />
       <Puntos className="punto-rosa" />
-
+      <Puntos className="punto-rosa" />
       <br></br>
       <Link
         label={"Learn"}
@@ -223,14 +232,8 @@ const Dev = () => {
         <GridComposer2 className={"theme2"} col={5} />
         <br />
       </div>
-      <div className="flex-sidebuton">
-        <ButtonPrimary
-          className={"button-primary"}
-          widthValue={"50px"}
-          heightValue={"50px"}
-          svg={<ArrowUp />}
-        />
-      </div>
+      <SlideBunny />
+      <ButtonScroll />
       <Footer />
       <MainSection
         className={"main-section"}
