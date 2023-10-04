@@ -20,7 +20,7 @@ export const Box = ({
   isFlexRowCenter,
   isFlexRowStart,
   isItemCard,
-  icons,
+  maxWidth,
 }) => {
   const boxSection = classNames({
     box: true,
@@ -34,13 +34,8 @@ export const Box = ({
     "item-card": isItemCard,
   });
   return (
-    <div className={boxSection}>
-      <div>{text}</div>
-      <div style={{ display: "flex", gap: "var(--spacing-xs)" }}>
-        {children}
-      </div>
-      <div>{icons}</div>
+    <div className={boxSection} style={{ maxWidth: `${maxWidth}px` }}>
+      {children}
     </div>
   );
 };
-
