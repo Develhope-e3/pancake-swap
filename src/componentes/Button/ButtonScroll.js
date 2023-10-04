@@ -10,14 +10,14 @@ export function ButtonScroll() {
       top: 0,
       behavior: "smooth",
     })
-  },[])
+  },)
 
   useEffect(() => {
     const scrollDone = document.documentElement.scrollTop;
     if(scrollDone <= 500) {
       setVisible(true);
     }
-  },[])
+  },)
   
   return (
     <div
