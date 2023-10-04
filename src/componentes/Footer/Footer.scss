@@ -25,7 +25,7 @@ footer {
             width: 14px;
             height: 1.3px;
 
-            background-color: white;
+            background-color:var(--color-subtitulo-lila);
 
         }
 
@@ -38,9 +38,39 @@ footer {
     .parte-abajo-footer {
 
         display: flex;
+
         padding-top: 30px;
-       
- 
+        justify-content: space-around;
+
+
+
+        .parte-abajo-derecha {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 230px;
+            margin-left: 480px;
+
+
+        }
+
+
+
+        .conejo-azul {
+            background-color: var(--color-primary);
+            border-radius: 25px;
+            padding: 4px;
+            width: 16px;
+            height: 16px;
+
+
+
+
+
+            cursor: pointer;
+        }
+
+
     }
 
 
@@ -49,21 +79,24 @@ footer {
 
     .raya-divisora {
         width: 81%;
-        border-top: solid 1px var(--color-subtitulo-lila);
-       margin-left: 140px;
+        border-top: inset 1px var(--color-subtitulo-lila);
+        margin-left: 143px;
+        margin-top: 30px;
 
     }
 
 
 
-    .iconos-padre{
+    .iconos-padre {
         display: flex;
-    gap: 25px;
-      margin-left: 146px;
+        gap: 25px;
+        margin-left: 146px;
+        margin-top: -20px;
 
 
 
-       
+
+
     }
 
 }
