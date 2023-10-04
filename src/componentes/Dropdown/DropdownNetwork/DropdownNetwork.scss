@@ -1,0 +1,38 @@
+.bnb{
+    padding:0;
+    width: 200px;
+    height: 32px;
+
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+  
+    color: var(--color-text);
+    font-weight: bold;
+    background-color: var(--background-dropdown-hover);
+    border-radius: var(--radius-lg);
+  
+    &:hover {
+      background-color: var(--background-color-secondary);
+    }
+    img{
+      display: flex;
+      padding-right:10px;
+    }
+    svg{
+        display: flex;
+        width: 17px;
+        height: 17px;
+        padding-right: 10px;
+    }
+}
+.idiomas {
+  display: flex;
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+}

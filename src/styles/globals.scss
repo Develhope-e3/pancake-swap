@@ -1,20 +1,44 @@
-*{
+* {
   font-family: var(--font-normal)
 }
-.flex-col-center {
+
+.section {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  align-content: center;
+  padding: 48px 0px;
+}
+
+.box {
+  width: 100%;
+  max-width: 968px;
+  padding: 0px 16px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col-center {
+  display: inline-flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
   gap: var(--spacing-xs);
 }
 
-.flex-row {
-  display: flex;
-  align-items: center;
+.flex-col-start {
+  display: inline-flex;
+  flex-flow: column wrap;
   justify-content: center;
-  flex-direction: row;
+  align-items: flex-start;
+  text-align: center;
 }
 
 .flex-row-space {
@@ -28,6 +52,27 @@
 
 
 .flex-sidebuton{
+.flex-row {
+  display: flex;
+}
+
+.flex-row-center {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-row-start {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-sidebuton {
   display: inline;
 
   position: fixed;
