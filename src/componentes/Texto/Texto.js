@@ -103,6 +103,17 @@ const Texto = ({ size, color, label }) => {
           {label}
         </span>
       )}
+      {size === "tittle-section-lg" && (
+        <span className="tittle-section-lg" style={{ color: `${color}` }}>
+          {label}
+        </span>
+      )}
+      {size === "text-section-ml" && (
+        <span className="text-section-ml" style={{ color: `${color}` }}>
+          {label}
+        </span>
+      )}
+
     </>
   );
 };

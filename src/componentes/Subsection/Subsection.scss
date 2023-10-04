@@ -1,0 +1,26 @@
+.subsection-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .text-container-up {
+      > span {
+        margin-right: 10px;
+      }
+    }
+  }
+  .button-containers {
+    display: flex;
+    gap: 16px;
+
+    .link-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

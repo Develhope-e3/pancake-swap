@@ -27,14 +27,20 @@ import {
   GridComposer2,
 } from "../componentes/GridComposer/GridComposer.js";
 import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
-import ArrowUp from "../assets/iconos/ArrowUp.jsx";
 import Footer from "../componentes/Footer/Footer.js";
 import { IoSettingsSharp } from "react-icons/io5";
 import DropdownNetwork from "../componentes/Dropdown/DropdownNetwork/DropdownNetwork.jsx";
 import BnbSmartChain from "../assets/iconos/BnbSmartChain.jsx";
 import {IoIosArrowDown} from 'react-icons/io'
-
-
+import { MainSection } from "../componentes/Section/Section.js";
+import MainSectionBody from "../componentes/MainSectionBody/MainSectionBody.jsx";
+import ImageMainSection from "../assets/iconos/MainSection.jsx";
+import "../styles/globals.scss";
+import { Section2, Box } from "../componentes/Section/Section2/Section2.js";
+import NuevoIcono from "../componentes/Icono/NuevoIcono.jsx";
+import { ButtonScroll } from "../componentes/Button/ButtonScroll.js";
+import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny.js";
+import ArrowUp from "../assets/iconos/ArrowUp.jsx";
 
 const Dev = () => {
   return (
@@ -79,6 +85,7 @@ const Dev = () => {
           
           <Button
             isSetting= {true}
+            className="button-setting"
             svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
             onClick={() => console.log("click en el boton setting")}
           />
@@ -96,40 +103,44 @@ const Dev = () => {
         <Texto
           size={"title-lg-bold"}
           label={"title-lg-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-lg"}
           label={"title-lg"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-md-bold"}
           label={"title-md-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-md"}
           label={"title-md"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-s-bold"}
           label={"title-s-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
-        <Texto size={"title-s"} label={"title-s"} color={"--color-secondary"} />
+        <Texto
+          size={"title-s"}
+          label={"title-s"}
+          color={"var(--color-secondary)"}
+        />
         <Texto
           size={"title-xs-bold"}
           label={"title-xs-bold"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
         <Texto
           size={"title-xs"}
           label={"title-xs"}
-          color={"--color-secondary"}
+          color={"var(--color-secondary)"}
         />
-        <Texto size={"body"} label={"body"} color={"--color-secondary"} />
+        <Texto size={"body"} label={"body"} color={"var(--color-secondary)"} />
       </div>
       <br />
       <div className="flex-row-container">
@@ -238,6 +249,32 @@ const Dev = () => {
           svg={<ArrowUp/>}
         />
       </div>
+      <SlideBunny />
+      <ButtonScroll />
+      <Footer />
+      <MainSection
+        className={"main-section"}
+        children={
+          <div>
+            <MainSectionBody />
+          </div>
+        }></MainSection>
+      <br />
+      <MainSection>
+        <Section2>
+          <Box>
+            <Link
+              label={"Contact"}
+              className={"footer-anchor-secondary"}
+              href={"www.google.es"}
+            />
+          </Box>
+        </Section2>
+      </MainSection>
+      <br />
+      <ImageMainSection>
+        <NuevoIcono />
+      </ImageMainSection>
     </div>
   );
 };

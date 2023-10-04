@@ -14,22 +14,22 @@ export function WarningHeader() {
           <div className="text-container">
             <Texto
               size={"body-warningv1"}
-              color={"--color-secondary"}
+              color={"var(--color-secondary)"}
               label={"PHISHING WARNING: "}
             />
             <Texto
               size={"body-warningv2"}
-              color={"--color-warning-text"}
+              color={"var(--color-warning-text)"}
               label={" please make sure you're visiting "}
             />
             <Texto
               size={"body-warningv1"}
-              color={"--text-color"}
+              color={"var(--text-color)"}
               label={" https://pancakeswap.finance "}
             />
             <Texto
               size={"body-warningv2"}
-              color={"--color-warning-text"}
+              color={"var(--color-warning-text)"}
               label={" - check the URL carefully."}
             />
           </div>
