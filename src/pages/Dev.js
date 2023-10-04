@@ -30,7 +30,6 @@ import Footer from "../componentes/Footer/Footer.js";
 import { IoSettingsSharp } from "react-icons/io5";
 import { ButtonScroll } from "../componentes/Button/ButtonScroll.js";
 import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny.js";
-import { SectionThree } from "../componentes/SectionThree/SectionThree.js";
 
 const Dev = () => {
   return (
@@ -236,7 +235,6 @@ const Dev = () => {
       <SlideBunny />
       <ButtonScroll />
       <Footer />
-      <SectionThree />
     </div>
   );
 };
