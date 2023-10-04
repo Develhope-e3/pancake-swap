@@ -2,7 +2,7 @@ import React from "react";
 import "./mainSection.scss";
 import ImageMainSection from "../../assets/iconos/MainSection";
 import Texto from "../Texto/Texto";
-import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
+import Button from "../Button/Button.js";
 
 const MainSectionBody = () => {
   return (
@@ -21,14 +21,14 @@ const MainSectionBody = () => {
           }
         />
         <div className="buttons-section">
-          <ButtonPrimary
+          <Button
             className={"button-primary"}
             widthValue={"165px"}
             heightValue={"48px"}
             texto={"Connect Wallet"}
             onClick={""}
           />
-          <ButtonPrimary
+          <Button
             className={"button-secondary"}
             widthValue={"132px"}
             heightValue={"48px"}

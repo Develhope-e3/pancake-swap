@@ -1,7 +1,7 @@
 import "./CardCTA.scss";
 import "../Cards/PrimaryCard.scss";
 import Texto from "../Texto/Texto.js";
-import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
+import Button from "../Button/Button";
 import Icono from "../Icono/Icono";
 
 /**
@@ -32,11 +32,11 @@ export const CardCTA = ({
       <div className={style}>
         <Icono icono={icon} className={"cta-card-icon"} />
         <div>
-        <Texto
-          label={prelude.text}
-          size={"title-md-bold"}
-          color={prelude.color}
-        />
+          <Texto
+            label={prelude.text}
+            size={"title-md-bold"}
+            color={prelude.color}
+          />
           <Texto label={title.text} size={"title-card"} color={title.color} />
           <Texto
             label={subtitle.text}
@@ -46,10 +46,18 @@ export const CardCTA = ({
         </div>
         <Texto label={body.text} size={"body"} color={body.color} />
         <div className="cta-card-button">
-          <ButtonPrimary
-            className={"button-primary-card"}
-            texto={<Texto label={button.text} size={"title-md-bold"} color={button.color} />}
-            svg={<Icono icono={button.icon} className={""} />}
+          <Button
+            isPrimary={true}
+            widthValue={"166px"}
+            heightValue={"48px"}
+            texto={
+              <Texto
+                label={button.text}
+                size={"title-md-bold"}
+                color={button.color}
+              />
+            }
+            svg={<Icono icono={button.icon} />}
             onClick={onClick}
           />
         </div>

@@ -1,12 +1,8 @@
 .pancakeswap-icon {
   width: 160px;
   height: 56px;
-
-  svg {
-    fill-rule: nonzero;
-    stroke: none;
-    fill-opacity: 1;
-  }
+  display: flex;
+  align-items: center;
 }
 
 .otro:hover {
@@ -18,8 +14,4 @@
 .redSocial:hover {
   transform: scale(1.2, 1.2);
   transition: transform 0.3s;
-}
-.idiomas{
-font-size: large; //esto no sirve necesito agrandar el icono
-  
 }

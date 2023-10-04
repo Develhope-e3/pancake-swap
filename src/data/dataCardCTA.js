@@ -7,16 +7,16 @@ export const dataCardCTA = [
   {
     style: "cta-card-yellow",
     icon: <CrystallBall color={"var(--text-color-black)"} />,
-    prelude: { text: "Prediction", color: "--color-card-text" },
-    title: { text: "$880 million", color: "--color-card-text" },
-    subtitle: { text: "in BNB + CAKE won so far", color: "--color-card-text" },
+    prelude: { text: "Prediction", color: "var(--color-card-text)" },
+    title: { text: "$880 million", color: "var(--color-card-text)" },
+    subtitle: { text: "in BNB + CAKE won so far", color: "var(--color-card-text)" },
     body: {
       text: "Predict the price rend of BNB or CAKE to win",
-      color: "--color-card-text",
+      color: "var(--color-card-text)",
     },
     button: {
       text: "Play",
-      color: "--text-color-black",
+      color: "var(--text-color-black)",
       icon: <ArrowRight color={"var(--text-color-black"} />,
     },
     onClick: () => {
@@ -26,22 +26,22 @@ export const dataCardCTA = [
   {
     style: "cta-card-violet",
     icon: <IoTicketSharp color={"var(--text-color)"} />,
-    prelude: { text: "Lottery", color: "--text-color" },
+    prelude: { text: "Lottery", color: "var(--text-color)" },
     title: {
       text: <CakeSum className={"title-card"} limite={32429} />,
-      color: "--color-secondary",
+      color: "var(--color-secondary)",
     },
     subtitle: {
       text: "in CAKE prizes this round",
-      color: "--text-color",
+      color: "var(--text-color)",
     },
     body: {
       text: "Buy tickets with CAKE, win CAKE if your numbers match",
-      color: "--text-color",
+      color: "var(--text-color)",
     },
     button: {
       text: "Buy Tickets",
-      color: "--text-color-black",
+      color: "var(--text-color-black)",
       icon: <ArrowRight color={"var(--text-color-black"} />,
     },
     onClick: () => {
