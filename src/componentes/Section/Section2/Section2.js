@@ -10,38 +10,37 @@ export const Section2 = ({ children }) => {
 };
 
 export const Box = ({
+  text,
   children,
   isFlexCol,
   isFlexColCenter,
   isFlexColStart,
+  isFlexColSpaceBetween,
   isFlexRow,
   isFlexRowCenter,
   isFlexRowStart,
+  isItemCard,
+  icons,
 }) => {
   const boxSection = classNames({
     box: true,
     "flex-col": isFlexCol,
     "flex-col-center": isFlexColCenter,
     "flex-col-start": isFlexColStart,
+    "flex-col-space-between": isFlexColSpaceBetween,
     "flex-row": isFlexRow,
     "flex-row-center": isFlexRowCenter,
     "flex-row-start": isFlexRowStart,
-  });
-  return <div className={boxSection}>{children}</div>;
-};
-
-export const Item = ({ text, children, isSpaceBetween, isItemCard, icon }) => {
-  const itemSection = classNames({
-    item: true,
-    "flex-space-between": isSpaceBetween,
     "item-card": isItemCard,
   });
-
   return (
-    <div className={itemSection}>
+    <div className={boxSection}>
       <div>{text}</div>
-      <div>{children}</div>
-      <div>{icon}</div>
+      <div style={{ display: "flex", gap: "var(--spacing-xs)" }}>
+        {children}
+      </div>
+      <div>{icons}</div>
     </div>
   );
 };
+
