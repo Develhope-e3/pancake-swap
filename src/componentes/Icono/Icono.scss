@@ -1,11 +1,8 @@
 .pancakeswap-icon {
   width: 160px;
   height: 56px;
-
-  svg {
-    stroke: none;
-    fill-opacity: 1;
-  }
+  display: flex;
+  align-items: center;
 }
 
 .otro:hover {
@@ -18,9 +15,3 @@
   transform: scale(1.2, 1.2);
   transition: transform 0.3s;
 }
-/*
-.idiomas{
-no lo estoy utilizando
-}
-
-*/

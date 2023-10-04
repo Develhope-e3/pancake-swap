@@ -7,31 +7,13 @@ import { Button } from "../componentes/Button/Button.js";
 import Link from "../componentes/Link/Link.js";
 import Texto from "../componentes/Texto/Texto.js";
 import Puntos from "../componentes/Puntos/Puntos.js";
-import Dropdown from "../componentes/Dropdown/Dropdown.jsx";
-import {
-  earn,
-  trade,
-  win,
-  game,
-  birthday,
-  tresPuntos,
-  idiomas,
-  bnb,
-} from "../data/dropdownItems.js";
-import { BsThreeDots } from "react-icons/bs";
-import Icono from "../componentes/Icono/Icono.jsx";
-import PancakeSwapIcono from "../componentes/Icono/PancakeSwapIcono.jsx";
-import { TbWorld } from "react-icons/tb";
 import {
   GridComposer1,
   GridComposer2,
 } from "../componentes/GridComposer/GridComposer.js";
 import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 import Footer from "../componentes/Footer/Footer.js";
-import { IoSettingsSharp } from "react-icons/io5";
-import DropdownNetwork from "../componentes/Dropdown/DropdownNetwork/DropdownNetwork.jsx";
-import BnbSmartChain from "../assets/iconos/BnbSmartChain.jsx";
-import { IoIosArrowDown } from "react-icons/io";
+
 // import { MainSection } from "../componentes/Section/Section.js";
 // import MainSectionBody from "../componentes/MainSectionBody/MainSectionBody.jsx";
 // import ImageMainSection from "../assets/iconos/MainSection.jsx";
@@ -40,75 +22,23 @@ import "../styles/globals.scss";
 // import NuevoIcono from "../componentes/Icono/NuevoIcono.jsx";
 import { ButtonScroll } from "../componentes/Button/ButtonScroll.js";
 import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny.js";
-import BunnySmall from "../assets/iconos/BunnySmall.jsx";
+import Navbar from "../componentes/Navbar/Navbar.jsx";
 
 const Dev = () => {
   return (
     <div>
       <div className="flex-header">
         <WarningHeader />
+        <Navbar />
       </div>
       <div className="flex-col-center">
         {/**
          * Manera de invocar a mi componente reutilizable
          */}
-        <div className="flex-row">
-          <div className="pancakeswap-icon">
-            <Icono icono={<PancakeSwapIcono />} />
-          </div>
-          <Dropdown
-            label={"Trade"}
-            dropdownItems={trade}
-            punto={<Puntos className="punto-rosa" />}
-          />
-          <Dropdown label={"Earn"} dropdownItems={earn} />
-          <Dropdown label={"Win"} dropdownItems={win} />
-          <Dropdown label={"Game"} dropdownItems={game} />
-          <Dropdown
-            label={"Birthday"}
-            dropdownItems={birthday}
-            punto={<Puntos className="punto-verde" />}
-            className={"birthday"}
-          />
-          <Dropdown
-            label={<BsThreeDots />}
-            dropdownItems={tresPuntos}
-            punto={<Puntos className="punto-verde" />}
-            className={"three-dots"}
-          />
-          <Dropdown
-            label={<TbWorld />}
-            dropdownItems={idiomas}
-            className={"idiomas"}
-            isIdiomas={true}
-          />
 
-          <Button
-            isSetting={true}
-            className="button-setting"
-            svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
-            onClick={() => console.log("click en el boton setting")}
-          />
-          <Link className={"button-bunny"} svg={<BunnySmall/>} label={'$1.184'} href={"www.google.com"}/>
-
-          <DropdownNetwork
-            icono1={<BnbSmartChain />}
-            label={"BNB Smart Chain"}
-            dropdownItems={bnb}
-            className={"bnb"}
-            icono2={<IoIosArrowDown />}
-            isNetwork={true}
-          />
-
-          <Button
-            isPrimary={true}
-            widthValue={"149px"}
-            heightValue={"32px"}
-            texto={"Connect Wallet"}
-            colorTexto={"var(--text-color-black)"}
-            onClick={() => console.log("click en el boton primario")}
-          />
-        </div>
+       
+         
+       
 
         <Texto
           size={"title-lg-bold"}
