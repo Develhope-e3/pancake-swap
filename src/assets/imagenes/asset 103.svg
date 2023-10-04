@@ -5,9 +5,8 @@
       fill="url(#paint0_radial)" fill-opacity="0.1" />
   </g>
   <defs>
-    <filter id="filter0_f" x="0" y="0" width="1956" height="1956" filterUnits="userSpaceOnUse"
-      color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+    <filter id="filter0_f" x="0" y="0" width="1956" height="1956" filterUnits="userSpaceOnUse">
+      <feFlood result="BackgroundImageFix" />
       <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
       <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur" />
     </filter>
