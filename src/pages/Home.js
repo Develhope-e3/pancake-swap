@@ -1,25 +1,38 @@
 import React from "react";
-import { MainSection, Section } from "../componentes/Section/Section.js";
-import { Section2, Box } from "../componentes/Section/Section2/Section2.js";
-import { GridComposer1 } from "../componentes/GridComposer/GridComposer";
+import { MainSection } from "../componentes/Section/Section.js";
+import {
+  Section2,
+  Box,
+  Item,
+} from "../componentes/Section/Section2/Section2.js";
 import MainSectionBody from "../componentes/MainSectionBody/MainSectionBody.jsx";
+import { PrimaryCard } from "../componentes/Cards/PrimaryCard.js";
+import { dataPrimaryCard } from "../data/dataPrimaryCard.js";
 
 const Home = () => {
   return (
     <div>
       <MainSection>
-        <MainSectionBody/>
+        <MainSectionBody />
       </MainSection>
       <br />
       <MainSection>
         <Section2>
-          <Box isFlexRow={true}>
-            <GridComposer1
-              className={"theme1"}
-              col={3}
-              remRowSpacing={2}
-              remColSpacing={9}
-            />
+          <Box isFlexColCenter={true}>
+            <Item isSpaceBetween={true} isItemCard={true} >
+              {dataPrimaryCard &&
+                dataPrimaryCard.map((card, index) => {
+                  return (
+                    <PrimaryCard
+                      icon={card.icon}
+                      title={card.title}
+                      subtitle={card.subtitle}
+                      body={card.body}
+                      key={index}
+                    />
+                  );
+                })}
+            </Item>
           </Box>
         </Section2>
       </MainSection>
