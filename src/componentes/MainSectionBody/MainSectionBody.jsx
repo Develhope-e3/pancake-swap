@@ -10,30 +10,30 @@ const MainSectionBody = () => {
       <div className="text-section">
         <Texto
           size={"title-lg-bold"}
-          color={"--color-titulo-lila"}
+          color={"var(--color-titulo-lila)"}
           label={"The moon is made of pancakes."}
         />
         <Texto
           size={"title-ml-bold"}
-          color={"--color-text"}
+          color={"var(--color-text)"}
           label={
             "Trade, earn, and win crypto on the most popular decentralized platform in the galaxy."
           }
         />
         <div className="buttons-section">
           <Button
-            className={"button-primary"}
-            widthValue={"165px"}
-            heightValue={"48px"}
+            isPrimary={true}
+            widthValue={"166px"}
+            heightValue={"46px"}
             texto={"Connect Wallet"}
-            onClick={""}
+            colorTexto={"var(--text-color-black)"}
+            onClick={() => console.log("click")}
           />
           <Button
-            className={"button-secondary"}
-            widthValue={"132px"}
-            heightValue={"48px"}
+            isSecondary={true}
             texto={"Trade Now"}
-            onClick={""}
+            colorTexto={"var(--color-primary)"}
+            onClick={() => console.log("click")}
           />
         </div>
       </div>

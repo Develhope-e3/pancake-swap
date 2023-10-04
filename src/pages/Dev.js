@@ -7,6 +7,24 @@ import { Button } from "../componentes/Button/Button.js";
 import Link from "../componentes/Link/Link.js";
 import Texto from "../componentes/Texto/Texto.js";
 import Puntos from "../componentes/Puntos/Puntos.js";
+import Dropdown from "../componentes/Dropdown/Dropdown.jsx";
+import {
+  earn,
+  trade,
+  win,
+  game,
+  birthday,
+  tresPuntos,
+  idiomas,
+} from "../data/dropdownItems.js";
+import { BsThreeDots } from "react-icons/bs";
+import Icono from "../componentes/Icono/Icono.jsx";
+import PancakeSwapIcono from "../componentes/Icono/PancakeSwapIcono.jsx";
+import { TbWorld } from "react-icons/tb";
+import { GridComposer1 } from "../componentes/GridComposer/GridComposer.js";
+import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
+import Footer from "../componentes/Footer/Footer.js";
+import { IoSettingsSharp } from "react-icons/io5";
 import {
   GridComposer1,
   GridComposer2,
@@ -169,13 +187,12 @@ const Dev = () => {
         />
         <br />
         <br />
-        <GridComposer2 className={"theme2"} col={5} />
-        <br />
       </div>
-
       <SlideBunny />
       <ButtonScroll />
       <Footer />
+      <br />
+      <br />
     </div>
   );
 };

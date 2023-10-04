@@ -1,0 +1,33 @@
+.main-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1200px;
+  height: fit-content;
+
+  padding-top: var(--space-xxl);
+  padding-bottom: var(--space-xxl);
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+}
+
+.main-imagen {
+  position: relative;
+  width: 648px;
+  height: 648px;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.buttons-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--space-lg);
+}
