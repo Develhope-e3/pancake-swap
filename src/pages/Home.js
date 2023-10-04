@@ -1,8 +1,7 @@
 import React from "react";
 import "../styles/variables.scss";
 import { MainSection } from "../componentes/Section/Section.js";
-import { Section2, Box } from "../componentes/Section/Section2/Section2.js";
-import MainSectionBody from "../componentes/MainSectionBody/MainSectionBody.jsx";
+import { Box } from "../componentes/Section/Section2/Box.js";
 import { PrimaryCard } from "../componentes/Cards/PrimaryCard.js";
 import { dataPrimaryCard } from "../data/dataPrimaryCard.js";
 import BasePage from "../componentes/Section/BasePage";
@@ -10,6 +9,10 @@ import Texto from "../componentes/Texto/Texto";
 import Button from "../componentes/Button/Button";
 import ImageMainSection from "../assets/iconos/MainSection";
 import "./Home.scss";
+import { SectionThree } from "../componentes/SectionThree/SectionThree";
+import { SectionFour } from "../componentes/SectionFour/SectionFour";
+// import { SectionFive } from "../componentes/SectionFive/SectionFive";
+import { SectionSix } from "../componentes/SectionSix/SectionSix";
 const Home = () => {
   return (
     <BasePage>
@@ -48,24 +51,30 @@ const Home = () => {
           <ImageMainSection />
         </Box>
       </MainSection>
-      <br />
       <MainSection>
-        <Section2>
-          <Box isFlexColSpaceBetween={true}>
-            {dataPrimaryCard &&
-              dataPrimaryCard.map((card, index) => {
-                return (
-                  <PrimaryCard
-                    icon={card.icon}
-                    title={card.title}
-                    subtitle={card.subtitle}
-                    body={card.body}
-                    key={index}
-                  />
-                );
-              })}
-          </Box>
-        </Section2>
+        <Box isFlexRowStart={true}>
+          {dataPrimaryCard &&
+            dataPrimaryCard.map((card, index) => {
+              return (
+                <PrimaryCard
+                  icon={card.icon}
+                  title={card.title}
+                  subtitle={card.subtitle}
+                  body={card.body}
+                  key={index}
+                />
+              );
+            })}
+        </Box>
+      </MainSection>
+      <MainSection>
+        <SectionThree />
+      </MainSection>
+      <MainSection>
+        <SectionFour />
+      </MainSection>
+      <MainSection>
+        <SectionSix />
       </MainSection>
     </BasePage>
   );

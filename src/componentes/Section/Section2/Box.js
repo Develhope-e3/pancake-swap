@@ -1,16 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-export const Section2 = ({ children }) => {
-  const classSection = classNames({
-    section: true,
-  });
-
-  return <section className={classSection}>{children}</section>;
-};
-
 export const Box = ({
-  text,
   children,
   isFlexCol,
   isFlexColCenter,
@@ -19,6 +10,7 @@ export const Box = ({
   isFlexRow,
   isFlexRowCenter,
   isFlexRowStart,
+  isFlexRowSpaceBetween,
   isItemCard,
   maxWidth,
 }) => {
@@ -31,6 +23,7 @@ export const Box = ({
     "flex-row": isFlexRow,
     "flex-row-center": isFlexRowCenter,
     "flex-row-start": isFlexRowStart,
+    "flex-row-space-between": isFlexRowSpaceBetween,
     "item-card": isItemCard,
   });
   return (

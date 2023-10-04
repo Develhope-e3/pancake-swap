@@ -60,6 +60,16 @@
 
 }
 
+.flex-row-space-between {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  gap: var(--space-lg);
+
+}
+
 .flex-row {
   display: flex;
   gap: var(--space-md);

@@ -11,7 +11,7 @@ export function WarningHeader() {
       <div className="main-container">
         <div className="box-container">
           <img src={PhishingWarningBunny} alt="bunny" />
-          <div className="text-container">
+          <div className="text-container-todo">
             <Texto
               size={"body-warningv1"}
               color={"var(--color-secondary)"}
