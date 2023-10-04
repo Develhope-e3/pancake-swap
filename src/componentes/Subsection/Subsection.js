@@ -10,7 +10,7 @@ import Link from "../Link/Link";
  * @returns Estructura HTML
  */
 
-export function Subsection({ labelTexto, labelButton, labelLink }) {
+export function Subsection({ labelTexto1,labelTexto2,labelTextoDown,labelButton, labelLink }) {
   return (
     <div className="subsection-container">
       <div className="text-container">
@@ -18,19 +18,19 @@ export function Subsection({ labelTexto, labelButton, labelLink }) {
           <Texto
             size={"tittle-section-lg"}
             color={"var(--color-titulo-lila)"}
-            label={labelTexto}
+            label={labelTexto1}
           />
           <Texto
             size={"tittle-section-lg"}
             color={"var(--color-text)"}
-            label={labelTexto}
+            label={labelTexto2}
           />
         </div>
         <div className="text-container-down">
           <Texto
             size={"text-section-ml"}
             color={"var(--color-subtitulo-lila)"}
-            label={labelTexto}
+            label={labelTextoDown}
           />
         </div>
       </div>
