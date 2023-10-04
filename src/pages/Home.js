@@ -2,12 +2,13 @@ import React from "react";
 import { MainSection, Section } from "../componentes/Section/Section.js";
 import { Section2, Box } from "../componentes/Section/Section2/Section2.js";
 import { GridComposer1 } from "../componentes/GridComposer/GridComposer";
+import MainSectionBody from "../componentes/MainSectionBody/MainSectionBody.jsx";
 
 const Home = () => {
   return (
     <div>
       <MainSection>
-        <Section />
+        <MainSectionBody/>
       </MainSection>
       <br />
       <MainSection>
