@@ -6,11 +6,7 @@ export const Section2 = () => {
     section: true,
   });
 
-  return (
-    <section>
-      <Section2 className={classSection}></Section2>
-    </section>
-  );
+  return <section className={classSection}></section>;
 };
 
 export const Box = (isFlexRow, isFlexCol, isFlexColCenter, isFlexRowCenter) => {
@@ -22,5 +18,5 @@ export const Box = (isFlexRow, isFlexCol, isFlexColCenter, isFlexRowCenter) => {
     "flex-col-center": isFlexColCenter,
     "flex-row-start": isFlexRowCenter,
   });
-  return <Box className={boxSection}></Box>;
+  return <div className={boxSection}></div>;
 };

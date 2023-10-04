@@ -21,10 +21,7 @@ import { BsThreeDots } from "react-icons/bs";
 import Icono from "../componentes/Icono/Icono.jsx";
 import PancakeSwapIcono from "../componentes/Icono/PancakeSwapIcono.jsx";
 import { TbWorld } from "react-icons/tb";
-import {
-  GridComposer1,
-  GridComposer2,
-} from "../componentes/GridComposer/GridComposer.js";
+import { GridComposer1 } from "../componentes/GridComposer/GridComposer.js";
 import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
 import Footer from "../componentes/Footer/Footer.js";
 import { IoSettingsSharp } from "react-icons/io5";
@@ -223,8 +220,6 @@ const Dev = () => {
           remColSpacing={9}
         />
         <br />
-        <br />
-        <GridComposer2 className={"theme2"} col={5} />
         <br />
       </div>
       <SlideBunny />
