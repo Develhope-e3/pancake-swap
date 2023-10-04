@@ -83,7 +83,7 @@ const Home = () => {
         <SectionFour />
       </MainSection>
       <MainSection>
-        <Box isFlexRowCenter={true}>
+        <Box isFlexRowCenter={true} isItemCard={true}>
           {dataCardCTA &&
             dataCardCTA.map((card, index) => {
               return (
