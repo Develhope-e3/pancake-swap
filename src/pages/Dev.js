@@ -74,7 +74,9 @@ const Dev = () => {
             label={<TbWorld />}
             dropdownItems={idiomas}
             className={"idiomas"}
+            isIdiomas ={true}
           />
+          
           <Button
             isSetting= {true}
             svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
@@ -90,11 +92,7 @@ const Dev = () => {
           />
 
         </div>
-        <Link
-          label={"Un link"}
-          className={"primary"}
-          href={"https://facebook.com"}
-        />
+       
         <Texto
           size={"title-lg-bold"}
           label={"title-lg-bold"}
@@ -188,11 +186,6 @@ const Dev = () => {
         onClick={() => console.log("click en el boton secundario")}
       />
       <br />
-      <Puntos className="punto-verde" />
-      <Puntos className="punto-verde" />
-      <Puntos className="punto-rosa" />
-      <Puntos className="punto-rosa" />
-      <br></br>
       <Link
         label={"Learn"}
         className={"primary-anchor"}

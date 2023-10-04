@@ -35,6 +35,10 @@ export const trade = [
     label: "Buy Cripto",
     href: "www.google.com",
   },
+  {
+    label: "Trading Reward",
+    href: "www.google.com",
+  }
 ];
 
 export const earn = [
