@@ -28,7 +28,7 @@ export const CardCTA = ({
     /**
      * TODO modificar container y agregarlo a secciones
      */
-    <div className="flex-row-container">
+    <div className="spacing-top">
       <div className={style}>
         <Icono icono={icon} className={"cta-card-icon"} />
         <div>

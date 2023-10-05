@@ -22,19 +22,19 @@ export function Subsection({
       <div className="text-container">
         <div className="text-container-up">
           <Texto
-            size={"tittle-section-lg"}
+            size={"title-section-lg-bold"}
             color={"var(--color-titulo-lila)"}
             label={labelTexto1}
           />
           <Texto
-            size={"tittle-section-lg"}
+            size={"title-section-lg-bold"}
             color={"var(--color-text)"}
             label={labelTexto2}
           />
         </div>
         <div className="text-container-down">
           <Texto
-            size={"text-section-ml"}
+            size={"title-section-ml"}
             color={"var(--color-subtitulo-lila)"}
             label={labelTextoDown}
           />

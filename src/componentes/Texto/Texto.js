@@ -4,14 +4,21 @@ import "./Texto.scss";
 /**
  *
  * @param {string} size - Tamaño para renderizar el tipo de texto
- * @param {string} color - Variable color, identica a las variables en styles/variables.scss
- * @param {string} label - Texto primario
- * @param {string} colorizedLabel - Texto, dentro del texto primario, coloreado
+ * @param {string} color - Variable color, identica a las variables en Componentes/Texto/Texto.scss
+ * @param {string} label - Texto primario, utilizar backticks para escribir en él y aprovechar el white-space: pre-line;
+ * @param {string} colorizedLabelStart - Texto coloreado al inicio de texto, en size title-section-lg-bold y title-section-ml
+ * @param {string} colorizedLabelEnd - Texto coloreado al final de texto, en size title-section-lg-bold y title-section-ml
  *
  * @returns Elemento HTML para el texto
  */
 
-const Texto = ({ size, color, label, colorizedLabel, label2 }) => {
+const Texto = ({
+  size,
+  color,
+  label,
+  colorizedLabelStart,
+  colorizedLabelEnd,
+}) => {
   return (
     <>
       {size === "title-lg-bold" && (
@@ -32,11 +39,6 @@ const Texto = ({ size, color, label, colorizedLabel, label2 }) => {
       {size === "title-md" && (
         <h2 className="title-md" style={{ color: `${color}` }}>
           {label}
-          <span style={{ color: "var(--color-titulo-lila)" }}>
-            {colorizedLabel}
-          </span>
-          <br />
-          {label2}
         </h2>
       )}
       {size === "title-ml-bold" && (
@@ -84,16 +86,6 @@ const Texto = ({ size, color, label, colorizedLabel, label2 }) => {
           {label}
         </a>
       )}
-      {size === "title-text-colorized-bold" && (
-        <h2 className="title-text-colorized-bold" style={{ color: `${color}` }}>
-          {label}
-          <span style={{ color: "var(--color-titulo-lila)" }}>
-            {colorizedLabel}
-          </span>
-          <br />
-          {label2}
-        </h2>
-      )}
       {size === "title-card-bold" && (
         <h2 className="title-card-bold" style={{ color: `${color}` }}>
           {label}
@@ -119,14 +111,26 @@ const Texto = ({ size, color, label, colorizedLabel, label2 }) => {
           {label}
         </span>
       )}
-      {size === "tittle-section-lg" && (
-        <span className="tittle-section-lg" style={{ color: `${color}` }}>
+      {size === "title-section-lg-bold" && (
+        <span className="title-section-lg-bold" style={{ color: `${color}` }}>
+          <span style={{ color: "var(--color-titulo-lila)" }}>
+            {colorizedLabelStart && `${colorizedLabelStart} `}
+          </span>
           {label}
+          <span style={{ color: "var(--color-titulo-lila)" }}>
+            {colorizedLabelEnd && ` ${colorizedLabelEnd}`}
+          </span>
         </span>
       )}
-      {size === "text-section-ml" && (
-        <span className="text-section-ml" style={{ color: `${color}` }}>
+      {size === "title-section-ml" && (
+        <span className="title-section-ml" style={{ color: `${color}` }}>
+          <span style={{ color: "var(--color-titulo-lila)" }}>
+            {colorizedLabelStart && `${colorizedLabelStart} `}
+          </span>
           {label}
+          <span style={{ color: "var(--color-titulo-lila)" }}>
+            {colorizedLabelEnd && ` ${colorizedLabelEnd}`}
+          </span>
         </span>
       )}
     </>

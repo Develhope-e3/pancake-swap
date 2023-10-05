@@ -67,23 +67,19 @@ const Home = () => {
         <Box isFlexColCenter>
           <VioletBunny color={"var(--color-tertiary)"} />
           <Texto
-            size={"title-text-colorized-bold"}
+            size={"title-section-lg-bold"}
             color={"var(--color-text)"}
-            label={"Used by millions."}
-            label2={"Trusted with billions."}
+            label={`Used by millions. 
+            Trusted with billions.`}
           />
           <Texto
-            size={"title-md"}
+            size={"title-section-ml"}
             color={"var(--color-subtitulo-lila)"}
-            label={
-              "PancakeSwap has the most users of any decentralized platform, ever."
-            }
-            label2={
-              "And those users are now entrusting the platform with over $13 billion in funds."
-            }
+            label={`PancakeSwap has the most users of any decentralized platform, ever.
+              And those users are now entrusting the platform with over $13 billion in funds.`}
           />
           <Texto
-            size={"title-md-bold"}
+            size={"title-ml-bold"}
             color={"var(--color-subtitulo-lila)"}
             label={"Will you join them?"}
           />
@@ -112,15 +108,16 @@ const Home = () => {
       <MainSection isCardSection>
         <Box isFlexColCenter isItemCard>
           <Texto
-            size={"title-section-lg"}
-            color={"var(--color-text)"}
+            size={"title-section-lg-bold"}
+            colorizedLabelStart={"Win"}
             label={"millions in prizes"}
+            color={"var(--color-text)"}
           />
           <Texto
-            size={"title-md"}
+            size={"title-section-ml"}
             color={"var(--color-subtitulo-lila)"}
-            label={"Provably fair, on-chain games."}
-            label2={"Win big with PancakeSwap."}
+            label={`Provably fair, on-chain games.
+            Win big with PancakeSwap.`}
           />
           <Box isFlexRowCenter>
             {dataCardCTA &&

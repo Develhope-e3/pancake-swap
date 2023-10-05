@@ -66,7 +66,6 @@ const Dev = () => {
         <Texto size={"body"} label={"body"} color={"var(--color-secondary)"} />
       </div>
       <br />
-      <div className="flex-row-container">
         {dataPrimaryCard &&
           dataPrimaryCard.map((card, index) => {
             return (
@@ -97,7 +96,6 @@ const Dev = () => {
               />
             );
           })}
-      </div>
       <br />
       <Button
         isNotHover
