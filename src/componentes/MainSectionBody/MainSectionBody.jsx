@@ -22,13 +22,13 @@ const MainSectionBody = () => {
         />
         <div className="buttons-section">
           <Button
-            widthValue={"166px"}
-            heightValue={"46px"}
+            isL
             texto={"Connect Wallet"}
             colorTexto={"var(--color-button-primary)"}
             onClick={() => console.log("click")}
           />
           <Button
+            isM
             isSecondary
             texto={"Trade Now"}
             colorTexto={"var(--color-primary)"}

@@ -2,7 +2,6 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   flex: 1;
 
   border-radius: var(--radius-default);
@@ -12,6 +11,7 @@
   cursor: pointer;
 
   letter-spacing: 0.03em;
+  text-transform: capitalize;
 
   white-space: nowrap;
 
@@ -27,8 +27,7 @@
 
   opacity: 1;
 
-  width: 132px;
-  height: var(--space-xxl);
+  min-height: 48px;
 
   &:hover {
     opacity: 0.75;
@@ -46,6 +45,24 @@
     opacity: 1;
   }
 }
+
+.button-xs {
+  max-width: 150px;
+  min-height: 32px;
+}
+
+.button-s {
+  max-width: 125px;
+}
+
+.button-m {
+  max-width: 135px;
+}
+
+.button-l {
+  max-width: 166px;
+}
+
 
 .button-secondary {
   background-color: transparent;
@@ -65,9 +82,10 @@
 .button-warning {
   background-color: transparent;
 
-  opacity: 1;
-
   box-shadow: none;
+
+  width: 48px;
+  height: 48px;
 
   outline: 0px;
   padding: var(--space-4xs);

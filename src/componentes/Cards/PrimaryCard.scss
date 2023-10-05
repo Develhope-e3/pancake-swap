@@ -3,8 +3,9 @@
   flex-flow: column wrap;
   justify-content: space-between;
   text-align: start;
+  flex: 1;
 
-  min-width: 310px;
+  max-width: 310px;
   height: 290px;
 
   box-sizing: border-box;
@@ -26,6 +27,7 @@
 .primary-card-icon {
   display: flex;
   justify-content: flex-end;
+  flex: 1;
 
   margin-bottom: 60px;
 

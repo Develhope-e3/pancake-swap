@@ -59,7 +59,6 @@ const Navbar = () => {
           className={"idiomas"}
           isIdiomas={true}
         />
-
         <Button
           isSetting
           className="button-setting"
@@ -81,10 +80,8 @@ const Navbar = () => {
           icono2={<IoIosArrowDown />}
           isNetwork={true}
         />
-
         <Button
-          widthValue={"149px"}
-          heightValue={"32px"}
+          isXs
           texto={"Connect Wallet"}
           colorTexto={"var(--color-button-primary)"}
           onClick={() => console.log("click en el boton primario")}

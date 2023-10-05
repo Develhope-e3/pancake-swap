@@ -15,10 +15,18 @@ import { SectionSix } from "../componentes/SectionSix/SectionSix";
 import Footer from "../componentes/Footer/Footer";
 import { WarningHeader } from "../componentes/WarningHeader/WarningHeader";
 import Navbar from "../componentes/Navbar/Navbar";
+import { ButtonScroll } from "../componentes/Button/ButtonScroll";
+import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny";
+import { VioletBunny } from "../assets/iconos/VioletBunny";
+import { GridComposer1 } from "../componentes/GridComposer/GridComposer.js";
+import { dataCardCTA } from "../data/dataCardCTA";
+import { CardCTA } from "../componentes/Cards/CardCTA";
 
 const Home = () => {
   return (
     <BasePage>
+      <SlideBunny />
+      <ButtonScroll />
       <WarningHeader />
       <Navbar />
       <MainSection>
@@ -38,11 +46,13 @@ const Home = () => {
             />
             <Box isFlexRowStart>
               <Button
+                isL
                 texto={"Connect Wallet"}
                 colorTexto={"var(--color-button-primary)"}
                 onClick={() => console.log("click")}
               />
               <Button
+                isM
                 isSecondary
                 texto={"Trade Now"}
                 colorTexto={"var(--color-primary)"}
@@ -54,19 +64,43 @@ const Home = () => {
         </Box>
       </MainSection>
       <MainSection>
-        <Box isFlexRowStart={true}>
-          {dataPrimaryCard &&
-            dataPrimaryCard.map((card, index) => {
-              return (
-                <PrimaryCard
-                  icon={card.icon}
-                  title={card.title}
-                  subtitle={card.subtitle}
-                  body={card.body}
-                  key={index}
-                />
-              );
-            })}
+        <Box isFlexColCenter>
+          <VioletBunny color={"var(--color-tertiary)"} />
+          <Texto
+            size={"title-text-colorized-bold"}
+            color={"var(--color-text)"}
+            label={"Used by millions."}
+            label2={"Trusted with billions."}
+          />
+          <Texto
+            size={"title-md"}
+            color={"var(--color-subtitulo-lila)"}
+            label={
+              "PancakeSwap has the most users of any decentralized platform, ever."
+            }
+            label2={
+              "And those users are now entrusting the platform with over $13 billion in funds."
+            }
+          />
+          <Texto
+            size={"title-md-bold"}
+            color={"var(--color-subtitulo-lila)"}
+            label={"Will you join them?"}
+          />
+          <Box isFlexRowCenter>
+            {dataPrimaryCard &&
+              dataPrimaryCard.map((card, index) => {
+                return (
+                  <PrimaryCard
+                    icon={card.icon}
+                    title={card.title}
+                    subtitle={card.subtitle}
+                    body={card.body}
+                    key={index}
+                  />
+                );
+              })}
+          </Box>
         </Box>
       </MainSection>
       <MainSection>
@@ -75,8 +109,49 @@ const Home = () => {
       <MainSection>
         <SectionFour />
       </MainSection>
+      <MainSection isCardSection>
+        <Box isFlexColCenter isItemCard>
+          <Texto
+            size={"title-section-lg"}
+            color={"var(--color-text)"}
+            label={"millions in prizes"}
+          />
+          <Texto
+            size={"title-md"}
+            color={"var(--color-subtitulo-lila)"}
+            label={"Provably fair, on-chain games."}
+            label2={"Win big with PancakeSwap."}
+          />
+          <Box isFlexRowCenter>
+            {dataCardCTA &&
+              dataCardCTA.map((card, index) => {
+                return (
+                  <CardCTA
+                    style={card.style}
+                    icon={card.icon}
+                    prelude={card.prelude}
+                    title={card.title}
+                    subtitle={card.subtitle}
+                    body={card.body}
+                    button={card.button}
+                    onClick={card.onClick}
+                    key={index}
+                  />
+                );
+              })}
+          </Box>
+        </Box>
+      </MainSection>
       <MainSection>
         <SectionSix />
+        <Box isFlexRowCenter>
+          <GridComposer1
+            className={"theme1"}
+            col={3}
+            remRowSpacing={2}
+            remColSpacing={9}
+          />
+        </Box>
       </MainSection>
       <Footer />
     </BasePage>

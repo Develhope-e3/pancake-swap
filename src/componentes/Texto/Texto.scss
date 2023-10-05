@@ -74,6 +74,15 @@
   font-weight: 600;
 }
 
+.title-text-colorized-bold {
+  display: inline-block;
+  text-align: center;
+  
+  font-size: var(--font-size-32px);
+  font-weight: 600;
+  line-height: 110%;
+}
+
 .title-card-bold {
   font-size: var(--font-size-lg);
   font-weight: 600;

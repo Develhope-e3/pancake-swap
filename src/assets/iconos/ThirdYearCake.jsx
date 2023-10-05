@@ -14,7 +14,7 @@ const ThirdYearCake = ({ color }) => {
       width="48"
       height="58"
       viewBox="0 0 48 58"
-      fill="none">
+      fill={color}>
       <g filter="url(#filter0_i_622_7305)">
         <rect y="9.66772" width="48" height="48" rx="16" fill="#1FC7D4" />
       </g>

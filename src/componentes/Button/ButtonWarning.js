@@ -23,9 +23,7 @@ export const ButtonWarning = ({ className, svg }) => {
     <>
       {isShow && (
         <Button
-          isWarning={true}
-          widthValue={"49px"}
-          heightValue={"49px"}
+          isWarning
           onClick={handleClickHiddenWarning}
           svg={svg}
         />

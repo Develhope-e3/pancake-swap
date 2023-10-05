@@ -5,12 +5,13 @@ import "./Texto.scss";
  *
  * @param {string} size - Tamaño para renderizar el tipo de texto
  * @param {string} color - Variable color, identica a las variables en styles/variables.scss
- * @param {string} label - Texto
+ * @param {string} label - Texto primario
+ * @param {string} colorizedLabel - Texto, dentro del texto primario, coloreado
  *
  * @returns Elemento HTML para el texto
  */
 
-const Texto = ({ size, color, label }) => {
+const Texto = ({ size, color, label, colorizedLabel, label2 }) => {
   return (
     <>
       {size === "title-lg-bold" && (
@@ -31,6 +32,11 @@ const Texto = ({ size, color, label }) => {
       {size === "title-md" && (
         <h2 className="title-md" style={{ color: `${color}` }}>
           {label}
+          <span style={{ color: "var(--color-titulo-lila)" }}>
+            {colorizedLabel}
+          </span>
+          <br />
+          {label2}
         </h2>
       )}
       {size === "title-ml-bold" && (
@@ -78,6 +84,16 @@ const Texto = ({ size, color, label }) => {
           {label}
         </a>
       )}
+      {size === "title-text-colorized-bold" && (
+        <h2 className="title-text-colorized-bold" style={{ color: `${color}` }}>
+          {label}
+          <span style={{ color: "var(--color-titulo-lila)" }}>
+            {colorizedLabel}
+          </span>
+          <br />
+          {label2}
+        </h2>
+      )}
       {size === "title-card-bold" && (
         <h2 className="title-card-bold" style={{ color: `${color}` }}>
           {label}
@@ -113,7 +129,6 @@ const Texto = ({ size, color, label }) => {
           {label}
         </span>
       )}
-
     </>
   );
 };

@@ -21,14 +21,13 @@
   height: 100%;
   margin: auto;
   max-width: 1024px;
-  // padding: 0px 16px;
 }
 
 .flex-col {
   display: flex;
   flex-direction: column;
-  gap: var(--space-lg);
 
+  gap: var(--space-lg);
 }
 
 .flex-col-center {
@@ -37,8 +36,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: var(--space-lg);
 
+  gap: var(--space-lg);
 }
 
 .flex-col-start {
@@ -46,8 +45,8 @@
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: var(--space-lg);
 
+  gap: var(--space-lg);
 }
 
 .flex-col-space-between {
@@ -56,8 +55,8 @@
   justify-content: space-between;
   align-items: flex-start;
   text-align: center;
-  gap: var(--space-lg);
 
+  gap: var(--space-lg);
 }
 
 .flex-row-space-between {
@@ -66,14 +65,14 @@
   justify-content: space-between;
   align-items: flex-start;
   text-align: center;
-  gap: var(--space-lg);
 
+  gap: var(--space-lg);
 }
 
 .flex-row {
   display: flex;
-  gap: var(--space-md);
 
+  gap: var(--space-md);
 }
 
 .flex-row-center {
@@ -82,6 +81,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
   gap: var(--space-md);
 }
 
@@ -91,15 +91,17 @@
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  gap: var(--space-md);
 
+  gap: var(--space-md);
 }
 
 .flex-sidebuton {
   display: inline;
 
   position: fixed;
+
   right: 18px;
+
   bottom: calc(82px + env(safe-area-inset-bottom));
 }
 

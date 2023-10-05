@@ -42,8 +42,7 @@ export function Subsection({
       </div>
       <div className="button-containers">
         <Button
-          widthValue={"166px"}
-          heightValue={"46px"}
+          isS
           texto={labelButton}
           colorTexto={"var(--color-button-primary)"}
           onClick={() => console.log("click en el boton primario")}

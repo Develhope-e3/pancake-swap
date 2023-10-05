@@ -101,17 +101,17 @@ const Dev = () => {
       <br />
       <Button
         isNotHover
-        widthValue={"145px"}
-        heightValue={"33px"}
         texto={"Normal"}
         onClick={() => console.log("click en el boton normal")}
       />
       <Button
+        isL
         texto={"Primary"}
         colorTexto={"var(--color-button-primary)"}
         onClick={() => console.log("click en el boton primario")}
       />
       <Button
+        isM
         isSecondary
         texto={"Secondary"}
         colorTexto={"var(--color-primary)"}
