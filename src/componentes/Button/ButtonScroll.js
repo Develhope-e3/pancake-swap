@@ -5,7 +5,7 @@ import ArrowUp from "../../assets/iconos/ArrowUp";
 
 export function ButtonScroll() {
   const bunny = document.getElementById("bunny");
-  bunny.style.transform = "translateY(58px)";
+  bunny.style.transform = "translateY(60px)";
   bunny.style.transition = "all 0.07s linear 0.07s";
 
   const [visible, setVisible] = useState(false);
@@ -18,12 +18,10 @@ export function ButtonScroll() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 1000) {
+      if (window.scrollY > 500) {
         setVisible(true);
-        bunny.style.transform = "translateY(-10px)";
-      }
-
-      if (window.scrollY < 3) {
+        bunny.style.transform = "translateY(-7px)";
+      } else {
         setVisible(false);
       }
     };
