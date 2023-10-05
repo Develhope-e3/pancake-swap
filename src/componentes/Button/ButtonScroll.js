@@ -4,9 +4,6 @@ import { useState, useEffect, useCallback } from "react";
 import ArrowUp from "../../assets/iconos/ArrowUp";
 
 export function ButtonScroll() {
-  const bunny = document.getElementById("bunny");
-  bunny.style.transform = "translateY(60px)";
-
   const [visible, setVisible] = useState(false);
   const scroll = useCallback(() => {
     window.scrollTo({
@@ -16,6 +13,11 @@ export function ButtonScroll() {
   }, []);
 
   useEffect(() => {
+    if (document) {
+      var bunny = document.getElementById("bunny");
+      bunny.style.transform = "translateY(60px)";
+    }
+
     const handleScroll = () => {
       if (window.scrollY > 500) {
         setVisible(true);
@@ -29,7 +31,7 @@ export function ButtonScroll() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [bunny.style]);
+  });
 
   return (
     <div style={{ display: visible ? "inline" : "none", position: "relative" }}>
