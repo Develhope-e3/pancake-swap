@@ -11,10 +11,12 @@ import "./EjemploComponente.scss";
  */
 
 const EjemploComponente = ({ texto, esPrimario, disabled, onClick }) => {
+
   /**
    * Logica de la aplicacion
    */
   const className = esPrimario ? "primario" : "secundario";
+
 
   /**
    * HTML a retornar

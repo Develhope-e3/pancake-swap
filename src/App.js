@@ -1,23 +1,46 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./index.css";
+import logo from "./logo.svg";
+import "./App.css";
 import "./styles/index.scss";
-import Home from "./pages/Home.js";
-import Dev from "./pages/Dev.js";
-import Navbar from "./componentes/Navbar/Navbar";
-import Footer from "./componentes/Footer/Footer";
-import { WarningHeader } from "./componentes/WarningHeader/WarningHeader";
-
+import EjemploComponente from "./componentes/EjemploComponente/EjemploComponente";
 function App() {
   return (
-    <BrowserRouter>
-      <WarningHeader />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/dev" element={<Dev />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code>
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+        <div className="flex-col-center">
+          {/**
+           * Manera de invocar a mi componente reutilizable
+           */}
+          <EjemploComponente
+            esPrimario={true}
+            texto={"Boton primario"}
+            onClick={() => console.log("click en el boton primario")}
+          />
+          <EjemploComponente
+            esPrimario={false}
+            texto={"Boton secundario"}
+            onClick={() => console.log("click en el boton secundario")}
+          />
+          <EjemploComponente
+            esPrimario={false}
+            disabled={true}
+            onClick={() => console.log("click en el boton disabled")}
+            texto={"Boton secundario"}
+          />
+        </div>
+      </header>
+    </div>
   );
 }
 

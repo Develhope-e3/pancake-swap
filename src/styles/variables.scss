@@ -1,78 +1,19 @@
 :root {
-  --font-normal: "Kanit", sans-serif;
-  --font-mono: SFMono, ui-monospace, monospace;
 
-  --space-rem: 1rem;
-  --space-rem-m: 1.5rem;
-  --space-5xs: 1px;
-  --space-4xs: 2px;
-  --space-3xs: 4px;
-  --space-xxs: 6px;
-  --space-xs: 8px;
-  --space-s: 10px;
-  --space-sm: 12px;
-  --space-ms: 14px;
-  --space-md: 16px;
-  --space-ml: 20px;
-  --space-lg: 24px;
-  --space-xl: 32px;
-  --space-xll: 40px;
-  --space-xxl: 48px;
-  --space-3xl: 56px;
-  --space-4xl: 64px;
+  --spacing-xl: 150px;
+  --spacing-lg: 100px;
+  --spacing-md: 50px;
+  --spacing-sm: 20px;
+  --spacing-xs: 5px;
 
-  --text-color-black: #202020;
-  --text-color: #ffffff;
+  --color-primario: rgb(59, 120, 85);
+  --color-primario-disabled: rgb(59, 120, 85, 0.5);
+  --color-secundario: rgb(59, 120, 85);
+  --color-secundario-disabled: rgb(59, 120, 85, 0.5);
+
+  --text-color: white;
 
   --border-radius-sm: 5px;
   --border-radius-m: 10px;
   --border-radius-ml: 20px;
-  --border-radius-xxl: 72px;
-  --borderWidths-0: 0px;
-  --borderWidths-1: 1px;
-  --borderWidths-2: 2px;
-
-  --radius-0: 0px;
-  --radius-sm: 4px;
-  --radius-ms: 8px;
-  --radius-md: 12px;
-  --radius-default: 16px;
-  --radius-ml: 20px;
-  --radius-card: 24px;
-  --radius-lg: 32px;
-  --radius-circle: 50%;
-
-  --font-size-xs: 10px;
-  --font-size-sm: 12px;
-  --font-size-ms: 14px;
-  --font-size-md: 16px;
-  --font-size-ml: 20px;
-  --font-size-24px: 24px;
-  --font-size-lg: 40px;
-  --font-size-xxl: 64px;
-
-  --color-titulo-lila: #9a6aff;
-  --color-subtitulo-lila: #b8add2;
-  --color-text: #f4eeff;
-  --color-primary: #1fc7d4;
-  --color-secondary: #ffb237;
-  --color-tertiary: #3c1786;
-  --color-quaternary: #ffa920;
-  --color-failure: #ed4b9e;
-  --color-success: #31d0aa;
-  --color-card-text: #280d5f;
-  --color-border-item: #383241;
-  --color-text-swiper: #ffe437;
-  --color-button-primary: #191326;
-  --color-bg-button-hover: #228f99;
-  --color-gradient-violet: linear-gradient(#8040ff 0%, #5121b1 100%);
-  --color-gradient-yellow: linear-gradient(#fcac2d 0%, #fdcf5b 100%);
-  --background-dropdown-hover: #353547;
-  --color-warning-text: #bdc2c4;
-  --color-warning-gradient-violet: linear-gradient(#8051d6 0%, #492286 100%);
-  --color-warning-background: #27262c66;
-
-  --background-color-secondary: #27262c;
-  --background-color-tertiary: #000000cc;
-  --background-color-card-title: #08060b;
 }
