@@ -1,8 +1,126 @@
-.flex-col-center {
+* {
+  font-family: var(--font-normal)
+}
+
+.section {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  align-content: center;
 
-  gap: var(--spacing-xs);
+  min-width: 100%;
+  height: 100%;
+
+  padding: 48px 0px;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  max-width: 1024px;
+  // padding: 0px 16px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+
+}
+
+.flex-col-center {
+  display: inline-flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-lg);
+
+}
+
+.flex-col-start {
+  display: inline-flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: var(--space-lg);
+
+}
+
+.flex-col-space-between {
+  display: inline-flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  gap: var(--space-lg);
+
+}
+
+.flex-row-space-between {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  gap: var(--space-lg);
+
+}
+
+.flex-row {
+  display: flex;
+  gap: var(--space-md);
+
+}
+
+.flex-row-center {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-md);
+}
+
+.flex-row-start {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-md);
+
+}
+
+.flex-sidebuton {
+  display: inline;
+
+  position: fixed;
+  right: 18px;
+  bottom: calc(82px + env(safe-area-inset-bottom));
+}
+
+
+.item-card {
+  width: 100%;
+  height: 100%;
+
+  background: var(--background-color-tertiary);
+
+  z-index: 2;
+
+  padding: var(--space-xll);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid var(--color-border-item);
+
+  border-radius: var(--border-radius-xxl);
+  -webkit-border-radius: var(--border-radius-xxl);
+  -moz-border-radius: var(--border-radius-xxl);
+  -ms-border-radius: var(--border-radius-xxl);
+  -o-border-radius: var(--border-radius-xxl);
 }

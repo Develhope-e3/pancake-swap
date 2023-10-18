@@ -1,0 +1,27 @@
+.dropdown {
+  padding: var(--space-md) var(--space-sm);
+
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  color: var(--color-subtitulo-lila);
+  background-color: var(--background-color-secondary);
+  border-radius: var(--radius-ms);
+
+  &:hover {
+    background-color: var(--background-dropdown-hover);
+  }
+}
+.three-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+.birthday {
+  font-weight: 600;
+  color: var(--color-titulo-lila);
+}
+

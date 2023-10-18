@@ -1,0 +1,90 @@
+.cta-card-yellow {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  text-align: start;
+
+  width: 300px;
+  height: 380px;
+
+  box-sizing: border-box;
+
+  padding: 24px;
+
+  overflow: inherit;
+
+  color: var(--color-text);
+  background: var(--color-gradient-yellow);
+
+  border-radius: var(--radius-card);
+  border: var(--borderWidths-1) solid var(--color-quaternary);
+  border-bottom: var(--space-3xs) solid var(--color-quaternary);
+  -webkit-border-radius: var(--radius-card);
+  -moz-border-radius: var(--radius-card);
+  -ms-border-radius: var(--radius-card);
+  -o-border-radius: var(--radius-card);
+
+  font: inherit;
+
+  transform: rotate(-2.36deg);
+}
+
+.cta-card-violet {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  text-align: start;
+
+  width: 300px;
+  height: 380px;
+
+  box-sizing: border-box;
+
+  padding: 24px;
+
+  overflow: inherit;
+
+  color: var(--color-text);
+  background: var(--color-gradient-violet);
+
+  border-radius: var(--radius-card);
+  border: var(--borderWidths-1) solid var(--color-tertiary);
+  border-bottom: var(--space-3xs) solid var(--color-tertiary);
+  -webkit-border-radius: var(--radius-card);
+  -moz-border-radius: var(--radius-card);
+  -ms-border-radius: var(--radius-card);
+  -o-border-radius: var(--radius-card);
+
+  font: inherit;
+
+  transform: rotate(1.43deg);
+}
+
+.cta-card-icon {
+  display: flex;
+  justify-content: flex-end;
+
+  height: auto;
+
+  >svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.cta-card-button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+
+  height: 60px;
+
+  >button {
+    display: flex;
+    flex: 1;
+    padding: 0px 24px;
+
+    gap: 5px;
+  }
+}
