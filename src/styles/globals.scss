@@ -1,5 +1,5 @@
 * {
-  font-family: var(--font-normal)
+  font-family: var(--font-normal);
 }
 
 .section {
@@ -28,7 +28,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-lg);
-
 }
 
 .flex-col-center {
@@ -38,7 +37,6 @@
   align-items: center;
   text-align: center;
   gap: var(--space-lg);
-
 }
 
 .flex-col-start {
@@ -47,7 +45,6 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: var(--space-lg);
-
 }
 
 .flex-col-space-between {
@@ -57,7 +54,6 @@
   align-items: flex-start;
   text-align: center;
   gap: var(--space-lg);
-
 }
 
 .flex-row-space-between {
@@ -67,13 +63,11 @@
   align-items: flex-start;
   text-align: center;
   gap: var(--space-lg);
-
 }
 
 .flex-row {
   display: flex;
   gap: var(--space-md);
-
 }
 
 .flex-row-center {
@@ -92,7 +86,14 @@
   align-items: center;
   text-align: center;
   gap: var(--space-md);
+}
 
+.flex-row-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .flex-sidebuton {
