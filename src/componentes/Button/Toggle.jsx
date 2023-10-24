@@ -1,13 +1,11 @@
+import { useTheme } from "../../context/ThemeContext";
 import "./Button.scss";
-import { useState } from "react";
 export default function Toggle() {
-  const [isLight, setIsLight] = useState(false);
-
-  console.log(isLight);
+  const { theme, toggleTheme } = useTheme();
   return (
-    <div className="toggle" onClick={() => setIsLight(!isLight)}>
+    <div className="toggle" onClick={toggleTheme}>
       <input type="checkbox" />
-      {isLight && (
+      {theme === "light" && (
         <div>
           <svg
             viewBox="0 0 24 24"
@@ -32,7 +30,7 @@ export default function Toggle() {
           </svg>
         </div>
       )}
-      {!isLight && (
+      {theme === "dark" && (
         <div>
           <svg
             viewBox="0 0 24 24"
