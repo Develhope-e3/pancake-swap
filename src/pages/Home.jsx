@@ -10,7 +10,6 @@ import ImageMainSection from "../assets/iconos/MainSection";
 import "./Home.scss";
 import { SectionThree } from "../componentes/SectionThree/SectionThree";
 import { SectionFour } from "../componentes/SectionFour/SectionFour";
-// import { SectionFive } from "../componentes/SectionFive/SectionFive";
 import { SectionSix } from "../componentes/SectionSix/SectionSix";
 import { GridComposer1 } from "../componentes/GridComposer/GridComposer";
 import { CardCTA } from "../componentes/Cards/CardCTA";
@@ -18,9 +17,11 @@ import { dataCardCTA } from "../data/dataCardCTA";
 import { ButtonScroll } from "../componentes/Button/ButtonScroll";
 import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny";
 
+import { useTheme } from "../context/ThemeContext";
 const Home = () => {
+  const { theme } = useTheme();
   return (
-    <BasePage>
+    <BasePage className={theme === "dark" ? "dark-mode" : "light-mode"}>
       <MainSection>
         <Box isFlexRow={true} maxWidth={1200}>
           <Box isFlexColStart>
