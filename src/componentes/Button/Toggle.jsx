@@ -2,6 +2,8 @@ import { useTheme } from "../../context/ThemeContext";
 import "./Button.scss";
 export default function Toggle() {
   const { theme, toggleTheme } = useTheme();
+
+  console.log(theme);
   return (
     <div className="toggle" onClick={toggleTheme}>
       <input type="checkbox" />

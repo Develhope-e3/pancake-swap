@@ -11,11 +11,12 @@ import ImageMainSection from "../assets/iconos/MainSection";
 import "./Home.scss";
 import { SectionThree } from "../componentes/SectionThree/SectionThree";
 import { SectionFour } from "../componentes/SectionFour/SectionFour";
-// import { SectionFive } from "../componentes/SectionFive/SectionFive";
 import { SectionSix } from "../componentes/SectionSix/SectionSix";
+import { useTheme } from "../context/ThemeContext";
 const Home = () => {
+  const { theme } = useTheme();
   return (
-    <BasePage>
+    <BasePage className={theme === "dark" ? "dark-mode" : "light-mode"}>
       <MainSection>
         <Box isFlexRow={true} maxWidth={1200}>
           <Box isFlexColStart>
