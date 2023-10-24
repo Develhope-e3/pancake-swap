@@ -21,8 +21,8 @@
   --space-3xl: 56px;
   --space-4xl: 64px;
 
-  --text-color-black: #202020;
-  --text-color: #ffffff;
+
+ 
 
   --border-radius-sm: 5px;
   --border-radius-m: 10px;
@@ -55,15 +55,20 @@
 
 
 .light-mode {
+  --text-color: #ffffff;
+  --color-titulo-lila: #9a6aff;
+  --color-subtitulo-lila: #9a6aff;
+  --background-color-secondary: #faf9fa;
+  --background-color-tertiary: #e9eaeb;
   --colors-white: #fff;
-  --colors-failure: #ed4b9e;
+  --color-failure: #ed4b9e;
   --colors-failure33: #ed4b9e33;
-  --colors-primary: #1fc7d4;
+  --color-primary: #1fc7d4;
   --colors-primary0f: #1fc7d40f;
   --colors-primary3D: #1fc7d43d;
   --colors-primaryBright: #53dee9;
   --colors-primaryDark: #0098a1;
-  --colors-success: #31d0aa;
+  --color-success: #31d0aa;
   --colors-success19: #31d0aa19;
   --colors-warning: #ffb237;
   --colors-warning2D: #ed4b9e2d;
@@ -73,7 +78,7 @@
   --colors-gold: #ffc700;
   --colors-silver: #b2b2b2;
   --colors-bronze: #e7974d;
-  --colors-secondary: #7645d9;
+  --color-secondary: #ffb237;;
   --colors-secondary80: #7645d980;
   --colors-background: #faf9fa;
   --colors-backgroundDisabled: #e9eaeb;
@@ -87,8 +92,8 @@
   --colors-input: #eeeaf4;
   --colors-inputSecondary: #d7caec;
   --colors-tertiary: #eff4f5;
-  --colors-text: #280d5f;
-  --colors-text99: #280d5f99;
+  --color-text: #280d5f;
+  --color-text-footer: #f4eeff;
   --colors-textDisabled: #bdc2c4;
   --colors-textSubtle: #7a6eaa;
   --colors-disabled: #e9eaeb;
@@ -102,9 +107,13 @@
   --colors-gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
   --colors-gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --colors-gradientBold: linear-gradient(#53dee9, #7645d9);
+  --color-warning-gradient-violet: linear-gradient(#8051d6 0%, #492286 100%);
+  --color-warning-background: #27262c66;
+  --color-warning-text: #bdc2c4;
 }
 
 .dark-mode {
+  --text-color: #202020;
   --color-titulo-lila: #9a6aff;
   --color-subtitulo-lila: #b8add2;
   --color-text: #f4eeff;
@@ -117,6 +126,7 @@
   --color-card-text: #280d5f;
   --color-border-item: #383241;
   --color-text-swiper: #ffe437;
+  --color-text-footer: #f4eeff;
   --color-button-primary: #191326;
   --color-bg-button-hover: #228f99;
   --color-gradient-violet: linear-gradient(#8040ff 0%, #5121b1 100%);

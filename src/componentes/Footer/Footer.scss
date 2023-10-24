@@ -37,6 +37,9 @@ footer {
       align-items: center;
       width: 230px;
       margin-left: 480px;
+      svg {
+        fill: var(--text-color);
+      }
     }
 
     .conejo-azul {

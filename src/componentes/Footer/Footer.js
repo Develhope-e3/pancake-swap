@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import "./Footer.scss";
 import Texto from "../Texto/Texto";
 import Link from "../Link/Link";
