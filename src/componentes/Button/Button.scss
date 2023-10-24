@@ -76,6 +76,7 @@
     opacity: 0.65;
   }
 }
+
 .button-setting {
   padding: var(--space-md) var(--space-sm);
   color: var(--color-subtitulo-lila);
@@ -83,22 +84,27 @@
   border: none;
   align-content: center;
   box-shadow: none;
+
   .setting {
     display: flex;
+
     svg {
       width: 22px;
       height: 22px;
+
       &:hover {
         color: var(--background-dropdown-hover);
       }
     }
   }
 }
+
 .button-scroll {
   position: fixed;
   right: 18px;
   bottom: calc(82px + env(safe-area-inset-bottom));
 }
+
 .toggle {
   align-items: center;
   background-color: var(--colors-textDisabled);
@@ -110,6 +116,7 @@
   position: relative;
   transition: background-color 200ms ease 0s;
   width: 56px;
+
   input {
     cursor: pointer;
     opacity: 0;
@@ -117,5 +124,9 @@
     position: absolute;
     width: 100%;
     z-index: 3;
+  }
+
+  svg {
+    fill: white;
   }
 }
