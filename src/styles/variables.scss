@@ -93,7 +93,6 @@
   --colors-gold: #ffc700;
   --colors-silver: #b2b2b2;
   --colors-bronze: #e7974d;
-
   --colors-secondary80: #7645d980;
 
   --colors-backgroundDisabled: #e9eaeb;
@@ -107,8 +106,8 @@
   --colors-input: #eeeaf4;
   --colors-inputSecondary: #d7caec;
   --colors-tertiary: #eff4f5;
-  --colors-text: #280d5f;
-  --colors-text99: #280d5f99;
+  --color-text: #280d5f;
+  --color-text-footer: #f4eeff;
   --colors-textDisabled: #bdc2c4;
 
   --colors-disabled: #e9eaeb;
@@ -124,6 +123,9 @@
   --colors-gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
   --colors-gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --colors-gradientBold: linear-gradient(#53dee9, #7645d9);
+  --color-warning-gradient-violet: linear-gradient(#8051d6 0%, #492286 100%);
+  --color-warning-background: #27262c66;
+  --color-warning-text: #bdc2c4;
 }
 
 /*
@@ -169,6 +171,7 @@
   --color-card-text: #280d5f;
   --color-border-item: #383241;
   --color-text-swiper: #ffe437;
+  --color-text-footer: #f4eeff;
   --color-button-primary: #191326;
   --color-bg-button-hover: #228f99;
   --color-gradient-violet: linear-gradient(#8040ff 0%, #5121b1 100%);
