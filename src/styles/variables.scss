@@ -61,7 +61,8 @@
   --color-gradient-violet: linear-gradient(#8040ff 0%, #5121b1 100%);
   --color-gradient-yellow: linear-gradient(#fcac2d 0%, #fdcf5b 100%);
   --background-image-main: linear-gradient(139.73deg, #e5fdff, #f3efff);
-  ;
+  --color-black: black;
+
   --color-secondary: #ffb237;
   --color-bg-button-hover: #228f99;
   --color-button-primary: #ffffff;
@@ -76,7 +77,7 @@
   --color-text: #280d5f;
   --color-linea-footer: #b8add2;
   --color-titulo-footer: #9a6aff;
-  --color-dropdown-network:#ffffff;
+  --color-dropdown-network: #ffffff;
 
   --colors-failure33: #ed4b9e33;
   --colors-primary0f: #1fc7d40f;
@@ -112,27 +113,17 @@
 
   --colors-disabled: #e9eaeb;
 
-  --colors-gradientBubblegum: linear-gradient(139.73deg, #e5fdff, #f3efff);
-  --colors-gradientInverseBubblegum: linear-gradient(139.73deg,
-      #f3efff,
-      #e5fdff);
-
-
-
   --colors-gradientInverseBubblegum: linear-gradient(
     139.73deg,
     #f3efff,
     #e5fdff
   );
-
   --colors-gradientCardHeader: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
   --colors-gradientBlue: linear-gradient(180deg, #6fb6f1, #eaf2f6);
   --colors-gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
   --colors-gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
   --colors-gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --colors-gradientBold: linear-gradient(#53dee9, #7645d9);
-
-
 }
 
 /*
@@ -165,12 +156,10 @@
 } */
 
 .dark-mode {
-  --text-color: #202020;
+  --text-color: #ffffff;
   --color-titulo-lila: #9a6aff;
   --color-subtitulo-lila: #b8add2;
-  --colors-textDisabled: #bdc2c4;
   --color-text: #f4eeff;
-  --shadows-inset: inset 0px 2px 2px -1px rgba(74,74,104,.1);
   --color-primary: #1fc7d4;
   --color-secondary: #ffb237;
   --color-tertiary: #3c1786;
@@ -180,7 +169,6 @@
   --color-card-text: #280d5f;
   --color-border-item: #383241;
   --color-text-swiper: #ffe437;
-  --color-text-footer: #f4eeff;
   --color-button-primary: #191326;
   --color-bg-button-hover: #228f99;
   --color-gradient-violet: linear-gradient(#8040ff 0%, #5121b1 100%);
@@ -189,21 +177,23 @@
   --background-toggle: #666171;
   --color-warning-text: #bdc2c4;
   --color-warning-gradient-violet: linear-gradient(#8051d6 0%, #492286 100%);
-  --colors-gradientBlue: linear-gradient(180deg,#0b4576 0%,#091115 100%);
+  --colors-gradientBlue: linear-gradient(180deg, #0b4576 0%, #091115 100%);
+
   --color-warning-background: #27262c66;
   --color-button-footer-black: #191326;
-  --color-input: #372F47;
+  --color-input: #372f47;
   --color-linea-footer: #b8add2;
   --color-titulo-footer: #9a6aff;
-  --color-dropdown-network:#3c3742;
-
+  --color-dropdown-network: #3c3742;
+  --color-black: black;
 
   --background-color-secondary: #27262c;
   --background-color-tertiary: #000000cc;
   --background-color-card-title: #08060b;
-  --background-toggle: #666171
 
-  --background-image-main: radial-gradient(103.12% 50% at 50% 50%,
-      rgb(33, 25, 58) 0%,
-      rgb(25, 19, 38) 100%);
+  --background-image-main: radial-gradient(
+    103.12% 50% at 50% 50%,
+    rgb(33, 25, 58) 0%,
+    rgb(25, 19, 38) 100%
+  );
 }
