@@ -20,8 +20,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite anteprima",
+    "build": "vite build",
     "lint": "eslint . --ext js, jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

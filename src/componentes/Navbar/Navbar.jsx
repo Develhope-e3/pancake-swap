@@ -1,4 +1,3 @@
-import React from "react";
 import { BsThreeDots } from "react-icons/bs";
 import Dropdown from "../Dropdown/Dropdown";
 import Icono from "../Icono/Icono";
@@ -28,9 +27,9 @@ const Navbar = () => {
   return (
     <nav>
       <div className="navbar div1">
-      <div className="pancakeswap-icon">
-        <Icono icono={<PancakeSwapIcono />} />
-      </div>
+        <div className="pancakeswap-icon">
+          <Icono icono={<PancakeSwapIcono />} />
+        </div>
         <Dropdown
           label={"Trade"}
           dropdownItems={trade}

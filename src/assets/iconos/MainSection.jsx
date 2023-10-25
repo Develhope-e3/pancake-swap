@@ -1,4 +1,3 @@
-import React from 'react'
 import asset71 from '../imagenes/asset71.png'
 import asset67 from '../imagenes/asset 67.png'
 import asset65 from '../imagenes/asset 65.png'

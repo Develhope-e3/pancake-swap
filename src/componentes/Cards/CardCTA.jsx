@@ -1,6 +1,6 @@
 import "./CardCTA.scss";
 import "../Cards/PrimaryCard.scss";
-import Texto from "../Texto/Texto.js";
+import Texto from "../Texto/Texto";
 import Button from "../Button/Button";
 import Icono from "../Icono/Icono";
 
