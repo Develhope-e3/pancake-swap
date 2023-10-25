@@ -1,4 +1,3 @@
-import React from "react";
 import "./mainSection.scss";
 import ImageMainSection from "../../assets/iconos/MainSection";
 import Texto from "../Texto/Texto";
