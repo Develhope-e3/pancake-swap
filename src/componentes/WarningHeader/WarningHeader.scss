@@ -40,7 +40,7 @@
         margin-right: 4px;
       }
 
-      .text-container {
+      .text-container-todo {
         background: var(--color-warning-background);
 
         border-radius: var(--radius-default);
@@ -52,6 +52,7 @@
 
         display: flex;
         align-items: center;
+        justify-content: flex-start;
         flex-wrap: wrap;
       }
     }

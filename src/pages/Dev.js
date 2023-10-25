@@ -7,24 +7,14 @@ import { Button } from "../componentes/Button/Button.js";
 import Link from "../componentes/Link/Link.js";
 import Texto from "../componentes/Texto/Texto.js";
 import Puntos from "../componentes/Puntos/Puntos.js";
-import {
-  GridComposer1,
-  GridComposer2,
-} from "../componentes/GridComposer/GridComposer.js";
-import { WarningHeader } from "../componentes/WarningHeader/WarningHeader.js";
-import Footer from "../componentes/Footer/Footer.js";
+import { GridComposer1 } from "../componentes/GridComposer/GridComposer.js";
 import "../styles/globals.scss";
 import { ButtonScroll } from "../componentes/Button/ButtonScroll.js";
 import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny.js";
-import Navbar from "../componentes/Navbar/Navbar.jsx";
 
 const Dev = () => {
   return (
     <div>
-      <div className="flex-header">
-        <WarningHeader />
-        <Navbar />
-      </div>
       <div className="flex-col-center">
         <Texto
           size={"title-lg-bold"}
@@ -169,13 +159,11 @@ const Dev = () => {
         />
         <br />
         <br />
-        <GridComposer2 className={"theme2"} col={5} />
-        <br />
       </div>
-
       <SlideBunny />
       <ButtonScroll />
-      <Footer />
+      <br />
+      <br />
     </div>
   );
 };
