@@ -1,5 +1,5 @@
 import "./PrimaryCard.scss";
-import Texto from "../Texto/Texto.js";
+import Texto from "../Texto/Texto";
 
 /**
  * @param {JSX.Element} icon - Icono .svg de la card

@@ -1,4 +1,3 @@
-import React from "react";
 import "./Button.scss";
 import classNames from "classnames";
 import Texto from "../Texto/Texto";
@@ -37,7 +36,7 @@ export const Button = ({
     "button-primary": isPrimary,
     "button-secondary": isSecondary,
     "button-warning": isWarning,
-    "button-setting":isSetting,
+    "button-setting": isSetting,
   });
 
   return (

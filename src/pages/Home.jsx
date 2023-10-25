@@ -1,9 +1,8 @@
-import React from "react";
 import "../styles/variables.scss";
-import { MainSection } from "../componentes/Section/Section.js";
-import { Box } from "../componentes/Section/Section2/Box.js";
-import { PrimaryCard } from "../componentes/Cards/PrimaryCard.js";
-import { dataPrimaryCard } from "../data/dataPrimaryCard.js";
+import { MainSection } from "../componentes/Section/Section";
+import { Box } from "../componentes/Section/Section2/Box";
+import { PrimaryCard } from "../componentes/Cards/PrimaryCard";
+import { dataPrimaryCard } from "../data/dataPrimaryCard";
 import BasePage from "../componentes/Section/BasePage";
 import Texto from "../componentes/Texto/Texto";
 import Button from "../componentes/Button/Button";
