@@ -1,4 +1,3 @@
-import React from "react";
 import "../WarningHeader/WarningHeader.scss";
 import ButtonWarning from "../Button/ButtonWarning";
 import Texto from "../Texto/Texto";
