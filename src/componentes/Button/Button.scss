@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--text-color);
+  color:var(--color-button-primary);
 
   border-radius: var(--radius-default);
   border-width: var(--borderwidths-0);
@@ -152,5 +152,17 @@
     transition: left 200ms ease-in 0s;
     width: 26px;
     z-index: 1;
+  }
+}
+
+.button-footer {
+  background-color: var(--color-primary);
+  color: var(--color-button-footer-black);
+
+  padding: 0px 16px;
+
+
+  &:hover {
+    background-color: var(--color-bg-button-hover);
   }
 }

@@ -1,5 +1,8 @@
-const BasePage = ({ children }) => {
-  return <div className="base-page">{children}</div>;
+import classNames from "classnames";
+
+const BasePage = ({ children, givenClassName }) => {
+  const className = classNames(givenClassName, "base-page");
+  return <div className={className}>{children}</div>;
 };
 
 export default BasePage;

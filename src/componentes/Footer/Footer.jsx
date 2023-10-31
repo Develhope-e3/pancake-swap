@@ -203,14 +203,13 @@ const Footer = () => {
             </div>
             <div>
               <Button
-                isPrimary={true}
+                isFooter={true}
                 heightValue={"32px"}
                 widthValue={"138px"}
                 texto={"Buy CAKE"}
                 svg={
                   <svg
                     viewBox="0 0 24 24"
-                    color="backgroundAlt"
                     width="20px"
                     xmlns="http://www.w3.org/2000/svg"
                   >

@@ -11,14 +11,10 @@ import "./Home.scss";
 import { SectionThree } from "../componentes/SectionThree/SectionThree";
 import { SectionFour } from "../componentes/SectionFour/SectionFour";
 import { SectionSix } from "../componentes/SectionSix/SectionSix";
-<<<<<<< HEAD
-import { useTheme } from "../context/ThemeContext";
-=======
 import { GridComposer1 } from "../componentes/GridComposer/GridComposer";
 import { CardCTA } from "../componentes/Cards/CardCTA";
 import { dataCardCTA } from "../data/dataCardCTA";
 
->>>>>>> 316bcf1 (refactor: update)
 const Home = () => {
   const { theme } = useTheme();
   return (
