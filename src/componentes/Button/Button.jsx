@@ -25,6 +25,7 @@ export const Button = ({
   isSecondary,
   isWarning,
   isSetting,
+  isFooter,
   onClick,
   widthValue,
   heightValue,
@@ -42,6 +43,7 @@ export const Button = ({
     "button-setting": isSetting,
     "button-scroll": isScroll,
     "button-modal-content": isModalContent,
+    "button-footer": isFooter,
   });
 
   return (
