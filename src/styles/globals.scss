@@ -74,6 +74,12 @@
   display: flex;
   gap: var(--space-md);
 
+  @media (max-width: 1350px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 .flex-row-center {
