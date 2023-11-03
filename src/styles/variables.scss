@@ -63,7 +63,8 @@
   --color-quaternary: #ffa920;
   --color-gradient-violet: linear-gradient(#8040ff 0%, #5121b1 100%);
   --color-gradient-yellow: linear-gradient(#fcac2d 0%, #fdcf5b 100%);
-  --background-image-main: linear-gradient(139.73deg, #e5fdff, #f3efff);;
+  --background-image-main: linear-gradient(139.73deg, #e5fdff, #f3efff);
+  ;
   --color-secondary: #ffb237;
   --color-bg-button-hover: #228f99;
   --color-button-primary: #ffffff;
@@ -72,9 +73,11 @@
   --color-warning-gradient-violet: linear-gradient(#8051d6 0%, #492286 100%);
   --color-warning-background: #27262c66;
   --background-color-secondary: #fff;
+  --background-toggle: #666171;
+  --background-dropdown-hover: #353547;
   --color-input: #eeeaf4;
   --color-text: #280d5f;
-  --color-linea-footer:#b8add2;
+  --color-linea-footer: #b8add2;
   --color-titulo-footer: #9a6aff;
 
 
@@ -186,13 +189,15 @@
   --color-gradient-violet: linear-gradient(#8040ff 0%, #5121b1 100%);
   --color-gradient-yellow: linear-gradient(#fcac2d 0%, #fdcf5b 100%);
   --background-dropdown-hover: #353547;
+  --background-toggle: #666171;
   --color-warning-text: #bdc2c4;
   --color-warning-gradient-violet: linear-gradient(#8051d6 0%, #492286 100%);
   --color-warning-background: #27262c66;
   --color-button-footer-black: #191326;
-  --color-input:#372F47;
-  --color-linea-footer:#b8add2;
+  --color-input: #372F47;
+  --color-linea-footer: #b8add2;
   --color-titulo-footer: #9a6aff;
+
 
   --background-color-secondary: #27262c;
   --background-color-tertiary: #000000cc;
@@ -200,6 +205,6 @@
   --background-toggle: #666171
 
   --background-image-main: radial-gradient(103.12% 50% at 50% 50%,
-  rgb(33, 25, 58) 0%,
-  rgb(25, 19, 38) 100%);
+      rgb(33, 25, 58) 0%,
+      rgb(25, 19, 38) 100%);
 }
