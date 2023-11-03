@@ -37,10 +37,9 @@ const DropdownNetwork = ({
 
   return (
     <div
-    className="dropdownContainer"
+      className="dropdownContainer"
       onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+      onMouseLeave={handleMouseLeave}>
       <div className="bnb">
         <Icono icono={selectedNetwork.iconoinicio} />
         <Link label={selectedNetwork.label} className={className} href={href} />
