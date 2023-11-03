@@ -12,9 +12,9 @@ import CakeSum from "../Cake-sum/Cake-sum";
  */
 
 /**
- * 
+ *
  * TODO agregar data para hacer el componente más intuitivo y que reciba distintas cantidades de elementos y distintos styles "theme"
- * 
+ *
  */
 
 export const GridComposer1 = ({
@@ -41,7 +41,7 @@ export const GridComposer1 = ({
             />
             <Texto
               size={"title-ml"}
-              color={"var(--text-color)"}
+              color={"var(--color-text)"}
               label={<CakeSum limite={22456392} />}
             />
           </>
@@ -55,7 +55,7 @@ export const GridComposer1 = ({
             />
             <Texto
               size={"title-ml"}
-              color={"var(--text-color)"}
+              color={"var(--color-text)"}
               label={<CakeSum limite={398513365} />}
             />
           </>
@@ -69,7 +69,7 @@ export const GridComposer1 = ({
             />
             <Texto
               size={"title-ml"}
-              color={"var(--text-color)"}
+              color={"var(--color-text)"}
               label={<CakeSum limite={750000000} />}
             />
           </>
@@ -83,7 +83,7 @@ export const GridComposer1 = ({
             />
             <Texto
               size={"title-ml"}
-              color={"var(--text-color)"}
+              color={"var(--color-text)"}
               label={"$280 million"}
             />
           </>
@@ -97,7 +97,7 @@ export const GridComposer1 = ({
             />
             <Texto
               size={"title-ml"}
-              color={"var(--text-color)"}
+              color={"var(--color-text)"}
               label={<CakeSum limite={952660681} />}
             />
           </>
@@ -111,7 +111,7 @@ export const GridComposer1 = ({
             />
             <Texto
               size={"title-ml"}
-              color={"var(--text-color)"}
+              color={"var(--color-text)"}
               label={"$2,93/block"}
             />
           </>

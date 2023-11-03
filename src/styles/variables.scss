@@ -67,7 +67,11 @@
   --color-button-footer-black: #191326;
   --color-warning-text: #bdc2c4;
   --color-warning-gradient-violet: linear-gradient(#8051d6 0%, #492286 100%);
+  --color-warning-background: #27262c66;
   --background-color-secondary: #fff;
+  --color-input: #eeeaf4;
+  --color-text: #280d5f;
+
 
   --colors-failure33: #ed4b9e33;
   --colors-primary0f: #1fc7d40f;
@@ -102,7 +106,7 @@
   --colors-textDisabled: #bdc2c4;
 
   --colors-disabled: #e9eaeb;
-  
+
   --colors-gradientInverseBubblegum: linear-gradient(
     139.73deg,
     #f3efff,
@@ -115,10 +119,10 @@
   --colors-gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --colors-gradientBold: linear-gradient(#53dee9, #7645d9);
 
-  
+
 }
 
-/* 
+/*
   secondary80: '#9A6AFF80',
   background: '#08060B',
   backgroundDisabled: '#3c3742',
@@ -170,6 +174,7 @@
   --color-warning-gradient-violet: linear-gradient(#8051d6 0%, #492286 100%);
   --color-warning-background: #27262c66;
   --color-button-footer-black: #191326;
+  --color-input:#372F47;
 
   --background-color-secondary: #27262c;
   --background-color-tertiary: #000000cc;
