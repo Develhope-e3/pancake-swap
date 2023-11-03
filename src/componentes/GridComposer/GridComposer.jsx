@@ -44,7 +44,7 @@ export const GridComposer1 = ({
           <Texto
             size={"title-ml"}
             color={"var(--color-text)"}
-            label={<CakeSum limite={22456392} />}
+            label={<CakeSum limite={22492} />}
           />
         </>
       </div>
@@ -58,7 +58,7 @@ export const GridComposer1 = ({
           <Texto
             size={"title-ml"}
             color={"var(--color-text)"}
-            label={<CakeSum limite={398513365} />}
+            label={<CakeSum limite={398365} />}
           />
         </>
       </div>
@@ -72,7 +72,7 @@ export const GridComposer1 = ({
           <Texto
             size={"title-ml"}
             color={"var(--color-text)"}
-            label={<CakeSum limite={750000000} />}
+            label={<CakeSum limite={750000} />}
           />
         </>
       </div>
@@ -134,22 +134,28 @@ export const GridComposer2 = ({
         className={className}
         style={{
           display: "grid",
+          gap: "1.5rem",
+          width: "100%",
           gridTemplateColumns: `repeat(${col}, 1fr)`,
           gridRowGap: `${remRowSpacing}rem`,
           gridColumnGap: `${remColSpacing}rem`,
         }}>
         <div className="title-container border-none">
           <span className="text">
-          <Texto size={"title-ml"} color={"var(--text-color)"} label={"Top"} />
-          <Texto
-            size={"title-ml"}
-            color={"var(--color-titulo-lila)"}
-            label={"Farms"}
-          />
-          <Icono
-            icono={<ArrowUpDown color={`var(--text-color)`} />}
-            className={`border-none`}
-          />
+            <Texto
+              size={"title-ml"}
+              color={"var(--text-color)"}
+              label={"Top"}
+            />
+            <Texto
+              size={"title-ml"}
+              color={"var(--color-titulo-lila)"}
+              label={"Farms"}
+            />
+            <Icono
+              icono={<ArrowUpDown color={`var(--text-color)`} />}
+              className={`border-none`}
+            />
           </span>
         </div>
         <div className="border-none">
@@ -162,7 +168,7 @@ export const GridComposer2 = ({
             <Texto
               size={"title-ml"}
               color={"var(--color-titulo-lila)"}
-              label={<CakeSum limite={227026415} />}
+              label={<CakeSum limite={259595} />}
             />
           </>
         </div>
