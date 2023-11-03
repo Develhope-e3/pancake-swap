@@ -35,7 +35,7 @@ const DropdownNetwork = ({
 
   return (
     <div
-      className={className}
+      className="bnb"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
