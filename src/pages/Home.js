@@ -72,17 +72,27 @@ const Home = () => {
         <Box isFlexRow={true}>
           <Box isFlexColStart={true}>
             <Box isFlexCol={true}>
-              <Texto
-                size={"tittle-section-lg"}
-                label={"Trade anything. No registration, no hassle."}
-              />
-              <Texto
-                size={"text-section-ml"}
-                color={"var(--color-subtitulo-lila)"}
-                label={
-                  "Trade any token on BNB Smart Chain in seconds, just by connnecting your wallet"
-                }
-              />
+              <Box>
+                <Texto
+                  size={"tittle-section-lg"}
+                  color={"var(--color-titulo-lila)"}
+                  label={"Trade  "}
+                />
+                <Texto
+                  size={"tittle-section-lg"}
+                  color={"var(--color-text)"}
+                  label={"anything. No registration, no hassle."}
+                />
+              </Box>
+              <Box>
+                <Texto
+                  size={"text-section-ml"}
+                  color={"var(--color-subtitulo-lila)"}
+                  label={
+                    "Trade any token on BNB Smart Chain in seconds, just by connnecting your wallet"
+                  }
+                />
+              </Box>
             </Box>
             <Box isFlexRow={true}>
               <Button
@@ -123,17 +133,27 @@ const Home = () => {
           </Box>
           <Box isFlexColStart={true}>
             <Box isFlexCol={true}>
-              <Texto
-                size={"tittle-section-lg"}
-                label={"Earn passive income with crypto"}
-              />
-              <Texto
-                size={"text-section-ml"}
-                color={"var(--color-subtitulo-lila)"}
-                label={
-                  "PancakeSwap makes it easy to make your crypto work for you"
-                }
-              />
+              <Box>
+                <Texto
+                  size={"tittle-section-lg"}
+                  color={"var(--color-titulo-lila)"}
+                  label={"Earn "}
+                />
+                <Texto
+                  size={"tittle-section-lg"}
+                  color={"var(--color-text)"}
+                  label={"passive income with crypto"}
+                />
+              </Box>
+              <Box>
+                <Texto
+                  size={"text-section-ml"}
+                  color={"var(--color-subtitulo-lila)"}
+                  label={
+                    "PancakeSwap makes it easy to make your crypto work for you"
+                  }
+                />
+              </Box>
             </Box>
             <Box isFlexRow={true}>
               <Button
@@ -168,17 +188,27 @@ const Home = () => {
         <Box isFlexRow={true}>
           <Box isFlexColStart={true}>
             <Box isFlexCol={true}>
-              <Texto
-                size={"tittle-section-lg"}
-                label={"CAKE make our world go round."}
-              />
-              <Texto
-                size={"text-section-ml"}
-                color={"var(--color-subtitulo-lila)"}
-                label={
-                  "CAKE tokens is at the heart of the PankakeSwap ecosystem. Buy it ,win it, farm it,spend it, stake it... heck, you can even vote with it!"
-                }
-              />
+              <Box>
+                <Texto
+                  size={"tittle-section-lg"}
+                  color={"var(--color-titulo-lila)"}
+                  label={"CAKE "}
+                />
+                <Texto
+                  size={"tittle-section-lg"}
+                  color={"var(--color-text)"}
+                  label={" make our world go round."}
+                />
+              </Box>
+              <Box>
+                <Texto
+                  size={"text-section-ml"}
+                  color={"var(--color-subtitulo-lila)"}
+                  label={
+                    "CAKE tokens is at the heart of the PankakeSwap ecosystem. Buy it ,win it, farm it,spend it, stake it... heck, you can even vote with it!"
+                  }
+                />
+              </Box>
             </Box>
             <Box isFlexRow={true}>
               <Button
