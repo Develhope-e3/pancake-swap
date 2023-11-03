@@ -12,7 +12,7 @@ import { SectionThree } from "../componentes/SectionThree/SectionThree";
 import { SectionFour } from "../componentes/SectionFour/SectionFour";
 import { SectionSix } from "../componentes/SectionSix/SectionSix";
 import { useTheme } from "../context/ThemeContext";
-import { GridComposer1 } from "../componentes/GridComposer/GridComposer";
+import { GridComposer1, GridComposer2 } from "../componentes/GridComposer/GridComposer";
 import { CardCTA } from "../componentes/Cards/CardCTA";
 import { dataCardCTA } from "../data/dataCardCTA";
 
@@ -77,6 +77,13 @@ const Home = () => {
       </MainSection>
       <MainSection>
         <SectionFour />
+        <Box>
+        <GridComposer2
+          className={"theme2"}
+          col={5}
+          remColSpacing={3}
+        />
+        </Box>
       </MainSection>
       <MainSection>
         <Box isFlexRowCenter={true} isItemCard={true}>
