@@ -20,7 +20,7 @@ const Footer = () => {
           <Texto
             size={"title-md-bold"}
             label={"ABOUT"}
-            color={"var(--color-titulo-lila)"}
+            color={"var(--color-titulo-footer)"}
           />
           <Link className={"footer-anchor-secondary"} label={"Contact"} />
           <Link className={"footer-anchor"} label={"Brand"} />
@@ -40,7 +40,7 @@ const Footer = () => {
           <Texto
             size={"title-md-bold"}
             label={"HELP"}
-            color={"var(--color-titulo-lila)"}
+            color={"var(--color-titulo-footer)"}
           />
           <Link className={"footer-anchor"} label={"Customer Support"} />
           <Link className={"footer-anchor"} label={"TroubleShooting"} />
@@ -51,7 +51,7 @@ const Footer = () => {
           <Texto
             size={"title-md-bold"}
             label={"DEVELOPERS"}
-            color={"var(--color-titulo-lila)"}
+            color={"var(--color-titulo-footer)"}
           />
           <Link className={"footer-anchor"} label={"Github"} />
           <Link className={"footer-anchor"} label={"Documentation"} />
