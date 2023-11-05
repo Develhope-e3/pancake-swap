@@ -1,5 +1,5 @@
 import "../styles/variables.scss";
-import { MainSection } from "../componentes/Section/Section";
+import { MainSection, Section } from "../componentes/Section/Section";
 import { Box } from "../componentes/Section/Section2/Box";
 import { PrimaryCard } from "../componentes/Cards/PrimaryCard";
 import { dataPrimaryCard } from "../data/dataPrimaryCard";
@@ -12,9 +12,13 @@ import { SectionThree } from "../componentes/SectionThree/SectionThree";
 import { SectionFour } from "../componentes/SectionFour/SectionFour";
 import { SectionSix } from "../componentes/SectionSix/SectionSix";
 import { useTheme } from "../context/ThemeContext";
-import { GridComposer1, GridComposer2 } from "../componentes/GridComposer/GridComposer";
+import {
+  GridComposer1,
+  GridComposer2,
+} from "../componentes/GridComposer/GridComposer";
 import { CardCTA } from "../componentes/Cards/CardCTA";
 import { dataCardCTA } from "../data/dataCardCTA";
+import SubImages from "../assets/iconos/SubImages";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -78,15 +82,27 @@ const Home = () => {
       <MainSection>
         <SectionFour />
         <Box>
-        <GridComposer2
-          className={"theme2"}
-          col={5}
-          remColSpacing={3}
-        />
+          <GridComposer2 className={"theme2"} col={5} remColSpacing={3} />
         </Box>
       </MainSection>
-      <MainSection>
-        <Box isFlexRowCenter={true} isItemCard={true}>
+      <Section gradient={"var(--colors-gradientBlue)"}>
+        <Box isFlexRowCenter isItemCard>
+          <Box isFlexRowCenter>
+            <Texto
+              size={"tittle-section-lg"}
+              color={"var(--color-text)"}
+              colorizedLabelStart={"Win"}
+              label={"millions in prizes"}
+            />
+          </Box>
+          <Box isFlexColCenter>
+            <Texto
+              size={"text-section-ml"}
+              color={"var(--color-subtitulo-lila)"}
+              label={`Provably fair, on-chain games.
+              Win big with PancakeSwap.`}
+            />
+          </Box>
           {dataCardCTA &&
             dataCardCTA.map((card, index) => {
               return (
@@ -104,7 +120,7 @@ const Home = () => {
               );
             })}
         </Box>
-      </MainSection>
+      </Section>
       <MainSection>
         <SectionSix />
         <GridComposer1

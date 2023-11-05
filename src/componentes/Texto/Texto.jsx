@@ -6,11 +6,12 @@ import "./Texto.scss";
  * @param {string} size - Tamaño para renderizar el tipo de texto
  * @param {string} color - Variable color, identica a las variables en styles/variables.scss
  * @param {string} label - Texto
+ * @param {string} colorizedLabelStart - Texto violeta al inicio del texto. Unicamente presente en tittle-section-lg
  *
  * @returns Elemento HTML para el texto
  */
 
-const Texto = ({ size, color, label }) => {
+const Texto = ({ size, color, label, colorizedLabelStart }) => {
   return (
     <>
       {size === "title-lg-bold" && (
@@ -105,6 +106,9 @@ const Texto = ({ size, color, label }) => {
       )}
       {size === "tittle-section-lg" && (
         <span className="tittle-section-lg" style={{ color: `${color}` }}>
+          <span style={{ color: "var(--color-titulo-lila)" }}>
+            {colorizedLabelStart && `${colorizedLabelStart} `}
+          </span>
           {label}
         </span>
       )}
@@ -113,7 +117,6 @@ const Texto = ({ size, color, label }) => {
           {label}
         </span>
       )}
-
     </>
   );
 };
