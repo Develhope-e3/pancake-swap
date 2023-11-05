@@ -6,10 +6,11 @@
 
   width: 300px;
   height: 380px;
+  margin-top: var(--space-lg);
 
   box-sizing: border-box;
 
-  padding: 24px;
+  padding: var(--space-lg);
 
   overflow: inherit;
 
@@ -37,10 +38,11 @@
 
   width: 300px;
   height: 380px;
+  margin-top: var(--space-lg);
 
   box-sizing: border-box;
 
-  padding: 24px;
+  padding: var(--space-lg);
 
   overflow: inherit;
 

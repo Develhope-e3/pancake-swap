@@ -15,3 +15,17 @@
 
   background-image: var(--background-image-main);
 }
+
+.section {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+
+  border: none;
+  vertical-align: baseline;
+
+  overflow: hidden;
+
+  min-width: 100%;
+  height: auto;
+}
