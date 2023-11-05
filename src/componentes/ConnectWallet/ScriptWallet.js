@@ -1,32 +1,51 @@
 import ethers from "ethers";
-import { useContext, useState, createContext } from "react";
+import { useState } from "react";
 
-const WalletContext = createContext(ethers);
+/**
+ *
+ * @param {} asd - ASDF
+ *
+ * @returns Estructura HTML
+ */
 
-export const ScriptWalletProvider = ({children}) => {
-  const [wallet, setWallet] = useState(ethers.Contract);
+export const useConnectWallet = async ({ _chainId }) => {
+  const [pending, setPending] = useState(true);
+  const [error, setError] = useState(null);
+  const provider = new ethers.providers.Web3Provider(window.ethereum);
+  let chainId = _chainId;
 
-  const changeWallet = () => {
-    setWallet(ethers.Wallet);
-  };
+  const addNetwork = await provider.request({
+    method: "eth_requestAccounts",
+    params: [
+      {
+        chainId: "",
+        chainName: "",
+        nativeCurrency: {
+          name: "",
+          symbol: "",
+          decimals: 10,
+        },
+        blockExplorerUrls: "",
+      },
+    ],
+  });
 
-  return (
-    <>
-      <WalletContext.Provider value={{wallet, changeWallet}}>
+  setPending(true);
+  const requestAccount = await window.ethereum
+    .request({
+      method: "",
+      params: [{ chainId: chainId }],
+    })
+    .then(() => console.log("Successfully!"))
+    .catch((err) => setError(err.message))
+    .finally(() => setPending(false));
 
-        <script type="module">ScriptWallet</script>
-        {children}
-      </WalletContext.Provider>
-    </>
-  );
-};
+  const signer = provider.getSigner();
 
-export const ScriptWalletConsumer = () => {
-  const { wallet, changeWallet } = useContext();
+  const transaction = await signer.sendTransaction({
+    to: "0xRecipientAddress",
+    value: ethers.utils.parseEther("0.1"),
+  });
 
-  return (
-    <>
-    
-    </>
-  );
+  return [error, pending, provider, addNetwork, transaction, signer, requestAccount];
 };
