@@ -18,8 +18,8 @@ const SupImages = ({ size }) => {
         style={{
           width: `${size}rem`,
           position: "absolute",
-          bottom: "-25rem",
-          left: "27rem",
+          bottom: "19rem",
+          right: "6rem",
           transform: "rotateZ(-45deg) rotateX(32deg) rotateY(180deg)",
         }}
       />
@@ -29,8 +29,8 @@ const SupImages = ({ size }) => {
         style={{
           width: `${size}rem`,
           position: "absolute",
-          bottom: "-19rem",
-          right: "-9rem",
+          bottom: "20rem",
+          right: "-8rem",
           zIndex: "1",
           transform: "rotateZ(-255deg)",
         }}
