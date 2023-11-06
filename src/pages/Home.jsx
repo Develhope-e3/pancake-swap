@@ -20,7 +20,8 @@ import { CardCTA } from "../componentes/Cards/CardCTA";
 import { dataCardCTA } from "../data/dataCardCTA";
 import { ButtonScroll } from "../componentes/Button/ButtonScroll";
 import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny";
-import SubImages from "../assets/iconos/SubImages";
+import SubImages from "../../src/assets/iconos/SubImages";
+import SupImages from "../../src/assets/iconos/SupImages";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -81,13 +82,14 @@ const Home = () => {
       <MainSection>
         <SectionThree />
       </MainSection>
-      <MainSection>
+      <MainSection background={`var(--background-color-secondary)`}>
         <SectionFour />
-        <Box>
+        <Box isFlexColCenter>
           <GridComposer2 className={"theme2"} col={5} remColSpacing={3} />
         </Box>
       </MainSection>
       <Section gradient={"var(--colors-gradientBlue)"}>
+        <SupImages size={35} />
         <Box isFlexRowCenter isItemCard>
           <Box isFlexRowCenter>
             <Texto
@@ -122,6 +124,7 @@ const Home = () => {
               );
             })}
         </Box>
+        <SubImages size={35} />
       </Section>
       <MainSection>
         <SectionSix />

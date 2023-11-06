@@ -18,8 +18,8 @@ const SubImages = ({ size }) => {
         style={{
           width: `${size}rem`,
           position: "absolute",
-          bottom: "25rem",
-          left: "0.5rem",
+          bottom: "-0.2rem",
+          left: "-1.5rem",
           zIndex: "1",
         }}
       />
@@ -29,8 +29,8 @@ const SubImages = ({ size }) => {
         style={{
           width: `30rem`,
           position: "absolute",
-          bottom: "41rem",
-          right: "15rem",
+          bottom: "15.2rem",
+          left: "17rem",
           transform: "rotateZ(195deg) rotateZ(180deg)",
         }}
       />
