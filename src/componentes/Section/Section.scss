@@ -18,14 +18,19 @@
 
 .section {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   text-align: center;
+  justify-content: center;
 
   border: none;
   vertical-align: baseline;
 
   overflow: hidden;
+  padding-top: var(--space-xxl);
+  padding-bottom: var(--space-xxl);
 
   min-width: 100%;
   height: auto;
+
+  position: relative;
 }

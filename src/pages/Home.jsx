@@ -18,7 +18,6 @@ import {
 } from "../componentes/GridComposer/GridComposer";
 import { CardCTA } from "../componentes/Cards/CardCTA";
 import { dataCardCTA } from "../data/dataCardCTA";
-import SubImages from "../assets/iconos/SubImages";
 
 const Home = () => {
   const { theme } = useTheme();

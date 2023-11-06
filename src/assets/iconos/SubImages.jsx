@@ -12,34 +12,28 @@ import subImage2 from "../../assets/imagenes/game-prediction2.png";
 const SubImages = ({ size }) => {
   return (
     <>
-      <div
+      <img
+        src={subImage}
+        alt="Money"
         style={{
-          display: "flex",
-          justifyContent: "flex-start",
-        }}>
-        <img
-          src={subImage}
-          alt="Money"
-          style={{
-            width: `${size}rem`,
-            position: "relative",
-            bottom: "25rem",
-            left: "0.5rem",
-            zIndex: "1",
-          }}
-        />
-        <img
-          src={subImage2}
-          alt="Money"
-          style={{
-            width: `30rem`,
-            position: "relative",
-            bottom: "41rem",
-            right: "15rem",
-            transform: "rotateZ(195deg) rotateZ(180deg)",
-          }}
-        />
-      </div>
+          width: `${size}rem`,
+          position: "absolute",
+          bottom: "25rem",
+          left: "0.5rem",
+          zIndex: "1",
+        }}
+      />
+      <img
+        src={subImage2}
+        alt="Money"
+        style={{
+          width: `30rem`,
+          position: "absolute",
+          bottom: "41rem",
+          right: "15rem",
+          transform: "rotateZ(195deg) rotateZ(180deg)",
+        }}
+      />
     </>
   );
 };

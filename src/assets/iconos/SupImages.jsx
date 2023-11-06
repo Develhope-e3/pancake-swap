@@ -12,35 +12,29 @@ import supImage2 from "../../assets/imagenes/assetLottery.png";
 const SupImages = ({ size }) => {
   return (
     <>
-      <div
+      <img
+        src={supImage}
+        alt="Pool balls"
         style={{
-          display: "flex",
-          justifyContent: "flex-end",
-        }}>
-        <img
-          src={supImage}
-          alt="Pool balls"
-          style={{
-            width: `${size}rem`,
-            position: "relative",
-            bottom: "-25rem",
-            left: "27rem",
-            transform: "rotateZ(-45deg) rotateX(32deg) rotateY(180deg)",
-          }}
-        />
-        <img
-          src={supImage2}
-          alt="Pool balls"
-          style={{
-            width: `${size}rem`,
-            position: "relative",
-            bottom: "-19rem",
-            right: "-9rem",
-            zIndex: "1",
-            transform: "rotateZ(-255deg)",
-          }}
-        />
-      </div>
+          width: `${size}rem`,
+          position: "absolute",
+          bottom: "-25rem",
+          left: "27rem",
+          transform: "rotateZ(-45deg) rotateX(32deg) rotateY(180deg)",
+        }}
+      />
+      <img
+        src={supImage2}
+        alt="Pool balls"
+        style={{
+          width: `${size}rem`,
+          position: "absolute",
+          bottom: "-19rem",
+          right: "-9rem",
+          zIndex: "1",
+          transform: "rotateZ(-255deg)",
+        }}
+      />
     </>
   );
 };
