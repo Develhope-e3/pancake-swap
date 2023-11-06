@@ -74,6 +74,11 @@
 .footer-anchor-secondary:hover {
   text-decoration: underline;
 }
+.dropdown-secundario{
+  svg{
+    color:var(--color-linea-footer);
+  }
+}
 
 .slide-bunny {
   display: flex;

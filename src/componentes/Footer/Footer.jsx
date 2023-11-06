@@ -169,6 +169,7 @@ const Footer = () => {
                 </svg>
               }
             />
+            <p>ES</p>
           </div>
           <div className="parte-abajo-derecha">
             <div className="flex-row-space">
