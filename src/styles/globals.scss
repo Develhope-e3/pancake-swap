@@ -80,6 +80,9 @@
   justify-content: space-around;
   flex-direction: row;
   gap: 10px;
+  p{
+    color:var(--text-color)
+  }
 }
 
 .flex-sidebuton {
