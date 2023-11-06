@@ -146,7 +146,7 @@ export const GridComposer2 = ({
           <span className="text">
             <Texto
               size={"title-ml"}
-              color={"var(--text-color)"}
+              color={"var(--color-text)"}
               label={"Top"}
             />
             <Texto
@@ -155,7 +155,7 @@ export const GridComposer2 = ({
               label={"Farms"}
             />
             <Icono
-              icono={<ArrowUpDown color={`var(--text-color)`} />}
+              icono={<ArrowUpDown color={`var(--color-warning-text)`} />}
               className={`border-none`}
             />
           </span>

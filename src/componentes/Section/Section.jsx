@@ -13,9 +13,9 @@ export const Section = ({ children, gradient }) => {
       style={{
         background: `${gradient}`,
       }}>
-      <SupImages size={35} />
-      <div>{children}</div>
       <SubImages size={35} />
+      {children}
+      <SupImages size={35} />
     </section>
   );
 };
