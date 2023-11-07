@@ -1,10 +1,10 @@
 import { ethers } from "ethers";
 
-export const connectWallet = async (setWallet) => {
+export const connectWallet = async (setWallet, selectedNetwork) => {
   if (window.ethereum == null) {
     console.log("Metamask not installed; using read only defaults");
   } else {
-    await SwitchNetwork("0x94");
+    await SwitchNetwork(selectedNetwork);
     const provider = new ethers.BrowserProvider(window.ethereum);
     const signer = await provider.getSigner();
     const address = await signer.getAddress();

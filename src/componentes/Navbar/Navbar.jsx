@@ -23,11 +23,14 @@ import {
   networkData,
 } from "../../data/dropdownItems";
 import { useEffect, useState } from "react";
-import { SwitchNetwork } from "../Button/utils.jsx";
+import { SwitchNetwork, connectWallet } from "../Button/utils.jsx";
 
 const Navbar = () => {
   const [selectedNetwork, setSelectedNetwork] = useState(networkData[0]);
 
+  const [wallet, setWallet] = useState("");
+
+  console.log(wallet);
   useEffect(() => {
     SwitchNetwork(selectedNetwork.data);
   }, [selectedNetwork]);
@@ -96,7 +99,7 @@ const Navbar = () => {
           heightValue={"32px"}
           texto={"Connect Wallet"}
           colorTexto={"var(--text-color-black)"}
-          onClick={() => SwitchNetwork(selectedNetwork.data)}
+          onClick={() => connectWallet(setWallet)}
         />
       </div>
     </nav>
