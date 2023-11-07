@@ -38,7 +38,7 @@ export const trade = [
   {
     label: "Trading Reward",
     href: "www.google.com",
-  }
+  },
 ];
 
 export const earn = [
@@ -298,56 +298,140 @@ export const idiomas = [
   },
 ];
 
-export const bnb = [
+export const networkData = [
   {
-    iconoinicio: <BnbSmartChain/>,
+    iconoinicio: <BnbSmartChain />,
     label: "BNB Smart Chain",
     href: "www.google.com",
-    
+    data: {
+      chainId: "",
+      chainName: "",
+      nativeCurrency: {
+        name: "",
+        symbol: "",
+        decimals: 10,
+      },
+      blockExplorerUrls: "",
+    },
   },
-  { 
-    iconoinicio: <Ethereum/>,
+  {
+    iconoinicio: <Ethereum />,
     label: "Ethereum",
     href: "www.google.com",
-    
+    data: {
+      chainId: "",
+      chainName: "",
+      nativeCurrency: {
+        name: "",
+        symbol: "",
+        decimals: 10,
+      },
+      blockExplorerUrls: "",
+    },
   },
-  { 
+  {
     iconoinicio: <Polygon />,
     label: "Polygon zkEVM",
     href: "www.google.com",
+    data: {
+      chainId: "",
+      chainName: "",
+      nativeCurrency: {
+        name: "",
+        symbol: "",
+        decimals: 10,
+      },
+      blockExplorerUrls: "",
+    },
   },
   {
-    iconoinicio: <ZkSyncEra/>,
+    iconoinicio: <ZkSyncEra />,
     label: "zkSync Era",
     href: "www.google.com",
-    
+    data: {
+      chainId: "",
+      chainName: "",
+      nativeCurrency: {
+        name: "",
+        symbol: "",
+        decimals: 10,
+      },
+      blockExplorerUrls: "",
+    },
   },
-  { 
-    iconoinicio: <ArbitrumOne/>,
+  {
+    iconoinicio: <ArbitrumOne />,
     label: "Arbitrum One",
     href: "www.google.com",
-    
+    data: {
+      chainId: "",
+      chainName: "",
+      nativeCurrency: {
+        name: "",
+        symbol: "",
+        decimals: 10,
+      },
+      blockExplorerUrls: "",
+    },
   },
-  { 
+  {
     iconoinicio: <LineaMainnet />,
     label: "Linea Mainnet",
     href: "www.google.com",
+    data: {
+      chainId: "",
+      chainName: "",
+      nativeCurrency: {
+        name: "",
+        symbol: "",
+        decimals: 10,
+      },
+      blockExplorerUrls: "",
+    },
   },
   {
-    iconoinicio: <Ethereum/>,
+    iconoinicio: <Ethereum />,
     label: "Base",
     href: "www.google.com",
-    
+    data: {
+      chainId: "",
+      chainName: "",
+      nativeCurrency: {
+        name: "",
+        symbol: "",
+        decimals: 10,
+      },
+      blockExplorerUrls: "",
+    },
   },
-  { 
-    iconoinicio: <BnbSmartChain/>,
+  {
+    iconoinicio: <BnbSmartChain />,
     label: "opBNB Mainnet",
     href: "www.google.com",
-    
+    data: {
+      chainId: "",
+      chainName: "",
+      nativeCurrency: {
+        name: "",
+        symbol: "",
+        decimals: 10,
+      },
+      blockExplorerUrls: "",
+    },
   },
-  { 
+  {
     iconoinicio: <Aptos />,
     label: "Aptos",
     href: "www.google.com",
+    data: {
+      chainId: "",
+      chainName: "",
+      nativeCurrency: {
+        name: "",
+        symbol: "",
+        decimals: 10,
+      },
+      blockExplorerUrls: "",
+    },
   },
 ];

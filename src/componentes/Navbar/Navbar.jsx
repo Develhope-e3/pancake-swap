@@ -20,10 +20,17 @@ import {
   birthday,
   tresPuntos,
   idiomas,
-  bnb,
+  networkData,
 } from "../../data/dropdownItems";
+import { useEffect, useState } from "react";
+import { SwitchNetwork } from "../Button/utils.jsx";
 
 const Navbar = () => {
+  const [selectedNetwork, setSelectedNetwork] = useState(networkData[0]);
+
+  useEffect(() => {
+    SwitchNetwork(selectedNetwork.data);
+  }, [selectedNetwork]);
   return (
     <nav>
       <div className="navbar div1">
@@ -73,12 +80,14 @@ const Navbar = () => {
         />
 
         <DropdownNetwork
-          icono1={<BnbSmartChain />}
-          label={"BNB Smart Chain"}
-          dropdownItems={bnb}
+          icono1={selectedNetwork.iconoinicio}
+          label={selectedNetwork.label}
+          dropdownItems={networkData}
           className={"bnb"}
           icono2={<IoIosArrowDown />}
           isNetwork={true}
+          selectedNetwork={selectedNetwork}
+          setSelectedNetwork={setSelectedNetwork}
         />
 
         <Button

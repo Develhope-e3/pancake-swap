@@ -10,7 +10,12 @@ import classNames from "classnames";
  * @returns Estructura HTML
  */
 
-const DropdownItem = ({ options, isNetwork, isIdiomas }) => {
+const DropdownItem = ({
+  options,
+  isNetwork,
+  isIdiomas,
+  setSelectedNetwork,
+}) => {
   const givenClassName = classNames({
     "dropdown-item": true,
     "dropdown-bnb": isNetwork,
@@ -19,7 +24,11 @@ const DropdownItem = ({ options, isNetwork, isIdiomas }) => {
   return (
     <ul className={"dropdown-list"}>
       {options.map((option, index) => (
-        <div className={givenClassName} key={index}>
+        <div
+          className={givenClassName}
+          key={index}
+          onClick={() => setSelectedNetwork(option)}
+        >
           {option.iconoinicio && <Icono icono={option.iconoinicio} />}
           <Texto
             label={option.label}
