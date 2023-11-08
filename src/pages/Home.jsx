@@ -1,5 +1,5 @@
 import "../styles/variables.scss";
-import { MainSection } from "../componentes/Section/Section";
+import { MainSection, Section } from "../componentes/Section/Section";
 import { Box } from "../componentes/Section/Section2/Box";
 import { PrimaryCard } from "../componentes/Cards/PrimaryCard";
 import { dataPrimaryCard } from "../data/dataPrimaryCard";
@@ -10,15 +10,21 @@ import ImageMainSection from "../assets/iconos/MainSection";
 import "./Home.scss";
 import { SectionThree } from "../componentes/SectionThree/SectionThree";
 import { SectionFour } from "../componentes/SectionFour/SectionFour";
-// import { SectionFive } from "../componentes/SectionFive/SectionFive";
 import { SectionSix } from "../componentes/SectionSix/SectionSix";
-import { GridComposer1 } from "../componentes/GridComposer/GridComposer";
+import { useTheme } from "../context/ThemeContext";
+import {
+  GridComposer1,
+  GridComposer2,
+} from "../componentes/GridComposer/GridComposer";
 import { CardCTA } from "../componentes/Cards/CardCTA";
 import { dataCardCTA } from "../data/dataCardCTA";
+import SubImages from "../../src/assets/iconos/SubImages";
+import SupImages from "../../src/assets/iconos/SupImages";
 
 const Home = () => {
+  const { theme } = useTheme();
   return (
-    <BasePage>
+    <BasePage className={theme === "dark" ? "dark-mode" : "light-mode"}>
       <MainSection>
         <Box isFlexRow={true} maxWidth={1200}>
           <Box isFlexColStart>
@@ -74,11 +80,31 @@ const Home = () => {
       <MainSection>
         <SectionThree />
       </MainSection>
-      <MainSection>
+      <MainSection background={`var(--background-color-secondary)`}>
         <SectionFour />
+        <Box isFlexColCenter>
+          <GridComposer2 className={"theme2"} col={5} remColSpacing={3} />
+        </Box>
       </MainSection>
-      <MainSection>
-        <Box isFlexRowCenter={true} isItemCard={true}>
+      <Section gradient={"var(--colors-gradientBlue)"}>
+        <SupImages size={35} />
+        <Box isFlexRowCenter isItemCard>
+          <Box isFlexRowCenter>
+            <Texto
+              size={"tittle-section-lg"}
+              color={"var(--color-text)"}
+              colorizedLabelStart={"Win"}
+              label={"millions in prizes"}
+            />
+          </Box>
+          <Box isFlexColCenter>
+            <Texto
+              size={"text-section-ml"}
+              color={"var(--color-subtitulo-lila)"}
+              label={`Provably fair, on-chain games.
+              Win big with PancakeSwap.`}
+            />
+          </Box>
           {dataCardCTA &&
             dataCardCTA.map((card, index) => {
               return (
@@ -96,7 +122,8 @@ const Home = () => {
               );
             })}
         </Box>
-      </MainSection>
+        <SubImages size={35} />
+      </Section>
       <MainSection>
         <SectionSix />
         <GridComposer1

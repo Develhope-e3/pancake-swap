@@ -1,6 +1,8 @@
 import "./GridComposer.scss";
 import Texto from "../Texto/Texto";
 import CakeSum from "../Cake-sum/Cake-sum";
+import Icono from "../Icono/Icono";
+import ArrowUpDown from "../../assets/iconos/ArrowsUpDown";
 
 /**
  * @param {string} className - clase para elegir qué theme de la Grid tendrá la tabla
@@ -12,9 +14,9 @@ import CakeSum from "../Cake-sum/Cake-sum";
  */
 
 /**
- * 
+ *
  * TODO agregar data para hacer el componente más intuitivo y que reciba distintas cantidades de elementos y distintos styles "theme"
- * 
+ *
  */
 
 export const GridComposer1 = ({
@@ -24,99 +26,99 @@ export const GridComposer1 = ({
   remColSpacing,
 }) => {
   return (
-      <div
-        className={className}
-        style={{
-          display: "grid",
-          gridTemplateColumns: `repeat(${col}, 1fr)`,
-          gridRowGap: `${remRowSpacing}rem`,
-          gridColumnGap: `${remColSpacing}rem`,
-        }}>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-subtitulo-lila)"}
-              label={"Circulating Supply"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--text-color)"}
-              label={<CakeSum limite={22456392} />}
-            />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-subtitulo-lila)"}
-              label={"Total Supply"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--text-color)"}
-              label={<CakeSum limite={398513365} />}
-            />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-subtitulo-lila)"}
-              label={"Max Supply"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--text-color)"}
-              label={<CakeSum limite={750000000} />}
-            />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-subtitulo-lila)"}
-              label={"Market Cap"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--text-color)"}
-              label={"$280 million"}
-            />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-subtitulo-lila)"}
-              label={"Burned to date"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--text-color)"}
-              label={<CakeSum limite={952660681} />}
-            />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-subtitulo-lila)"}
-              label={"Current Emissions"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--text-color)"}
-              label={"$2,93/block"}
-            />
-          </>
-        </div>
+    <div
+      className={className}
+      style={{
+        display: "grid",
+        gridTemplateColumns: `repeat(${col}, 1fr)`,
+        gridRowGap: `${remRowSpacing}rem`,
+        gridColumnGap: `${remColSpacing}rem`,
+      }}>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+            label={"Circulating Supply"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--color-text)"}
+            label={<CakeSum limite={22492} />}
+          />
+        </>
       </div>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+            label={"Total Supply"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--color-text)"}
+            label={<CakeSum limite={398365} />}
+          />
+        </>
+      </div>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+            label={"Max Supply"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--color-text)"}
+            label={<CakeSum limite={750000} />}
+          />
+        </>
+      </div>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+            label={"Market Cap"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--color-text)"}
+            label={"$280 million"}
+          />
+        </>
+      </div>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+            label={"Burned to date"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--color-text)"}
+            label={<CakeSum limite={952660681} />}
+          />
+        </>
+      </div>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+            label={"Current Emissions"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--color-text)"}
+            label={"$2,93/block"}
+          />
+        </>
+      </div>
+    </div>
   );
 };
 
@@ -127,15 +129,35 @@ export const GridComposer2 = ({
   remColSpacing,
 }) => {
   return (
-    <div className="grid-container">
+    <>
       <div
         className={className}
         style={{
           display: "grid",
+          gap: "1.5rem",
+          width: "100%",
           gridTemplateColumns: `repeat(${col}, 1fr)`,
           gridRowGap: `${remRowSpacing}rem`,
           gridColumnGap: `${remColSpacing}rem`,
         }}>
+        <div className="title-container border-none">
+          <span className="text">
+            <Texto
+              size={"title-ml"}
+              color={"var(--color-text)"}
+              label={"Top"}
+            />
+            <Texto
+              size={"title-ml"}
+              color={"var(--color-titulo-lila)"}
+              label={"Farms"}
+            />
+            <Icono
+              icono={<ArrowUpDown color={`var(--color-warning-text)`} />}
+              className={`border-none`}
+            />
+          </span>
+        </div>
         <div className="border-none">
           <>
             <Texto
@@ -146,7 +168,7 @@ export const GridComposer2 = ({
             <Texto
               size={"title-ml"}
               color={"var(--color-titulo-lila)"}
-              label={<CakeSum limite={227026415} />}
+              label={<CakeSum limite={259595} />}
             />
           </>
         </div>
@@ -207,6 +229,6 @@ export const GridComposer2 = ({
           </>
         </div>
       </div>
-    </div>
+    </>
   );
 };

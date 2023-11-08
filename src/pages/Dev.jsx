@@ -7,20 +7,13 @@ import Link from "../componentes/Link/Link";
 import Texto from "../componentes/Texto/Texto";
 import Puntos from "../componentes/Puntos/Puntos";
 import { GridComposer1 } from "../componentes/GridComposer/GridComposer";
-import { WarningHeader } from "../componentes/WarningHeader/WarningHeader";
-import Footer from "../componentes/Footer/Footer";
 import "../styles/globals.scss";
 import { ButtonScroll } from "../componentes/Button/ButtonScroll";
 import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny";
-import Navbar from "../componentes/Navbar/Navbar";
 
 const Dev = () => {
   return (
     <div>
-      <div className="flex-header">
-        <WarningHeader />
-        <Navbar />
-      </div>
       <div className="flex-col-center">
         <Texto
           size={"title-lg-bold"}
@@ -162,7 +155,6 @@ const Dev = () => {
       </div>
       <SlideBunny />
       <ButtonScroll />
-      <Footer />
       <br />
       <br />
     </div>

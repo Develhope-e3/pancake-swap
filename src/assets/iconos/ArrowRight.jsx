@@ -9,7 +9,7 @@ const ArrowRight = ({ color }) => {
   return (
     <svg
       fill={color}
-      viewBox="0 -9 33 33"
+      viewBox="0 -7 33 33"
       ml="4px"
       color="invertedContrast"
       width="30px"
