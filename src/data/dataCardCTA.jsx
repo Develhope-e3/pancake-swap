@@ -16,8 +16,8 @@ export const dataCardCTA = [
     },
     button: {
       text: "Play",
-      color: "var(--text-color-black)",
-      icon: <ArrowRight color={"var(--text-color-black"} />,
+      color: "#202020",
+      icon: <ArrowRight color={"#202020"} />,
     },
     onClick: () => {
       console.log("Click on Play");
@@ -41,8 +41,8 @@ export const dataCardCTA = [
     },
     button: {
       text: "Buy Tickets",
-      color: "var(--text-color-black)",
-      icon: <ArrowRight color={"var(--text-color-black"} />,
+      color: "#202020",
+      icon: <ArrowRight color={"#202020"} />,
     },
     onClick: () => {
       console.log("Click on Buy Tickets");
