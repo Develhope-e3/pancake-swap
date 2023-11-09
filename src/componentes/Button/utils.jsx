@@ -1,6 +1,7 @@
 import { ethers } from "ethers";
 
 export const connectWallet = async (setWallet, selectedNetwork) => {
+
   if (window.ethereum == null) {
     console.log("Metamask not installed; using read only defaults");
   } else {
@@ -14,34 +15,28 @@ export const connectWallet = async (setWallet, selectedNetwork) => {
 };
 
 export const SwitchNetwork = async (networkData) => {
-  console.log(networkData);
+  const data = networkData.data[0];
 
-  // const addNetwork = await window.ethereum.request({
-  //   method: "wallet_addEthereumChain",
-  //   params: [
-  //     {
-  //       chainId: "0x94",
-  //       rpcUrls: ["https://json-rpc.evm.shimmer.network"],
-  //       chainName: "ShimmerEVM Mainnet",
-  //       nativeCurrency: {
-  //         name: "Shimmer",
-  //         symbol: "SMR",
-  //         decimals: 18,
-  //       },
-  //       blockExplorerUrls: ["https://explorer.evm.shimmer.network/"],
-  //     },
-  //   ],
-  // });
+  console.log(data);
 
-  // await window.ethereum
-  //   .request({
-  //     method: "wallet_switchEthereumChain",
-  //     params: [{ chainId: chainId }],
-  //   })
-  //   .then(() => console.log("Successfully! Connected to the requested Network"))
-  //   .catch((err) => {
-  //     if (err.message.startsWith("Unrecognized chain ID")) {
-  //       addNetwork();
-  //     }
-  //   });
+  const addNetwork = await window.ethereum.request({
+    method: "wallet_addEthereumChain",
+    params: [
+      {
+        ...data,
+      },
+    ],
+  });
+
+  await window.ethereum
+    .request({
+      method: "wallet_switchEthereumChain",
+      params: [{ chainId: networkData.chainId }],
+    })
+    .then(() => console.log("Successfully! Connected to the requested Network"))
+    .catch((err) => {
+      if (err.message.startsWith("Unrecognized chain ID")) {
+        addNetwork();
+      }
+    });
 };

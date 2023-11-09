@@ -30,10 +30,12 @@ const Navbar = () => {
 
   const [wallet, setWallet] = useState("");
 
-  console.log(wallet);
   useEffect(() => {
-    SwitchNetwork(selectedNetwork.data);
-  }, [selectedNetwork]);
+    if (wallet) {
+      SwitchNetwork(selectedNetwork);
+    }
+  }, [selectedNetwork, wallet]);
+
   return (
     <nav>
       <div className="navbar div1">
@@ -99,7 +101,7 @@ const Navbar = () => {
           heightValue={"32px"}
           texto={"Connect Wallet"}
           colorTexto={"var(--text-color-black)"}
-          onClick={() => connectWallet(setWallet)}
+          onClick={() => connectWallet(setWallet, selectedNetwork)}
         />
       </div>
     </nav>
