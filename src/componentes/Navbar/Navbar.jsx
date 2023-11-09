@@ -96,7 +96,7 @@ const Navbar = () => {
           heightValue={"32px"}
           texto={"Connect Wallet"}
           colorTexto={"var(--text-color-black)"}
-          onClick={() => console.log("click en el boton primario")}
+          onClick={() => SwitchNetwork(selectedNetwork.data)}
         />
       </div>
     </nav>

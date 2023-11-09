@@ -302,136 +302,155 @@ export const networkData = [
   {
     iconoinicio: <BnbSmartChain />,
     label: "BNB Smart Chain",
-    href: "www.google.com",
-    data: {
-      chainId: "",
-      chainName: "",
-      nativeCurrency: {
-        name: "",
-        symbol: "",
-        decimals: 10,
+    data: [
+      {
+        chainId: "0x61",
+        rpcUrls: ["https://data-seed-prebsc-1-s1.binance.org:8545/"],
+        chainName: "BNB Chain Testnet",
+        nativeCurrency: {
+          name: "BNB",
+          symbol: "tBNB",
+          decimals: 18,
+        },
+        blockExplorerUrls: "https://goerli.explorer.zksync.io/",
       },
-      blockExplorerUrls: "",
-    },
+    ],
   },
   {
     iconoinicio: <Ethereum />,
     label: "Ethereum",
-    href: "www.google.com",
-    data: {
-      chainId: "",
-      chainName: "",
-      nativeCurrency: {
-        name: "",
-        symbol: "",
-        decimals: 10,
+    data: [
+      {
+        chainId: "0x3D",
+        rpcUrls: ["https://etc.rivet.link"],
+        chainName: "Ethereum Classic",
+        nativeCurrency: {
+          name: "ETC",
+          symbol: "ETC",
+          decimals: 18,
+        },
+        blockExplorerUrls: "https://blockscout.com/etc/mainnet/",
       },
-      blockExplorerUrls: "",
-    },
+    ],
   },
   {
     iconoinicio: <Polygon />,
     label: "Polygon zkEVM",
-    href: "www.google.com",
-    data: {
-      chainId: "",
-      chainName: "",
-      nativeCurrency: {
-        name: "",
-        symbol: "",
-        decimals: 10,
+    data: [
+      {
+        chainId: "0x89",
+        rpcUrls: ["https://polygon-rpc.com/"],
+        chainName: "Polygon Mainnet",
+        nativeCurrency: {
+          name: "MATIC",
+          symbol: "MATIC",
+          decimals: 18,
+        },
+        blockExplorerUrls: "https://polygonscan.com",
       },
-      blockExplorerUrls: "",
-    },
+    ],
   },
   {
     iconoinicio: <ZkSyncEra />,
     label: "zkSync Era",
-    href: "www.google.com",
-    data: {
-      chainId: "",
-      chainName: "",
-      nativeCurrency: {
-        name: "",
-        symbol: "",
-        decimals: 10,
+    data: [
+      {
+        chainId: "0x144",
+        rpcUrls: ["https://mainnet.era.zksync.io"],
+        chainName: "zkSync Era Mainnet",
+        nativeCurrency: {
+          name: "ETH",
+          symbol: "ETH",
+          decimals: 18,
+        },
+        blockExplorerUrls: "https://explorer.zksync.io/",
       },
-      blockExplorerUrls: "",
-    },
+    ],
   },
   {
     iconoinicio: <ArbitrumOne />,
     label: "Arbitrum One",
-    href: "www.google.com",
-    data: {
-      chainId: "",
-      chainName: "",
-      nativeCurrency: {
-        name: "",
-        symbol: "",
-        decimals: 10,
+    data: [
+      {
+        chainId: "0xA4B1",
+        rpcUrls: ["https://arbitrum-mainnet.infura.io"],
+        chainName: "Arbitrum One",
+        nativeCurrency: {
+          name: "ETH",
+          symbol: "ETH",
+          decimals: 18,
+        },
+        blockExplorerUrls: "https://explorer.arbitrum.io",
       },
-      blockExplorerUrls: "",
-    },
+    ],
   },
   {
     iconoinicio: <LineaMainnet />,
     label: "Linea Mainnet",
-    href: "www.google.com",
-    data: {
-      chainId: "",
-      chainName: "",
-      nativeCurrency: {
-        name: "",
-        symbol: "",
-        decimals: 10,
+    data: [
+      {
+        chainId: "0x1",
+        rpcUrls: ["https://mainnet.infura.io/v3/"],
+        chainName: "BNB Chain Testnet",
+        nativeCurrency: {
+          name: "ETH",
+          symbol: "ETH",
+          decimals: 18,
+        },
+        blockExplorerUrls: "https://etherscan.io",
       },
-      blockExplorerUrls: "",
-    },
+    ],
   },
-  {
-    iconoinicio: <Ethereum />,
+  /* {
+    iconoinicio: <Base />,
     label: "Base",
-    href: "www.google.com",
-    data: {
-      chainId: "",
-      chainName: "",
-      nativeCurrency: {
-        name: "",
-        symbol: "",
-        decimals: 10,
+    data: [
+      {
+        chainId: "0x2105",
+        rpcUrls: ["https://mainnet.base.org"],
+        chainName: "Base Mainnet",
+        nativeCurrency: {
+          name: "ETH",
+          symbol: "ETH",
+          decimals: 18,
+        },
+        blockExplorerUrls: "https://basescan.org",
       },
-      blockExplorerUrls: "",
-    },
-  },
+    ],
+  }, */
   {
     iconoinicio: <BnbSmartChain />,
     label: "opBNB Mainnet",
-    href: "www.google.com",
-    data: {
-      chainId: "",
-      chainName: "",
-      nativeCurrency: {
-        name: "",
-        symbol: "",
-        decimals: 10,
+    data: [
+      {
+        chainId: "0x15EB",
+        rpcUrls: ["https://opbnb-testnet-rpc.bnbchain.org"],
+        chainName: "opBNB Testnet",
+        nativeCurrency: {
+          name: "BNB",
+          symbol: "tBNB",
+          decimals: 18,
+        },
+        blockExplorerUrls: "http://testnet.opbnbscan.com/",
       },
-      blockExplorerUrls: "",
-    },
+    ],
   },
   {
     iconoinicio: <Aptos />,
     label: "Aptos",
-    href: "www.google.com",
-    data: {
-      chainId: "",
-      chainName: "",
-      nativeCurrency: {
-        name: "",
-        symbol: "",
-        decimals: 10,
+    data: [
+      {
+        chainId: "???",
+        rpcUrls: ["https://fullnode.testnet.aptoslab.com/"],
+        chainName: "Aptos",
+        nativeCurrency: {
+          name: "TAPTOS",
+          symbol: "TAPTOS",
+          decimals: 18,
+        },
+        blockExplorerUrls:
+          "https://aptos-testnet.s.chainbase.com",
       },
-      blockExplorerUrls: "",
-    },
+    ],
   },
 ];
