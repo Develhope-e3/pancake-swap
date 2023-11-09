@@ -6,6 +6,7 @@ import ZkSyncEra from "../assets/iconos/ZkSyncEra";
 import ArbitrumOne from "../assets/iconos/ArbitrumOne";
 import LineaMainnet from "../assets/iconos/LineaMainnet";
 import Aptos from "../assets/iconos/Aptos";
+import Base from "../assets/iconos/Base";
 
 export const trade = [
   {
@@ -303,15 +304,15 @@ export const bnb = [
     iconoinicio: <BnbSmartChain/>,
     label: "BNB Smart Chain",
     href: "www.google.com",
-    
+
   },
-  { 
+  {
     iconoinicio: <Ethereum/>,
     label: "Ethereum",
     href: "www.google.com",
-    
+
   },
-  { 
+  {
     iconoinicio: <Polygon />,
     label: "Polygon zkEVM",
     href: "www.google.com",
@@ -320,32 +321,32 @@ export const bnb = [
     iconoinicio: <ZkSyncEra/>,
     label: "zkSync Era",
     href: "www.google.com",
-    
+
   },
-  { 
+  {
     iconoinicio: <ArbitrumOne/>,
     label: "Arbitrum One",
     href: "www.google.com",
-    
+
   },
-  { 
+  {
     iconoinicio: <LineaMainnet />,
     label: "Linea Mainnet",
     href: "www.google.com",
   },
   {
-    iconoinicio: <Ethereum/>,
+    iconoinicio: <Base/>,
     label: "Base",
     href: "www.google.com",
-    
+
   },
-  { 
+  {
     iconoinicio: <BnbSmartChain/>,
     label: "opBNB Mainnet",
     href: "www.google.com",
-    
+
   },
-  { 
+  {
     iconoinicio: <Aptos />,
     label: "Aptos",
     href: "www.google.com",

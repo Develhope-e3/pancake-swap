@@ -20,12 +20,16 @@ import { CardCTA } from "../componentes/Cards/CardCTA";
 import { dataCardCTA } from "../data/dataCardCTA";
 import SubImages from "../../src/assets/iconos/SubImages";
 import SupImages from "../../src/assets/iconos/SupImages";
+import SwiperScrollbar from "../componentes/Swiper/SwiperScrollbar";
 
 const Home = () => {
   const { theme } = useTheme();
   return (
     <BasePage className={theme === "dark" ? "dark-mode" : "light-mode"}>
       <MainSection>
+      <Box isFlexRow={true} maxWidth={1200}>
+      <SwiperScrollbar/>
+      </Box>
         <Box isFlexRow={true} maxWidth={1200}>
           <Box isFlexColStart>
             <Texto

@@ -1,0 +1,10 @@
+.swiper-backface-hidden .swiper-slide {
+  transform: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.swiper-scrollbar-drag{
+  width: 10px;
+  opacity: none;
+}
