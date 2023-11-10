@@ -304,15 +304,15 @@ export const networkData = [
     label: "BNB Smart Chain",
     data: [
       {
-        chainId: "0x61",
-        rpcUrls: ["https://data-seed-prebsc-1-s1.binance.org:8545/"],
+        blockExplorerUrls: ["https://goerli.explorer.zksync.io/"],
+        rpcUrls: ["https://data-seed-prebsc-1-s1.binance.org:8545/", null],
+        chainId: "0x61", // 97
         chainName: "BNB Chain Testnet",
         nativeCurrency: {
           name: "BNB",
           symbol: "tBNB",
           decimals: 18,
         },
-        blockExplorerUrls: ["https://goerli.explorer.zksync.io/"],
       },
     ],
   },
@@ -321,15 +321,15 @@ export const networkData = [
     label: "Ethereum",
     data: [
       {
-        chainId: "0x3D",
-        rpcUrls: ["https://etc.rivet.link"],
-        chainName: "Ethereum Classic",
+        blockExplorerUrls: ["https://etherscan.io"],
+        rpcUrls: ["https://mainnet.infura.io/v3/", null],
+        chainId: "0x1", // 1
+        chainName: "Ethereum Mainnet",
         nativeCurrency: {
-          name: "ETC",
-          symbol: "ETC",
+          name: "ETH",
+          symbol: "ETH",
           decimals: 18,
         },
-        blockExplorerUrls: ["https://blockscout.com/etc/mainnet/"],
       },
     ],
   },
@@ -338,15 +338,15 @@ export const networkData = [
     label: "Polygon zkEVM",
     data: [
       {
-        chainId: "0x89",
-        rpcUrls: ["https://polygon-rpc.com/"],
-        chainName: "Polygon Mainnet",
+        blockExplorerUrls: ["https://mumbai.polygonscan.com/"],
+        rpcUrls: ["https://rpc-mumbai.maticvigil.com/", null],
+        chainId: "0x13881", // 80001
+        chainName: "Polygon Testnet",
         nativeCurrency: {
-          name: "MATIC",
+          name: "MATIC Token",
           symbol: "MATIC",
           decimals: 18,
         },
-        blockExplorerUrls: ["https://polygonscan.com"],
       },
     ],
   },
@@ -355,15 +355,18 @@ export const networkData = [
     label: "zkSync Era",
     data: [
       {
-        chainId: "0x144",
-        rpcUrls: ["https://mainnet.era.zksync.io"],
-        chainName: "zkSync Era Mainnet",
+        blockExplorerUrls: ["https://goerli.explorer.zksync.io"],
+        rpcUrls: [
+          "https://zksync-era-testnet.blockpi.network/v1/rpc/public",
+          null,
+        ],
+        chainId: "0x118", // 280
+        chainName: "zkSync Era Testnet",
         nativeCurrency: {
           name: "ETH",
           symbol: "ETH",
           decimals: 18,
         },
-        blockExplorerUrls: ["https://explorer.zksync.io/"],
       },
     ],
   },
@@ -372,15 +375,15 @@ export const networkData = [
     label: "Arbitrum One",
     data: [
       {
-        chainId: "0xA4B1",
-        rpcUrls: ["https://arbitrum-mainnet.infura.io"],
+        blockExplorerUrls: ["https://goerli.arbiscan.io"],
+        rpcUrls: ["https://goerli-rollup.arbitrum.io/rpc", null],
+        chainId: "0x66EED", // 421613
         chainName: "Arbitrum One",
         nativeCurrency: {
           name: "ETH",
           symbol: "ETH",
           decimals: 18,
         },
-        blockExplorerUrls: ["https://explorer.arbitrum.io"],
       },
     ],
   },
@@ -389,15 +392,15 @@ export const networkData = [
     label: "Linea Mainnet",
     data: [
       {
-        chainId: "0x1",
-        rpcUrls: ["https://mainnet.infura.io/v3/"],
+        blockExplorerUrls: ["https://lineascan.build"],
+        rpcUrls: ["https://mainnet.infura.io/v3/", null],
+        chainId: "0xE708", // 59144
         chainName: "BNB Chain Testnet",
         nativeCurrency: {
           name: "ETH",
           symbol: "ETH",
           decimals: 18,
         },
-        blockExplorerUrls: ["https://etherscan.io"],
       },
     ],
   },
@@ -406,15 +409,15 @@ export const networkData = [
     label: "Base",
     data: [
       {
-        chainId: "0x2105",
-        rpcUrls: ["https://mainnet.base.org"],
-        chainName: "Base Mainnet",
+        blockExplorerUrls: ["https://goerli.basescan.org"],
+        rpcUrls: ["https://goerli.base.org", null],
+        chainId: "0x14A33", // 84531
+        chainName: "Base Goerli",
         nativeCurrency: {
           name: "ETH",
           symbol: "ETH",
           decimals: 18,
         },
-        blockExplorerUrls: "https://basescan.org",
       },
     ],
   }, */
@@ -423,33 +426,33 @@ export const networkData = [
     label: "opBNB Mainnet",
     data: [
       {
-        chainId: "0x15EB",
-        rpcUrls: ["https://opbnb-testnet-rpc.bnbchain.org"],
+        blockExplorerUrls: ["https://opbnb-testnet.bscscan.com"],
+        rpcUrls: ["https://opbnb-testnet-rpc.bnbchain.org", null],
+        chainId: "0xCC", // 5611
         chainName: "opBNB Testnet",
         nativeCurrency: {
           name: "BNB",
-          symbol: "tBNB",
+          symbol: "BNB",
           decimals: 18,
         },
-        blockExplorerUrls: ["http://testnet.opbnbscan.com/"],
       },
     ],
   },
   {
     iconoinicio: <Aptos />,
     label: "Aptos",
-    data: [
+    /* data: [
       {
-        chainId: "???",
-        rpcUrls: ["https://fullnode.testnet.aptoslab.com/"],
+        blockExplorerUrls: ["https://aptos-testnet.s.chainbase.com"],
+        rpcUrls: ["https://fullnode.testnet.aptoslab.com/", null],
+        chainId: "0x13", // 19, pero es trucho
         chainName: "Aptos",
         nativeCurrency: {
           name: "TAPTOS",
           symbol: "TAPTOS",
           decimals: 18,
         },
-        blockExplorerUrls: ["https://aptos-testnet.s.chainbase.com"],
       },
-    ],
+    ], */
   },
 ];
