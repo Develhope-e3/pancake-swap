@@ -1,15 +1,14 @@
-import { ethers } from "ethers";
+import * as ethers from "ethers";
 
 export const connectWallet = async (setWallet, selectedNetwork) => {
-
-  if (window.ethereum == null) {
-    console.log("Metamask not installed; using read only defaults");
+  if (window.ethereum === null || undefined) {
+    console.error("Metamask not installed; using read only defaults");
   } else {
     await SwitchNetwork(selectedNetwork);
-    const provider = new ethers.BrowserProvider(window.ethereum);
+    const provider = new ethers.BrowserProvider(window.ethereum, "any");
+    await provider.send("eth_requestAccounts", []);
     const signer = await provider.getSigner();
     const address = await signer.getAddress();
-
     setWallet(address);
   }
 };
@@ -31,7 +30,7 @@ export const SwitchNetwork = async (networkData) => {
   await window.ethereum
     .request({
       method: "wallet_switchEthereumChain",
-      params: [{ chainId: networkData.chainId }],
+      params: [{ chainId: networkData.data[0].chainId }],
     })
     .then(() => console.log("Successfully! Connected to the requested Network"))
     .catch((err) => {
