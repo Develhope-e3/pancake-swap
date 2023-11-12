@@ -96,6 +96,7 @@ const Navbar = () => {
         />
 
         <Button
+          id="connect-wallet"
           isPrimary={true}
           widthValue={"149px"}
           heightValue={"32px"}
