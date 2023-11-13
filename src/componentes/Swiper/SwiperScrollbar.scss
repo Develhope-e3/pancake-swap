@@ -8,12 +8,28 @@
 //   width: 10px;
 //   opacity: none;
 // }
-.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: var(--swiper-pagination-bottom, 8px);
-    top: var(--swiper-pagination-top, auto);
-    left: 0;
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// .swiper-pagination-fraction,
+// .swiper-pagination-custom,
+// .swiper-horizontal > .swiper-pagination-bullets,
+// .swiper-pagination-bullets.swiper-pagination-horizontal {
+//     bottom: var(--swiper-pagination-bottom, 8px);
+//     top: var(--swiper-pagination-top, auto);
+//     left: 0;
+//     width: 10%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .swiper {
+//     overflow: visible !important;
+// }
+
+.conejoVolando {
+    width: 262px;
+    height: 170px;
+    position: absolute;
+    right: 12rem;
+    bottom: 4rem;
+    z-index: 50;
 }
