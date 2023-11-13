@@ -1,4 +1,5 @@
-import asset from '../imagenes/asset 17.png'
+import asset from '../imagenes/asset 17.png';
+// import asset2 from '../imagenes/asset 26.png'
 
 const Slide3 = () => {
 return (

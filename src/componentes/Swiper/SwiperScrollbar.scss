@@ -8,3 +8,12 @@
 //   width: 10px;
 //   opacity: none;
 // }
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom, 8px);
+    top: var(--swiper-pagination-top, auto);
+    left: 0;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
