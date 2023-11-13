@@ -35,7 +35,6 @@ export const PortalRoot = () => {
 };
  */
 
-
 export const PortalRoot = () => {
   const [appear, setAppear] = useState(false);
 
@@ -71,14 +70,12 @@ export const PortalRoot = () => {
 
   return (
     <>
+      {handleClickWallet()}
       {appear && (
         <div id="portal-root">
           <div className="appear"></div>
         </div>
       )}
-      <button id="connect-wallet" onClick={handleClickWallet}>
-        Connect Wallet
-      </button>
     </>
   );
 };
