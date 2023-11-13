@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <BasePage className={theme === "dark" ? "dark-mode" : "light-mode"}>
       <MainSection>
-      <Box isFlexRow={true} maxWidth={1200}>
+      <Box isFlexRowCenter maxWidth={1200} >
       <SwiperScrollbar/>
       </Box>
         <Box isFlexRow={true} maxWidth={1200}>
