@@ -52,7 +52,7 @@
 
   font-size: var(--font-size-md);
   font-weight: 600;
-  color: var(--color-text);
+  color: var(--text-color);
   text-decoration: none;
 }
 .footer-anchor:hover {
@@ -71,6 +71,11 @@
 }
 .footer-anchor-secondary:hover {
   text-decoration: underline;
+}
+.dropdown-secundario{
+  svg{
+    color:var(--color-linea-footer);
+  }
 }
 
 .slide-bunny {

@@ -1,4 +1,3 @@
-import React from "react";
 import "./mainSection.scss";
 import ImageMainSection from "../../assets/iconos/MainSection";
 import Texto from "../Texto/Texto";
@@ -26,7 +25,7 @@ const MainSectionBody = () => {
             widthValue={"166px"}
             heightValue={"46px"}
             texto={"Connect Wallet"}
-            colorTexto={"var(--text-color-black)"}
+            colorTexto={"var(--color-button-primary)"}
             onClick={() => console.log("click")}
           />
           <Button

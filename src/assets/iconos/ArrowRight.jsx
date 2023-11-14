@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  * @param {string} color - color asignado al icono
  * @param {JSX.Element} svg - SVG element o React-Icon
@@ -11,7 +9,7 @@ const ArrowRight = ({ color }) => {
   return (
     <svg
       fill={color}
-      viewBox="0 -9 33 33"
+      viewBox="0 -7 33 33"
       ml="4px"
       color="invertedContrast"
       width="30px"

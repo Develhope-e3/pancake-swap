@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  * @param {string} color - color asignado al icono
  * @param {JSX.Element} svg - SVG element o React-Icon
@@ -14,8 +12,7 @@ const ThirdYearCake = ({ color }) => {
       width="48"
       height="58"
       fill={color}
-      viewBox="0 0 48 58"
-    >
+      viewBox="0 0 48 58">
       <g filter="url(#filter0_i_622_7305)">
         <rect width="48" height="48" y="9.668" fill="#1FC7D4" rx="16" />
       </g>
@@ -28,8 +25,7 @@ const ThirdYearCake = ({ color }) => {
             x="-4.458"
             y="4.333"
             fill="#000"
-            maskUnits="userSpaceOnUse"
-          >
+            maskUnits="userSpaceOnUse">
             <rect
               width="54.332"
               height="55.032"
@@ -133,8 +129,7 @@ const ThirdYearCake = ({ color }) => {
           x="0"
           y="9.668"
           color-interpolation-filters="sRGB"
-          filterUnits="userSpaceOnUse"
-        >
+          filterUnits="userSpaceOnUse">
           <feFlood flood-opacity="0" result="BackgroundImageFix" />
           <feBlend
             in="SourceGraphic"
