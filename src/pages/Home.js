@@ -72,7 +72,7 @@ const Home = () => {
         <Box isFlexRow={true}>
           <Box isFlexColStart={true}>
             <Box isFlexCol={true}>
-              <Box>
+              <Box seccionText={true}>
                 <Texto
                   size={"tittle-section-lg"}
                   color={"var(--color-titulo-lila)"}
@@ -84,7 +84,7 @@ const Home = () => {
                   label={"anything. No registration, no hassle."}
                 />
               </Box>
-              <Box>
+              <Box seccionText={true}>
                 <Texto
                   size={"text-section-ml"}
                   color={"var(--color-subtitulo-lila)"}
@@ -120,7 +120,7 @@ const Home = () => {
               />
             </Box>
           </Box>
-          <Box>
+          <Box seccionImage={true}>
             <img src={SectionthreeCoins} alt="coins"></img>
           </Box>
         </Box>
@@ -128,12 +128,12 @@ const Home = () => {
       {/* Seccion 4 */}
       <MainSection>
         <Box isFlexRow={true}>
-          <Box>
+          <Box seccionImage={true}>
             <img src={SectionFourCoins} alt="data"></img>
           </Box>
           <Box isFlexColStart={true}>
             <Box isFlexCol={true}>
-              <Box>
+              <Box seccionText={true}>
                 <Texto
                   size={"tittle-section-lg"}
                   color={"var(--color-titulo-lila)"}
@@ -145,7 +145,7 @@ const Home = () => {
                   label={"passive income with crypto"}
                 />
               </Box>
-              <Box>
+              <Box seccionText={true}>
                 <Texto
                   size={"text-section-ml"}
                   color={"var(--color-subtitulo-lila)"}
@@ -188,7 +188,7 @@ const Home = () => {
         <Box isFlexRow={true}>
           <Box isFlexColStart={true}>
             <Box isFlexCol={true}>
-              <Box>
+              <Box seccionText={true}>
                 <Texto
                   size={"tittle-section-lg"}
                   color={"var(--color-titulo-lila)"}
@@ -200,7 +200,7 @@ const Home = () => {
                   label={" make our world go round."}
                 />
               </Box>
-              <Box>
+              <Box seccionText={true}>
                 <Texto
                   size={"text-section-ml"}
                   color={"var(--color-subtitulo-lila)"}
@@ -236,7 +236,7 @@ const Home = () => {
               />
             </Box>
           </Box>
-          <Box>
+          <Box seccionImage={true}>
             <img src={SectionSixCoins} alt="coins"></img>
           </Box>
         </Box>

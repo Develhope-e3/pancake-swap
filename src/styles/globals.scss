@@ -1,5 +1,5 @@
 * {
-  font-family: var(--font-normal)
+  font-family: var(--font-normal);
 }
 
 .section {
@@ -28,7 +28,11 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-lg);
-
+  @media (max-width: 1350px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .flex-col-center {
@@ -38,7 +42,6 @@
   align-items: center;
   text-align: center;
   gap: var(--space-lg);
-
 }
 
 .flex-col-start {
@@ -47,7 +50,10 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: var(--space-lg);
-
+  @media (max-width: 1350px) {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .flex-col-space-between {
@@ -57,7 +63,6 @@
   align-items: flex-start;
   text-align: center;
   gap: var(--space-lg);
-
 }
 
 .flex-row-space-between {
@@ -67,7 +72,6 @@
   align-items: flex-start;
   text-align: center;
   gap: var(--space-lg);
-
 }
 
 .flex-row {
@@ -79,7 +83,6 @@
     justify-content: center;
     align-items: center;
   }
-
 }
 
 .flex-row-center {
@@ -98,7 +101,11 @@
   align-items: center;
   text-align: center;
   gap: var(--space-md);
-
+  @media (max-width: 1350px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .flex-sidebuton {
@@ -130,4 +137,21 @@
   -moz-border-radius: var(--border-radius-xxl);
   -ms-border-radius: var(--border-radius-xxl);
   -o-border-radius: var(--border-radius-xxl);
+}
+.seccion-text {
+  @media (max-width: 1350px) {
+    display: inline-flex;
+    order: 1;
+    justify-content: center;
+    gap: 0.2rem;
+    text-align: center;
+
+  }
+}
+.seccion-image {
+  @media (max-width: 1350px) {
+    display: flex;
+    order: 2;
+    justify-content: center;
+  }
 }
