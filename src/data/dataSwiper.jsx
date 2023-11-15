@@ -22,7 +22,7 @@ export const dataSwiper = [
     ),
     textoSecundario: "subtitulo de la card 1",
     descripcion: null,
-    link: "Get Starded",
+    link: null,
     botonPrimario: (
       <Button
         isPrimary={true}

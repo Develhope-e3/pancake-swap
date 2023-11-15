@@ -1,7 +1,4 @@
 import classNames from "classnames";
-import Button from "../../Button/Button";
-import Link from "../../Link/Link";
-import Texto from "../../Texto/Texto";
 import './Slide.scss'
 const Slide = ({
   className,
@@ -24,22 +21,22 @@ const Slide = ({
   });
 
   return (
-    <>
+    <div className="swiper-card-container">
       <img src={backgroundImage} alt="asd" className={className}/>
       <div className="text-container">
-        {textoPrimario && <Texto/>}
-        {textoSecundario && <Texto/>}
+        {textoPrimario && textoPrimario}
+        {textoSecundario && textoSecundario}
         {descripcion && <h1>{descripcion}</h1>}
       </div>
 
       <div className="buttons-container">
-        {botonPrimario && <Button />}
-        {botonSecundario && <Button />}
-        {link && <Link />}
+        {botonPrimario && botonPrimario}
+        {botonSecundario && botonSecundario}
+        {link && link}
       </div>
 
       {conejo && <img src={conejo} alt="swiper" className={mappedClassname} />}
-    </>
+    </div>
   );
 };
 export default Slide;
