@@ -2,6 +2,7 @@ import { BsThreeDots } from "react-icons/bs";
 import Dropdown from "../Dropdown/Dropdown";
 import Icono from "../Icono/Icono";
 import PancakeSwapIcono from "../Icono/PancakeSwapIcono";
+import ResponsivePancakeSwapIcono from "../../assets/iconos/ResponsivePancakeSwapIcono.jsx";
 import Puntos from "../Puntos/Puntos";
 import BunnySmall from "../../assets/iconos/BunnySmall";
 import { IoSettingsSharp } from "react-icons/io5";
@@ -29,6 +30,13 @@ const Navbar = () => {
       <div className="navbar div1">
         <div className="pancakeswap-icon">
           <Icono icono={<PancakeSwapIcono />} />
+        </div>
+        <div>
+          <Link
+            className={"pancakeswap-icon_responsive"}
+            svg={<ResponsivePancakeSwapIcono />}
+            href={"/"}
+          />
         </div>
         <Dropdown
           label={"Trade"}

@@ -16,14 +16,29 @@ nav {
   display: flex;
   align-items: center;
   width: 700px;
+  .dropdown {
+    @media (max-width: 850px) {
+      display: none;
+    }
+  }
 }
 .div2 {
   display: flex;
   justify-content: space-between;
   width: 550px;
+
+  @media (max-width: 850px) {
+    justify-content: flex-end;
+  }
 }
 .pancakeswap-icon {
   @media (max-width: 1200px) {
     display: none;
+  }
+}
+.pancakeswap-icon_responsive {
+  display: none;
+  @media (max-width: 1200px) {
+    display: flex;
   }
 }
