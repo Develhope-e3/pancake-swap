@@ -1,15 +1,45 @@
-.conejoVolando {}
-
-.conejoConVelasJaponesas {}
-
-.conejoFreezado {}
-
-.conejoConHambre {}
-
-.text-container{
-
+.conejoVolando {
+  width: 262px;
+  height: 170px;
+  position: absolute;
+  right: 12rem;
+  bottom: 4rem;
+  z-index: 50;
 }
 
-.buttons-container{
-  
+.conejoConVelasJaponesas {
+  width: 262px;
+  height: 170px;
+  position: absolute;
+  right: 12rem;
+  bottom: 4rem;
+  z-index: 50;
+}
+
+.conejoFreezado {
+  width: 262px;
+  height: 170px;
+  position: absolute;
+  right: 12rem;
+  bottom: 4rem;
+  z-index: 50;
+}
+
+.conejoConHambre {
+  width: 262px;
+  height: 170px;
+  position: absolute;
+  right: 12rem;
+  bottom: 4rem;
+  z-index: 50;
+}
+
+.text-container {
+    height: 50px;
+    position: absolute;
+}
+
+
+.buttons-container {
+    position: absolute;
 }

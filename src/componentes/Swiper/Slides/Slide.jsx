@@ -1,7 +1,10 @@
 import classNames from "classnames";
 import Button from "../../Button/Button";
 import Link from "../../Link/Link";
+import Texto from "../../Texto/Texto";
+import './Slide.scss'
 const Slide = ({
+  className,
   textoPrimario,
   textoSecundario,
   descripcion,
@@ -22,10 +25,10 @@ const Slide = ({
 
   return (
     <>
-      <img src={backgroundImage} alt="asd" />
+      <img src={backgroundImage} alt="asd" className={className}/>
       <div className="text-container">
-        {textoPrimario && <h1>{textoPrimario}</h1>}
-        {textoSecundario && <h1>{textoSecundario}</h1>}
+        {textoPrimario && <Texto/>}
+        {textoSecundario && <Texto/>}
         {descripcion && <h1>{descripcion}</h1>}
       </div>
 

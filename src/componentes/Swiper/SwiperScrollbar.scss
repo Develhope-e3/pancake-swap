@@ -1,35 +1,22 @@
-// .swiper-backface-hidden .swiper-slide {
-//   transform: none;
-//   -webkit-backface-visibility: hidden;
-//   backface-visibility: hidden;
-// }
-
-// .swiper-scrollbar-drag{
-//   width: 10px;
-//   opacity: none;
-// }
-// .swiper-pagination-fraction,
-// .swiper-pagination-custom,
-// .swiper-horizontal > .swiper-pagination-bullets,
-// .swiper-pagination-bullets.swiper-pagination-horizontal {
-//     bottom: var(--swiper-pagination-bottom, 8px);
-//     top: var(--swiper-pagination-top, auto);
-//     left: 0;
-//     width: 10%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// .swiper {
-//     overflow: visible !important;
-// }
-
-.conejoVolando {
-    width: 262px;
-    height: 170px;
-    position: absolute;
-    right: 12rem;
-    bottom: 4rem;
-    z-index: 50;
+.swiper {
+  height: 200px;
+}
+.swiper-slide {
+  overflow: visible;
+}
+img.slide1 {
+  width: 1100px;
+  height: 189px;
+}
+img.slide2 {
+  width: 1100px;
+  height: 189px;
+}
+img.slide3 {
+  width: 1100px;
+  height: 189px;
+}
+img.slide4 {
+  width: 1100px;
+  height: 189px;
 }
