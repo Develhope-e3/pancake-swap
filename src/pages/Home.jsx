@@ -6,16 +6,18 @@ import { dataPrimaryCard } from "../data/dataPrimaryCard";
 import BasePage from "../componentes/Section/BasePage";
 import Texto from "../componentes/Texto/Texto";
 import Button from "../componentes/Button/Button";
+import Link from "../componentes/Link/Link";
 import ImageMainSection from "../assets/iconos/MainSection";
 import "./Home.scss";
-import { SectionThree } from "../componentes/SectionThree/SectionThree";
-import { SectionFour } from "../componentes/SectionFour/SectionFour";
-import { SectionSix } from "../componentes/SectionSix/SectionSix";
 import { useTheme } from "../context/ThemeContext";
 import {
   GridComposer1,
   GridComposer2,
 } from "../componentes/GridComposer/GridComposer";
+
+import SectionFourCoins from "../assets/imagenes/SectionFourCoins.png";
+import SectionSixCoins from "../assets/imagenes/SectionSixCoins.png";
+import SectionthreeCoins from "../assets/imagenes/SectionthreeCoins.png";
 import { CardCTA } from "../componentes/Cards/CardCTA";
 import { dataCardCTA } from "../data/dataCardCTA";
 import SubImages from "../../src/assets/iconos/SubImages";
@@ -251,7 +253,6 @@ const Home = () => {
         </Box>
       </MainSection>
       <MainSection background={`var(--background-color-secondary)`}>
-        <SectionFour />
         <Box isFlexColCenter>
           <GridComposer2 className={"theme2"} col={5} remColSpacing={3} />
         </Box>
@@ -295,7 +296,6 @@ const Home = () => {
         <SubImages size={35} />
       </Section>
       <MainSection>
-        <SectionSix />
         <GridComposer1
           className={"theme1"}
           col={3}

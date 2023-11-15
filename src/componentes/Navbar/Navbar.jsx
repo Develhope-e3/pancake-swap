@@ -52,26 +52,24 @@ const Navbar = () => {
         />
       </div>
       <div className="navbar div2">
-        <Dropdown
-          label={<TbWorld />}
-          dropdownItems={idiomas}
-          className={"idiomas"}
-          isIdiomas={true}
-        />
-
-        <Button
-          isSetting={true}
-          className="button-setting"
-          svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
-          onClick={() => console.log("click en el boton setting")}
-        />
         <Link
           className={"button-bunny"}
           svg={<BunnySmall />}
           label={"$1.184"}
           href={"www.google.com"}
         />
-
+        <Dropdown
+          label={<TbWorld />}
+          dropdownItems={idiomas}
+          className={"idiomas"}
+          isIdiomas={true}
+        />
+        <Button
+          isSetting={true}
+          className="button-setting"
+          svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
+          onClick={() => console.log("click en el boton setting")}
+        />
         <DropdownNetwork
           icono1={<BnbSmartChain />}
           label={"BNB Smart Chain"}

@@ -1,28 +1,29 @@
-nav{
+nav {
   display: flex;
   padding: 0px 16px;
   justify-content: space-between;
   align-items: center;
 
-
   background-color: var(--background-color-secondary);
-  
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.div1{
-    display: flex;
-    align-items: center;
-    width: 700px;
-
+.div1 {
+  display: flex;
+  align-items: center;
+  width: 700px;
 }
-.div2{
-    display: flex;
-    justify-content: space-between;
-    width: 550px;
+.div2 {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+}
+.pancakeswap-icon {
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }
