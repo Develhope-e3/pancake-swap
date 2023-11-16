@@ -1,23 +1,19 @@
-.modal-container { 
-  
+@import "../../styles/mixins.scss";
+
+.modal-container {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 100vw;
   height: 100vh;
-
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
+  @include modal-bg-animation;
 }
 
 .modal-content {
-  // position: relative;
-  z-index: 101;
-
-
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -34,6 +30,8 @@
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
+
+  z-index: 101;
 }
 
 .modal-close {
