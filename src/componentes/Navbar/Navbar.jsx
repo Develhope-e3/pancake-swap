@@ -24,6 +24,8 @@ import {
 } from "../../data/dropdownItems";
 import { useEffect, useState } from "react";
 import { SwitchNetwork, connectWallet } from "../Button/utils.jsx";
+import { useModal } from "../Modals/useModal";
+import { Modal } from "../Modals/Modal";
 
 const Navbar = () => {
   const [selectedNetwork, setSelectedNetwork] = useState(networkData[0]);
@@ -35,6 +37,8 @@ const Navbar = () => {
       SwitchNetwork(selectedNetwork);
     }
   }, [selectedNetwork, wallet]);
+
+  const {visible, handleOpenModal, handleCloseModal} = useModal(false);
 
   return (
     <nav>
@@ -94,7 +98,6 @@ const Navbar = () => {
           selectedNetwork={selectedNetwork}
           setSelectedNetwork={setSelectedNetwork}
         />
-
         <Button
           id="connect-wallet"
           isPrimary={true}
@@ -102,8 +105,13 @@ const Navbar = () => {
           heightValue={"32px"}
           texto={"Connect Wallet"}
           colorTexto={"var(--text-color-black)"}
-          onClick={() => connectWallet(setWallet, selectedNetwork)}
+          onClick={() => handleOpenModal}
         />
+        <Modal isVisible={true} closeModal={handleCloseModal}>
+          <h1 style={{ backgroundColor: "white", fontSize: "68px" }}>
+            Hola soy Marcos
+          </h1>
+        </Modal>
       </div>
     </nav>
   );
