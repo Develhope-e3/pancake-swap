@@ -8,7 +8,7 @@
 
 .bnb {
   padding: 0;
-  width: 200px;
+  width: 220px;
   height: 32px;
 
   position: relative;
@@ -25,6 +25,7 @@
 
   &:hover {
     background-color: var(--background-color-secondary);
+
   }
 
   img {
