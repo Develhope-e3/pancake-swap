@@ -16,8 +16,8 @@ export const dataSwiper = [
     textoPrimario: (
       <Texto
         label={"Traverse the Treasure Islands on Galxe now!"}
-        size={"title-md-bold"}
-        color={"var(--color-gradient-text)"}
+        size={"title-card-bold"}
+        color={"var(--color-secondary)"}
       />
     ),
     textoSecundario: "subtitulo de la card 1",

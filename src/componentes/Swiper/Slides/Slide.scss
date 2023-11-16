@@ -1,12 +1,11 @@
-.swiper-card-container{
+.swiper-card-container {
   position: relative;
   width: 1200px;
   height: 200px;
   display: flex;
   flex-direction: column;
-justify-items: end;
+  justify-content: space-evenly;
   align-items: flex-start;
-
 }
 
 .conejoVolando {
@@ -47,12 +46,10 @@ justify-items: end;
   z-index: 50;
 }
 
-// .text-container {
+.text-container {
+  padding-left: 20px;
+}
 
-
-// }
-
-
-// .buttons-container {
-
-// }
+.buttons-container {
+  padding-left: 20px;
+}
