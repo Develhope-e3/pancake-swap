@@ -22,9 +22,8 @@ const DropdownItem = ({
     "dropdown-idiomas": isIdiomas,
   });
 
-  
   return (
-    <ul className={"dropdown-list"}>
+    <ul className={isNetwork ? "dropdown-network" : "dropdown-list"}>
       {options.map((option, index) => (
         <div
           className={givenClassName}

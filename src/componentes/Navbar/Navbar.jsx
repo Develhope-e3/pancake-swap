@@ -6,7 +6,6 @@ import Puntos from "../Puntos/Puntos";
 import BunnySmall from "../../assets/iconos/BunnySmall";
 import { IoSettingsSharp } from "react-icons/io5";
 import DropdownNetwork from "../../componentes/Dropdown/DropdownNetwork/DropdownNetwork.jsx";
-import BnbSmartChain from "../../assets/iconos/BnbSmartChain.jsx";
 import { IoIosArrowDown } from "react-icons/io";
 import { TbWorld } from "react-icons/tb";
 import "./Navbar.scss";
@@ -38,7 +37,8 @@ const Navbar = () => {
     }
   }, [selectedNetwork, wallet]);
 
-  const {visible, handleOpenModal, handleCloseModal} = useModal(false);
+  // const {visible, handleOpenModal, handleCloseModal} = useModal(false);
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   return (
     <nav>
@@ -105,13 +105,13 @@ const Navbar = () => {
           heightValue={"32px"}
           texto={"Connect Wallet"}
           colorTexto={"var(--text-color-black)"}
-          onClick={() => handleOpenModal}
+          onClick={() => setIsModalVisible(true)}
         />
-        <Modal isVisible={true} closeModal={handleCloseModal}>
-          <h1 style={{ backgroundColor: "white", fontSize: "68px" }}>
-            Hola soy Marcos
-          </h1>
-        </Modal>
+        {isModalVisible && (
+          <Modal setIsModalVisible={setIsModalVisible}>
+            {/* <WalletModalContent /> */}
+          </Modal>
+        )}
       </div>
     </nav>
   );

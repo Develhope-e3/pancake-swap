@@ -9,17 +9,14 @@ import "./Modal.scss";
  * @returns Estructura HTML
  */
 
-export const Modal = ({ children, isVisible, closeModal }) => {
-  const handleModalContainerClick = (e) => e.stopPropagation();
-
+export const Modal = ({ setIsModalVisible, children }) => {
   return (
-    <article
-      className={`modal-base ${isVisible && "is-visible"}`}
-      onClick={closeModal}>
-      <div className="modal-container" onClick={handleModalContainerClick}>
-        <div className="modal-content">{children}</div>
-        <div className="modal-close" onClick={closeModal}></div>
-      </div>
-    </article>
+    <div className="modal-container">
+      <div className="modal-content">{children}</div>
+      <div
+        className="modal-close"
+        onClick={() => setIsModalVisible(false)}
+      ></div>
+    </div>
   );
 };

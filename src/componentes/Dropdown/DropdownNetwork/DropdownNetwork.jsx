@@ -25,23 +25,23 @@ const DropdownNetwork = ({
   icono2,
   setSelectedNetwork,
 }) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
-  // const handleMouseEnter = () => {
-  //   setIsOpen(true);
-  // };
+  const handleMouseEnter = () => {
+    setIsOpen(true);
+  };
 
-  // const handleMouseLeave = () => {
-  //   setIsOpen(false);
-  // };
+  const handleMouseLeave = () => {
+    setIsOpen(false);
+  };
 
   return (
-    <>
-      <div
-        className="bnb"
-        // onMouseEnter={handleMouseEnter}
-        // onMouseLeave={handleMouseLeave}
-      >
+    <div
+    className="dropdownContainer"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div className="bnb">
         <Icono icono={selectedNetwork.iconoinicio} />
         <Link label={selectedNetwork.label} className={className} href={href} />
         <Icono icono={icono2} />
@@ -53,7 +53,7 @@ const DropdownNetwork = ({
           />
         )}
       </div>
-    </>
+    </div>
   );
 };
 export default DropdownNetwork;

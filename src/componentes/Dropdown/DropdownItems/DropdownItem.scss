@@ -9,6 +9,17 @@
 
 }
 
+.dropdown-network {
+  position: absolute;
+  z-index: 5;
+  top: 44px;
+  left: 0;
+
+  background-color: var(--background-color-secondary);
+  border-radius: var(--radius-ms);
+
+}
+
 .dropdown-item {
   width: 280px;
 
@@ -23,13 +34,14 @@
   }
 }
 
-.dropdown-bnb{
+.dropdown-bnb {
   display: flex;
   justify-content: flex-start;
-  
+
   width: 200px;
 
 }
-.dropdown-idiomas{
+
+.dropdown-idiomas {
   width: 100px;
 }
