@@ -8,6 +8,8 @@ import Slide from "./Slides/Slide";
 import "./SwiperScrollbar.scss";
 import { dataSwiper } from "../../data/dataSwiper";
 
+import { EffectFade } from "swiper/modules";
+
 export default function SwiperScrollbar() {
   return (
     <>
@@ -15,8 +17,8 @@ export default function SwiperScrollbar() {
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
-        className="swiper"
+        spaceBetween={50}
+        modules={[Pagination, EffectFade]}
       >
         {dataSwiper &&
           dataSwiper.map((card) => (
