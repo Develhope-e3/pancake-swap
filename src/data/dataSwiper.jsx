@@ -14,13 +14,19 @@ export const dataSwiper = [
   {
     className: "slide1",
     textoPrimario: (
-      <Texto
-        label={"Traverse the Treasure Islands on Galxe now!"}
-        size={"title-card-bold"}
-        color={"var(--color-secondary)"}
-      />
+      <div>
+        <h3 style={{ color: "var(--color-quaternary)", fontSize: "30px" }}>
+          Traverse the Treasure Islands on Galxe now!
+        </h3>
+      </div>
     ),
-    textoSecundario: "subtitulo de la card 1",
+    textoSecundario: (
+      <div>
+        <h3 style={{ color: "var(--color-quaternary)", fontSize: "30px" }}>
+          subtitulo
+        </h3>
+      </div>
+    ),
     descripcion: null,
     link: null,
     botonPrimario: (
