@@ -20,6 +20,7 @@ import { CardCTA } from "../componentes/Cards/CardCTA";
 import { dataCardCTA } from "../data/dataCardCTA";
 import SubImages from "../../src/assets/iconos/SubImages";
 import SupImages from "../../src/assets/iconos/SupImages";
+import MainSectionSVG from "../assets/BackgroundSVG/MainSectionSVG";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -59,6 +60,7 @@ const Home = () => {
           </Box>
           <ImageMainSection />
         </Box>
+        <MainSectionSVG />
       </MainSection>
       <MainSection>
         <Box isFlexRowStart={true}>
