@@ -1,6 +1,8 @@
 import classNames from "classnames";
-import './Slide.scss'
+import "./Slide.scss";
 const Slide = ({
+  texto1EnPng,
+  texto2EnPng,
   className,
   textoPrimario,
   textoSecundario,
@@ -22,17 +24,28 @@ const Slide = ({
 
   return (
     <div className="swiper-card-container">
-      <img src={backgroundImage} alt="asd" className={className}/>
+      <img src={backgroundImage} alt="asd" className={className} />
       <div className="text-container">
-        {textoPrimario && textoPrimario}
-        {textoSecundario && textoSecundario}
+        <div className="text-container-png">
+          <img
+            src={texto1EnPng}
+            alt="pancake"
+            style={{ width: 132, height: 22 }}
+          />
+          |{" "}
+          <img src={texto2EnPng} alt="asd" style={{ width: 77, height: 14 }} />
+        </div>
+        <div className="text-central">
+          {textoPrimario && textoPrimario}
+          {textoSecundario && textoSecundario}
+        </div>
         {descripcion && <h1>{descripcion}</h1>}
-      </div>
 
-      <div className="buttons-container">
-        {botonPrimario && botonPrimario}
-        {botonSecundario && botonSecundario}
-        {link && link}
+        <div className="buttons-container">
+          {botonPrimario && botonPrimario}
+          {botonSecundario && botonSecundario}
+          {link && link}
+        </div>
       </div>
 
       {conejo && <img src={conejo} alt="swiper" className={mappedClassname} />}

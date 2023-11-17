@@ -9,23 +9,36 @@ import conejo4 from "../assets/imagenes/asset 59.png";
 import Texto from "../componentes/Texto/Texto";
 import Button from "../componentes/Button/Button";
 import LinkLearn from "../assets/iconos/LinkLearn";
+import texto2Png1 from "../assets/imagenes/asset 40.png";
+import textoPancake from "../assets/imagenes/asset 9.png";
 
 export const dataSwiper = [
   {
     className: "slide1",
+    texto1EnPng: textoPancake,
+    texto2EnPng: texto2Png1,
     textoPrimario: (
-      <div>
-        <h3 style={{ color: "var(--color-quaternary)", fontSize: "30px" }}>
-          Traverse the Treasure Islands on Galxe now!
-        </h3>
-      </div>
+      <h3
+        style={{
+          color: "var(--color-quaternary)",
+          fontSize: "30px",
+          webkitTextFillColor: "var(--color-quaternary)",
+          webkitTextStroke: "2px var(--color-borde-text-swiper)",
+        }}
+      >
+        Traverse the Treasure Islands on Galxe now!
+      </h3>
     ),
     textoSecundario: (
-      <div>
-        <h3 style={{ color: "var(--color-quaternary)", fontSize: "30px" }}>
-          subtitulo
-        </h3>
-      </div>
+      <h4
+        style={{
+          color: "var(--color-card-text)",
+          fontSize: "24px",
+          fontWeight: 700,
+        }}
+      >
+        Exclusive NFTs and treasures await!
+      </h4>
     ),
     descripcion: null,
     link: null,

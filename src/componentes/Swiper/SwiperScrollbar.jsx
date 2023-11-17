@@ -24,6 +24,8 @@ export default function SwiperScrollbar() {
           dataSwiper.map((card) => (
             <SwiperSlide>
               <Slide
+                texto1EnPng={card.texto1EnPng}
+                texto2EnPng={card.texto2EnPng}
                 className={card.className}
                 textoPrimario={card.textoPrimario}
                 textoSecundario={card.textoSecundario}

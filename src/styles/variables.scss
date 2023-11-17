@@ -50,6 +50,7 @@
 }
 
 .light-mode {
+  --color-borde-text-swiper: #ff5100;
   --text-color: #ffffff;
   --color-titulo-lila: #7645d9;
   --color-subtitulo-lila: #7a6eaa;
@@ -152,10 +153,11 @@
   gradientBlue: 'linear-gradient(180deg, #00707F 0%, #19778C 100%)',
   gradientViolet: 'linear-gradient(180deg, #6C4999 0%, #6D4DB2 100%)',
   gradientVioletAlt: 'linear-gradient(180deg, #434575 0%, #66578D 100%)',
-  gradientGold: 'linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)',
+  gradientGold: 'linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)';
 } */
 
 .dark-mode {
+  --color-borde-text-swiper: #ff5100;
   --text-color: #ffffff;
   --color-titulo-lila: #9a6aff;
   --color-subtitulo-lila: #b8add2;
