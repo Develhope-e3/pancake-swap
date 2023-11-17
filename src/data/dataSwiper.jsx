@@ -119,7 +119,7 @@ export const dataSwiper = [
           webkitTextStroke: "2px var(--color-borde-text-swiper)",
         }}
       >
-        Titulo 3er card!
+        Titulo 3er card kgykyfk!
       </h3>
     ),
     textoSecundario: (
