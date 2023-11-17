@@ -23,6 +23,7 @@ import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny";
 import SubImages from "../../src/assets/iconos/SubImages";
 import SupImages from "../../src/assets/iconos/SupImages";
 import { VioletBunny } from "../assets/iconos/VioletBunny";
+import MainSectionSVG from "../assets/BackgroundSVG/MainSectionSVG";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -62,6 +63,7 @@ const Home = () => {
           </Box>
           <ImageMainSection />
         </Box>
+        <MainSectionSVG />
       </MainSection>
       <MainSection>
         <Box isFlexColCenter isPaddingTopButton>
