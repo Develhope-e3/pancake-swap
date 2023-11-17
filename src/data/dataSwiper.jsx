@@ -1,16 +1,20 @@
 import base1 from "../assets/imagenes/asset 41.png";
-import base2 from "../assets/imagenes/asset 36.png";
-import base3 from "../assets/imagenes/asset 17.png";
+import base3 from "../assets/imagenes/asset 36.png";
+import base2 from "../assets/imagenes/asset 17.png";
 import base4 from "../assets/imagenes/asset 54.png";
 import conejo1 from "../assets/imagenes/asset 45.png";
-import conejo2 from "../assets/imagenes/asset 38.png";
-import conejo3 from "../assets/imagenes/asset 34.png";
-import conejo4 from "../assets/imagenes/asset 59.png";
+import conejo3 from "../assets/imagenes/asset 38.png";
+import conejo2 from "../assets/imagenes/asset 151.png";
+import conejo4 from "../assets/imagenes/asset 47.png";
 import Texto from "../componentes/Texto/Texto";
 import Button from "../componentes/Button/Button";
 import LinkLearn from "../assets/iconos/LinkLearn";
 import texto2Png1 from "../assets/imagenes/asset 40.png";
 import textoPancake from "../assets/imagenes/asset 9.png";
+import texto2Png2 from "../assets/imagenes/asset 30.png";
+import Link from "../componentes/Link/Link";
+import pngBNB from "../assets/imagenes/asset 1.png";
+import ArrowRight from "../assets/iconos/ArrowRight";
 
 export const dataSwiper = [
   {
@@ -40,7 +44,6 @@ export const dataSwiper = [
         Exclusive NFTs and treasures await!
       </h4>
     ),
-    descripcion: null,
     link: null,
     botonPrimario: (
       <Button
@@ -56,7 +59,7 @@ export const dataSwiper = [
           />
         }
         svg={<LinkLearn color={"var(--text-color)"} />}
-        onClick={() => console.log("boton conejo volador")}
+        onClick={() => console.log("boton")}
       />
     ),
     botonSecundario: null,
@@ -66,10 +69,37 @@ export const dataSwiper = [
   },
   {
     className: "slide2",
-    textoPrimario: "Titulo de la card 2",
-    textoSecundario: "subtitulo de la card 2",
-    descripcion: null,
-    link: "Get Rekt",
+    texto1EnPng: textoPancake,
+    texto2EnPng: pngBNB,
+    textoPrimario: (
+      <h3
+        style={{
+          color: "var(--color-quaternary)",
+          fontSize: "30px",
+        }}
+      >
+        PancakeSwap Now Live on opBNB!
+      </h3>
+    ),
+    textoSecundario: (
+      <h4
+        style={{
+          color: "var(--text-color)",
+          fontSize: "24px",
+          fontWeight: 700,
+        }}
+      >
+        Swap and Provide Liquidity Nov!
+      </h4>
+    ),
+    link: (
+      <Link
+        className={"link3"}
+        svg={<LinkLearn />}
+        label={"Get Started"}
+        href={"www.google.com"}
+      />
+    ),
     botonPrimario: null,
     botonSecundario: null,
     conejo: conejo2,
@@ -78,9 +108,31 @@ export const dataSwiper = [
   },
   {
     className: "slide3",
-    textoPrimario: "Titulo de la card 3",
-    textoSecundario: "subtitulo de la card 3",
-    descripcion: null,
+    texto1EnPng: textoPancake,
+    texto2EnPng: texto2Png2,
+    textoPrimario: (
+      <h3
+        style={{
+          color: "var(--color-quaternary)",
+          fontSize: "30px",
+          webkitTextFillColor: "var(--color-quaternary)",
+          webkitTextStroke: "2px var(--color-borde-text-swiper)",
+        }}
+      >
+        Titulo 3er card!
+      </h3>
+    ),
+    textoSecundario: (
+      <h4
+        style={{
+          color: "var(--color-card-text)",
+          fontSize: "24px",
+          fontWeight: 700,
+        }}
+      >
+        subtitulo 3er card!
+      </h4>
+    ),
     link: "Get Rekt",
     botonPrimario: null,
     botonSecundario: null,
@@ -90,12 +142,64 @@ export const dataSwiper = [
   },
   {
     className: "slide4",
-    textoPrimario: "Titulo de la card 4",
-    textoSecundario: "subtitulo de la card 4",
-    descripcion: null,
-    link: "Get Rekt",
-    botonPrimario: null,
-    botonSecundario: null,
+    texto1EnPng: null,
+    texto2EnPng: null,
+    textoPrimario: (
+      <h3
+        style={{
+          color: "var(--text-color)",
+          fontSize: "25px",
+        }}
+      >
+        Trade to Earn Rewards!
+      </h3>
+    ),
+    textoSecundario: (
+      <h4
+        style={{
+          color: "var(--text-color)",
+          fontSize: "40px",
+          fontWeight: 700,
+        }}
+      >
+        10% trading rebate to be earned!
+      </h4>
+    ),
+    link: null,
+    botonPrimario: (
+      <Button
+        isPrimary={true}
+        widthValue={"140px"}
+        heightValue={"48px"}
+        gap={"2px"}
+        texto={
+          <Texto
+            label={"Trade Now"}
+            size={"title-md-bold"}
+            color={"var(--text-color)"}
+          />
+        }
+        svg={<ArrowRight color={"var(--text-color)"} />}
+        onClick={() => console.log("boton")}
+      />
+    ),
+    botonSecundario: (
+      <Button
+        isTertiary={true}
+        widthValue={"158.6px"}
+        heightValue={"48px"}
+        gap={"2px"}
+        texto={
+          <Texto
+            label={"Learn More"}
+            size={"text-button"}
+            color={"var(--color-primary)"}
+          />
+        }
+        svg={<LinkLearn color={"var(--color-primary)"} />}
+        onClick={() => console.log("boton")}
+      />
+    ),
     conejo: conejo4,
     numeroDeSlide: 4,
     backgroundImage: base4,

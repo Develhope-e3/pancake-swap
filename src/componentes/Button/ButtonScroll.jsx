@@ -18,7 +18,7 @@ export function ButtonScroll() {
       setVisible(true);
     }
   }, [])
-  
+
   return (
     <div
       className="button-scroll"

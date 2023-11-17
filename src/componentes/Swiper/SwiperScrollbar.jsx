@@ -29,7 +29,6 @@ export default function SwiperScrollbar() {
                 className={card.className}
                 textoPrimario={card.textoPrimario}
                 textoSecundario={card.textoSecundario}
-                descripcion={card.descripcion}
                 link={card.link}
                 botonPrimario={card.botonPrimario}
                 botonSecundario={card.botonSecundario}

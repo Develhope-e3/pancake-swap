@@ -23,6 +23,7 @@ import Texto from "../Texto/Texto";
 export const Button = ({
   isPrimary,
   isSecondary,
+  isTertiary,
   isWarning,
   isSetting,
   isFooter,
@@ -38,6 +39,7 @@ export const Button = ({
     button: true,
     "button-primary": isPrimary,
     "button-secondary": isSecondary,
+    "button-tertiary":isTertiary,
     "button-warning": isWarning,
     "button-setting": isSetting,
     "button-footer": isFooter,

@@ -37,4 +37,7 @@ img.slide3 {
 
 img.slide4 {
     @extend .slide1;
+    background-color: var(--color-secondary);
+    z-index: -1;
+    border-radius: var(--border-radius-xl) ;
 }

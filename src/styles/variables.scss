@@ -24,6 +24,7 @@
   --border-radius-sm: 5px;
   --border-radius-m: 10px;
   --border-radius-ml: 20px;
+  --border-radius-xl: 30px;
   --border-radius-xxl: 72px;
   --borderWidths-0: 0px;
   --borderWidths-1: 1px;
@@ -51,6 +52,7 @@
 
 .light-mode {
   --color-borde-text-swiper: #ff5100;
+  --color-card-text: #280d5f;
   --text-color: #ffffff;
   --color-titulo-lila: #7645d9;
   --color-subtitulo-lila: #7a6eaa;
@@ -63,7 +65,8 @@
   --color-gradient-yellow: linear-gradient(#fcac2d 0%, #fdcf5b 100%);
   --color-gradient-text: linear-gradient(166.02deg, #ffb237 -5.1%, #ffeb37 75.24%);
   --background-image-main: linear-gradient(139.73deg, #e5fdff, #f3efff);
-  ;
+
+  --color-gold: #ffc700;
   --color-secondary: #ffb237;
   --color-bg-button-hover: #228f99;
   --color-button-primary: #ffffff;
@@ -91,7 +94,6 @@
   --colors-warning33: #ed4b9e33;
   --colors-binance: #f0b90b;
   --colors-overlay: #452a7a;
-  --colors-gold: #ffc700;
   --colors-silver: #b2b2b2;
   --colors-bronze: #e7974d;
 
@@ -187,6 +189,7 @@
   --color-titulo-footer: #9a6aff;
   --color-dropdown-network:#3c3742;
   --color-gradient-text: linear-gradient(166.02deg, #ffb237 -5.1%, #ffeb37 75.24%);
+  --color-gold: #ffc700;
 
 
   --background-color-secondary: #27262c;
