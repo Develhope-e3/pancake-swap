@@ -15,6 +15,8 @@ import { SectionSix } from "../componentes/SectionSix/SectionSix";
 import { GridComposer1 } from "../componentes/GridComposer/GridComposer";
 import { CardCTA } from "../componentes/Cards/CardCTA";
 import { dataCardCTA } from "../data/dataCardCTA";
+import { ButtonScroll } from "../componentes/Button/ButtonScroll";
+import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny";
 
 const Home = () => {
   return (
@@ -106,6 +108,8 @@ const Home = () => {
           remColSpacing={9}
         />
       </MainSection>
+      <SlideBunny />
+      <ButtonScroll />
     </BasePage>
   );
 };
