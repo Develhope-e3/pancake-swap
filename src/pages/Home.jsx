@@ -21,6 +21,8 @@ import { dataCardCTA } from "../data/dataCardCTA";
 import SubImages from "../../src/assets/iconos/SubImages";
 import SupImages from "../../src/assets/iconos/SupImages";
 import SwiperScrollbar from "../componentes/Swiper/SwiperScrollbar";
+import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny";
+import { ButtonScroll } from "../componentes/Button/ButtonScroll";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -137,6 +139,8 @@ const Home = () => {
           remColSpacing={9}
         />
       </MainSection>
+      <SlideBunny />
+      <ButtonScroll />
     </BasePage>
   );
 };
