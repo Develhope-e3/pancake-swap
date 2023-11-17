@@ -11,9 +11,10 @@ export function ButtonScroll() {
       behavior: "smooth",
     });
   }, []);
-  
+
   useEffect(() => {
     var bunny = document.getElementById("bunny");
+
     if (bunny) {
       bunny.style.transform = "translateY(60px)";
     }
@@ -21,6 +22,7 @@ export function ButtonScroll() {
     const handleScroll = () => {
       if (window.scrollY > 500) {
         setVisible(true);
+      } else if (bunny) {
         bunny.style.transform = "translateY(-7px)";
       } else {
         setVisible(false);
