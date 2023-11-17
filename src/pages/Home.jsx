@@ -21,6 +21,8 @@ import { dataCardCTA } from "../data/dataCardCTA";
 import SubImages from "../../src/assets/iconos/SubImages";
 import SupImages from "../../src/assets/iconos/SupImages";
 import MainSectionSVG from "../assets/BackgroundSVG/MainSectionSVG";
+import SecondarySectionSVG from "../assets/BackgroundSVG/SecondarySectionSVG";
+import TertiarySectionSVG from "../assets/BackgroundSVG/TertiarySectionSVG";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -78,10 +80,11 @@ const Home = () => {
             })}
         </Box>
       </MainSection>
-      <MainSection></MainSection>
-      <MainSection>
+      <TertiarySectionSVG />
+      <Section gradient={"var(--color-black)"}>
         <SectionThree />
-      </MainSection>
+      </Section>
+      <SecondarySectionSVG />
       <MainSection background={`var(--background-color-secondary)`}>
         <SectionFour />
         <Box isFlexColCenter>
