@@ -6,6 +6,20 @@
 
   background-color: var(--background-color-secondary);
   border-radius: var(--radius-ms);
+  overflow: hidden;
+
+}
+
+.dropdown-network {
+  position: absolute;
+  z-index: 5;
+  top: 44px;
+  left: 0;
+
+  overflow: hidden;
+
+  background-color: var(--background-color-secondary);
+  border-radius: var(--radius-ms);
 
 }
 
@@ -20,16 +34,18 @@
 
   &:hover {
     background-color: var(--background-dropdown-hover);
+
   }
 }
 
-.dropdown-bnb{
+.dropdown-bnb {
   display: flex;
   justify-content: flex-start;
-  
+
   width: 200px;
 
 }
-.dropdown-idiomas{
+
+.dropdown-idiomas {
   width: 100px;
 }

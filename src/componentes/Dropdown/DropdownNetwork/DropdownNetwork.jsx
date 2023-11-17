@@ -20,8 +20,10 @@ const DropdownNetwork = ({
   label,
   href,
   className,
+  selectedNetwork,
   icono1,
   icono2,
+  setSelectedNetwork,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -35,19 +37,22 @@ const DropdownNetwork = ({
 
   return (
     <div
-      className="bnb"
+    className="dropdownContainer"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <Icono icono={icono1} className="bnb-icon" />
-      <Link
-        label={label}
-        className={className}
-        href={href}
-        svg={<Icono icono={icono2} />}
-      />
-
-      {isOpen && <DropdownItem options={dropdownItems} isNetwork={true} />}
+      <div className="bnb">
+        <Icono icono={selectedNetwork.iconoinicio} />
+        <Link label={selectedNetwork.label} className={className} href={href} />
+        <Icono icono={icono2} />
+        {isOpen && (
+          <DropdownItem
+            options={dropdownItems}
+            isNetwork={true}
+            setSelectedNetwork={setSelectedNetwork}
+          />
+        )}
+      </div>
     </div>
   );
 };
