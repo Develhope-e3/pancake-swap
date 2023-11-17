@@ -160,6 +160,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 1px;
+  height: min-content;
 
   background-color: var(--background-toggle);
   transition: background-color 200ms ease 0s;

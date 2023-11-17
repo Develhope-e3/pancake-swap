@@ -2,68 +2,71 @@ footer {
   background-color: var(--backgroundcolor-secondary);
   width: 100%;
   height: auto;
+}
 
-  .div-padre-1 {
-    display: flex;
-    justify-content: space-between;
+.div-padre-1 {
+  display: flex;
+  justify-content: space-between;
+}
 
-    padding: 56px 40px 32px;
+.raya-blanca {
+  width: 14px;
+  height: 1.3px;
 
-    .columnas-footer {
-      display: flex;
-      flex-direction: column;
+  background-color: var(--color-linea-footer);
+}
+.columnas-footer {
+  display: flex;
+  flex-direction: column;
 
-      align-items: flex-start;
-      margin-bottom: 30px;
-      gap: var(--space-ms);
+  align-items: flex-start;
+  margin-bottom: 30px;
+  gap: var(--space-ms);
+  padding: 56px 40px 32px;
 
-      cursor: pointer;
-    }
+  cursor: pointer;
+}
 
-    .raya-blanca {
-      width: 14px;
-      height: 1.3px;
+.parte-abajo-footer {
+  display: flex;
+  align-items: center;
+  padding: 35px;
+  width: 1200px;
+  margin-left: 125px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-      background-color: var(--color-linea-footer);
-    }
+.parte-abajo-derecha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 230px;
+  // margin-left: 700px;
+  svg {
+    fill: var(--color-button-footer-black);
   }
+}
+.parte-abajo-izq {
+  display: flex;
+  align-items: center;
+//   width: 400px;
+// margin-left: 50px;
 
-  .parte-abajo-footer {
-    display: flex;
-
-    .parte-abajo-derecha {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 230px;
-      margin-left: 480px;
-      svg {
-        fill: var(--color-button-footer-black);
-      }
-    }
-
-    .conejo-azul {
-      background-color: var(--color-primary);
-      border-radius: 25px;
-      padding: 4px;
-      width: 16px;
-      height: 16px;
-
-      cursor: pointer;
-    }
+  > p {
+    color: var(--color-linea-footer);
   }
+}
+.raya-divisora {
+  width: 81%;
+  border-top: inset 1px var(--color-linea-footer);
+  margin-left: 143px;
+  margin-top: 30px;
+}
 
-  .raya-divisora {
-    width: 81%;
-    border-top: inset 1px var(--color-linea-footer);
-    margin-left: 143px;
-    margin-top: 30px;
-  }
-
-  .iconos-padre {
-    display: flex;
-    gap: 25px;
-    margin-left: 146px;
-    margin-top: -20px;
-  }
+.iconos-padre {
+  display: flex;
+  gap: 25px;
+  margin-left: 146px;
+  margin-top: -20px;
 }
