@@ -86,6 +86,8 @@
       > .injected-svg {
         padding: 2px;
         margin-bottom: 4px;
+        width: 52px;
+        height: 52px;
         background: var(--colors-gradientBold);
         transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
         @include grid-border-animation;

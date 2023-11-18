@@ -18,8 +18,8 @@ const Injected = ({ color }) => {
       style={{
         backgroundColor: "black",
         borderRadius: "12px",
-        marginLeft: "0.1rem",
-        marginTop: "0.1rem",
+        marginBottom: "0.1rem",
+        marginRight: "0.1rem",
       }}
       xmlns="http://www.w3.org/2000/svg">
       <path

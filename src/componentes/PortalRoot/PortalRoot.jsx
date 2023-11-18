@@ -70,6 +70,11 @@ export const PortalRoot = () => {
               color={"var(--color-titulo-lila)"}
             />
           </div>
+          <img
+            className="bunny-connect-wallet"
+            src="https://cdn.pancakeswap.com/wallets/wallet_intro.png"
+            alt="Bunny connect wallet"
+          />
           <div>
             <Link
               href={

@@ -15,7 +15,7 @@
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
-}
+  }
 
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px #372f47;
@@ -24,7 +24,7 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-}
+  }
 }
 
 .container-buttons {
@@ -115,6 +115,11 @@
     width: 47%;
 
     margin: 0px 24px;
+
+    > .bunny-connect-wallet {
+      max-width: 198px;
+      max-height: 178px;
+    }
 
     > div {
       display: flex;

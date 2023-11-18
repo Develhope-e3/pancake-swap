@@ -235,71 +235,71 @@ export const GridComposer3 = ({
           <Texto
             label={"Metamask"}
             size={"title-s"}
-            color={"var(--color-subtitulo-lila)"}
+            color={"#f4eeff"}
           />
         </div>
       </button>
       <button>
         <div>
           <div className="injected-svg">
-            <Injected color={"var(--color-subtitulo-lila)"} />
+            <Injected color={"#f4eeff"} />
           </div>
           <Texto
             label={"Injected"}
             size={"title-s"}
-            color={"var(--color-subtitulo-lila)"}
+            color={"#f4eeff"}
           />
         </div>
       </button>
       <button>
         <div>
           <img
-            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
-            alt="opera wallet"
+            src="	https://assets.pancakeswap.finance/web/wallets/binance.png"
+            alt="Binance wallet"
           />
           <Texto
             label={"Binance Wallet"}
             size={"title-s"}
-            color={"var(--color-subtitulo-lila)"}
+            color={"#f4eeff"}
           />
         </div>
       </button>
       <button>
         <div>
           <img
-            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
-            alt="opera wallet"
+            src="https://assets.pancakeswap.finance/web/wallets/coinbase.png"
+            alt="Coinbase wallet"
           />
           <Texto
             label={"Coinbase Wallet"}
             size={"title-s"}
-            color={"var(--color-subtitulo-lila)"}
+            color={"#f4eeff"}
           />
         </div>
       </button>
       <button>
         <div>
           <img
-            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
-            alt="opera wallet"
+            src="	https://assets.pancakeswap.finance/web/wallets/trust.png"
+            alt="Trust wallet"
           />
           <Texto
             label={"Trust Wallet"}
             size={"title-s"}
-            color={"var(--color-subtitulo-lila)"}
+            color={"#f4eeff"}
           />
         </div>
       </button>
       <button>
         <div>
           <img
-            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
-            alt="opera wallet"
+            src="https://assets.pancakeswap.finance/web/wallets/walletconnect.png"
+            alt="WalletConnect"
           />
           <Texto
             label={"WalletConnect"}
             size={"title-s"}
-            color={"var(--color-subtitulo-lila)"}
+            color={"#f4eeff"}
           />
         </div>
       </button>
@@ -307,77 +307,65 @@ export const GridComposer3 = ({
         <div>
           <img
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
-            alt="opera wallet"
+            alt="Opera wallet"
           />
           <Texto
-            label={"OperaWallet"}
+            label={"Opera Wallet"}
             size={"title-s"}
-            color={"var(--color-subtitulo-lila)"}
+            color={"#f4eeff"}
           />
         </div>
       </button>
       <button>
         <div>
           <img
-            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
-            alt="opera wallet"
+            src="https://assets.pancakeswap.finance/web/wallets/brave.png"
+            alt="Brave wallet"
           />
           <Texto
             label={"Brave Wallet"}
             size={"title-s"}
-            color={"var(--color-subtitulo-lila)"}
+            color={"#f4eeff"}
           />
         </div>
       </button>
       <button>
         <div>
-          <img
-            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
-            alt="opera wallet"
-          />
+          <img src="###" alt="More info" />
           <Texto
             label={"More"}
             size={"title-s"}
-            color={"var(--color-subtitulo-lila)"}
+            color={"#f4eeff"}
           />
         </div>
       </button>
       <button>
         <div>
-          <img
-            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
-            alt="opera wallet"
-          />
+          <img src="##1" alt="Another option" />
           <Texto
             label={"Uno"}
             size={"title-s"}
-            color={"color: var(--color-subtitulo-lila)"}
+            color={"#f4eeff"}
           />
         </div>
       </button>
       <button>
         <div>
-          <img
-            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
-            alt="opera wallet"
-          />
+          <img src="##2" alt="Another option" />
           <Texto
             label={"Dos"}
             size={"title-s"}
-            color={"color: var(--color-subtitulo-lila)"}
+            color={"#f4eeff"}
           />
         </div>
       </button>
       <button>
         <div>
-          <img
-            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
-            alt="opera wallet"
-          />
+          <img src="##3" alt="Another option" />
           <Texto
             label={"Tres"}
             size={"title-s"}
-            color={"var(--color-subtitulo-lila)"}
+            color={"#f4eeff"}
           />
         </div>
       </button>
