@@ -19,7 +19,7 @@
 /// Make a context based selector a little more friendly
 /// @author Hugo Giraudel
 /// @param {String} $context
-/* @mixin when-inside($classes...) {
+@mixin when-inside($classes...) {
   @each $class in $classes {
     #{$class} & {
       @content;
@@ -71,4 +71,4 @@ $breakpoints: (
 
 @mixin toRem($property, $value) {
   #{$property}: ($value / 16) + rem;
-} */
+}
