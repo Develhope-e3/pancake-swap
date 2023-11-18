@@ -216,7 +216,7 @@ export const GridComposer3 = ({
   remColSpacing,
 }) => {
   return (
-    <div
+    <section
       className={className}
       style={{
         display: "grid",
@@ -245,15 +245,6 @@ export const GridComposer3 = ({
       <div>
         <button>
           <img
-            src="https://assets.pancakeswap.finance/web/wallets/binance.png"
-            alt="opera wallet"
-          />
-          <Texto />
-        </button>
-      </div>
-      <div>
-        <button>
-          <img
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
@@ -308,8 +299,8 @@ export const GridComposer3 = ({
       <div>
         <button>
           <img
-            src=""
-            alt=""
+            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
+            alt="opera wallet"
           />
           <Texto />
         </button>
@@ -317,8 +308,8 @@ export const GridComposer3 = ({
       <div>
         <button>
           <img
-            src=""
-            alt=""
+            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
+            alt="opera wallet"
           />
           <Texto />
         </button>
@@ -326,8 +317,8 @@ export const GridComposer3 = ({
       <div>
         <button>
           <img
-            src=""
-            alt=""
+            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
+            alt="opera wallet"
           />
           <Texto />
         </button>
@@ -335,30 +326,12 @@ export const GridComposer3 = ({
       <div>
         <button>
           <img
-            src=""
-            alt=""
+            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
+            alt="opera wallet"
           />
           <Texto />
         </button>
       </div>
-      <div>
-        <button>
-          <img
-            src=""
-            alt=""
-          />
-          <Texto />
-        </button>
-      </div>
-      <div>
-        <button>
-          <img
-            src=""
-            alt=""
-          />
-          <Texto />
-        </button>
-      </div>
-    </div>
+    </section>
   );
 };

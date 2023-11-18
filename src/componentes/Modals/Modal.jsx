@@ -15,7 +15,7 @@ export const Modal = ({ setIsModalVisible, children }) => {
       <div className="modal-content">{children}</div>
       <div
         className="modal-close"
-        onClick={() => setIsModalVisible(true)}
+        onClick={() => setIsModalVisible(false)}
       ></div>
     </div>
   );

@@ -50,12 +50,9 @@ export const PortalRoot = ({ isPrimaria, isSecundaria }) => {
             size={"body-warningv2"}
             color={"var(--text-color)"}
           />
-          <GridComposer3
-            className={"theme3"}
-            col={3}
-            remColSpacing={1}
-            remRowSpacing={1.5}
-          />
+          <div className="container-grid">
+            <GridComposer3 className={"theme3"} col={3} remRowSpacing={1.5} />
+          </div>
         </section>
         <section className="ventana-secundaria">
           <div>

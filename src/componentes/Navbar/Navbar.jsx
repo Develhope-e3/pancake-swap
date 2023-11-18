@@ -109,7 +109,7 @@ const Navbar = () => {
           onClick={() => setIsModalVisible(true)}
         />
         {isModalVisible && (
-          <Modal setIsModalVisible={/* setIsModalVisible */true}>
+          <Modal setIsModalVisible={setIsModalVisible}>
             {/* <WalletModalContent /> */}
             <PortalRoot />
           </Modal>
