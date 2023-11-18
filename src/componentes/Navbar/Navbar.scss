@@ -26,7 +26,11 @@ nav {
   display: flex;
   justify-content: space-between;
   /* width: 550px; */
-
+  a.button-bunny {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
   @media (max-width: 850px) {
     justify-content: flex-end;
   }

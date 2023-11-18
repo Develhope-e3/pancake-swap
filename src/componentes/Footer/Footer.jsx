@@ -12,110 +12,112 @@ import Youtube from "../../assets/iconos/YouTube";
 import Toggle from "../Button/Toggle";
 import BunnySmall from "../../assets/iconos/BunnySmall";
 import conejosvg from "../../assets/conejo.svg";
+import useWindowSize from "../../customHooks/ConnectWallet/useWindowSize ";
+import ResponsivePancakeSwapIcono from "../../assets/iconos/ResponsivePancakeSwapIcono.jsx";
 
 const Footer = () => {
+  const { width } = useWindowSize();
   return (
     <footer>
-      {/* columnas links footer */}
-      <div className="div-padre-1">
-        <div className="columnas-footer">
-          <Texto
-            size={"title-md-bold"}
-            label={"ABOUT"}
-            color={"var(--color-titulo-footer)"}
-          />
-          <Link className={"footer-anchor-secondary"} label={"Contact"} />
-          <Link className={"footer-anchor"} label={"Brand"} />
-          <Link className={"footer-anchor"} label={"Blog"} />
-          <Link className={"footer-anchor"} label={"Community"} />
-          <Link className={"footer-anchor"} label={"Litepaper"} />
-          <Link
-            className={"footer-anchor"}
-            label={"CAKE Emission Projection"}
-          />
-          <Link className={"footer-anchor"} label={"Terms of Service"} />
-          <div className="raya-blanca"></div>
-          <Link className={"footer-anchor-secondary"} label={"Merchandise"} />
-        </div>
+      <div className="footer-container">
+        {/* columnas links footer */}
+        <div className="div-padre-1">
+          <div className="columnas-footer">
+            <Texto
+              size={"title-md-bold"}
+              label={"ABOUT"}
+              color={"var(--color-titulo-footer)"}
+            />
+            <Link className={"footer-anchor-secondary"} label={"Contact"} />
+            <Link className={"footer-anchor"} label={"Brand"} />
+            <Link className={"footer-anchor"} label={"Blog"} />
+            <Link className={"footer-anchor"} label={"Community"} />
+            <Link className={"footer-anchor"} label={"Litepaper"} />
+            <Link
+              className={"footer-anchor"}
+              label={"CAKE Emission Projection"}
+            />
+            <Link className={"footer-anchor"} label={"Terms of Service"} />
+            <div className="raya-blanca"></div>
+            <Link className={"footer-anchor-secondary"} label={"Merchandise"} />
+          </div>
 
-        <div className="columnas-footer">
-          <Texto
-            size={"title-md-bold"}
-            label={"HELP"}
-            color={"var(--color-titulo-footer)"}
-          />
-          <Link className={"footer-anchor"} label={"Customer Support"} />
-          <Link className={"footer-anchor"} label={"TroubleShooting"} />
-          <Link className={"footer-anchor"} label={"Guides"} />
-        </div>
+          <div className="columnas-footer">
+            <Texto
+              size={"title-md-bold"}
+              label={"HELP"}
+              color={"var(--color-titulo-footer)"}
+            />
+            <Link className={"footer-anchor"} label={"Customer Support"} />
+            <Link className={"footer-anchor"} label={"TroubleShooting"} />
+            <Link className={"footer-anchor"} label={"Guides"} />
+          </div>
 
-        <div className="columnas-footer">
-          <Texto
-            size={"title-md-bold"}
-            label={"DEVELOPERS"}
-            color={"var(--color-titulo-footer)"}
-          />
-          <Link className={"footer-anchor"} label={"Github"} />
-          <Link className={"footer-anchor"} label={"Documentation"} />
-          <Link className={"footer-anchor"} label={"Bug Bounty"} />
-          <Link className={"footer-anchor"} label={"Audits"} />
-          <Link className={"footer-anchor"} label={"Careers"} />
+          <div className="columnas-footer">
+            <Texto
+              size={"title-md-bold"}
+              label={"DEVELOPERS"}
+              color={"var(--color-titulo-footer)"}
+            />
+            <Link className={"footer-anchor"} label={"Github"} />
+            <Link className={"footer-anchor"} label={"Documentation"} />
+            <Link className={"footer-anchor"} label={"Bug Bounty"} />
+            <Link className={"footer-anchor"} label={"Audits"} />
+            <Link className={"footer-anchor"} label={"Careers"} />
+          </div>
         </div>
-
-        <div>
-          <img src={conejosvg} alt="conejo" />
+        {/* ------------------------------------------ */}
+        <div className="footer-icon">
+          <img src={conejosvg} />
         </div>
-      </div>
-      {/* ------------------------------------------ */}
-
-      <div className="iconos-padre">
+        {/* ------------------------------------------ */}
+        <div className="iconos-padre">
+          {/* iconos redes */}
+          <div>
+            <Link href={"https://www.twitter.com"} svg={<Twitter />} />
+          </div>
+          <div>
+            <Link href={"https://t.me/pancakeswapES"} svg={<Telegram />} />
+          </div>
+          <div>
+            <Link
+              href={"https://www.reddit.com/r/pancakeswap/"}
+              svg={<Reddit />}
+            />
+          </div>
+          <div>
+            <Link
+              className={"iconos-redes"}
+              href={"https://www.instagram.com/pancakeswap_official/"}
+              svg={<Instagram />}
+            />
+          </div>
+          <div>
+            <Link
+              className={"iconos-redes"}
+              href={"https://github.com/pancakeswap/"}
+              svg={<GitHub />}
+            />
+          </div>
+          <div>
+            <Link
+              className={"iconos-redes"}
+              url={"https://discord.com/invite/pancakeswap"}
+              svg={<Discord />}
+            />
+          </div>
+          <div>
+            <Link
+              className={"iconos-redes"}
+              url={"https://www.youtube.com/@pancakeswap_official"}
+              svg={<Youtube />}
+            />
+          </div>
+        </div>
         {/* iconos redes */}
-        <div>
-          <Link href={"https://www.twitter.com"} svg={<Twitter />} />
+        <div className="raya-divisora-padre">
+          <div className="raya-divisora"></div>
         </div>
-        <div>
-          <Link href={"https://t.me/pancakeswapES"} svg={<Telegram />} />
-        </div>
-        <div>
-          <Link
-            href={"https://www.reddit.com/r/pancakeswap/"}
-            svg={<Reddit />}
-          />
-        </div>
-        <div>
-          <Link
-            className={"iconos-redes"}
-            href={"https://www.instagram.com/pancakeswap_official/"}
-            svg={<Instagram />}
-          />
-        </div>
-        <div>
-          <Link
-            className={"iconos-redes"}
-            href={"https://github.com/pancakeswap/"}
-            svg={<GitHub />}
-          />
-        </div>
-        <div>
-          <Link
-            className={"iconos-redes"}
-            url={"https://discord.com/invite/pancakeswap"}
-            svg={<Discord />}
-          />
-        </div>
-        <div>
-          <Link
-            className={"iconos-redes"}
-            url={"https://www.youtube.com/@pancakeswap_official"}
-            svg={<Youtube />}
-          />
-        </div>
-      </div>
-      {/* iconos redes */}
-      <div className="raya-divisora-padre">
-        <div className="raya-divisora"></div>
-      </div>
-      <div className="div-padre-1">
         <div className="parte-abajo-footer">
           {/* parte de abajo footer */}
 
@@ -153,7 +155,6 @@ const Footer = () => {
               label={"$1.184"}
               href={"www.google.com"}
             />
-
             <Button
               isFooter={true}
               heightValue={"32px"}
