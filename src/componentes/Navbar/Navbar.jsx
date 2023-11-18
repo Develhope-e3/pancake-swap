@@ -1,7 +1,7 @@
 import { BsThreeDots } from "react-icons/bs";
 import Dropdown from "../Dropdown/Dropdown";
 import Icono from "../Icono/Icono";
-import PancakeSwapIcono from "../Icono/PancakeSwapIcono";
+import PancakeSwapIcono from "../../assets/iconos/PancakeSwapIcono.jsx";
 import ResponsivePancakeSwapIcono from "../../assets/iconos/ResponsivePancakeSwapIcono.jsx";
 import Puntos from "../Puntos/Puntos";
 import BunnySmall from "../../assets/iconos/BunnySmall";
