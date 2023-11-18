@@ -26,6 +26,7 @@ import { useEffect, useState } from "react";
 import { SwitchNetwork, connectWallet } from "../Button/utils.jsx";
 import { useModal } from "../Modals/useModal";
 import { Modal } from "../Modals/Modal";
+import useWindowSize from "../../customHooks/ConnectWallet/useWindowSize .jsx";
 
 const Navbar = () => {
   const [selectedNetwork, setSelectedNetwork] = useState(networkData[0]);
@@ -40,7 +41,7 @@ const Navbar = () => {
 
   // const {visible, handleOpenModal, handleCloseModal} = useModal(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
-
+  const { width } = useWindowSize();
   return (
     <nav>
       <div className="navbar div1">
@@ -109,7 +110,7 @@ const Navbar = () => {
           isPrimary={true}
           widthValue={"149px"}
           heightValue={"32px"}
-          texto={"Connect Wallet"}
+          texto={width > 980 ? "Connect Wallet" : "Connect"}
           colorTexto={"var(--text-color-black)"}
           onClick={() => setIsModalVisible(true)}
         />

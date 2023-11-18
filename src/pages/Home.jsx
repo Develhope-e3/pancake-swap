@@ -258,11 +258,11 @@ const Home = () => {
           </Box>
         </Box>
       </MainSection>
-      <MainSection background={`var(--background-color-secondary)`}>
+      {/* <MainSection background={`var(--background-color-secondary)`}>
         <Box isFlexColCenter>
           <GridComposer2 className={"theme2"} col={5} remColSpacing={3} />
         </Box>
-      </MainSection>
+      </MainSection> */}
       <Section gradient={"var(--colors-gradientBlue)"}>
         <SupImages size={35} />
         <Box isFlexRowCenter isItemCard>

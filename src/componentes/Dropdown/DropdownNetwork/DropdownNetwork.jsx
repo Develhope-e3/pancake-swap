@@ -3,6 +3,7 @@ import { useState } from "react";
 import DropdownItem from "../DropdownItems/DropdownItems";
 import Icono from "../../Icono/Icono";
 import Link from "../../Link/Link";
+import useWindowSize from "../../../customHooks/ConnectWallet/useWindowSize ";
 
 /**
  *
@@ -35,15 +36,21 @@ const DropdownNetwork = ({
     setIsOpen(false);
   };
 
+  const { width } = useWindowSize();
+
   return (
     <div
-    className="dropdownContainer"
+      className="dropdownContainer"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <div className="bnb">
         <Icono icono={selectedNetwork.iconoinicio} />
-        <Link label={selectedNetwork.label} className={className} href={href} />
+        <Link
+          label={width > 980 ? "BNB Smart Chain" : "BNB"}
+          className={className}
+          href={href}
+        />
         <Icono icono={icono2} />
         {isOpen && (
           <DropdownItem
