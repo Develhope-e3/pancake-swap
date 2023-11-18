@@ -52,7 +52,7 @@
   width: 132px;
   height: 48px;
   padding: 0px 24px;
-  
+
   &:hover {
     opacity: 0.75;
   }
@@ -68,7 +68,7 @@
   outline: 0px;
   padding: 2px;
 
-  >svg {
+  > svg {
     width: 18px;
   }
 
@@ -107,4 +107,18 @@
   height: var(--space-xxl);
 
   padding: 0px;
+}
+
+.button-modal-content {
+  background-color: var(--color-subtitulo-lila);
+  
+  &:hover {
+    text-decoration: underline;
+    opacity: 0.65;
+    transition: text-decoration 0.2s ease 0.2s;
+    -webkit-transition: text-decoration 0.2s ease 0.2s;
+    -moz-transition: text-decoration 0.2s ease 0.2s;
+    -ms-transition: text-decoration 0.2s ease 0.2s;
+    -o-transition: text-decoration 0.2s ease 0.2s;
+}
 }

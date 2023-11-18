@@ -2,6 +2,8 @@ import Texto from "../Texto/Texto";
 import "./PortalRoot.scss";
 import { GridComposer3 } from "../GridComposer/GridComposer";
 import { useState } from "react";
+import Link from "../Link/Link";
+import ArrowRight from "../../assets/iconos/ArrowRight";
 
 /**
  *
@@ -12,20 +14,24 @@ import { useState } from "react";
  * @returns Estructura HTML
  */
 
-export const PortalRoot = ({ isPrimaria, isSecundaria }) => {
+export const PortalRoot = () => {
   const [window, setWindow] = useState(null);
 
   return (
     <>
       <div className="container-buttons">
-        <button className={"button-left"} onClic={""}>
+        <button
+          className={"button-left"}
+          onClick={() => console.log("button left")}>
           <Texto
             size={"title-md-bold"}
-            color={"#b8add2"}
+            color={"var(--color-subtitulo-lila)"}
             label={"Connect Wallet"}
           />
         </button>
-        <button className={"button-right"} onClic={""}>
+        <button
+          className={"button-right"}
+          onClick={() => console.log("button right")}>
           <Texto
             size={"title-md-bold"}
             color={"#27262c"}
@@ -45,7 +51,7 @@ export const PortalRoot = ({ isPrimaria, isSecundaria }) => {
               "Start by connecting with one of the wallets below. Be sure to store your private keys or seed phrase securely. Never share them with anyone."
             }
             size={"body-warningv2"}
-            color={"var(--text-color)"}
+            color={"var(--color-subtitulo-lila)"}
           />
           <div className="container-grid">
             <GridComposer3
@@ -59,13 +65,26 @@ export const PortalRoot = ({ isPrimaria, isSecundaria }) => {
         <section className="ventana-secundaria">
           <div>
             <Texto
-              label={"title-ml-bold"}
+              label={"Haven't got a wallet yet?"}
               size={"title-ml-bold"}
-              color={"var(--text-color)"}
+              color={"var(--color-titulo-lila)"}
             />
           </div>
           <div>
-            <button>Hola</button>
+            <Link
+              href={
+                "https://support.metamask.io/hc/es/articles/360015489531-Comenzar-con-MetaMask"
+              }
+              label={
+                <Texto
+                  size={"title-md-bold"}
+                  color={"#27262c"}
+                  label={"Learn How to Connect"}
+                />
+              }
+              className={"modal-anchor"}
+              svg={<ArrowRight />}
+            />
           </div>
         </section>
       </article>

@@ -2,6 +2,7 @@ import "./GridComposer.scss";
 import Texto from "../Texto/Texto";
 import CakeSum from "../Cake-sum/Cake-sum";
 import Injected from "../../assets/iconos/Injected";
+import { connectWallet } from "../Button/utils";
 
 /**
  * @param {string} className - clase para elegir qué theme de la Grid tendrá la tabla
@@ -225,13 +226,17 @@ export const GridComposer3 = ({
         gridRowGap: `${remRowSpacing}rem`,
         gridColumnGap: `${remColSpacing}rem`,
       }}>
-      <button>
+      <button onClick={() => connectWallet()}>
         <div>
           <img
             src="	https://assets.pancakeswap.finance/web/wallets/metamask.png"
             alt="opera wallet"
           />
-          <Texto label={"Metamask"} size={"title-s"} color={""} />
+          <Texto
+            label={"Metamask"}
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+          />
         </div>
       </button>
       <button>
@@ -239,7 +244,11 @@ export const GridComposer3 = ({
           <div className="injected-svg">
             <Injected color={"var(--color-subtitulo-lila)"} />
           </div>
-          <Texto label={"Injected"} size={"title-s"} color={""} />
+          <Texto
+            label={"Injected"}
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+          />
         </div>
       </button>
       <button>
@@ -248,7 +257,11 @@ export const GridComposer3 = ({
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto label={"Binance Wallet"} size={"title-s"} color={""} />
+          <Texto
+            label={"Binance Wallet"}
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+          />
         </div>
       </button>
       <button>
@@ -257,7 +270,11 @@ export const GridComposer3 = ({
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto label={"Coinbase Wallet"} size={"title-s"} color={""} />
+          <Texto
+            label={"Coinbase Wallet"}
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+          />
         </div>
       </button>
       <button>
@@ -266,7 +283,11 @@ export const GridComposer3 = ({
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto label={"Trust Wallet"} size={"title-s"} color={""} />
+          <Texto
+            label={"Trust Wallet"}
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+          />
         </div>
       </button>
       <button>
@@ -275,7 +296,11 @@ export const GridComposer3 = ({
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto label={"WalletConnect"} size={"title-s"} color={""} />
+          <Texto
+            label={"WalletConnect"}
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+          />
         </div>
       </button>
       <button>
@@ -284,7 +309,11 @@ export const GridComposer3 = ({
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto label={"OperaWallet"} size={"title-s"} color={""} />
+          <Texto
+            label={"OperaWallet"}
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+          />
         </div>
       </button>
       <button>
@@ -293,7 +322,11 @@ export const GridComposer3 = ({
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto label={"Brave Wallet"} size={"title-s"} color={""} />
+          <Texto
+            label={"Brave Wallet"}
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+          />
         </div>
       </button>
       <button>
@@ -302,7 +335,11 @@ export const GridComposer3 = ({
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto label={"More"} size={"title-s"} color={""} />
+          <Texto
+            label={"More"}
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+          />
         </div>
       </button>
       <button>
@@ -311,7 +348,11 @@ export const GridComposer3 = ({
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto label={"Uno"} size={"title-s"} color={""} />
+          <Texto
+            label={"Uno"}
+            size={"title-s"}
+            color={"color: var(--color-subtitulo-lila)"}
+          />
         </div>
       </button>
       <button>
@@ -320,7 +361,11 @@ export const GridComposer3 = ({
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto label={"Dos"} size={"title-s"} color={""} />
+          <Texto
+            label={"Dos"}
+            size={"title-s"}
+            color={"color: var(--color-subtitulo-lila)"}
+          />
         </div>
       </button>
       <button>
@@ -329,7 +374,11 @@ export const GridComposer3 = ({
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto label={"Tres"} size={"title-s"} color={""} />
+          <Texto
+            label={"Tres"}
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+          />
         </div>
       </button>
     </section>

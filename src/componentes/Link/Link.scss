@@ -110,7 +110,7 @@
   font-weight: bold;
 
   padding: var(--space-md) var(--space-sm);
-  
+
   transition: all 0.07s linear 0.07s;
   -webkit-transition: all 0.07s linear 0.07s;
   -moz-transition: all 0.07s linear 0.07s;
@@ -120,5 +120,41 @@
   .bunny {
     display: flex;
     margin-right: 10px;
+  }
+}
+
+.modal-anchor {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  height: 48px;
+  padding: 0px 24px;
+
+  position: relative;
+  
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  
+  cursor: pointer;
+  
+  opacity: 1;
+  outline: 0px;
+
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  background-color: var(--color-subtitulo-lila);
+
+  text-decoration: none;
+
+  border: 0px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+
+  &:hover {
+    text-decoration: underline;
+    opacity: 0.65;
   }
 }

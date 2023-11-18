@@ -32,6 +32,7 @@ export const Button = ({
   colorTexto,
   svg,
   isScroll,
+  isModalContent,
 }) => {
   const givenClassName = classNames({
     button: true,
@@ -40,6 +41,7 @@ export const Button = ({
     "button-warning": isWarning,
     "button-setting": isSetting,
     "button-scroll": isScroll,
+    "button-modal-content": isModalContent,
   });
 
   return (

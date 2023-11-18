@@ -15,7 +15,12 @@ const Injected = ({ color }) => {
       height="52px"
       color="textSubtle"
       fill={color}
-      style={{ backgroundColor: "black", borderRadius: "12px" }}
+      style={{
+        backgroundColor: "black",
+        borderRadius: "12px",
+        marginLeft: "0.1rem",
+        marginTop: "0.1rem",
+      }}
       xmlns="http://www.w3.org/2000/svg">
       <path
         fillRule="evenodd"
