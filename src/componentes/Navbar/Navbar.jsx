@@ -25,6 +25,7 @@ import { useEffect, useState } from "react";
 import { SwitchNetwork, connectWallet } from "../Button/utils.jsx";
 import { useModal } from "../Modals/useModal";
 import { Modal } from "../Modals/Modal";
+import { PortalRoot } from "../PortalRoot/PortalRoot";
 
 const Navbar = () => {
   const [selectedNetwork, setSelectedNetwork] = useState(networkData[0]);
@@ -108,8 +109,9 @@ const Navbar = () => {
           onClick={() => setIsModalVisible(true)}
         />
         {isModalVisible && (
-          <Modal setIsModalVisible={setIsModalVisible}>
+          <Modal setIsModalVisible={/* setIsModalVisible */true}>
             {/* <WalletModalContent /> */}
+            <PortalRoot />
           </Modal>
         )}
       </div>

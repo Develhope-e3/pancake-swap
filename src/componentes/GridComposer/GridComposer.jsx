@@ -12,9 +12,9 @@ import CakeSum from "../Cake-sum/Cake-sum";
  */
 
 /**
- * 
+ *
  * TODO agregar data para hacer el componente más intuitivo y que reciba distintas cantidades de elementos y distintos styles "theme"
- * 
+ *
  */
 
 export const GridComposer1 = ({
@@ -24,99 +24,99 @@ export const GridComposer1 = ({
   remColSpacing,
 }) => {
   return (
-      <div
-        className={className}
-        style={{
-          display: "grid",
-          gridTemplateColumns: `repeat(${col}, 1fr)`,
-          gridRowGap: `${remRowSpacing}rem`,
-          gridColumnGap: `${remColSpacing}rem`,
-        }}>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-subtitulo-lila)"}
-              label={"Circulating Supply"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--text-color)"}
-              label={<CakeSum limite={22456392} />}
-            />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-subtitulo-lila)"}
-              label={"Total Supply"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--text-color)"}
-              label={<CakeSum limite={398513365} />}
-            />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-subtitulo-lila)"}
-              label={"Max Supply"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--text-color)"}
-              label={<CakeSum limite={750000000} />}
-            />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-subtitulo-lila)"}
-              label={"Market Cap"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--text-color)"}
-              label={"$280 million"}
-            />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-subtitulo-lila)"}
-              label={"Burned to date"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--text-color)"}
-              label={<CakeSum limite={952660681} />}
-            />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-subtitulo-lila)"}
-              label={"Current Emissions"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--text-color)"}
-              label={"$2,93/block"}
-            />
-          </>
-        </div>
+    <div
+      className={className}
+      style={{
+        display: "grid",
+        gridTemplateColumns: `repeat(${col}, 1fr)`,
+        gridRowGap: `${remRowSpacing}rem`,
+        gridColumnGap: `${remColSpacing}rem`,
+      }}>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+            label={"Circulating Supply"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--text-color)"}
+            label={<CakeSum limite={22456392} />}
+          />
+        </>
       </div>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+            label={"Total Supply"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--text-color)"}
+            label={<CakeSum limite={398513365} />}
+          />
+        </>
+      </div>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+            label={"Max Supply"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--text-color)"}
+            label={<CakeSum limite={750000000} />}
+          />
+        </>
+      </div>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+            label={"Market Cap"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--text-color)"}
+            label={"$280 million"}
+          />
+        </>
+      </div>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+            label={"Burned to date"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--text-color)"}
+            label={<CakeSum limite={952660681} />}
+          />
+        </>
+      </div>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-subtitulo-lila)"}
+            label={"Current Emissions"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--text-color)"}
+            label={"$2,93/block"}
+          />
+        </>
+      </div>
+    </div>
   );
 };
 
@@ -127,85 +127,237 @@ export const GridComposer2 = ({
   remColSpacing,
 }) => {
   return (
-    <div className="grid-container">
-      <div
-        className={className}
-        style={{
-          display: "grid",
-          gridTemplateColumns: `repeat(${col}, 1fr)`,
-          gridRowGap: `${remRowSpacing}rem`,
-          gridColumnGap: `${remColSpacing}rem`,
-        }}>
-        <div className="border-none">
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-text)"}
-              label={"Circulating Supply"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--color-titulo-lila)"}
-              label={<CakeSum limite={227026415} />}
-            />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-text)"}
-              label={"Total Supply"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--color-titulo-lila)"}
-              label={<CakeSum limite={398171116} />}
-            />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-text)"}
-              label={"Market Cap"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--color-titulo-lila)"}
-              label={"$260 million"}
-            />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-text)"}
-              label={"Token Burn"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--color-titulo-lila)"}
-              label={<CakeSum limite={987196236} />}
-            />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-text)"}
-              label={"Curren Emissions"}
-            />
-            <Texto
-              size={"title-ml"}
-              color={"var(--color-titulo-lila)"}
-              label={"1.88/block"}
-            />
-          </>
-        </div>
+    <div
+      className={className}
+      style={{
+        display: "grid",
+        gridTemplateColumns: `repeat(${col}, 1fr)`,
+        gridRowGap: `${remRowSpacing}rem`,
+        gridColumnGap: `${remColSpacing}rem`,
+      }}>
+      <div className="border-none">
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-text)"}
+            label={"Circulating Supply"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--color-titulo-lila)"}
+            label={<CakeSum limite={227026415} />}
+          />
+        </>
+      </div>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-text)"}
+            label={"Total Supply"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--color-titulo-lila)"}
+            label={<CakeSum limite={398171116} />}
+          />
+        </>
+      </div>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-text)"}
+            label={"Market Cap"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--color-titulo-lila)"}
+            label={"$260 million"}
+          />
+        </>
+      </div>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-text)"}
+            label={"Token Burn"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--color-titulo-lila)"}
+            label={<CakeSum limite={987196236} />}
+          />
+        </>
+      </div>
+      <div>
+        <>
+          <Texto
+            size={"title-s"}
+            color={"var(--color-text)"}
+            label={"Curren Emissions"}
+          />
+          <Texto
+            size={"title-ml"}
+            color={"var(--color-titulo-lila)"}
+            label={"1.88/block"}
+          />
+        </>
+      </div>
+    </div>
+  );
+};
+
+export const GridComposer3 = ({
+  className,
+  col,
+  remRowSpacing,
+  remColSpacing,
+}) => {
+  return (
+    <div
+      className={className}
+      style={{
+        display: "grid",
+        gridTemplateColumns: `repeat(${col}, 1fr)`,
+        gridRowGap: `${remRowSpacing}rem`,
+        gridColumnGap: `${remColSpacing}rem`,
+      }}>
+      <div>
+        <button>
+          <img
+            src="	https://assets.pancakeswap.finance/web/wallets/metamask.png"
+            alt="opera wallet"
+          />
+          <Texto />
+        </button>
+      </div>
+      <div>
+        <button>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
+            alt="opera wallet"
+          />
+          <Texto />
+        </button>
+      </div>
+      <div>
+        <button>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/binance.png"
+            alt="opera wallet"
+          />
+          <Texto />
+        </button>
+      </div>
+      <div>
+        <button>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
+            alt="opera wallet"
+          />
+          <Texto />
+        </button>
+      </div>
+      <div>
+        <button>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
+            alt="opera wallet"
+          />
+          <Texto />
+        </button>
+      </div>
+      <div>
+        <button>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
+            alt="opera wallet"
+          />
+          <Texto />
+        </button>
+      </div>
+      <div>
+        <button>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
+            alt="opera wallet"
+          />
+          <Texto />
+        </button>
+      </div>
+      <div>
+        <button>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
+            alt="opera wallet"
+          />
+          <Texto />
+        </button>
+      </div>
+      <div>
+        <button>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
+            alt="opera wallet"
+          />
+          <Texto />
+        </button>
+      </div>
+      <div>
+        <button>
+          <img
+            src=""
+            alt=""
+          />
+          <Texto />
+        </button>
+      </div>
+      <div>
+        <button>
+          <img
+            src=""
+            alt=""
+          />
+          <Texto />
+        </button>
+      </div>
+      <div>
+        <button>
+          <img
+            src=""
+            alt=""
+          />
+          <Texto />
+        </button>
+      </div>
+      <div>
+        <button>
+          <img
+            src=""
+            alt=""
+          />
+          <Texto />
+        </button>
+      </div>
+      <div>
+        <button>
+          <img
+            src=""
+            alt=""
+          />
+          <Texto />
+        </button>
+      </div>
+      <div>
+        <button>
+          <img
+            src=""
+            alt=""
+          />
+          <Texto />
+        </button>
       </div>
     </div>
   );

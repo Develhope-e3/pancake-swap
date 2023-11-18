@@ -1,6 +1,7 @@
-.theme1 {
+@import "../../styles/mixins.scss";
 
-  >div {
+.theme1 {
+  > div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -16,11 +17,11 @@
 .theme2 {
   display: flex;
 
-  >.border-none {
+  > .border-none {
     border: none;
   }
 
-  >div {
+  > div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -30,5 +31,56 @@
     padding-left: var(--space-s);
 
     border-left: 1px solid var(--color-text);
+  }
+}
+
+.theme3 {
+  justify-content: center;
+
+  width: 100%;
+
+  padding-bottom: 12px;
+
+  background-color: inherit;
+
+  box-sizing: border-box;
+
+  outline: 0px;
+
+  line-height: 1;
+
+  > div {
+    display: flex;
+    flex-flow: column wrap;
+
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+
+    cursor: pointer;
+
+    > button {
+      background-color: inherit;
+      border: none;
+
+      > img {
+        padding: 2px;
+        margin-bottom: 4px;
+        background-size: 400% 400%;
+        background: var(--colors-gradientBold);
+        transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+        @include grid-border-animation;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+      }
+    }
   }
 }

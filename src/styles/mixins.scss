@@ -12,3 +12,21 @@
   animation: appear $duration ease-out forwards;
   -webkit-animation: appear $duration ease-out forwards;
 }
+
+@mixin grid-border-animation {
+  $duration: 3s;
+
+  @keyframes bg-border {
+    0% {
+      background-position: 50% 0%;
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 50% 0%;
+    }
+  }
+  animation: bg-border $duration ease infinite;
+  -webkit-animation: bg-border $duration ease infinite;
+}
