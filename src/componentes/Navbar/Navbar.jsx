@@ -7,7 +7,6 @@ import Puntos from "../Puntos/Puntos";
 import BunnySmall from "../../assets/iconos/BunnySmall";
 import { IoSettingsSharp } from "react-icons/io5";
 import DropdownNetwork from "../../componentes/Dropdown/DropdownNetwork/DropdownNetwork.jsx";
-import BnbSmartChain from "../../assets/iconos/BnbSmartChain.jsx";
 import { IoIosArrowDown } from "react-icons/io";
 import { TbWorld } from "react-icons/tb";
 import "./Navbar.scss";
@@ -21,10 +20,27 @@ import {
   birthday,
   tresPuntos,
   idiomas,
-  bnb,
+  networkData,
 } from "../../data/dropdownItems";
+import { useEffect, useState } from "react";
+import { SwitchNetwork, connectWallet } from "../Button/utils.jsx";
+import { useModal } from "../Modals/useModal";
+import { Modal } from "../Modals/Modal";
 
 const Navbar = () => {
+  const [selectedNetwork, setSelectedNetwork] = useState(networkData[0]);
+
+  const [wallet, setWallet] = useState("");
+
+  useEffect(() => {
+    if (wallet) {
+      SwitchNetwork(selectedNetwork);
+    }
+  }, [selectedNetwork, wallet]);
+
+  // const {visible, handleOpenModal, handleCloseModal} = useModal(false);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
   return (
     <nav>
       <div className="navbar div1">
@@ -79,22 +95,29 @@ const Navbar = () => {
           onClick={() => console.log("click en el boton setting")}
         />
         <DropdownNetwork
-          icono1={<BnbSmartChain />}
-          label={"BNB Smart Chain"}
-          dropdownItems={bnb}
+          icono1={selectedNetwork.iconoinicio}
+          label={selectedNetwork.label}
+          dropdownItems={networkData}
           className={"bnb"}
           icono2={<IoIosArrowDown />}
           isNetwork={true}
+          selectedNetwork={selectedNetwork}
+          setSelectedNetwork={setSelectedNetwork}
         />
-
         <Button
+          id="connect-wallet"
           isPrimary={true}
           widthValue={"149px"}
           heightValue={"32px"}
           texto={"Connect Wallet"}
           colorTexto={"var(--text-color-black)"}
-          onClick={() => console.log("click en el boton primario")}
+          onClick={() => setIsModalVisible(true)}
         />
+        {isModalVisible && (
+          <Modal setIsModalVisible={setIsModalVisible}>
+            {/* <WalletModalContent /> */}
+          </Modal>
+        )}
       </div>
     </nav>
   );

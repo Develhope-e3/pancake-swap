@@ -1,0 +1,43 @@
+// @media (min-width: 768px) and (max-width: 991px){
+//  .swiper{
+
+//  }
+// }
+.swiper {
+    height: 250px;
+    width: 1200px;
+    display: flex;
+    text-transform: capitalize;
+    margin-bottom: 50px
+    // overflow: visible !important;
+}
+.swiper-slide{
+  display: flex;
+  align-items: flex-end;
+  height: 250px;
+}
+
+img.slide1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+img.slide2 {
+    @extend .slide1;
+}
+
+img.slide3 {
+    @extend .slide1;
+}
+
+img.slide4 {
+    @extend .slide1;
+    background-color: var(--color-secondary);
+    z-index: -1;
+    border-radius: var(--border-radius-xl) ;
+}

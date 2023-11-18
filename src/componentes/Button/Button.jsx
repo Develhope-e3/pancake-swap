@@ -14,6 +14,7 @@ import Texto from "../Texto/Texto";
  * @param {String} heightValue - Valor para modificar el alto del botón
  * @param {String} texto - Texto que va a llevar el boton
  * @param {String} colorTexto - Color del texto que va a llevar el boton
+ * @param {String} gap - Espacio entre elementos dentro de boton
  * @param {JSX.Element} svg - SVG element o Icon-React
  *
  * @returns Estructura HTML
@@ -22,6 +23,7 @@ import Texto from "../Texto/Texto";
 export const Button = ({
   isPrimary,
   isSecondary,
+  isTertiary,
   isWarning,
   isSetting,
   isFooter,
@@ -31,11 +33,13 @@ export const Button = ({
   texto,
   colorTexto,
   svg,
+  gap
 }) => {
   const givenClassName = classNames({
     button: true,
     "button-primary": isPrimary,
     "button-secondary": isSecondary,
+    "button-tertiary":isTertiary,
     "button-warning": isWarning,
     "button-setting": isSetting,
     "button-footer": isFooter,
@@ -45,7 +49,7 @@ export const Button = ({
     <button
       className={givenClassName}
       onClick={onClick}
-      style={{ width: widthValue, height: heightValue }}>
+      style={{ width: widthValue, height: heightValue, gap: gap }}>
       {<Texto size={"text-button"} label={texto} color={`${colorTexto}`} />}
       {svg && svg}
     </button>

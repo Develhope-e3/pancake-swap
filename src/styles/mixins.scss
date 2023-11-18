@@ -1,10 +1,25 @@
+@mixin modal-bg-animation {
+  $duration: 0.3s;
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  animation: appear $duration ease-out forwards;
+  -webkit-animation: appear $duration ease-out forwards;
+}
+
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 /// Make a context based selector a little more friendly
 /// @author Hugo Giraudel
 /// @param {String} $context
-@mixin when-inside($classes...) {
+/* @mixin when-inside($classes...) {
   @each $class in $classes {
     #{$class} & {
       @content;
@@ -56,4 +71,4 @@ $breakpoints: (
 
 @mixin toRem($property, $value) {
   #{$property}: ($value / 16) + rem;
-}
+} */

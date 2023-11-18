@@ -28,6 +28,7 @@
     -ms-transition: all 0.2s ease 0.2s;
     -o-transition: all 0.2s ease 0.2s;
   }
+
 }
 
 .button-primary {
@@ -58,6 +59,16 @@
     opacity: 0.75;
   }
 }
+.button-tertiary {
+  background-color: var(--text-color);
+
+  padding: 0px 16px;
+
+  &:hover {
+    background-color: var(--color-bg-button-hover);
+  }
+}
+
 
 .button-warning {
   background-color: transparent;
@@ -149,6 +160,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 1px;
+  height: min-content;
 
   background-color: var(--background-toggle);
   transition: background-color 200ms ease 0s;
