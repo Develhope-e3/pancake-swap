@@ -1,7 +1,7 @@
 import Texto from "../Texto/Texto";
-import classnames from "classnames";
 import "./PortalRoot.scss";
 import { GridComposer3 } from "../GridComposer/GridComposer";
+import { useState } from "react";
 
 /**
  *
@@ -13,10 +13,7 @@ import { GridComposer3 } from "../GridComposer/GridComposer";
  */
 
 export const PortalRoot = ({ isPrimaria, isSecundaria }) => {
-  /*   const className = classnames({
-    ventanaPrimaria: ventanaPrimaria,
-    ventanaSecundaria: ventanaSecundaria,
-  }); */
+  const [window, setWindow] = useState(null);
 
   return (
     <>
@@ -51,7 +48,12 @@ export const PortalRoot = ({ isPrimaria, isSecundaria }) => {
             color={"var(--text-color)"}
           />
           <div className="container-grid">
-            <GridComposer3 className={"theme3"} col={3} remRowSpacing={1.5} />
+            <GridComposer3
+              className={"theme3"}
+              col={3}
+              remRowSpacing={1.5}
+              remColSpacing={2}
+            />
           </div>
         </section>
         <section className="ventana-secundaria">

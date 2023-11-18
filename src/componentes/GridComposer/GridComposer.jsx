@@ -1,6 +1,7 @@
 import "./GridComposer.scss";
 import Texto from "../Texto/Texto";
 import CakeSum from "../Cake-sum/Cake-sum";
+import Injected from "../../assets/iconos/Injected";
 
 /**
  * @param {string} className - clase para elegir qué theme de la Grid tendrá la tabla
@@ -224,114 +225,113 @@ export const GridComposer3 = ({
         gridRowGap: `${remRowSpacing}rem`,
         gridColumnGap: `${remColSpacing}rem`,
       }}>
-      <div>
-        <button>
+      <button>
+        <div>
           <img
             src="	https://assets.pancakeswap.finance/web/wallets/metamask.png"
             alt="opera wallet"
           />
-          <Texto />
-        </button>
-      </div>
-      <div>
-        <button>
+          <Texto label={"Metamask"} size={"title-s"} color={""} />
+        </div>
+      </button>
+      <button>
+        <div>
+          <div className="injected-svg">
+            <Injected color={"var(--color-subtitulo-lila)"} />
+          </div>
+          <Texto label={"Injected"} size={"title-s"} color={""} />
+        </div>
+      </button>
+      <button>
+        <div>
           <img
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto />
-        </button>
-      </div>
-      <div>
-        <button>
+          <Texto label={"Binance Wallet"} size={"title-s"} color={""} />
+        </div>
+      </button>
+      <button>
+        <div>
           <img
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto />
-        </button>
-      </div>
-      <div>
-        <button>
+          <Texto label={"Coinbase Wallet"} size={"title-s"} color={""} />
+        </div>
+      </button>
+      <button>
+        <div>
           <img
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto />
-        </button>
-      </div>
-      <div>
-        <button>
+          <Texto label={"Trust Wallet"} size={"title-s"} color={""} />
+        </div>
+      </button>
+      <button>
+        <div>
           <img
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto />
-        </button>
-      </div>
-      <div>
-        <button>
+          <Texto label={"WalletConnect"} size={"title-s"} color={""} />
+        </div>
+      </button>
+      <button>
+        <div>
           <img
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto />
-        </button>
-      </div>
-      <div>
-        <button>
+          <Texto label={"OperaWallet"} size={"title-s"} color={""} />
+        </div>
+      </button>
+      <button>
+        <div>
           <img
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto />
-        </button>
-      </div>
-      <div>
-        <button>
+          <Texto label={"Brave Wallet"} size={"title-s"} color={""} />
+        </div>
+      </button>
+      <button>
+        <div>
           <img
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto />
-        </button>
-      </div>
-      <div>
-        <button>
+          <Texto label={"More"} size={"title-s"} color={""} />
+        </div>
+      </button>
+      <button>
+        <div>
           <img
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto />
-        </button>
-      </div>
-      <div>
-        <button>
+          <Texto label={"Uno"} size={"title-s"} color={""} />
+        </div>
+      </button>
+      <button>
+        <div>
           <img
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto />
-        </button>
-      </div>
-      <div>
-        <button>
+          <Texto label={"Dos"} size={"title-s"} color={""} />
+        </div>
+      </button>
+      <button>
+        <div>
           <img
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="opera wallet"
           />
-          <Texto />
-        </button>
-      </div>
-      <div>
-        <button>
-          <img
-            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
-            alt="opera wallet"
-          />
-          <Texto />
-        </button>
-      </div>
+          <Texto label={"Tres"} size={"title-s"} color={""} />
+        </div>
+      </button>
     </section>
   );
 };

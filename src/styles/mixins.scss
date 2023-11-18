@@ -9,6 +9,7 @@
       opacity: 1;
     }
   }
+
   animation: appear $duration ease-out forwards;
   -webkit-animation: appear $duration ease-out forwards;
 }
@@ -18,15 +19,20 @@
 
   @keyframes bg-border {
     0% {
-      background-position: 50% 0%;
+      background-position-x: 50%;
+      background-position-y: 0px;
     }
     50% {
-      background-position: 50% 100%;
+      background-position-x: 50%;
+      background-position-y: 100%;
     }
     100% {
-      background-position: 50% 0%;
+      background-position-x: 50%;
+      background-position-y: 0px;
     }
   }
+
+  background-size: 400% 400%;
   animation: bg-border $duration ease infinite;
   -webkit-animation: bg-border $duration ease infinite;
 }
