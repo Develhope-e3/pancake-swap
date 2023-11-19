@@ -5,8 +5,19 @@ import { useState } from "react";
 import Link from "../Link/Link";
 import ArrowRight from "../../assets/iconos/ArrowRight";
 import classnames from "classnames";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 /**
  *
@@ -103,10 +114,39 @@ export const PortalRoot = () => {
             </div> */}
             <div /* style={{ display: "none" }} */>
               <Swiper
-                spaceBetween={50}
-                slidesPerView={3}
-                onSlideChange={() => console.log("slide change")}
-                onSwiper={(swiper) => console.log(swiper)}>
+                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                navigation
+                pagination={{ el: "modal-swiper", clickable: true }}
+                scrollbar={{ draggable: true }}
+                breakpoints={{
+                  "@0.00": {
+                    spaceBetween: 50,
+                    slidesPerView: 1,
+                  },
+                  "@0.50": {
+                    spaceBetween: 50,
+                    slidesPerView: 1,
+                  },
+                  "@1.00": {
+                    spaceBetween: 50,
+                    slidesPerView: 1,
+                  },
+                  "@1.25": {
+                    spaceBetween: 50,
+                    slidesPerView: 1.5,
+                  },
+                  "@1.50": {
+                    spaceBetween: 50,
+                    slidesPerView: 2,
+                  },
+                  "@1.75": {
+                    spaceBetween: 50,
+                    slidesPerView: 2,
+                  },
+                }}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log("slide change")}>
                 <SwiperSlide>
                   <div>
                     <Texto
@@ -115,11 +155,13 @@ export const PortalRoot = () => {
                       color={"var(--color-titulo-lila)"}
                     />
                   </div>
-                  <img
-                    style={{ maxHeight: "178px", maxWidth: "198px" }}
-                    src="https://cdn.pancakeswap.com/wallets/wallet_intro.png"
-                    alt="Bunny connect wallet"
-                  />
+                  <div>
+                    <img
+                      style={{ maxHeight: "178px", maxWidth: "198px" }}
+                      src="https://cdn.pancakeswap.com/wallets/wallet_intro.png"
+                      alt="Bunny connect wallet"
+                    />
+                  </div>
                   <Texto
                     label={
                       "A Web3 Wallet allows you to send and receive crypto assets like bitcoin, BNB, ETH, NFTs and much more."
@@ -144,7 +186,7 @@ export const PortalRoot = () => {
                     />
                   </div>
                 </SwiperSlide>
-                {/* <SwiperSlide>
+                <SwiperSlide>
                   <div>
                     <Texto
                       label={"Login using a wallet connection"}
@@ -152,11 +194,13 @@ export const PortalRoot = () => {
                       color={"var(--color-titulo-lila)"}
                     />
                   </div>
-                  <img
-                    style={{ maxHeight: "178px", maxWidth: "198px" }}
-                    src="https://cdn.pancakeswap.com/wallets/wallet_intro.png"
-                    alt="Bunny connect wallet"
-                  />
+                  <div>
+                    <img
+                      style={{ maxHeight: "178px", maxWidth: "198px" }}
+                      src="https://cdn.pancakeswap.com/wallets/wallet_intro.png"
+                      alt="Bunny connect wallet"
+                    />
+                  </div>
                   <Texto
                     label={
                       "A Web3 Wallet allows you to send and receive crypto assets like bitcoin, BNB, ETH, NFTs and much more."
@@ -180,7 +224,7 @@ export const PortalRoot = () => {
                       svg={<ArrowRight />}
                     />
                   </div>
-                </SwiperSlide> */}
+                </SwiperSlide>
               </Swiper>
             </div>
           </section>
