@@ -4,7 +4,7 @@ const SecondarySectionSVG = () => {
   return (
     <svg
     className="secondarysectionsvg"
-      viewBox="-300 0 1660 48"
+      viewBox="-330 0 1660 48"
       preserveAspectRatio="none"
       color="var(--color-black)"
       width="100vw"

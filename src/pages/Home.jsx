@@ -102,13 +102,15 @@ const Home = () => {
               })}
           </Box>
         </Box>
+        <TertiarySectionSVG />
       </MainSection>
-      <TertiarySectionSVG />
+
       <Section gradient={"var(--color-black)"}>
         <SectionThree />
       </Section>
-      <SecondarySectionSVG />
+
       <MainSection background={`var(--background-color-secondary)`}>
+        <SecondarySectionSVG />
         <SectionFour />
         <Box isFlexColCenter>
           <GridComposer2 className={"theme2"} col={5} remColSpacing={3} />
