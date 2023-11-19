@@ -112,14 +112,9 @@
     gap: 2rem;
 
     box-sizing: border-box;
-    width: 47%;
+    width: 100%;
 
     margin: 0px 24px;
-
-    > .bunny-connect-wallet {
-      max-width: 198px;
-      max-height: 178px;
-    }
 
     > div {
       display: flex;
@@ -130,3 +125,4 @@
     }
   }
 }
+
