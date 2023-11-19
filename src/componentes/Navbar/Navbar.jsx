@@ -37,7 +37,6 @@ const Navbar = () => {
     }
   }, [selectedNetwork, wallet]);
 
-  // const {visible, handleOpenModal, handleCloseModal} = useModal(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   return (
@@ -109,7 +108,6 @@ const Navbar = () => {
         />
         {isModalVisible && (
           <Modal setIsModalVisible={setIsModalVisible}>
-            {/* <WalletModalContent /> */}
             <PortalRoot />
           </Modal>
         )}
