@@ -5,13 +5,7 @@ import { useState } from "react";
 import Link from "../Link/Link";
 import ArrowRight from "../../assets/iconos/ArrowRight";
 import classnames from "classnames";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -84,7 +78,7 @@ export const PortalRoot = () => {
         )}
         {
           <section className="ventana-secundaria">
-            {/*             <div>
+            <div>
               <Texto
                 label={"Haven't got a wallet yet?"}
                 size={"title-ml-bold"}
@@ -111,10 +105,10 @@ export const PortalRoot = () => {
                 className={"modal-anchor"}
                 svg={<ArrowRight />}
               />
-            </div> */}
-            <div /* style={{ display: "none" }} */>
+            </div>
+            <div style={{ display: "none" }}>
               <Swiper
-                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                modules={[Navigation, Pagination, Scrollbar, Autoplay]}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
                 navigation
                 pagination={{ el: "modal-swiper", clickable: true }}
