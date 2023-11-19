@@ -11,7 +11,8 @@ import useWindowSize from "../../customHooks/ConnectWallet/useWindowSize ";
  * @param {string} col - Para elegir la cantidad de columnas que tendrá el componente
  * @param {string} remRowSpacing - Espacio entre las filas de la tabla
  * @param {string} remColSpacing - Espacio entre las columnas de la tabla
- * @param {string} responsive - Variable para redimensionado de la pantalla
+ * @param {string} responsiveRow - Variable para redimensionado de la pantalla
+ * @param {string} responsiveCol - Variable para redimensionado de la pantalla
  *
  * @returns Estructura HTML
  */
@@ -27,16 +28,20 @@ export const GridComposer1 = ({
   col,
   remRowSpacing,
   remColSpacing,
-  responsive,
+  responsiveRow,
+  responsiveCol,
 }) => {
+  const { width } = useWindowSize();
   return (
     <div
       className={className}
       style={{
         display: "grid",
+        gap: "1.5rem",
         gridTemplateColumns: `repeat(${col}, 1fr)`,
-        gridRowGap: `${remRowSpacing}rem`,
-        gridColumnGap: `${remColSpacing}rem`,
+        gripRowGap: width > 850 ? `${remRowSpacing}rem` : `${responsiveRow}rem`,
+        gridColumnGap:
+          width > 850 ? `${remColSpacing}rem` : `${responsiveCol}rem`,
       }}
     >
       <div>
@@ -132,7 +137,8 @@ export const GridComposer2 = ({
   col,
   remRowSpacing,
   remColSpacing,
-  responsive = "1.5rem",
+  responsiveRow,
+  responsiveCol,
 }) => {
   const { width } = useWindowSize();
   return (
@@ -141,12 +147,13 @@ export const GridComposer2 = ({
         className={className}
         style={{
           display: "grid",
-          /* gap: "1.5rem", */
-          gap: width > 850 ? responsive : null,
-          width: "100%",
+          gap: "1.5rem",
+          /* width: "100%", */
           gridTemplateColumns: `repeat(${col}, 1fr)`,
-          gridRowGap: `${remRowSpacing}rem`,
-          gridColumnGap: `${remColSpacing}rem`,
+          gripRowGap:
+            width > 850 ? `${remRowSpacing}rem` : `${responsiveRow}rem`,
+          gridColumnGap:
+            width > 850 ? `${remColSpacing}rem` : `${responsiveCol}rem`,
         }}
       >
         <div className="title-container border-none">

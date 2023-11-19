@@ -16,7 +16,12 @@
 .main-imagen {
   position: relative;
   width: 648px;
-  height: 648px;
+  @media (max-width: 1280px) {
+    width: 486px;
+  }
+  @media (max-width: 580px) {
+    padding: 0rem 1rem 0rem 4rem;
+  }
 }
 
 .text-section {

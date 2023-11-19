@@ -151,19 +151,51 @@
   -ms-border-radius: var(--border-radius-xxl);
   -o-border-radius: var(--border-radius-xxl);
 }
+.text-order {
+  h1.title-lg-bold {
+    @media (max-width: 630px) {
+      text-align: center;
+    }
+  }
+  h2.title-ml-bold {
+    @media (max-width: 630px) {
+      text-align: center;
+    }
+  }
+  @media (max-width: 1280px) {
+    order: 2;
+  }
+}
 .seccion-text {
+  span.text-section-ml {
+    margin: 0rem 9rem;
+    @media (max-width: 750px) {
+      margin: 0rem 3rem;
+    }
+  }
   @media (max-width: 1280px) {
     display: inline-flex;
-    order: 1;
     justify-content: center;
     gap: 0.2rem;
     text-align: center;
   }
 }
 .seccion-image {
+  img {
+    max-width: 100%;
+    @media (max-width: 580px) {
+      max-width: 80%;
+    }
+  }
   @media (max-width: 1280px) {
     display: flex;
-    order: 2;
+    order: 1;
     justify-content: center;
+  }
+}
+.seccion-butons {
+  @media (max-width: 1280px) {
+    display: flex;
+    flex-direction: row;
   }
 }

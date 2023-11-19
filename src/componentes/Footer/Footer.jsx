@@ -13,7 +13,6 @@ import Toggle from "../Button/Toggle";
 import BunnySmall from "../../assets/iconos/BunnySmall";
 import conejosvg from "../../assets/conejo.svg";
 import useWindowSize from "../../customHooks/ConnectWallet/useWindowSize ";
-import ResponsivePancakeSwapIcono from "../../assets/iconos/ResponsivePancakeSwapIcono.jsx";
 
 const Footer = () => {
   const { width } = useWindowSize();

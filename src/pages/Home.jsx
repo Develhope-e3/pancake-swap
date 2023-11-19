@@ -25,17 +25,19 @@ import SupImages from "../../src/assets/iconos/SupImages";
 import SwiperScrollbar from "../componentes/Swiper/SwiperScrollbar";
 import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny";
 import { ButtonScroll } from "../componentes/Button/ButtonScroll";
+import useWindowSize from "../customHooks/ConnectWallet/useWindowSize ";
 
 const Home = () => {
   const { theme } = useTheme();
+  const { width } = useWindowSize();
   return (
     <BasePage className={theme === "dark" ? "dark-mode" : "light-mode"}>
       <MainSection>
-      <Box isFlexRowCenter maxWidth={1200} >
-      <SwiperScrollbar/>
-      </Box>
+        <Box isFlexRowCenter maxWidth={1200}>
+          <SwiperScrollbar />
+        </Box>
         <Box isFlexRow={true} maxWidth={1200}>
-          <Box isFlexColStart>
+          <Box isFlexColStart seccionTextOrder>
             <Texto
               size={"title-lg-bold"}
               color={"var(--color-titulo-lila)"}
@@ -65,7 +67,9 @@ const Home = () => {
               />
             </Box>
           </Box>
-          <ImageMainSection />
+          <Box seccionImage>
+            <ImageMainSection />
+          </Box>
         </Box>
       </MainSection>
       <MainSection>
@@ -87,7 +91,7 @@ const Home = () => {
       {/* Seccion 3 */}
       <MainSection>
         <Box isFlexRow={true}>
-          <Box isFlexColStart={true}>
+          <Box isFlexColStart={true} seccionTextOrder>
             <Box isFlexCol={true}>
               <Box seccionText={true}>
                 <Texto
@@ -111,7 +115,7 @@ const Home = () => {
                 />
               </Box>
             </Box>
-            <Box isFlexRow={true}>
+            <Box isFlexRowStart={true}>
               <Button
                 isPrimary={true}
                 widthValue={"166px"}
@@ -148,7 +152,7 @@ const Home = () => {
           <Box seccionImage={true}>
             <img src={SectionFourCoins} alt="data"></img>
           </Box>
-          <Box isFlexColStart={true}>
+          <Box isFlexColStart={true} seccionTextOrder>
             <Box isFlexCol={true}>
               <Box seccionText={true}>
                 <Texto
@@ -172,7 +176,7 @@ const Home = () => {
                 />
               </Box>
             </Box>
-            <Box isFlexRow={true}>
+            <Box isFlexRowStart={true}>
               <Button
                 isPrimary={true}
                 widthValue={"166px"}
@@ -203,7 +207,7 @@ const Home = () => {
       {/* Seccion 6 */}
       <MainSection>
         <Box isFlexRow={true}>
-          <Box isFlexColStart={true}>
+          <Box isFlexColStart={true} seccionTextOrder>
             <Box isFlexCol={true}>
               <Box seccionText={true}>
                 <Texto
@@ -227,7 +231,7 @@ const Home = () => {
                 />
               </Box>
             </Box>
-            <Box isFlexRow={true}>
+            <Box isFlexRowStart={true}>
               <Button
                 isPrimary={true}
                 widthValue={"166px"}
@@ -260,7 +264,16 @@ const Home = () => {
       </MainSection>
       <MainSection background={`var(--background-color-secondary)`}>
         <Box isFlexColCenter>
-          <GridComposer2 className={"theme2"} col={3} remColSpacing={3} remRowSpacing={2}/>
+          <GridComposer2
+            className={"theme2"}
+            col={3}
+            remColSpacing={3}
+            responsiveCol={0}
+            remRowSpacing={2}
+            responsiveRow={1}
+            /* remColSpacing={width > 850 ? 3 : 0}
+            remRowSpacing={width > 850 ? 1 : 1} */
+          />
         </Box>
       </MainSection>
       <Section gradient={"var(--colors-gradientBlue)"}>
@@ -306,7 +319,11 @@ const Home = () => {
           className={"theme1"}
           col={3}
           remRowSpacing={2}
+          responsiveRow={3}
           remColSpacing={9}
+          responsiveCol={1}
+          /* remColSpacing={width >= 850 ? 3 : 1}
+          remRowSpacing={width >= 850 ? 1 : 1} */
         />
       </MainSection>
       <SlideBunny />
