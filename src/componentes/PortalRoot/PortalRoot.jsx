@@ -22,7 +22,7 @@ import "swiper/css/scrollbar";
  * @returns Estructura HTML
  */
 
-export const PortalRoot = () => {
+export const PortalRoot = ({connectWallet}) => {
   const [isWindowVisible, setIsWindowVisible] = useState(null);
 
   const classNames = classnames({
@@ -72,6 +72,7 @@ export const PortalRoot = () => {
                 col={3}
                 remRowSpacing={1.5}
                 remColSpacing={2}
+                connectWallet={connectWallet}
               />
             </div>
           </section>

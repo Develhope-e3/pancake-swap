@@ -216,6 +216,7 @@ export const GridComposer3 = ({
   col,
   remRowSpacing,
   remColSpacing,
+  connectWallet
 }) => {
   return (
     <section

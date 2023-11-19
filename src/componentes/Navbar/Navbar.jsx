@@ -22,7 +22,7 @@ import {
   networkData,
 } from "../../data/dropdownItems";
 import { useEffect, useState } from "react";
-import { SwitchNetwork } from "../Button/utils.jsx";
+import { SwitchNetwork, connectWallet } from "../Button/utils.jsx";
 import { Modal } from "../Modals/Modal";
 import { PortalRoot } from "../PortalRoot/PortalRoot";
 
@@ -108,7 +108,7 @@ const Navbar = () => {
         />
         {isModalVisible && (
           <Modal setIsModalVisible={setIsModalVisible}>
-            <PortalRoot />
+            <PortalRoot connectWallet={connectWallet(setWallet)}/>
           </Modal>
         )}
       </div>
