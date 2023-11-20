@@ -53,3 +53,21 @@ nav {
     gap: 20px;
   }
 }
+
+.link-navbar2 {
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar2 {
+  display: flex;
+  align-items: center;
+}
+
+.navbar2-container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
