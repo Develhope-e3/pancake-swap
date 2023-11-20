@@ -20,6 +20,9 @@ import { CardCTA } from "../componentes/Cards/CardCTA";
 import { dataCardCTA } from "../data/dataCardCTA";
 import SubImages from "../../src/assets/iconos/SubImages";
 import SupImages from "../../src/assets/iconos/SupImages";
+import MainSectionSVG from "../assets/BackgroundSVG/MainSectionSVG";
+import SecondarySectionSVG from "../assets/BackgroundSVG/SecondarySectionSVG";
+import TertiarySectionSVG from "../assets/BackgroundSVG/TertiarySectionSVG";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -59,6 +62,7 @@ const Home = () => {
           </Box>
           <ImageMainSection />
         </Box>
+        <MainSectionSVG />
       </MainSection>
       <MainSection>
         <Box isFlexRowStart={true}>
@@ -75,12 +79,15 @@ const Home = () => {
               );
             })}
         </Box>
+        <TertiarySectionSVG />
       </MainSection>
-      <MainSection></MainSection>
-      <MainSection>
+
+      <Section gradient={"var(--color-black)"}>
         <SectionThree />
-      </MainSection>
+      </Section>
+
       <MainSection background={`var(--background-color-secondary)`}>
+        <SecondarySectionSVG />
         <SectionFour />
         <Box isFlexColCenter>
           <GridComposer2 className={"theme2"} col={5} remColSpacing={3} />
