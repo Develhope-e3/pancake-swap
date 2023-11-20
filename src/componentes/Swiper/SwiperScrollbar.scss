@@ -41,3 +41,7 @@ img.slide4 {
     z-index: -1;
     border-radius: var(--border-radius-xl) ;
 }
+img.slide5 {
+    @extend .slide1;
+    border-radius: 30px
+}
