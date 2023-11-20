@@ -233,23 +233,15 @@ export const GridComposer3 = ({
             src="	https://assets.pancakeswap.finance/web/wallets/metamask.png"
             alt="opera wallet"
           />
-          <Texto
-            label={"Metamask"}
-            size={"title-s"}
-            color={"#f4eeff"}
-          />
+          <Texto label={"Metamask"} size={"title-s"} color={"#f4eeff"} />
         </div>
       </button>
-      <button>
+      <button onClick={() => connectWallet()}>
         <div>
           <div className="injected-svg">
             <Injected color={"#f4eeff"} />
           </div>
-          <Texto
-            label={"Injected"}
-            size={"title-s"}
-            color={"#f4eeff"}
-          />
+          <Texto label={"Injected"} size={"title-s"} color={"#f4eeff"} />
         </div>
       </button>
       <button>
@@ -258,11 +250,7 @@ export const GridComposer3 = ({
             src="	https://assets.pancakeswap.finance/web/wallets/binance.png"
             alt="Binance wallet"
           />
-          <Texto
-            label={"Binance Wallet"}
-            size={"title-s"}
-            color={"#f4eeff"}
-          />
+          <Texto label={"Binance Wallet"} size={"title-s"} color={"#f4eeff"} />
         </div>
       </button>
       <button>
@@ -271,11 +259,7 @@ export const GridComposer3 = ({
             src="https://assets.pancakeswap.finance/web/wallets/coinbase.png"
             alt="Coinbase wallet"
           />
-          <Texto
-            label={"Coinbase Wallet"}
-            size={"title-s"}
-            color={"#f4eeff"}
-          />
+          <Texto label={"Coinbase Wallet"} size={"title-s"} color={"#f4eeff"} />
         </div>
       </button>
       <button>
@@ -284,11 +268,7 @@ export const GridComposer3 = ({
             src="	https://assets.pancakeswap.finance/web/wallets/trust.png"
             alt="Trust wallet"
           />
-          <Texto
-            label={"Trust Wallet"}
-            size={"title-s"}
-            color={"#f4eeff"}
-          />
+          <Texto label={"Trust Wallet"} size={"title-s"} color={"#f4eeff"} />
         </div>
       </button>
       <button>
@@ -297,11 +277,7 @@ export const GridComposer3 = ({
             src="https://assets.pancakeswap.finance/web/wallets/walletconnect.png"
             alt="WalletConnect"
           />
-          <Texto
-            label={"WalletConnect"}
-            size={"title-s"}
-            color={"#f4eeff"}
-          />
+          <Texto label={"WalletConnect"} size={"title-s"} color={"#f4eeff"} />
         </div>
       </button>
       <button>
@@ -310,11 +286,7 @@ export const GridComposer3 = ({
             src="https://assets.pancakeswap.finance/web/wallets/opera.png"
             alt="Opera wallet"
           />
-          <Texto
-            label={"Opera Wallet"}
-            size={"title-s"}
-            color={"#f4eeff"}
-          />
+          <Texto label={"Opera Wallet"} size={"title-s"} color={"#f4eeff"} />
         </div>
       </button>
       <button>
@@ -323,51 +295,31 @@ export const GridComposer3 = ({
             src="https://assets.pancakeswap.finance/web/wallets/brave.png"
             alt="Brave wallet"
           />
-          <Texto
-            label={"Brave Wallet"}
-            size={"title-s"}
-            color={"#f4eeff"}
-          />
+          <Texto label={"Brave Wallet"} size={"title-s"} color={"#f4eeff"} />
         </div>
       </button>
       <button>
         <div>
           <img src="###" alt="More info" />
-          <Texto
-            label={"More"}
-            size={"title-s"}
-            color={"#f4eeff"}
-          />
+          <Texto label={"More"} size={"title-s"} color={"#f4eeff"} />
         </div>
       </button>
       <button>
         <div>
           <img src="##1" alt="Another option" />
-          <Texto
-            label={"Uno"}
-            size={"title-s"}
-            color={"#f4eeff"}
-          />
+          <Texto label={"Uno"} size={"title-s"} color={"#f4eeff"} />
         </div>
       </button>
       <button>
         <div>
           <img src="##2" alt="Another option" />
-          <Texto
-            label={"Dos"}
-            size={"title-s"}
-            color={"#f4eeff"}
-          />
+          <Texto label={"Dos"} size={"title-s"} color={"#f4eeff"} />
         </div>
       </button>
       <button>
         <div>
           <img src="##3" alt="Another option" />
-          <Texto
-            label={"Tres"}
-            size={"title-s"}
-            color={"#f4eeff"}
-          />
+          <Texto label={"Tres"} size={"title-s"} color={"#f4eeff"} />
         </div>
       </button>
     </section>

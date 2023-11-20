@@ -1,4 +1,3 @@
-import React, { createContext, useContext, useState } from "react";
 import * as ethers from "ethers";
 
 export const connectWallet = async (setWallet, selectedNetwork) => {
@@ -40,44 +39,3 @@ export const SwitchNetwork = async (networkData) => {
       }
     });
 };
-
-
-// Crear el contexto con un valor por defecto
-const WalletsContext = createContext({
-  wallets: [],
-  addWallet: () => {},
-  removeWallet: () => {},
-});
-
-// Crear el proveedor
-export const WalletsProvider = ({ children }) => {
-  const [wallets, setWallets] = useState([]);
-
-  // Función para agregar una nueva wallet
-  const addWallet = (newWallet) => {
-    setWallets((prevWallets) => [...prevWallets, newWallet]);
-  };
-
-  // Función para eliminar una wallet
-  const removeWallet = (walletId) => {
-    setWallets((prevWallets) =>
-      prevWallets.filter((wallet) => wallet.id !== walletId),
-    );
-  };
-
-  return (
-    <WalletsContext.Provider value={{ wallets, addWallet, removeWallet }}>
-      {children}
-    </WalletsContext.Provider>
-  );
-};
-
-// Hook personalizado para acceder al contexto
-export const useWallets = () => {
-  const context = useContext(WalletsContext);
-  if (!context) {
-    throw new Error("useWallets debe ser usado dentro de WalletsProvider");
-  }
-  return context;
-};
-
