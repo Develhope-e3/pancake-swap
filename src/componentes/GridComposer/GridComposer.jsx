@@ -216,13 +216,14 @@ export const GridComposer3 = ({
   col,
   remRowSpacing,
   remColSpacing,
-  connectWallet
+  connectWallet,
 }) => {
   return (
     <section
       className={className}
       style={{
         display: "grid",
+        justifyContent: "center",
         gridTemplateColumns: `repeat(${col}, 1fr)`,
         gridRowGap: `${remRowSpacing}rem`,
         gridColumnGap: `${remColSpacing}rem`,
@@ -230,8 +231,8 @@ export const GridComposer3 = ({
       <button onClick={() => connectWallet()}>
         <div>
           <img
-            src="	https://assets.pancakeswap.finance/web/wallets/metamask.png"
-            alt="opera wallet"
+            src="https://assets.pancakeswap.finance/web/wallets/metamask.png"
+            alt="MetaMask"
           />
           <Texto label={"Metamask"} size={"title-s"} color={"#f4eeff"} />
         </div>
@@ -298,30 +299,7 @@ export const GridComposer3 = ({
           <Texto label={"Brave Wallet"} size={"title-s"} color={"#f4eeff"} />
         </div>
       </button>
-      <button>
-        <div>
-          <img src="###" alt="More info" />
-          <Texto label={"More"} size={"title-s"} color={"#f4eeff"} />
-        </div>
-      </button>
-      <button>
-        <div>
-          <img src="##1" alt="Another option" />
-          <Texto label={"Uno"} size={"title-s"} color={"#f4eeff"} />
-        </div>
-      </button>
-      <button>
-        <div>
-          <img src="##2" alt="Another option" />
-          <Texto label={"Dos"} size={"title-s"} color={"#f4eeff"} />
-        </div>
-      </button>
-      <button>
-        <div>
-          <img src="##3" alt="Another option" />
-          <Texto label={"Tres"} size={"title-s"} color={"#f4eeff"} />
-        </div>
-      </button>
+
     </section>
   );
 };

@@ -56,24 +56,26 @@ export const PortalRoot = ({ connectWallet }) => {
       <div className="ventana-prime">
         {!isWindowVisible && (
           <div className={classNames}>
-            <Texto
-              label={"Connect Wallet"}
-              size={"title-ml-bold"}
-              color={"var(--text-color)"}
-            />
-            <Texto
-              label={
-                "Start by connecting with one of the wallets below. Be sure to store your private keys or seed phrase securely. Never share them with anyone."
-              }
-              size={"body-warningv2"}
-              color={"var(--color-subtitulo-lila)"}
-            />
+            <div className="texto-container">
+              <Texto
+                label={"Connect Wallet"}
+                size={"title-ml-bold"}
+                color={"var(--text-color)"}
+              />
+              <Texto
+                label={
+                  "Start by connecting with one of the wallets below. Be sure to store your private keys or seed phrase securely. Never share them with anyone."
+                }
+                size={"body-warningv2"}
+                color={"var(--color-subtitulo-lila)"}
+              />
+            </div>
             <div className="container-grid">
               <GridComposer3
                 className={"theme3"}
                 col={3}
                 remRowSpacing={1.5}
-                remColSpacing={2}
+                remColSpacing={0.5}
                 connectWallet={connectWallet}
               />
             </div>

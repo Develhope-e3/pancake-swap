@@ -11,8 +11,8 @@ const Injected = ({ color }) => {
   return (
     <svg
       viewBox="0 -5 24 34"
-      width="52px"
-      height="52px"
+      width="46px"
+      height="46px"
       color="textSubtle"
       fill={color}
       style={{
