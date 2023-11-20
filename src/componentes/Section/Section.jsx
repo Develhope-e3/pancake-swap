@@ -1,3 +1,4 @@
+import MainSectionSVG from "../../assets/BackgroundSVG/MainSectionSVG";
 import "./Section.scss";
 
 export const MainSection = ({ children, background }) => {

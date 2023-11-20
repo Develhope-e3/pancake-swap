@@ -23,6 +23,9 @@ import SupImages from "../../src/assets/iconos/SupImages";
 import SwiperScrollbar from "../componentes/Swiper/SwiperScrollbar";
 import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny";
 import { ButtonScroll } from "../componentes/Button/ButtonScroll";
+import MainSectionSVG from "../assets/BackgroundSVG/MainSectionSVG";
+import SecondarySectionSVG from "../assets/BackgroundSVG/SecondarySectionSVG";
+import TertiarySectionSVG from "../assets/BackgroundSVG/TertiarySectionSVG";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -65,6 +68,7 @@ const Home = () => {
           </Box>
           <ImageMainSection />
         </Box>
+        <MainSectionSVG />
       </MainSection>
       <MainSection>
         <Box isFlexRowStart={true}>
@@ -81,12 +85,15 @@ const Home = () => {
               );
             })}
         </Box>
+        <TertiarySectionSVG />
       </MainSection>
-      <MainSection></MainSection>
-      <MainSection>
+
+      <Section gradient={"var(--color-black)"}>
         <SectionThree />
-      </MainSection>
+      </Section>
+
       <MainSection background={`var(--background-color-secondary)`}>
+        <SecondarySectionSVG />
         <SectionFour />
         <Box isFlexColCenter>
           <GridComposer2 className={"theme2"} col={5} remColSpacing={3} />
