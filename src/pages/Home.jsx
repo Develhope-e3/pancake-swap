@@ -14,7 +14,6 @@ import {
   GridComposer1,
   GridComposer2,
 } from "../componentes/GridComposer/GridComposer";
-
 import SectionFourCoins from "../assets/imagenes/SectionFourCoins.png";
 import SectionSixCoins from "../assets/imagenes/SectionSixCoins.png";
 import SectionthreeCoins from "../assets/imagenes/SectionthreeCoins.png";
@@ -29,10 +28,13 @@ import useWindowSize from "../customHooks/ConnectWallet/useWindowSize ";
 import MainSectionSVG from "../assets/BackgroundSVG/MainSectionSVG";
 import SecondarySectionSVG from "../assets/BackgroundSVG/SecondarySectionSVG";
 import TertiarySectionSVG from "../assets/BackgroundSVG/TertiarySectionSVG";
+import { SectionThree } from "../componentes/SectionThree/SectionThree";
+import { SectionFour } from "../componentes/SectionFour/SectionFour";
 
 
 const Home = () => {
   const { theme } = useTheme();
+  // eslint-disable-next-line no-unused-vars
   const { width } = useWindowSize();
   return (
     <BasePage className={theme === "dark" ? "dark-mode" : "light-mode"}>
@@ -274,7 +276,7 @@ const Home = () => {
       <Section gradient={"var(--color-black)"}>
         <SectionThree />
       </Section>
-
+      </MainSection>
       <MainSection background={`var(--background-color-secondary)`}>
         <SecondarySectionSVG />
         <SectionFour />
