@@ -82,11 +82,6 @@
         padding: 2px;
         margin-bottom: 4px;
 
-        background: var(--colors-gradientBold);
-
-        transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-        @include grid-border-animation;
-
         width: 46px;
         height: 46px;
 
@@ -107,9 +102,12 @@
         height: 46px;
 
         background: var(--colors-gradientBold);
-
-        transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
         @include grid-border-animation;
+        transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+        -webkit-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+        -moz-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+        -ms-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+        -o-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
 
         cursor: pointer;
 

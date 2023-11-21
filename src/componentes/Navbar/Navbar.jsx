@@ -25,7 +25,6 @@ import { useEffect, useState } from "react";
 import { SwitchNetwork, connectWallet } from "../Button/utils.jsx";
 import { Modal } from "../Modals/Modal";
 import { PortalRoot } from "../PortalModal/PortalRoot";
-import { PortalSwiper } from "../PortalModal/PortalSwiper";
 
 const Navbar = () => {
   const [selectedNetwork, setSelectedNetwork] = useState(networkData[0]);

@@ -2,7 +2,6 @@ import "./GridComposer.scss";
 import Texto from "../Texto/Texto";
 import CakeSum from "../Cake-sum/Cake-sum";
 import Injected from "../../assets/iconos/Injected";
-import { connectWallet } from "../Button/utils";
 import Icono from "../Icono/Icono";
 import ArrowUpDown from "../../assets/iconos/ArrowsUpDown";
 
@@ -244,6 +243,11 @@ export const GridComposer3 = ({
 }) => {
   return (
     <section
+      /* screen and (min-width: 576px)
+ .theme3 {
+  remRowSpacing: 1.5;
+  remColSpacing: 1;
+  col= 2; */
       className={className}
       style={{
         display: "grid",
@@ -323,7 +327,6 @@ export const GridComposer3 = ({
           <Texto label={"Brave Wallet"} size={"title-s"} color={"#f4eeff"} />
         </div>
       </button>
-
     </section>
   );
 };
