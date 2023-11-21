@@ -17,6 +17,20 @@
   z-index: 50;
   overflow: visible;
 }
+  @media (prefers-reduced-motion: no-preference) {
+    .conejo1 {
+      animation: conejo1-spin infinite 20s linear;
+    }
+  }
+
+@keyframes conejo1-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 .conejo2 {
   width: auto;
