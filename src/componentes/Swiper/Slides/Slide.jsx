@@ -23,11 +23,11 @@ const Slide = ({
     conejo4: numeroDeSlide === 4,
     conejo5: numeroDeSlide === 5,
   });
-  const { translateY} = useSpring({
-    to: { translateY: 8},
+  const { translateY } = useSpring({
+    to: { translateY: 8 }, // Cambia este valor para ajustar la altura de flotación
     from: { translateY: 0 },
-    loop: true,
-    config: { tension: 2, friction: 0 },
+    loop: true, // Para que la animación se repita
+    config: { tension: 10, friction: 0 },// cambiar tension para cambiar el efecto de flotar
   });
   return (
     <div className="swiper-card-container">
