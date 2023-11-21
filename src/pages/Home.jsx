@@ -14,7 +14,6 @@ import {
   GridComposer1,
   GridComposer2,
 } from "../componentes/GridComposer/GridComposer";
-
 import SectionFourCoins from "../assets/imagenes/SectionFourCoins.png";
 import SectionSixCoins from "../assets/imagenes/SectionSixCoins.png";
 import SectionthreeCoins from "../assets/imagenes/SectionthreeCoins.png";
@@ -26,9 +25,16 @@ import SwiperScrollbar from "../componentes/Swiper/SwiperScrollbar";
 import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny";
 import { ButtonScroll } from "../componentes/Button/ButtonScroll";
 import useWindowSize from "../customHooks/ConnectWallet/useWindowSize ";
+import MainSectionSVG from "../assets/BackgroundSVG/MainSectionSVG";
+import SecondarySectionSVG from "../assets/BackgroundSVG/SecondarySectionSVG";
+import TertiarySectionSVG from "../assets/BackgroundSVG/TertiarySectionSVG";
+import { SectionThree } from "../componentes/SectionThree/SectionThree";
+import { SectionFour } from "../componentes/SectionFour/SectionFour";
+
 
 const Home = () => {
   const { theme } = useTheme();
+  // eslint-disable-next-line no-unused-vars
   const { width } = useWindowSize();
   return (
     <BasePage className={theme === "dark" ? "dark-mode" : "light-mode"}>
@@ -71,6 +77,7 @@ const Home = () => {
             <ImageMainSection />
           </Box>
         </Box>
+        <MainSectionSVG />
       </MainSection>
       <MainSection>
         <Box isFlexRowStart={true}>
@@ -87,7 +94,9 @@ const Home = () => {
               );
             })}
         </Box>
+        <TertiarySectionSVG />
       </MainSection>
+
       {/* Seccion 3 */}
       <MainSection>
         <Box isFlexRow={true}>
@@ -263,6 +272,14 @@ const Home = () => {
         </Box>
       </MainSection>
       <MainSection background={`var(--background-color-secondary)`}>
+
+      <Section gradient={"var(--color-black)"}>
+        <SectionThree />
+      </Section>
+      </MainSection>
+      <MainSection background={`var(--background-color-secondary)`}>
+        <SecondarySectionSVG />
+        <SectionFour />
         <Box isFlexColCenter>
           <GridComposer2
             className={"theme2"}
