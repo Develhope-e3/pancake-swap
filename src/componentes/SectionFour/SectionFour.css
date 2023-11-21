@@ -1,0 +1,9 @@
+.section-four {
+  margin-top: var(--space-xl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-xl);
+  max-width: 1024px;
+  margin: auto;
+}/*# sourceMappingURL=SectionFour.css.map */

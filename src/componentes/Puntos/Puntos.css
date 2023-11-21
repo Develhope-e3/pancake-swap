@@ -1,0 +1,18 @@
+.punto-verde {
+  border-radius: 100%;
+  background: var(--color-success);
+  height: 8px;
+  width: 8px;
+  margin-left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.punto-rosa {
+  border-radius: 100%;
+  background: var(--color-failure);
+  height: 8px;
+  width: 8px;
+  margin-left: 12px;
+}/*# sourceMappingURL=Puntos.css.map */

@@ -1,0 +1,28 @@
+.main-section {
+  border: none;
+  vertical-align: baseline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  height: auto;
+  padding-top: var(--space-xxl);
+  padding-bottom: var(--space-xxl);
+  background-image: var(--background-image-main);
+}
+
+.section {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  vertical-align: baseline;
+  overflow: hidden;
+  padding-top: var(--space-xxl);
+  padding-bottom: var(--space-xxl);
+  min-width: 100%;
+  height: auto;
+  position: relative;
+}/*# sourceMappingURL=Section.css.map */
