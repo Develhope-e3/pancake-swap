@@ -7,7 +7,6 @@
   justify-content: space-evenly;
   align-items: flex-start;
 }
-
 .conejo1 {
   width: 262px;
   height: 170px;
@@ -17,7 +16,6 @@
   z-index: 50;
   overflow: visible;
 }
-
 .conejo2 {
   width: auto;
   height: 200px;
@@ -25,8 +23,8 @@
   right: 16rem;
   bottom: 2rem;
   z-index: 50;
+  transform: none !important;
 }
-
 .conejo3 {
   width: 300px;
   height: 237px;
@@ -36,20 +34,19 @@
   z-index: 50;
   overflow: visible;
 }
-
 .conejo4 {
-<<<<<<< HEAD
   height: 249px;
-=======
   width: 262px;
+  transform: none !important;
+  width: 232px;
   height: 236px;
->>>>>>> 6ac0140 (refactor: swiper completo)
   position: absolute;
   right: 4rem;
   bottom: 0rem;
   z-index: 50;
 }
 .conejo5 {
+  transform: none !important;
   width: 380px;
   height: 242px;
   position: absolute;
@@ -57,8 +54,6 @@
   bottom: 0rem;
   z-index: 50;
 }
-
-
 .text-container {
   padding-left: 20px;
   display: flex;
