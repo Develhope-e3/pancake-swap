@@ -68,40 +68,42 @@ const Home = () => {
         <MainSectionSVG />
       </MainSection>
       <MainSection>
-        <Box isFlexColCenter isPaddingTopButton>
-          <VioletBunny color={"var(--color-tertiary)"} />
-          <Texto
-            size={"tittle-section-lg"}
-            color={"var(--color-text)"}
-            label={`Used by millions. 
+        <Section gradient={"var(--color-PrimaryCard-background)"}>
+          <Box isFlexColCenter isPaddingTopButton>
+            <VioletBunny color={"var(--color-tertiary)"} />
+            <Texto
+              size={"tittle-section-lg"}
+              color={"var(--color-text)"}
+              label={`Used by millions. 
             Trusted with billions.`}
-          />
-          <Texto
-            size={"text-section-ml"}
-            color={"var(--color-subtitulo-lila)"}
-            label={`PancakeSwap has the most users of any decentralized platform, ever.
+            />
+            <Texto
+              size={"text-section-ml"}
+              color={"var(--color-subtitulo-lila)"}
+              label={`PancakeSwap has the most users of any decentralized platform, ever.
               And those users are now entrusting the platform with over $13 billion in funds.`}
-          />
-          <Texto
-            size={"title-ml-bold"}
-            color={"var(--color-subtitulo-lila)"}
-            label={"Will you join them?"}
-          />
-          <Box isFlexRowCenter>
-            {dataPrimaryCard &&
-              dataPrimaryCard.map((card, index) => {
-                return (
-                  <PrimaryCard
-                    icon={card.icon}
-                    title={card.title}
-                    subtitle={card.subtitle}
-                    body={card.body}
-                    key={index}
-                  />
-                );
-              })}
+            />
+            <Texto
+              size={"title-ml-bold"}
+              color={"var(--color-subtitulo-lila)"}
+              label={"Will you join them?"}
+            />
+            <Box isFlexRowCenter>
+              {dataPrimaryCard &&
+                dataPrimaryCard.map((card, index) => {
+                  return (
+                    <PrimaryCard
+                      icon={card.icon}
+                      title={card.title}
+                      subtitle={card.subtitle}
+                      body={card.body}
+                      key={index}
+                    />
+                  );
+                })}
+            </Box>
           </Box>
-        </Box>
+        </Section>
         <TertiarySectionSVG />
       </MainSection>
 

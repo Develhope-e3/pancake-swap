@@ -120,8 +120,6 @@
   --colors-gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
   --colors-gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --colors-gradientBold: linear-gradient(#53dee9, #7645d9);
-
-
 }
 
 /*
@@ -176,6 +174,7 @@
   --color-warning-text: #bdc2c4;
   --color-warning-gradient-violet: linear-gradient(#8051d6 0%, #492286 100%);
   --colors-gradientBlue: linear-gradient(180deg, #0b4576 0%, #091115 100%);
+  --color-PrimaryCard-background: linear-gradient(rgb(7, 6, 10) -7%, #191326 80%, #1b1429 90% );
 
   --color-warning-background: #27262c66;
   --color-button-footer-black: #191326;
@@ -185,14 +184,13 @@
   --color-dropdown-network: #3c3742;
   --color-black: black;
 
-
   --background-color-secondary: #27262c;
   --background-color-tertiary: #000000cc;
   --background-color-card-title: #08060b;
 
   --background-image-main: radial-gradient(
     103.12% 50% at 50% 50%,
-    rgb(33, 25, 58) 0%,
-    rgb(25, 19, 38) 100%
+    #211839,
+    #191326 100%
   );
 }
