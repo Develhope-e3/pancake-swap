@@ -5,6 +5,10 @@ import { useState } from "react";
 import Link from "../Link/Link";
 import ArrowRight from "../../assets/iconos/ArrowRight";
 import classnames from "classnames";
+
+/**
+ * ToDo: Crear el Swiper y el renderizado de diferentes cards según el botón del grid que se seleccione
+ */
 /* import { PortalSwiper } from "./PortalSwiper";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";

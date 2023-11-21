@@ -259,6 +259,7 @@ export const GridComposer3 = ({
       <button onClick={() => connectWallet()}>
         <div>
           <img
+            className="injected-svg"
             src="https://assets.pancakeswap.finance/web/wallets/metamask.png"
             alt="MetaMask"
           />
