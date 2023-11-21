@@ -172,9 +172,14 @@
   --background-dropdown-hover: #353547;
   --background-toggle: #666171;
   --color-warning-text: #bdc2c4;
+  --colors-gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
   --color-warning-gradient-violet: linear-gradient(#8051d6 0%, #492286 100%);
   --colors-gradientBlue: linear-gradient(180deg, #0b4576 0%, #091115 100%);
-  --color-PrimaryCard-background: linear-gradient(rgb(7, 6, 10) -7%, #191326 80%, #1b1429 90% );
+  --color-PrimaryCard-background: linear-gradient(
+    rgb(7, 6, 10) -7%,
+    #191326 80%,
+    #1b1429 90%
+  );
 
   --color-warning-background: #27262c66;
   --color-button-footer-black: #191326;

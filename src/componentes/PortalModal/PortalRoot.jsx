@@ -5,7 +5,6 @@ import { useState } from "react";
 import Link from "../Link/Link";
 import ArrowRight from "../../assets/iconos/ArrowRight";
 import classnames from "classnames";
-import { Modal } from "../Modals/Modal";
 import { PortalSwiper } from "./PortalSwiper";
 /* import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
