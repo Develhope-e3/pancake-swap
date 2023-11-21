@@ -22,6 +22,7 @@ import { ButtonScroll } from "../componentes/Button/ButtonScroll";
 import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny";
 import SubImages from "../../src/assets/iconos/SubImages";
 import SupImages from "../../src/assets/iconos/SupImages";
+import { VioletBunny } from "../assets/iconos/VioletBunny";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -63,19 +64,39 @@ const Home = () => {
         </Box>
       </MainSection>
       <MainSection>
-        <Box isFlexRowStart={true}>
-          {dataPrimaryCard &&
-            dataPrimaryCard.map((card, index) => {
-              return (
-                <PrimaryCard
-                  icon={card.icon}
-                  title={card.title}
-                  subtitle={card.subtitle}
-                  body={card.body}
-                  key={index}
-                />
-              );
-            })}
+        <Box isFlexColCenter isPaddingTopButton>
+          <VioletBunny color={"var(--color-tertiary)"} />
+          <Texto
+            size={"tittle-section-lg"}
+            color={"var(--color-text)"}
+            label={`Used by millions. 
+            Trusted with billions.`}
+          />
+          <Texto
+            size={"text-section-ml"}
+            color={"var(--color-subtitulo-lila)"}
+            label={`PancakeSwap has the most users of any decentralized platform, ever.
+              And those users are now entrusting the platform with over $13 billion in funds.`}
+          />
+          <Texto
+            size={"title-ml-bold"}
+            color={"var(--color-subtitulo-lila)"}
+            label={"Will you join them?"}
+          />
+          <Box isFlexRowCenter>
+            {dataPrimaryCard &&
+              dataPrimaryCard.map((card, index) => {
+                return (
+                  <PrimaryCard
+                    icon={card.icon}
+                    title={card.title}
+                    subtitle={card.subtitle}
+                    body={card.body}
+                    key={index}
+                  />
+                );
+              })}
+          </Box>
         </Box>
       </MainSection>
       <MainSection></MainSection>
