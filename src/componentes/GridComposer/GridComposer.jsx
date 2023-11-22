@@ -146,7 +146,16 @@ export const GridComposer2 = ({
         style={{
           display: "grid",
           gap: "1.5rem",
-          /* width: "100%", */
+          /* 
+          @media (max-width: 980px)
+
+          quitar 'width: "100%";'
+          quitar dos elementos del grid y crear otro abajo con esos elementos
+
+          justifyItems: "center",
+          col={3}
+           */
+          width: "100%",
           gridTemplateColumns: `repeat(${col}, 1fr)`,
           gripRowGap:
             width > 850 ? `${remRowSpacing}rem` : `${responsiveRow}rem`,
