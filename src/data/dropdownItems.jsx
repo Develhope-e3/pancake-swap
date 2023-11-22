@@ -144,42 +144,37 @@ export const birthday = [
 ];
 export const tresPuntos = [
   {
-    label: "Uranus Communities",
+    label: "Info",
+    href: "www.google.com",
+    icono: null,
+  },
+  {
+    label: "IFO",
+    href: "www.google.com",
+    icono: null,
+  },
+  {
+    label: "Affiliate Program",
+    href: "www.google.com",
+    icono: null,
+  },
+  {
+    label: "Voting",
+    href: "www.google.com",
+    icono: null,
+  },
+  {
+    label: "Leaderboard",
+    href: "www.google.com",
+    icono: null,
+  },
+  {
+    label: "Blogs",
     href: "www.google.com",
     icono: <RxExit />,
   },
   {
-    label: "Mercury Misteries",
-    href: "www.google.com",
-    icono: <RxExit />,
-  },
-  {
-    label: "Venus Protectors",
-    href: "www.google.com",
-    icono: <RxExit />,
-  },
-  {
-    label: "Uranus Unity Rain",
-    href: "www.google.com",
-    icono: <RxExit />,
-  },
-  {
-    label: "Mars Lottery Paradise",
-    href: "www.google.com",
-    icono: <RxExit />,
-  },
-  {
-    label: "Jupiter Predictors",
-    href: "www.google.com",
-    icono: <RxExit />,
-  },
-  {
-    label: "Saturn Syndicate",
-    href: "www.google.com",
-    icono: <RxExit />,
-  },
-  {
-    label: "Uranus Memories",
+    label: "Docs",
     href: "www.google.com",
     icono: <RxExit />,
   },
