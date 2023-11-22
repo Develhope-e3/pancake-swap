@@ -42,7 +42,7 @@ export const GridComposer1 = ({
           width > 850 ? `${remColSpacing}rem` : `${responsiveCol}rem`,
       }}
     >
-      <div>
+      <div className="border-none">
         <>
           <Texto
             size={"title-s"}
@@ -52,11 +52,11 @@ export const GridComposer1 = ({
           <Texto
             size={"title-ml"}
             color={"var(--color-text)"}
-            label={<CakeSum limite={22492} />}
+            label={<CakeSum limite={224927658} />}
           />
         </>
       </div>
-      <div>
+      <div className="border-none">
         <>
           <Texto
             size={"title-s"}
@@ -66,11 +66,11 @@ export const GridComposer1 = ({
           <Texto
             size={"title-ml"}
             color={"var(--color-text)"}
-            label={<CakeSum limite={398365} />}
+            label={<CakeSum limite={398365170} />}
           />
         </>
       </div>
-      <div>
+      <div className="border-none">
         <>
           <Texto
             size={"title-s"}
@@ -80,11 +80,11 @@ export const GridComposer1 = ({
           <Texto
             size={"title-ml"}
             color={"var(--color-text)"}
-            label={<CakeSum limite={750000} />}
+            label={<CakeSum limite={750000000} />}
           />
         </>
       </div>
-      <div>
+      <div className="border-none">
         <>
           <Texto
             size={"title-s"}
@@ -98,7 +98,7 @@ export const GridComposer1 = ({
           />
         </>
       </div>
-      <div>
+      <div className="border-none">
         <>
           <Texto
             size={"title-s"}
@@ -112,7 +112,7 @@ export const GridComposer1 = ({
           />
         </>
       </div>
-      <div>
+      <div className="border-none">
         <>
           <Texto
             size={"title-s"}
@@ -157,12 +157,12 @@ export const GridComposer2 = ({
         <div className="title-container border-none">
           <span className="text">
             <Texto
-              size={"title-ml"}
+              size={"title-ml-bold"}
               color={"var(--color-text)"}
               label={"Top"}
             />
             <Texto
-              size={"title-ml"}
+              size={"title-ml-bold"}
               color={"var(--color-titulo-lila)"}
               label={"Farms"}
             />
@@ -176,41 +176,37 @@ export const GridComposer2 = ({
           <>
             <Texto
               size={"title-s"}
-              color={"var(--color-text)"}
-              label={"Circulating Supply"}
+              color={"var(--color-titulo-lila)"} // var(--color-titulo-lila)
+              label={"EQB-BNB LP v3"}
             />
             <Texto
-              size={"title-ml"}
-              color={"var(--color-titulo-lila)"}
+              size={"title-ml-bold"}
+              color={"var(--color-text)"} // var(--color-text)
               label={<CakeSum limite={259595} />}
             />
+            <Texto
+              size={"title-ml"}
+              color={"var(--color-subtitulo-lila)"}
+              label={"APR"}
+            />
           </>
         </div>
         <div>
           <>
             <Texto
               size={"title-s"}
-              color={"var(--color-text)"}
-              label={"Total Supply"}
+              color={"var(--color-titulo-lila)"}
+              label={"DCK-BUSD LP v3"}
             />
             <Texto
-              size={"title-ml"}
-              color={"var(--color-titulo-lila)"}
+              size={"title-ml-bold"}
+              color={"var(--color-text)"}
               label={<CakeSum limite={398171116} />}
             />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-text)"}
-              label={"Market Cap"}
-            />
             <Texto
               size={"title-ml"}
-              color={"var(--color-titulo-lila)"}
-              label={"$260 million"}
+              color={"var(--color-subtitulo-lila)"}
+              label={"APR"}
             />
           </>
         </div>
@@ -218,27 +214,56 @@ export const GridComposer2 = ({
           <>
             <Texto
               size={"title-s"}
+              color={"var(--color-titulo-lila)"}
+              label={"MBX-USDT LP v3"}
+            />
+            <Texto
+              size={"title-ml-bold"}
               color={"var(--color-text)"}
-              label={"Token Burn"}
+              label={"$260"}
             />
             <Texto
               size={"title-ml"}
+              color={"var(--color-subtitulo-lila)"}
+              label={"APR"}
+            />
+          </>
+        </div>
+        <div>
+          <>
+            <Texto
+              size={"title-s"}
               color={"var(--color-titulo-lila)"}
+              label={"MBX-BNB LP v3"}
+            />
+            <Texto
+              size={"title-ml-bold"}
+              color={"var(--color-text)"}
               label={<CakeSum limite={987196236} />}
             />
+            <Texto
+              size={"title-ml"}
+              color={"var(--color-subtitulo-lila)"}
+              label={"APR"}
+            />
           </>
         </div>
         <div>
           <>
             <Texto
               size={"title-s"}
+              color={"var(--color-titulo-lila)"}
+              label={"WNCG-BNB LP v3"}
+            />
+            <Texto
+              size={"title-ml-bold"}
               color={"var(--color-text)"}
-              label={"Curren Emissions"}
+              label={"1.88/block"}
             />
             <Texto
               size={"title-ml"}
-              color={"var(--color-titulo-lila)"}
-              label={"1.88/block"}
+              color={"var(--color-subtitulo-lila)"}
+              label={"APR"}
             />
           </>
         </div>

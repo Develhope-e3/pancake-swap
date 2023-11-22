@@ -26,8 +26,8 @@ export const dataSwiper = [
         style={{
           color: "var(--color-quaternary)",
           fontSize: "30px",
-          webkitTextFillColor: "var(--color-quaternary)",
-          webkitTextStroke: "2px var(--color-borde-text-swiper)",
+          WebkitTextFillColor: "var(--color-quaternary)",
+          WebkitTextStroke: "2px var(--color-borde-text-swiper)",
         }}
       >
         Traverse the Treasure Islands on Galxe now!
@@ -115,8 +115,8 @@ export const dataSwiper = [
         style={{
           color: "var(--color-quaternary)",
           fontSize: "30px",
-          webkitTextFillColor: "var(--color-quaternary)",
-          webkitTextStroke: "2px var(--color-borde-text-swiper)",
+          WebkitTextFillColor: "var(--color-quaternary)",
+          WebkitTextStroke: "2px var(--color-borde-text-swiper)",
         }}
       >
         Titulo 3er card kgykyfk!
