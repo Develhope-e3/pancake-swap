@@ -30,7 +30,6 @@ import MainSectionSVG from "../assets/BackgroundSVG/MainSectionSVG";
 import SecondarySectionSVG from "../assets/BackgroundSVG/SecondarySectionSVG";
 import TertiarySectionSVG from "../assets/BackgroundSVG/TertiarySectionSVG";
 
-
 const Home = () => {
   const { theme } = useTheme();
   const { width } = useWindowSize();
@@ -270,12 +269,10 @@ const Home = () => {
         </Box>
       </MainSection>
       <MainSection background={`var(--background-color-secondary)`}>
-
-
-      <Section gradient={"var(--color-black)"}>
-        <SectionThree />
-      </Section>
-
+        <Section gradient={"var(--color-black)"}>
+          <SectionThree />
+        </Section>
+      </MainSection>
       <MainSection background={`var(--background-color-secondary)`}>
         <SecondarySectionSVG />
         <SectionFour />
