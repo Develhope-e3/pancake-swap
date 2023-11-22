@@ -1,3 +1,4 @@
+
 :root {
   --font-normal: "Kanit", sans-serif;
   --font-mono: SFMono, ui-monospace, monospace;
@@ -24,6 +25,7 @@
   --border-radius-sm: 5px;
   --border-radius-m: 10px;
   --border-radius-ml: 20px;
+  --border-radius-xl: 30px;
   --border-radius-xxl: 72px;
   --borderWidths-0: 0px;
   --borderWidths-1: 1px;
@@ -39,6 +41,7 @@
   --radius-lg: 32px;
   --radius-circle: 50%;
 
+
   --font-size-xs: 10px;
   --font-size-sm: 12px;
   --font-size-ms: 14px;
@@ -47,9 +50,22 @@
   --font-size-24px: 24px;
   --font-size-lg: 40px;
   --font-size-xxl: 64px;
+
+  @media (max-width:1350px) {
+    --font-size-xs: 8px;
+    --font-size-sm: 10px;
+    --font-size-ms: 12px;
+    --font-size-md: 14px;
+    --font-size-ml: 16px;
+    --font-size-24px: 20px;
+    --font-size-lg: 20px;
+    --font-size-xxl: 44px;
+  }
 }
 
 .light-mode {
+  --color-borde-text-swiper: #ff5100;
+  --color-card-text: #280d5f;
   --text-color: #ffffff;
   --color-titulo-lila: #7645d9;
   --color-subtitulo-lila: #7a6eaa;
@@ -60,9 +76,10 @@
   --color-quaternary: #ffa920;
   --color-gradient-violet: linear-gradient(#8040ff 0%, #5121b1 100%);
   --color-gradient-yellow: linear-gradient(#fcac2d 0%, #fdcf5b 100%);
+  --color-gradient-text: linear-gradient(166.02deg, #ffb237 -5.1%, #ffeb37 75.24%);
   --background-image-main: linear-gradient(139.73deg, #e5fdff, #f3efff);
+  --color-gold: #ffc700;
   --color-black: black;
-  
   --color-secondary: #ffb237;
   --color-bg-button-hover: #228f99;
   --color-button-primary: #ffffff;
@@ -90,7 +107,6 @@
   --colors-warning33: #ed4b9e33;
   --colors-binance: #f0b90b;
   --colors-overlay: #452a7a;
-  --colors-gold: #ffc700;
   --colors-silver: #b2b2b2;
   --colors-bronze: #e7974d;
 
@@ -152,10 +168,11 @@
   gradientBlue: 'linear-gradient(180deg, #00707F 0%, #19778C 100%)',
   gradientViolet: 'linear-gradient(180deg, #6C4999 0%, #6D4DB2 100%)',
   gradientVioletAlt: 'linear-gradient(180deg, #434575 0%, #66578D 100%)',
-  gradientGold: 'linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)',
+  gradientGold: 'linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)';
 } */
 
 .dark-mode {
+  --color-borde-text-swiper: #ff5100;
   --text-color: #ffffff;
   --color-titulo-lila: #9a6aff;
   --color-subtitulo-lila: #b8add2;
@@ -184,7 +201,10 @@
   --color-linea-footer: #b8add2;
   --color-titulo-footer: #9a6aff;
   --color-dropdown-network:#3c3742;
+  --color-gradient-text: linear-gradient(166.02deg, #ffb237 -5.1%, #ffeb37 75.24%);
+  --color-gold: #ffc700;
   --color-black: black;
+
 
   --background-color-secondary: #27262c;
   --background-color-tertiary: #000000cc;

@@ -3,12 +3,16 @@ import Texto from "../Texto/Texto";
 import CakeSum from "../Cake-sum/Cake-sum";
 import Icono from "../Icono/Icono";
 import ArrowUpDown from "../../assets/iconos/ArrowsUpDown";
+import { useActionData } from "react-router";
+import useWindowSize from "../../customHooks/ConnectWallet/useWindowSize ";
 
 /**
- * @param {string} className - clase para elegir qué theme de la Grid tendrá la tabla
+ * @param {string} className - Clase para elegir qué theme de la Grid tendrá la tabla
  * @param {string} col - Para elegir la cantidad de columnas que tendrá el componente
  * @param {string} remRowSpacing - Espacio entre las filas de la tabla
  * @param {string} remColSpacing - Espacio entre las columnas de la tabla
+ * @param {string} responsiveRow - Variable para redimensionado de la pantalla
+ * @param {string} responsiveCol - Variable para redimensionado de la pantalla
  *
  * @returns Estructura HTML
  */
@@ -24,16 +28,22 @@ export const GridComposer1 = ({
   col,
   remRowSpacing,
   remColSpacing,
+  responsiveRow,
+  responsiveCol,
 }) => {
+  const { width } = useWindowSize();
   return (
     <div
       className={className}
       style={{
         display: "grid",
+        gap: "1.5rem",
         gridTemplateColumns: `repeat(${col}, 1fr)`,
-        gridRowGap: `${remRowSpacing}rem`,
-        gridColumnGap: `${remColSpacing}rem`,
-      }}>
+        gripRowGap: width > 850 ? `${remRowSpacing}rem` : `${responsiveRow}rem`,
+        gridColumnGap:
+          width > 850 ? `${remColSpacing}rem` : `${responsiveCol}rem`,
+      }}
+    >
       <div>
         <>
           <Texto
@@ -127,7 +137,10 @@ export const GridComposer2 = ({
   col,
   remRowSpacing,
   remColSpacing,
+  responsiveRow,
+  responsiveCol,
 }) => {
+  const { width } = useWindowSize();
   return (
     <>
       <div
@@ -135,11 +148,14 @@ export const GridComposer2 = ({
         style={{
           display: "grid",
           gap: "1.5rem",
-          width: "100%",
+          /* width: "100%", */
           gridTemplateColumns: `repeat(${col}, 1fr)`,
-          gridRowGap: `${remRowSpacing}rem`,
-          gridColumnGap: `${remColSpacing}rem`,
-        }}>
+          gripRowGap:
+            width > 850 ? `${remRowSpacing}rem` : `${responsiveRow}rem`,
+          gridColumnGap:
+            width > 850 ? `${remColSpacing}rem` : `${responsiveCol}rem`,
+        }}
+      >
         <div className="title-container border-none">
           <span className="text">
             <Texto
