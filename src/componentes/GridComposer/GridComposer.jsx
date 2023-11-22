@@ -1,10 +1,9 @@
 import "./GridComposer.scss";
 import Texto from "../Texto/Texto";
 import CakeSum from "../Cake-sum/Cake-sum";
+import Injected from "../../assets/iconos/Injected";
 import Icono from "../Icono/Icono";
 import ArrowUpDown from "../../assets/iconos/ArrowsUpDown";
-import { useActionData } from "react-router";
-import useWindowSize from "../../customHooks/ConnectWallet/useWindowSize ";
 
 /**
  * @param {string} className - Clase para elegir qué theme de la Grid tendrá la tabla
@@ -37,13 +36,10 @@ export const GridComposer1 = ({
       className={className}
       style={{
         display: "grid",
-        gap: "1.5rem",
         gridTemplateColumns: `repeat(${col}, 1fr)`,
-        gripRowGap: width > 850 ? `${remRowSpacing}rem` : `${responsiveRow}rem`,
-        gridColumnGap:
-          width > 850 ? `${remColSpacing}rem` : `${responsiveCol}rem`,
-      }}
-    >
+        gridRowGap: `${remRowSpacing}rem`,
+        gridColumnGap: `${remColSpacing}rem`,
+      }}>
       <div>
         <>
           <Texto
@@ -148,14 +144,11 @@ export const GridComposer2 = ({
         style={{
           display: "grid",
           gap: "1.5rem",
-          /* width: "100%", */
+          width: "100%",
           gridTemplateColumns: `repeat(${col}, 1fr)`,
-          gripRowGap:
-            width > 850 ? `${remRowSpacing}rem` : `${responsiveRow}rem`,
-          gridColumnGap:
-            width > 850 ? `${remColSpacing}rem` : `${responsiveCol}rem`,
-        }}
-      >
+          gridRowGap: `${remRowSpacing}rem`,
+          gridColumnGap: `${remColSpacing}rem`,
+        }}>
         <div className="title-container border-none">
           <span className="text">
             <Texto
@@ -246,5 +239,103 @@ export const GridComposer2 = ({
         </div>
       </div>
     </>
+  );
+};
+
+export const GridComposer3 = ({
+  className,
+  col,
+  remRowSpacing,
+  remColSpacing,
+  connectWallet,
+}) => {
+  return (
+    <section
+      /* screen and (min-width: 576px)
+ .theme3 {
+  remRowSpacing: 1.5;
+  remColSpacing: 1;
+  col= 2; */
+      className={className}
+      style={{
+        display: "grid",
+        justifyContent: "center",
+        gridTemplateColumns: `repeat(${col}, 1fr)`,
+        gridRowGap: `${remRowSpacing}rem`,
+        gridColumnGap: `${remColSpacing}rem`,
+      }}>
+      <button onClick={() => connectWallet()}>
+        <div>
+          <img
+            className="injected-svg"
+            src="https://assets.pancakeswap.finance/web/wallets/metamask.png"
+            alt="MetaMask"
+          />
+          <Texto label={"Metamask"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+      <button onClick={() => connectWallet()}>
+        <div>
+          <div className="injected-svg">
+            <Injected color={"#f4eeff"} />
+          </div>
+          <Texto label={"Injected"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+      <button>
+        <div>
+          <img
+            src="	https://assets.pancakeswap.finance/web/wallets/binance.png"
+            alt="Binance wallet"
+          />
+          <Texto label={"Binance Wallet"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+      <button>
+        <div>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/coinbase.png"
+            alt="Coinbase wallet"
+          />
+          <Texto label={"Coinbase Wallet"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+      <button>
+        <div>
+          <img
+            src="	https://assets.pancakeswap.finance/web/wallets/trust.png"
+            alt="Trust wallet"
+          />
+          <Texto label={"Trust Wallet"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+      <button>
+        <div>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/walletconnect.png"
+            alt="WalletConnect"
+          />
+          <Texto label={"WalletConnect"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+      <button>
+        <div>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
+            alt="Opera wallet"
+          />
+          <Texto label={"Opera Wallet"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+      <button>
+        <div>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/brave.png"
+            alt="Brave wallet"
+          />
+          <Texto label={"Brave Wallet"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+    </section>
   );
 };

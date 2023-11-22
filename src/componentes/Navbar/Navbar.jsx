@@ -24,9 +24,8 @@ import {
 } from "../../data/dropdownItems";
 import { useEffect, useState } from "react";
 import { SwitchNetwork, connectWallet } from "../Button/utils.jsx";
-import { useModal } from "../Modals/useModal";
 import { Modal } from "../Modals/Modal";
-import useWindowSize from "../../customHooks/ConnectWallet/useWindowSize .jsx";
+import { PortalRoot } from "../PortalModal/PortalRoot";
 
 const Navbar = () => {
   const [selectedNetwork, setSelectedNetwork] = useState(networkData[0]);
@@ -39,7 +38,6 @@ const Navbar = () => {
     }
   }, [selectedNetwork, wallet]);
 
-  // const {visible, handleOpenModal, handleCloseModal} = useModal(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const { width } = useWindowSize();
   return (
@@ -116,7 +114,9 @@ const Navbar = () => {
         />
         {isModalVisible && (
           <Modal setIsModalVisible={setIsModalVisible}>
-            {/* <WalletModalContent /> */}
+            <PortalRoot
+              connectWallet={() => connectWallet(setWallet, selectedNetwork)}
+            />
           </Modal>
         )}
       </div>

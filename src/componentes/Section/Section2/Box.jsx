@@ -12,9 +12,7 @@ export const Box = ({
   isFlexRowSpaceBetween,
   isItemCard,
   maxWidth,
-  seccionTextOrder,
-  seccionText,
-  seccionImage,
+  isPaddingTopButton,
 }) => {
   const boxSection = classNames({
     box: true,
@@ -27,9 +25,7 @@ export const Box = ({
     "flex-row-start": isFlexRowStart,
     "flex-row-space-between": isFlexRowSpaceBetween,
     "item-card": isItemCard,
-    "text-order": seccionTextOrder,
-    "seccion-text": seccionText,
-    "seccion-image": seccionImage,
+    "padding-top-button": isPaddingTopButton,
   });
   return (
     <div className={boxSection} style={{ maxWidth: `${maxWidth}px` }}>

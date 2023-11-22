@@ -50,22 +50,9 @@
   --font-size-24px: 24px;
   --font-size-lg: 40px;
   --font-size-xxl: 64px;
-
-  @media (max-width:1350px) {
-    --font-size-xs: 8px;
-    --font-size-sm: 10px;
-    --font-size-ms: 12px;
-    --font-size-md: 14px;
-    --font-size-ml: 16px;
-    --font-size-24px: 20px;
-    --font-size-lg: 20px;
-    --font-size-xxl: 44px;
-  }
 }
 
 .light-mode {
-  --color-borde-text-swiper: #ff5100;
-  --color-card-text: #280d5f;
   --text-color: #ffffff;
   --color-titulo-lila: #7645d9;
   --color-subtitulo-lila: #7a6eaa;
@@ -76,12 +63,8 @@
   --color-quaternary: #ffa920;
   --color-gradient-violet: linear-gradient(#8040ff 0%, #5121b1 100%);
   --color-gradient-yellow: linear-gradient(#fcac2d 0%, #fdcf5b 100%);
-  --color-gradient-text: linear-gradient(166.02deg, #ffb237 -5.1%, #ffeb37 75.24%);
   --background-image-main: linear-gradient(139.73deg, #e5fdff, #f3efff);
-  --color-gold: #ffc700;
   --color-black: black;
-  
-
   --color-secondary: #ffb237;
   --color-bg-button-hover: #228f99;
   --color-button-primary: #ffffff;
@@ -96,7 +79,7 @@
   --color-text: #280d5f;
   --color-linea-footer: #b8add2;
   --color-titulo-footer: #9a6aff;
-  --color-dropdown-network:#ffffff;
+  --color-dropdown-network: #ffffff;
 
   --colors-failure33: #ed4b9e33;
   --colors-primary0f: #1fc7d40f;
@@ -109,9 +92,9 @@
   --colors-warning33: #ed4b9e33;
   --colors-binance: #f0b90b;
   --colors-overlay: #452a7a;
+  --colors-gold: #ffc700;
   --colors-silver: #b2b2b2;
   --colors-bronze: #e7974d;
-
   --colors-secondary80: #7645d980;
 
   --colors-backgroundDisabled: #e9eaeb;
@@ -128,20 +111,18 @@
   --colors-text: #280d5f;
   --colors-text99: #280d5f99;
   --colors-textDisabled: #bdc2c4;
-
   --colors-disabled: #e9eaeb;
-
-  --colors-gradientInverseBubblegum: linear-gradient(139.73deg,
-      #f3efff,
-      #e5fdff);
+  --colors-gradientInverseBubblegum: linear-gradient(
+    139.73deg,
+    #f3efff,
+    #e5fdff
+  );
   --colors-gradientCardHeader: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
   --colors-gradientBlue: linear-gradient(180deg, #6fb6f1, #eaf2f6);
   --colors-gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
   --colors-gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
   --colors-gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --colors-gradientBold: linear-gradient(#53dee9, #7645d9);
-
-
 }
 
 /*
@@ -170,11 +151,10 @@
   gradientBlue: 'linear-gradient(180deg, #00707F 0%, #19778C 100%)',
   gradientViolet: 'linear-gradient(180deg, #6C4999 0%, #6D4DB2 100%)',
   gradientVioletAlt: 'linear-gradient(180deg, #434575 0%, #66578D 100%)',
-  gradientGold: 'linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)';
+  gradientGold: 'linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)',
 } */
 
 .dark-mode {
-  --color-borde-text-swiper: #ff5100;
   --text-color: #ffffff;
   --color-titulo-lila: #9a6aff;
   --color-subtitulo-lila: #b8add2;
@@ -195,24 +175,32 @@
   --background-dropdown-hover: #353547;
   --background-toggle: #666171;
   --color-warning-text: #bdc2c4;
+  --colors-gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
   --color-warning-gradient-violet: linear-gradient(#8051d6 0%, #492286 100%);
-  --colors-gradientBlue: linear-gradient(180deg,#0b4576 0%,#091115 100%);
+  --colors-gradientBlue: linear-gradient(180deg, #0b4576 0%, #091115 100%);
+  --color-PrimaryCard-background: linear-gradient(
+    rgb(7, 6, 10) -7%,
+    #191326 80%,
+    #1b1429 90%
+  );
+  --colors-gradientBold: linear-gradient(#53dee9, #7645d9);
+
+
   --color-warning-background: #27262c66;
   --color-button-footer-black: #191326;
-  --color-input: #372F47;
+  --color-input: #372f47;
   --color-linea-footer: #b8add2;
   --color-titulo-footer: #9a6aff;
-  --color-dropdown-network:#3c3742;
-  --color-gradient-text: linear-gradient(166.02deg, #ffb237 -5.1%, #ffeb37 75.24%);
-  --color-gold: #ffc700;
+  --color-dropdown-network: #3c3742;
   --color-black: black;
-
 
   --background-color-secondary: #27262c;
   --background-color-tertiary: #000000cc;
   --background-color-card-title: #08060b;
 
-  --background-image-main: radial-gradient(103.12% 50% at 50% 50%,
-      rgb(33, 25, 58) 0%,
-      rgb(25, 19, 38) 100%);
+  --background-image-main: radial-gradient(
+    103.12% 50% at 50% 50%,
+    #211839,
+    #191326 100%
+  );
 }
