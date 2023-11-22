@@ -28,9 +28,6 @@ import useWindowSize from "../customHooks/ConnectWallet/useWindowSize ";
 import MainSectionSVG from "../assets/BackgroundSVG/MainSectionSVG";
 import SecondarySectionSVG from "../assets/BackgroundSVG/SecondarySectionSVG";
 import TertiarySectionSVG from "../assets/BackgroundSVG/TertiarySectionSVG";
-import { SectionThree } from "../componentes/SectionThree/SectionThree";
-import { SectionFour } from "../componentes/SectionFour/SectionFour";
-
 
 const Home = () => {
   const { theme } = useTheme();
@@ -96,7 +93,6 @@ const Home = () => {
         </Box>
         <TertiarySectionSVG />
       </MainSection>
-
       {/* Seccion 3 */}
       <MainSection>
         <Box isFlexRow={true}>
@@ -272,14 +268,11 @@ const Home = () => {
         </Box>
       </MainSection>
       <MainSection background={`var(--background-color-secondary)`}>
-
       <Section gradient={"var(--color-black)"}>
-        <SectionThree />
       </Section>
       </MainSection>
       <MainSection background={`var(--background-color-secondary)`}>
         <SecondarySectionSVG />
-        <SectionFour />
         <Box isFlexColCenter>
           <GridComposer2
             className={"theme2"}
