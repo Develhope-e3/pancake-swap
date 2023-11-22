@@ -6,6 +6,7 @@ import ZkSyncEra from "../assets/iconos/ZkSyncEra";
 import ArbitrumOne from "../assets/iconos/ArbitrumOne";
 import LineaMainnet from "../assets/iconos/LineaMainnet";
 import Aptos from "../assets/iconos/Aptos";
+import Base from "../assets/iconos/Base";
 
 export const trade = [
   {
@@ -404,7 +405,7 @@ export const networkData = [
       },
     ],
   },
-  /* {
+  {
     iconoinicio: <Base />,
     label: "Base",
     data: [
@@ -420,7 +421,7 @@ export const networkData = [
         },
       },
     ],
-  }, */
+  },
   {
     iconoinicio: <BnbSmartChain />,
     label: "opBNB Mainnet",

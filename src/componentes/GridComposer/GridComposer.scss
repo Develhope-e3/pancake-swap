@@ -42,6 +42,38 @@
 
     padding-left: var(--space-s);
 
+    border-left: 1px solid var(--color-subtitulo-lila);
+  }
+}
+
+.theme2 {
+  > .title-container {
+    grid-column: 1 / 6;
+    gap: 5px;
+
+    .text {
+      width: max-content;
+      display: flex;
+      flex-flow: row wrap;
+      gap: 0.3rem;
+    }
+  }
+
+  > .border-none {
+    border: none;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+
+    width: 6rem;
+
+    padding-left: var(--space-s);
+
     border-left: 1px solid var(--color-text);
   }
 }

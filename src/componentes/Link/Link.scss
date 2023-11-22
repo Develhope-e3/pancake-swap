@@ -74,9 +74,10 @@
 .footer-anchor-secondary:hover {
   text-decoration: underline;
 }
-.dropdown-secundario{
-  svg{
-    color:var(--color-linea-footer);
+
+.dropdown-secundario {
+  svg {
+    color: var(--color-linea-footer);
   }
 }
 
@@ -122,6 +123,9 @@
   -ms-transition: all 0.07s linear 0.07s;
   -o-transition: all 0.07s linear 0.07s;
 
+  /* @media (max-width: 1200px) {
+    display: none;
+  } */
   .bunny {
     display: flex;
     margin-right: 10px;
