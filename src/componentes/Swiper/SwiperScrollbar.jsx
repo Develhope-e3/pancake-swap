@@ -12,6 +12,7 @@ export default function SwiperScrollbar() {
       <Swiper
         pagination={{
           clickable: true,
+
         }}
         spaceBetween={50}
         modules={[Pagination]}
