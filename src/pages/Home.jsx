@@ -321,8 +321,7 @@ const Home = () => {
               <img src={SectionSixCoins} alt="coins"></img>
             </Box>
           </Box>
-          <Box isPaddingTop>
-
+          <Box isPaddingTop isFlexColCenter>
           <GridComposer1
             className={"theme1"}
             col={3}
