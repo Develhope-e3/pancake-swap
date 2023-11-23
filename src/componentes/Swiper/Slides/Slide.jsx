@@ -1,5 +1,7 @@
 import classNames from "classnames";
 import "./Slide.scss";
+import { useSpring, animated } from "@react-spring/web";
+
 const Slide = ({
   texto1EnPng,
   texto2EnPng,
@@ -19,8 +21,14 @@ const Slide = ({
     conejo2: numeroDeSlide === 2,
     conejo3: numeroDeSlide === 3,
     conejo4: numeroDeSlide === 4,
+    conejo5: numeroDeSlide === 5,
   });
-
+  const { translateY} = useSpring({
+    to: { translateY: 8},
+    from: { translateY: 0 },
+    loop: true,
+    config: { tension: 2, friction: 0 },
+  });
   return (
     <div className="swiper-card-container">
       <img src={backgroundImage} alt="asd" className={className} />
@@ -50,7 +58,7 @@ const Slide = ({
         </div>
       </div>
 
-      {conejo && <img src={conejo} alt="swiper" className={mappedClassname} />}
+      {conejo && <animated.img  src={conejo} a alt="swiper" className={mappedClassname}  style={{translateY}}/>}
     </div>
   );
 };
