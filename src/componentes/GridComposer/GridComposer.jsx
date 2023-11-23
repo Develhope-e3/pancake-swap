@@ -1,9 +1,9 @@
 import "./GridComposer.scss";
 import Texto from "../Texto/Texto";
 import CakeSum from "../Cake-sum/Cake-sum";
+import Injected from "../../assets/iconos/Injected";
 import Icono from "../Icono/Icono";
 import ArrowUpDown from "../../assets/iconos/ArrowsUpDown";
-import { useActionData } from "react-router";
 import useWindowSize from "../../customHooks/ConnectWallet/useWindowSize ";
 
 /**
@@ -18,9 +18,7 @@ import useWindowSize from "../../customHooks/ConnectWallet/useWindowSize ";
  */
 
 /**
- *
  * TODO agregar data para hacer el componente más intuitivo y que reciba distintas cantidades de elementos y distintos styles "theme"
- *
  */
 
 export const GridComposer1 = ({
@@ -44,7 +42,7 @@ export const GridComposer1 = ({
           width > 850 ? `${remColSpacing}rem` : `${responsiveCol}rem`,
       }}
     >
-      <div>
+      <div className="border-none">
         <>
           <Texto
             size={"title-s"}
@@ -54,11 +52,11 @@ export const GridComposer1 = ({
           <Texto
             size={"title-ml"}
             color={"var(--color-text)"}
-            label={<CakeSum limite={22492} />}
+            label={<CakeSum limite={224927658} />}
           />
         </>
       </div>
-      <div>
+      <div className="border-none">
         <>
           <Texto
             size={"title-s"}
@@ -68,11 +66,11 @@ export const GridComposer1 = ({
           <Texto
             size={"title-ml"}
             color={"var(--color-text)"}
-            label={<CakeSum limite={398365} />}
+            label={<CakeSum limite={398365170} />}
           />
         </>
       </div>
-      <div>
+      <div className="border-none">
         <>
           <Texto
             size={"title-s"}
@@ -82,11 +80,11 @@ export const GridComposer1 = ({
           <Texto
             size={"title-ml"}
             color={"var(--color-text)"}
-            label={<CakeSum limite={750000} />}
+            label={<CakeSum limite={750000000} />}
           />
         </>
       </div>
-      <div>
+      <div className="border-none">
         <>
           <Texto
             size={"title-s"}
@@ -100,7 +98,7 @@ export const GridComposer1 = ({
           />
         </>
       </div>
-      <div>
+      <div className="border-none">
         <>
           <Texto
             size={"title-s"}
@@ -114,7 +112,7 @@ export const GridComposer1 = ({
           />
         </>
       </div>
-      <div>
+      <div className="border-none">
         <>
           <Texto
             size={"title-s"}
@@ -148,7 +146,16 @@ export const GridComposer2 = ({
         style={{
           display: "grid",
           gap: "1.5rem",
-          /* width: "100%", */
+          /* 
+          @media (max-width: 980px)
+
+          quitar 'width: "100%";'
+          quitar dos elementos del grid y crear otro abajo con esos elementos
+
+          justifyItems: "center",
+          col={3}
+           */
+          width: "100%",
           gridTemplateColumns: `repeat(${col}, 1fr)`,
           gripRowGap:
             width > 850 ? `${remRowSpacing}rem` : `${responsiveRow}rem`,
@@ -159,12 +166,12 @@ export const GridComposer2 = ({
         <div className="title-container border-none">
           <span className="text">
             <Texto
-              size={"title-ml"}
+              size={"title-ml-bold"}
               color={"var(--color-text)"}
               label={"Top"}
             />
             <Texto
-              size={"title-ml"}
+              size={"title-ml-bold"}
               color={"var(--color-titulo-lila)"}
               label={"Farms"}
             />
@@ -178,41 +185,37 @@ export const GridComposer2 = ({
           <>
             <Texto
               size={"title-s"}
-              color={"var(--color-text)"}
-              label={"Circulating Supply"}
+              color={"var(--color-titulo-lila)"} // var(--color-titulo-lila)
+              label={"EQB-BNB LP v3"}
             />
             <Texto
-              size={"title-ml"}
-              color={"var(--color-titulo-lila)"}
+              size={"title-ml-bold"}
+              color={"var(--color-text)"} // var(--color-text)
               label={<CakeSum limite={259595} />}
             />
+            <Texto
+              size={"title-ml"}
+              color={"var(--color-subtitulo-lila)"}
+              label={"APR"}
+            />
           </>
         </div>
         <div>
           <>
             <Texto
               size={"title-s"}
-              color={"var(--color-text)"}
-              label={"Total Supply"}
+              color={"var(--color-titulo-lila)"}
+              label={"DCK-BUSD LP v3"}
             />
             <Texto
-              size={"title-ml"}
-              color={"var(--color-titulo-lila)"}
+              size={"title-ml-bold"}
+              color={"var(--color-text)"}
               label={<CakeSum limite={398171116} />}
             />
-          </>
-        </div>
-        <div>
-          <>
-            <Texto
-              size={"title-s"}
-              color={"var(--color-text)"}
-              label={"Market Cap"}
-            />
             <Texto
               size={"title-ml"}
-              color={"var(--color-titulo-lila)"}
-              label={"$260 million"}
+              color={"var(--color-subtitulo-lila)"}
+              label={"APR"}
             />
           </>
         </div>
@@ -220,31 +223,158 @@ export const GridComposer2 = ({
           <>
             <Texto
               size={"title-s"}
+              color={"var(--color-titulo-lila)"}
+              label={"MBX-USDT LP v3"}
+            />
+            <Texto
+              size={"title-ml-bold"}
               color={"var(--color-text)"}
-              label={"Token Burn"}
+              label={"$260"}
             />
             <Texto
               size={"title-ml"}
+              color={"var(--color-subtitulo-lila)"}
+              label={"APR"}
+            />
+          </>
+        </div>
+        <div>
+          <>
+            <Texto
+              size={"title-s"}
               color={"var(--color-titulo-lila)"}
+              label={"MBX-BNB LP v3"}
+            />
+            <Texto
+              size={"title-ml-bold"}
+              color={"var(--color-text)"}
               label={<CakeSum limite={987196236} />}
             />
+            <Texto
+              size={"title-ml"}
+              color={"var(--color-subtitulo-lila)"}
+              label={"APR"}
+            />
           </>
         </div>
         <div>
           <>
             <Texto
               size={"title-s"}
+              color={"var(--color-titulo-lila)"}
+              label={"WNCG-BNB LP v3"}
+            />
+            <Texto
+              size={"title-ml-bold"}
               color={"var(--color-text)"}
-              label={"Curren Emissions"}
+              label={"1.88/block"}
             />
             <Texto
               size={"title-ml"}
-              color={"var(--color-titulo-lila)"}
-              label={"1.88/block"}
+              color={"var(--color-subtitulo-lila)"}
+              label={"APR"}
             />
           </>
         </div>
       </div>
     </>
+  );
+};
+
+export const GridComposer3 = ({
+  className,
+  col,
+  remRowSpacing,
+  remColSpacing,
+  connectWallet,
+}) => {
+  return (
+    <section
+      /* screen and (min-width: 576px)
+ .theme3 {
+  remRowSpacing: 1.5;
+  remColSpacing: 1;
+  col= 2; */
+      className={className}
+      style={{
+        display: "grid",
+        justifyContent: "center",
+        gridTemplateColumns: `repeat(${col}, 1fr)`,
+        gridRowGap: `${remRowSpacing}rem`,
+        gridColumnGap: `${remColSpacing}rem`,
+      }}>
+      <button onClick={() => connectWallet()}>
+        <div>
+          <img
+            className="injected-svg"
+            src="https://assets.pancakeswap.finance/web/wallets/metamask.png"
+            alt="MetaMask"
+          />
+          <Texto label={"Metamask"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+      <button onClick={() => connectWallet()}>
+        <div>
+          <div className="injected-svg">
+            <Injected color={"#f4eeff"} />
+          </div>
+          <Texto label={"Injected"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+      <button>
+        <div>
+          <img
+            src="	https://assets.pancakeswap.finance/web/wallets/binance.png"
+            alt="Binance wallet"
+          />
+          <Texto label={"Binance Wallet"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+      <button>
+        <div>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/coinbase.png"
+            alt="Coinbase wallet"
+          />
+          <Texto label={"Coinbase Wallet"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+      <button>
+        <div>
+          <img
+            src="	https://assets.pancakeswap.finance/web/wallets/trust.png"
+            alt="Trust wallet"
+          />
+          <Texto label={"Trust Wallet"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+      <button>
+        <div>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/walletconnect.png"
+            alt="WalletConnect"
+          />
+          <Texto label={"WalletConnect"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+      <button>
+        <div>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/opera.png"
+            alt="Opera wallet"
+          />
+          <Texto label={"Opera Wallet"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+      <button>
+        <div>
+          <img
+            src="https://assets.pancakeswap.finance/web/wallets/brave.png"
+            alt="Brave wallet"
+          />
+          <Texto label={"Brave Wallet"} size={"title-s"} color={"#f4eeff"} />
+        </div>
+      </button>
+    </section>
   );
 };

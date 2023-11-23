@@ -22,8 +22,8 @@ export default function SwiperScrollbar() {
         modules={[Pagination, Autoplay]}
       >
         {dataSwiper &&
-          dataSwiper.map((card) => (
-            <SwiperSlide>
+          dataSwiper.map((card, index) => (
+            <SwiperSlide key={index}>
               <Slide
                 texto1EnPng={card.texto1EnPng}
                 texto2EnPng={card.texto2EnPng}

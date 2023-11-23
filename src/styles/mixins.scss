@@ -9,8 +9,32 @@
       opacity: 1;
     }
   }
+
   animation: appear $duration ease-out forwards;
   -webkit-animation: appear $duration ease-out forwards;
+}
+
+@mixin grid-border-animation {
+  $duration: 3s;
+
+  @keyframes bg-border {
+    0% {
+      background-position-x: 50%;
+      background-position-y: 0px;
+    }
+    50% {
+      background-position-x: 50%;
+      background-position-y: 100%;
+    }
+    100% {
+      background-position-x: 50%;
+      background-position-y: 0px;
+    }
+  }
+
+  background-size: 400% 400%;
+  animation: bg-border $duration ease infinite;
+  -webkit-animation: bg-border $duration ease infinite;
 }
 
 // -----------------------------------------------------------------------------
@@ -30,6 +54,7 @@
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
+
 $breakpoints: (
   'sm': (min-width: 768px,
   ),
@@ -51,6 +76,7 @@ $breakpoints: (
 /// @author Hugo Giraudel
 /// @param {String} $breakpoint - Breakpoint name
 /// @require $breakpoints
+
 @mixin respond-to($breakpoint) {
 
   // If the key exists in the map

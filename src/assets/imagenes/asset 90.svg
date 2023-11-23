@@ -3,9 +3,9 @@
     fill="url(#paint0_linear_dark)" />
   <defs>
     <linearGradient id="paint0_linear_dark" x1="830" y1="83.5" x2="830" y2="338.5" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#08060B" stop-opacity="0.2" />
-      <stop offset="0.545554" stop-color="#08060B" stop-opacity="0.5" />
-      <stop offset="1" stop-color="#08060B" />
+      <stop stopColor="#08060B" stopOpacity="0.2" />
+      <stop offset="0.545554" stopColor="#08060B" stopOpacity="0.5" />
+      <stop offset="1" stopColor="#08060B" />
     </linearGradient>
   </defs>
 </svg>

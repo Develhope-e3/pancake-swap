@@ -22,18 +22,18 @@
   <defs>
     <linearGradient id="paint0_linear_2863_25822" x1="10.4332" y1="2.00002" x2="15.7348" y2="12.0469"
       gradientUnits="userSpaceOnUse">
-      <stop stop-color="#57F1FF" />
-      <stop offset="1" stop-color="#61CCFE" />
+      <stop stopColor="#57F1FF" />
+      <stop offset="1" stopColor="#61CCFE" />
     </linearGradient>
     <linearGradient id="paint1_linear_2863_25822" x1="6.0573" y1="3.7328" x2="19.2144" y2="16.3639"
       gradientUnits="userSpaceOnUse">
-      <stop stop-color="#54FDFF" />
-      <stop offset="1" stop-color="#69A9FD" />
+      <stop stopColor="#54FDFF" />
+      <stop offset="1" stopColor="#69A9FD" />
     </linearGradient>
     <linearGradient id="paint2_linear_2863_25822" x1="11.4819" y1="0.774107" x2="28.1575" y2="6.01502"
       gradientUnits="userSpaceOnUse">
-      <stop stop-color="#54FDFF" />
-      <stop offset="1" stop-color="#69A9FD" />
+      <stop stopColor="#54FDFF" />
+      <stop offset="1" stopColor="#69A9FD" />
     </linearGradient>
     <clipPath id="clip0_2863_25822">
       <path fill="#fff" transform="translate(1 8.752)" d="M0 0H22.9091V17.5187H0z" />
