@@ -1,37 +1,39 @@
+import "./Home.scss";
 import "../styles/variables.scss";
-import { MainSection, Section } from "../componentes/Section/Section";
-import { Box } from "../componentes/Section/Section2/Box";
-import { PrimaryCard } from "../componentes/Cards/PrimaryCard";
-import { dataPrimaryCard } from "../data/dataPrimaryCard";
+import Navbar from "../componentes/Navbar/Navbar";
 import BasePage from "../componentes/Section/BasePage";
 import Texto from "../componentes/Texto/Texto";
 import Button from "../componentes/Button/Button";
-import ImageMainSection from "../assets/iconos/MainSection";
-import "./Home.scss";
 import Link from "../componentes/Link/Link";
-import SectionthreeCoins from "../assets/imagenes/SectionthreeCoins.png";
-import SectionFourCoins from "../assets/imagenes/SectionFourCoins.png";
-import SectionSixCoins from "../assets/imagenes/SectionSixCoins.png";
+import { MainSection, Section } from "../componentes/Section/Section";
+import { Box } from "../componentes/Section/Section2/Box";
 import { useTheme } from "../context/ThemeContext";
-import {
-  GridComposer1,
-  GridComposer2,
-} from "../componentes/GridComposer/GridComposer";
-import { CardCTA } from "../componentes/Cards/CardCTA";
-import { dataCardCTA } from "../data/dataCardCTA";
+import { WarningHeader } from "../componentes/WarningHeader/WarningHeader";
 import { ButtonScroll } from "../componentes/Button/ButtonScroll";
 import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny";
+import ImageMainSection from "../assets/iconos/MainSection";
+import MainSectionSVG from "../assets/BackgroundSVG/MainSectionSVG";
+import { VioletBunny } from "../assets/iconos/VioletBunny";
+import { dataPrimaryCard } from "../data/dataPrimaryCard";
+import { PrimaryCard } from "../componentes/Cards/PrimaryCard";
+import SecondarySectionSVG from "../assets/BackgroundSVG/SecondarySectionSVG";
+import SectionthreeCoins from "../assets/imagenes/SectionthreeCoins.png";
+import TertiarySectionSVG from "../assets/BackgroundSVG/TertiarySectionSVG";
+import { GridComposer1, GridComposer2 } from "../componentes/GridComposer/GridComposer";
 import SubImages from "../../src/assets/iconos/SubImages";
 import SupImages from "../../src/assets/iconos/SupImages";
-import { VioletBunny } from "../assets/iconos/VioletBunny";
-import MainSectionSVG from "../assets/BackgroundSVG/MainSectionSVG";
-import SecondarySectionSVG from "../assets/BackgroundSVG/SecondarySectionSVG";
-import TertiarySectionSVG from "../assets/BackgroundSVG/TertiarySectionSVG";
+import { dataCardCTA } from "../data/dataCardCTA";
+import { CardCTA } from "../componentes/Cards/CardCTA";
+import SectionFourCoins from "../assets/imagenes/SectionFourCoins.png";
+import SectionSixCoins from "../assets/imagenes/SectionSixCoins.png";
+import Footer from "../componentes/Footer/Footer";
 
 const Home = () => {
   const { theme } = useTheme();
   return (
     <BasePage className={theme === "dark" ? "dark-mode" : "light-mode"}>
+      <WarningHeader />
+      <Navbar />
       <MainSection>
         <Box isFlexRow={true} maxWidth={1200}>
           <Box isFlexColStart>
@@ -322,17 +324,19 @@ const Home = () => {
             </Box>
           </Box>
           <Box isPaddingTop isFlexColCenter>
-          <GridComposer1
-            className={"theme1"}
-            col={3}
-            remRowSpacing={2}
-            remColSpacing={9}
-          />
+            <GridComposer1
+              className={"theme1"}
+              col={3}
+              remRowSpacing={2}
+              remColSpacing={9}
+            />
           </Box>
         </Box>
       </Section>
       <SlideBunny />
       <ButtonScroll />
+      <Footer />
+
     </BasePage>
   );
 };

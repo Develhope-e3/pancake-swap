@@ -112,6 +112,7 @@ export const PortalRoot = ({ connectWallet }) => {
               }
               className={"modal-anchor"}
               svg={<ArrowRight />}
+              isTarget
             />
           </div>
         </div>
