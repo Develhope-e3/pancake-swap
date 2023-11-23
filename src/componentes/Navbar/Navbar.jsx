@@ -1,7 +1,8 @@
 import { BsThreeDots } from "react-icons/bs";
 import Dropdown from "../Dropdown/Dropdown";
 import Icono from "../Icono/Icono";
-import PancakeSwapIcono from "../Icono/PancakeSwapIcono";
+import PancakeSwapIcono from "../../assets/iconos/PancakeSwapIcono.jsx";
+import ResponsivePancakeSwapIcono from "../../assets/iconos/ResponsivePancakeSwapIcono.jsx";
 import Puntos from "../Puntos/Puntos";
 import BunnySmall from "../../assets/iconos/BunnySmall";
 import { IoSettingsSharp } from "react-icons/io5";
@@ -25,6 +26,7 @@ import { useEffect, useState } from "react";
 import { SwitchNetwork, connectWallet } from "../Button/utils.jsx";
 import { useModal } from "../Modals/useModal";
 import { Modal } from "../Modals/Modal";
+import useWindowSize from "../../customHooks/ConnectWallet/useWindowSize .jsx";
 
 const Navbar = () => {
   const [selectedNetwork, setSelectedNetwork] = useState(networkData[0]);
@@ -39,12 +41,19 @@ const Navbar = () => {
 
   // const {visible, handleOpenModal, handleCloseModal} = useModal(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
-
+  const { width } = useWindowSize();
   return (
     <nav>
       <div className="navbar div1">
         <div className="pancakeswap-icon">
           <Icono icono={<PancakeSwapIcono />} />
+        </div>
+        <div>
+          <Link
+            className={"pancakeswap-icon_responsive"}
+            svg={<ResponsivePancakeSwapIcono />}
+            href={"/"}
+          />
         </div>
         <Dropdown
           label={"Trade"}
@@ -68,26 +77,24 @@ const Navbar = () => {
         />
       </div>
       <div className="navbar div2">
-        <Dropdown
-          label={<TbWorld />}
-          dropdownItems={idiomas}
-          className={"idiomas"}
-          isIdiomas={true}
-        />
-
-        <Button
-          isSetting={true}
-          className="button-setting"
-          svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
-          onClick={() => console.log("click en el boton setting")}
-        />
         <Link
           className={"button-bunny"}
           svg={<BunnySmall />}
           label={"$1.184"}
           href={"www.google.com"}
         />
-
+        <Dropdown
+          label={<TbWorld />}
+          dropdownItems={idiomas}
+          className={"idiomas"}
+          isIdiomas={true}
+        />
+        <Button
+          isSetting={true}
+          className="button-setting"
+          svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
+          onClick={() => console.log("click en el boton setting")}
+        />
         <DropdownNetwork
           icono1={selectedNetwork.iconoinicio}
           label={selectedNetwork.label}
@@ -103,7 +110,7 @@ const Navbar = () => {
           isPrimary={true}
           widthValue={"149px"}
           heightValue={"32px"}
-          texto={"Connect Wallet"}
+          texto={width > 980 ? "Connect Wallet" : "Connect"}
           colorTexto={"var(--text-color-black)"}
           onClick={() => setIsModalVisible(true)}
         />

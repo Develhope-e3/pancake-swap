@@ -1,4 +1,4 @@
-import asset from "../../assets/conejo.svg";
+import asset from "../conejo.svg";
 
 const PancakeSwapIcono = () => {
   return <img src={asset} alt="conejo" />;

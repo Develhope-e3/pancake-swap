@@ -4,6 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 980px) {
+    width: auto;
+  }
 }
 
 .bnb {
@@ -25,9 +28,10 @@
 
   &:hover {
     background-color: var(--background-color-secondary);
-
   }
-
+  @media (max-width: 980px) {
+    width: auto;
+  }
   img {
     display: flex;
     padding-right: 10px;

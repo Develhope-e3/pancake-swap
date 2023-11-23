@@ -72,9 +72,9 @@
 .footer-anchor-secondary:hover {
   text-decoration: underline;
 }
-.dropdown-secundario{
-  svg{
-    color:var(--color-linea-footer);
+.dropdown-secundario {
+  svg {
+    color: var(--color-linea-footer);
   }
 }
 
@@ -91,14 +91,17 @@
   bottom: calc(146px + env(safe-area-inset-bottom));
 }
 
-.button-bunny{
+.button-bunny {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
 
   color: var(--color-subtitulo-lila);
   font-weight: bold;
-  .bunny{
+  /* @media (max-width: 1200px) {
+    display: none;
+  } */
+  .bunny {
     display: flex;
     margin-right: 10px;
   }

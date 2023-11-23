@@ -1,5 +1,5 @@
 import { Subsection } from "../Subsection/Subsection";
-import SectionFourData from "../../assets/imagenes/SectionFourData.png";
+import SectionFourData from "../../assets/imagenes/SectionFourCoins.png";
 import "./SectionFour.scss"
 import { useSpring, animated } from "@react-spring/web";
 

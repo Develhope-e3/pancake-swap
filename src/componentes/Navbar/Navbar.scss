@@ -1,28 +1,55 @@
-nav{
+nav {
   display: flex;
   padding: 0px 16px;
   justify-content: space-between;
   align-items: center;
 
-
   background-color: var(--background-color-secondary);
-  
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
+.navbar {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
 }
-.div1{
-    display: flex;
-    align-items: center;
-    width: 700px;
-
+.div1 {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  .dropdown {
+    @media (max-width: 850px) {
+      display: none;
+    }
+  }
 }
-.div2{
+.div2 {
+  display: flex;
+  justify-content: space-between;
+  /* width: 550px; */
+  a.button-bunny {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+  @media (max-width: 850px) {
+    justify-content: flex-end;
+  }
+  button {
+    @media (max-width: 980px) {
+      width: auto !important;
+    }
+  }
+}
+.pancakeswap-icon {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+.pancakeswap-icon_responsive {
+  display: none;
+  @media (max-width: 1200px) {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+  }
 }
