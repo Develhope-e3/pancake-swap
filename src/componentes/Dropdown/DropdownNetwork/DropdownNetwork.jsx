@@ -28,6 +28,7 @@ const DropdownNetwork = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+
   const handleMouseEnter = () => {
     setIsOpen(true);
   };
@@ -37,17 +38,17 @@ const DropdownNetwork = ({
   };
 
   const { width } = useWindowSize();
+  const labelMediaQueries = width > 980 ? selectedNetwork.label : selectedNetwork.data[0].nativeCurrency.name;
 
   return (
     <div
       className="dropdownContainer"
       onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+      onMouseLeave={handleMouseLeave}>
       <div className="bnb">
         <Icono icono={selectedNetwork.iconoinicio} />
         <Link
-          label={width > 980 ? "BNB Smart Chain" : "BNB"}
+          label={labelMediaQueries}
           className={className}
           href={href}
         />

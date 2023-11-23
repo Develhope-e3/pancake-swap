@@ -1,0 +1,136 @@
+.container-grid {
+  width: 100%;
+  max-height: 300px;
+
+  overflow-y: scroll;
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #b8add2;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #372f47;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+}
+
+.container-buttons {
+  display: flex;
+  justify-content: space-between;
+
+  overflow: auto;
+
+  position: absolute;
+  top: -2.3rem;
+  left: 1.3rem;
+
+  background-color: transparent;
+
+  > .button-left {
+    padding: 8px;
+
+    background-color: #372f47;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 16px 16px 0px 0px;
+    -webkit-border-radius: 16px 16px 0px 0px;
+    -moz-border-radius: 16px 16px 0px 0px;
+    -ms-border-radius: 16px 16px 0px 0px;
+    -o-border-radius: 16px 16px 0px 0px;
+  }
+
+  > .button-right {
+    padding: 8px;
+
+    background-color: #b8add2;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 16px 16px 0px 0px;
+    -webkit-border-radius: 16px 16px 0px 0px;
+    -moz-border-radius: 16px 16px 0px 0px;
+    -ms-border-radius: 16px 16px 0px 0px;
+    -o-border-radius: 16px 16px 0px 0px;
+  }
+}
+
+.ventana-prime {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+
+  background: var(--colors-gradientCardHeader);
+
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+
+  > .ventana-primaria {
+    text-align: justify;
+
+    box-sizing: border-box;
+
+    background-color: #27262c;
+
+    padding: 32px 0px;
+
+    width: 50%;
+
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+
+    .texto-container {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 48px;
+
+      > span {
+        padding-top: 24px;
+        padding-bottom: 32px;
+
+        vertical-align: baseline;
+      }
+    }
+  }
+
+  > .ventana-secundaria {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    margin: 0px 24px;
+
+    > img {
+      flex: 1 1;
+    }
+  }
+}

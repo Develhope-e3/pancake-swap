@@ -1,4 +1,5 @@
 import "./Link.scss";
+import classNames from "classnames";
 
 /**
  * @param {string} label - Texto que va a llevar el link
@@ -9,9 +10,13 @@ import "./Link.scss";
  * @returns Estructura HTML
  */
 
-export const Link = ({ label, className, href, svg }) => {
+const Link = ({ label, className, href, svg, id, isTarget }) => {
+  const targets = classNames({
+    "_blank": isTarget,
+  });
+
   return (
-    <a className={className} href={href}>
+    <a id={id} className={className} href={href} target={targets} rel="nofollow">
       {label} {svg && svg}
     </a>
   );

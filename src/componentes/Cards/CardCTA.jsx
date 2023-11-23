@@ -46,13 +46,8 @@ export const CardCTA = ({
           isPrimary={true}
           widthValue={"166px"}
           heightValue={"48px"}
-          texto={
-            <Texto
-              label={button.text}
-              size={"title-md-bold"}
-              color={button.color}
-            />
-          }
+          texto={button.text}
+          colorTexto={button.color}
           svg={<Icono icono={button.icon} />}
           onClick={onClick}
         />
