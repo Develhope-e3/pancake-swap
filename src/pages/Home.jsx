@@ -34,8 +34,8 @@ const Home = () => {
     <BasePage className={theme === "dark" ? "dark-mode" : "light-mode"}>
       <WarningHeader />
       <Navbar />
-      <MainSection>
-        <Box isFlexRow={true} maxWidth={1200}>
+      <Section gradient={"var(--background-image-main)"}>
+        <Box isFlexRow maxWidth={1200}>
           <Box isFlexColStart>
             <Texto
               size={"title-lg-bold"}
@@ -69,10 +69,10 @@ const Home = () => {
           <ImageMainSection />
         </Box>
         <MainSectionSVG />
-      </MainSection>
-      <MainSection>
-        <Section gradient={"var(--color-gradient-section-1)"}>
-          <Box isFlexColCenter isPaddingTop>
+      </Section>
+      <Section gradient={"var(--color-gradient-section-1)"}>
+        <Box isPaddingBottom isPaddingTop>
+          <Box isFlexColCenter isMarginBottom>
             <VioletBunny color={"var(--color-tertiary)"} />
             <Texto
               size={"tittle-section-lg"}
@@ -106,11 +106,11 @@ const Home = () => {
                 })}
             </Box>
           </Box>
-        </Section>
-        <TertiarySectionSVG />
-      </MainSection>
+        </Box>
+          <TertiarySectionSVG />
+      </Section>
       <Section gradient={"var(--color-black)"}>
-        <Box isFlexRow={true}>
+        <Box isFlexRow={true} isMarginTop isMarginBottom>
           <Box isFlexColStart={true} seccionTextOrder>
             <Box isFlexCol={true}>
               <Box seccionText={true}>
@@ -223,13 +223,13 @@ const Home = () => {
             </Box>
           </Box>
         </Box>
-        <Box isFlexColCenter isPaddingTop>
+        <Box isFlexColCenter isMarginTop isMarginBottom>
           <GridComposer2 className={"theme2"} col={5} remColSpacing={3} />
         </Box>
       </MainSection>
       <Section gradient={"var(--colors-gradientBlue)"}>
         <SupImages size={35} />
-        <Box isFlexRowCenter isItemCard>
+        <Box isFlexRowCenter isItemCard isMarginTop isMarginBottom>
           <Box isFlexRowCenter>
             <Texto
               size={"tittle-section-lg"}
@@ -322,7 +322,7 @@ const Home = () => {
               <img src={SectionSixCoins} alt="coins"></img>
             </Box>
           </Box>
-          <Box isPaddingTop isFlexColCenter>
+          <Box isMarginTop isMarginBottom isFlexColCenter>
             <GridComposer1
               className={"theme1"}
               col={3}

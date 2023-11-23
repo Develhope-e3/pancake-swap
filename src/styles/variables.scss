@@ -219,13 +219,17 @@
   --color-gradient-text: linear-gradient(166.02deg, #ffb237 -5.1%, #ffeb37 75.24%);
   --color-gold: #ffc700;
   --color-black: black;
-  --color-gradient-section-1: #08060b;
+  --color-gradient-section-1: radial-gradient(
+    300% 63% at 20% 10%,
+    #040205 22%,
+    #211839 100%
+    );
   --color-inputSecondary: black;
 
 
   --background-color-secondary: #27262c;
   --background-color-tertiary: #000000cc;
-  --background-color-card-title: #08060b;
+  --background-color-card-title: #050307;
 
   --background-image-main: radial-gradient(
     103.12% 50% at 50% 50%,

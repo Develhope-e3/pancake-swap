@@ -149,8 +149,20 @@
   -o-border-radius: var(--border-radius-xxl);
 }
 
+.margin-top {
+  margin-top: 68px;
+}
+
+.margin-bottom {
+  margin-bottom: 68px;
+}
+
 .padding-top {
-  padding: 48px 0px;
+  padding-top: 68px;
+}
+
+.padding-bottom {
+  padding-bottom: 68px;
 }
 
 .text-order {
