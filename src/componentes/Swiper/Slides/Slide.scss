@@ -16,6 +16,9 @@
   bottom: 4rem;
   z-index: 50;
   overflow: visible;
+  @media (max-width: 850px) {
+    isplay: none;
+}
 }
 
 .conejo2 {
@@ -26,6 +29,9 @@
   bottom: 2rem;
   z-index: 50;
   transform: none !important;
+  @media (max-width: 850px) {
+    isplay: none;
+}
 }
 .conejo3 {
   width: 300px;
@@ -35,6 +41,9 @@
   bottom: 3rem;
   z-index: 50;
   overflow: visible;
+  @media (max-width: 850px) {
+    isplay: none;
+}
 }
 
 .conejo4 {
@@ -45,6 +54,9 @@
   right: 4rem;
   bottom: 0rem;
   z-index: 50;
+  @media (max-width: 850px) {
+    isplay: none;
+}
 }
 
 .conejo5 {
@@ -55,6 +67,9 @@
   right: 4rem;
   bottom: 0rem;
   z-index: 50;
+  @media (max-width: 850px) {
+    isplay: none;
+}
 }
 
 .text-container {
