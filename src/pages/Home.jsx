@@ -30,6 +30,7 @@ import { CardCTA } from "../componentes/Cards/CardCTA";
 import SectionFourCoins from "../assets/imagenes/SectionFourCoins.png";
 import SectionSixCoins from "../assets/imagenes/SectionSixCoins.png";
 import Footer from "../componentes/Footer/Footer";
+import SwiperScrollbar from "../componentes/Swiper/SwiperScrollbar"
 import { useSpring, animated } from "@react-spring/web";
 
 const Home = () => {
@@ -55,6 +56,10 @@ const Home = () => {
       <WarningHeader />
       <Navbar />
       <Section gradient={"var(--background-image-main)"}>
+        <Box isMarginTop isFlexColCenter maxWidth={1200}>
+        <SwiperScrollbar />
+          </Box>
+
         <Box isFlexRow maxWidth={1200}>
           <Box isFlexColStart>
             <Texto
