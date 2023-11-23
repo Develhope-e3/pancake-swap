@@ -71,13 +71,13 @@ const Home = () => {
         <MainSectionSVG />
       </MainSection>
       <MainSection>
-        <Section gradient={"var(--color-PrimaryCard-background)"}>
+        <Section gradient={"var(--color-gradient-section-1)"}>
           <Box isFlexColCenter isPaddingTop>
             <VioletBunny color={"var(--color-tertiary)"} />
             <Texto
               size={"tittle-section-lg"}
               color={"var(--color-text)"}
-              label={`Used by millions. 
+              label={`Used by millions.
             Trusted with billions.`}
             />
             <Texto

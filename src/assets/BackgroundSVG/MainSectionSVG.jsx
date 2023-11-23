@@ -22,13 +22,13 @@ const MainSectionSVG = () => {
             y2="338.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#08060B" stopOpacity="0.2"></stop>
+            <stop stopColor="var(--background-color-card-title)" stopOpacity="0.2"></stop>
             <stop
               offset="0.545554"
-              stopColor="#08060B"
+              stopColor="var(--background-color-card-title)"
               stopOpacity="0.5"
             ></stop>
-            <stop offset="1" stopColor="#08060B"></stop>
+            <stop offset="1" stopColor="var(--background-color-card-title)"></stop>
           </linearGradient>
         </defs>
       </svg>

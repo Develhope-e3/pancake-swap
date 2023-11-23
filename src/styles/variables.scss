@@ -79,7 +79,11 @@
   --color-gradient-violet: linear-gradient(#8040ff 0%, #5121b1 100%);
   --color-gradient-yellow: linear-gradient(#fcac2d 0%, #fdcf5b 100%);
   --color-gradient-text: linear-gradient(166.02deg, #ffb237 -5.1%, #ffeb37 75.24%);
-  --background-image-main: linear-gradient(139.73deg, #e5fdff, #f3efff);
+  --background-image-main: radial-gradient(
+    103.12% 50% at 50% 50%,
+    #d7caec 0%,
+    #b8add2 100%
+    );
   --color-gold: #ffc700;
   --color-black: black;
   --color-secondary: #ffb237;
@@ -97,6 +101,8 @@
   --color-linea-footer: #b8add2;
   --color-titulo-footer: #9a6aff;
   --color-dropdown-network:#ffffff;
+  --color-gradient-section-1: linear-gradient(180deg,#fff 22%,#d7caec 100%);
+  --color-inputSecondary: #d7caec;
 
   --colors-failure33: #ed4b9e33;
   --colors-primary0f: #1fc7d40f;
@@ -123,7 +129,7 @@
   --colors-dropdownDeep: #eee;
   --colors-invertedContrast: #fff;
   --colors-input: #eeeaf4;
-  --colors-inputSecondary: #d7caec;
+
   --colors-tertiary: #eff4f5;
   --colors-text: #280d5f;
   --colors-text99: #280d5f99;
@@ -134,6 +140,7 @@
   --colors-gradientInverseBubblegum: linear-gradient(139.73deg,
       #f3efff,
       #e5fdff);
+
   --colors-gradientCardHeader: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
   --colors-gradientBlue: linear-gradient(180deg, #6fb6f1, #eaf2f6);
   --colors-gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
@@ -212,6 +219,8 @@
   --color-gradient-text: linear-gradient(166.02deg, #ffb237 -5.1%, #ffeb37 75.24%);
   --color-gold: #ffc700;
   --color-black: black;
+  --color-gradient-section-1: #08060b;
+  --color-inputSecondary: black;
 
 
   --background-color-secondary: #27262c;
@@ -222,5 +231,7 @@
     103.12% 50% at 50% 50%,
     #211839 0%,
     #191326 100%
-  );
+    );
+
+
 }
