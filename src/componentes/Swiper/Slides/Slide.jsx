@@ -19,6 +19,7 @@ const Slide = ({
     conejo2: numeroDeSlide === 2,
     conejo3: numeroDeSlide === 3,
     conejo4: numeroDeSlide === 4,
+    conejo5: numeroDeSlide === 5,
   });
 
   return (
