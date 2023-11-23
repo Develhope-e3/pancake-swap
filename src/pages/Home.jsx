@@ -109,7 +109,6 @@ const Home = () => {
         </Section>
         <TertiarySectionSVG />
       </MainSection>
-
       <Section gradient={"var(--color-black)"}>
         <Box isFlexRow={true}>
           <Box isFlexColStart={true} seccionTextOrder>
