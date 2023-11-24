@@ -52,7 +52,7 @@ const Home = () => {
             />
             <Box isFlexRowStart>
               <Button
-                isPrimary={true}
+                isPrimary
                 widthValue={"166px"}
                 heightValue={"46px"}
                 texto={"Connect Wallet"}
@@ -60,7 +60,7 @@ const Home = () => {
                 onClick={() => console.log("click")}
               />
               <Button
-                isSecondary={true}
+                isSecondary
                 texto={"Trade Now"}
                 colorTexto={"var(--color-primary)"}
                 onClick={() => console.log("click")}
@@ -111,10 +111,10 @@ const Home = () => {
         <TertiarySectionSVG />
       </Section>
       <Section gradient={"var(--background-color-card-title)"}>
-        <Box isFlexRow={true}>
-          <Box isFlexColStart={true} seccionTextOrder>
-            <Box isFlexCol={true}>
-              <Box seccionText={true}>
+        <Box isFlexRow>
+          <Box isFlexColStart seccionTextOrder>
+            <Box isFlexCol>
+              <Box seccionText>
                 <Texto
                   size={"tittle-section-lg"}
                   color={"var(--color-titulo-lila)"}
@@ -126,7 +126,7 @@ const Home = () => {
                   label={"anything. No registration, no hassle."}
                 />
               </Box>
-              <Box seccionText={true}>
+              <Box seccionText>
                 <Texto
                   size={"text-section-ml"}
                   color={"var(--color-subtitulo-lila)"}
@@ -136,9 +136,9 @@ const Home = () => {
                 />
               </Box>
             </Box>
-            <Box isFlexRowStart={true}>
+            <Box isFlexRowStart>
               <Button
-                isPrimary={true}
+                isPrimary
                 widthValue={"166px"}
                 heightValue={"46px"}
                 texto={"Trade Now"}
@@ -162,20 +162,20 @@ const Home = () => {
               />
             </Box>
           </Box>
-          <Box seccionImage={true}>
+          <Box seccionImage>
             <img src={SectionthreeCoins} alt="coins"></img>
           </Box>
         </Box>
       </Section>
       <MainSection background={`var(--background-color-secondary)`}>
         <SecondarySectionSVG />
-        <Box isFlexRow={true}>
-          <Box seccionImage={true}>
+        <Box isFlexRow>
+          <Box seccionImage>
             <img src={SectionFourCoins} alt="data"></img>
           </Box>
-          <Box isFlexColStart={true} seccionTextOrder>
-            <Box isFlexCol={true}>
-              <Box seccionText={true}>
+          <Box isFlexColStart seccionTextOrder>
+            <Box isFlexCol>
+              <Box seccionText>
                 <Texto
                   size={"tittle-section-lg"}
                   color={"var(--color-titulo-lila)"}
@@ -187,7 +187,7 @@ const Home = () => {
                   label={"passive income with crypto"}
                 />
               </Box>
-              <Box seccionText={true}>
+              <Box seccionText>
                 <Texto
                   size={"text-section-ml"}
                   color={"var(--color-subtitulo-lila)"}
@@ -197,9 +197,9 @@ const Home = () => {
                 />
               </Box>
             </Box>
-            <Box isFlexRowStart={true}>
+            <Box isFlexRowStart>
               <Button
-                isPrimary={true}
+                isPrimary
                 widthValue={"166px"}
                 heightValue={"46px"}
                 texto={"Trade Now"}
@@ -268,10 +268,10 @@ const Home = () => {
       </Section>
       <Section gradient={"var(--background-color-card-title)"}>
         <Box isFlexColCenter>
-          <Box isFlexRow={true}>
-            <Box isFlexColStart={true} seccionTextOrder>
-              <Box isFlexCol={true}>
-                <Box seccionText={true}>
+          <Box isFlexRow>
+            <Box isFlexColStart seccionTextOrder>
+              <Box isFlexCol>
+                <Box seccionText>
                   <Texto
                     size={"tittle-section-lg"}
                     color={"var(--color-titulo-lila)"}
@@ -283,7 +283,7 @@ const Home = () => {
                     label={" make our world go round."}
                   />
                 </Box>
-                <Box seccionText={true}>
+                <Box seccionText>
                   <Texto
                     size={"text-section-ml"}
                     color={"var(--color-subtitulo-lila)"}
@@ -293,9 +293,9 @@ const Home = () => {
                   />
                 </Box>
               </Box>
-              <Box isFlexRowStart={true}>
+              <Box isFlexRowStart>
                 <Button
-                  isPrimary={true}
+                  isPrimary
                   widthValue={"166px"}
                   heightValue={"46px"}
                   texto={"Trade Now"}
@@ -319,7 +319,7 @@ const Home = () => {
                 />
               </Box>
             </Box>
-            <Box seccionImage={true}>
+            <Box seccionImage>
               <img src={SectionSixCoins} alt="coins"></img>
             </Box>
           </Box>
