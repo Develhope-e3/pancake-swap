@@ -17,7 +17,10 @@ import { PrimaryCard } from "../componentes/Cards/PrimaryCard";
 import SecondarySectionSVG from "../assets/BackgroundSVG/SecondarySectionSVG";
 import SectionthreeCoins from "../assets/imagenes/SectionthreeCoins.png";
 import TertiarySectionSVG from "../assets/BackgroundSVG/TertiarySectionSVG";
-import { GridComposer1, GridComposer2 } from "../componentes/GridComposer/GridComposer";
+import {
+  GridComposer1,
+  GridComposer2,
+} from "../componentes/GridComposer/GridComposer";
 import SubImages from "../../src/assets/iconos/SubImages";
 import SupImages from "../../src/assets/iconos/SupImages";
 import { dataCardCTA } from "../data/dataCardCTA";
@@ -129,7 +132,7 @@ const Home = () => {
         <TertiarySectionSVG />
       </Section>
       <Section gradient={"var(--background-color-card-title)"}>
-        <Box isFlexRow>
+        <Box isFlexRow isPaddingTop isPaddingBottom>
           <Box isFlexColStart seccionTextOrder>
             <Box isFlexCol>
               <Box seccionText>
@@ -181,7 +184,11 @@ const Home = () => {
             </Box>
           </Box>
           <Box seccionImage>
-            <img src={SectionthreeCoins} alt="coins"></img>
+            <animated.img
+              src={SectionthreeCoins}
+              alt="coins"
+              style={{ transform: scale.to((s) => `scale(${s}`) }}
+            />
           </Box>
         </Box>
       </Section>
@@ -189,7 +196,11 @@ const Home = () => {
         <SecondarySectionSVG />
         <Box isFlexRow>
           <Box seccionImage>
-            <img src={SectionFourCoins} alt="data"></img>
+            <animated.img
+              src={SectionFourCoins}
+              alt="data"
+              style={{ translateY }}
+            />
           </Box>
           <Box isFlexColStart seccionTextOrder>
             <Box isFlexCol>
@@ -338,7 +349,11 @@ const Home = () => {
               </Box>
             </Box>
             <Box seccionImage>
-              <img src={SectionSixCoins} alt="coins"></img>
+              <animated.img
+                src={SectionSixCoins}
+                alt="coins"
+                style={{ translateY }}
+              />
             </Box>
           </Box>
           <Box isMarginTop isMarginBottom isFlexColCenter>
@@ -386,7 +401,6 @@ const Home = () => {
       </Section>
       <SlideBunny />
       <ButtonScroll />
-      <Footer />
     </BasePage>
   );
 };

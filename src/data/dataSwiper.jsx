@@ -8,7 +8,6 @@ import conejo3 from "../assets/imagenes/asset 38.png";
 import conejo2 from "../assets/imagenes/asset 151.png";
 import conejo4 from "../assets/imagenes/asset 47.png";
 import conejo5 from "../assets/imagenes/asset 69.png";
-import Texto from "../componentes/Texto/Texto";
 import Button from "../componentes/Button/Button";
 import LinkLearn from "../assets/iconos/LinkLearn";
 import texto2Png1 from "../assets/imagenes/asset 40.png";
@@ -53,13 +52,8 @@ export const dataSwiper = [
         widthValue={"158.6px"}
         heightValue={"48px"}
         gap={"2px"}
-        texto={
-          <Texto
-            label={"Get Started"}
-            size={"title-md-bold"}
-            color={"var(--text-color)"}
-          />
-        }
+        texto={"Get Started"}
+        colorTexto={"var(--text-color)"}
         svg={<LinkLearn color={"var(--text-color)"} />}
         onClick={() => console.log("boton")}
       />
@@ -179,13 +173,8 @@ export const dataSwiper = [
         widthValue={"140px"}
         heightValue={"48px"}
         gap={"2px"}
-        texto={
-          <Texto
-            label={"Trade Now"}
-            size={"title-md-bold"}
-            color={"var(--text-color)"}
-          />
-        }
+        texto={"Trade Now"}
+        colorTexto={"var(--text-color)"}
         svg={<ArrowRight color={"var(--text-color)"} />}
         onClick={() => console.log("boton")}
       />
@@ -196,13 +185,8 @@ export const dataSwiper = [
         widthValue={"158.6px"}
         heightValue={"48px"}
         gap={"2px"}
-        texto={
-          <Texto
-            label={"Learn More"}
-            size={"text-button"}
-            color={"var(--color-primary)"}
-          />
-        }
+        texto={"Learn More"}
+        colorTexto={"var(--color-primary)"}
         svg={<LinkLearn color={"var(--color-primary)"} />}
         onClick={() => console.log("boton")}
       />
@@ -218,8 +202,8 @@ export const dataSwiper = [
     textoPrimario: (
       <h3
         style={{
-          webkitTextFillColor: "var(--color-quaternary)",
-          webkitTextStroke: "2px var(--color-titulo-footer)",
+          WebkitTextFillColor: "var(--color-quaternary)",
+          WebkitTextStroke: "2px var(--color-titulo-footer)",
           fontSize: "24px",
         }}
       >
@@ -244,13 +228,8 @@ export const dataSwiper = [
         widthValue={"140px"}
         heightValue={"48px"}
         gap={"2px"}
-        texto={
-          <Texto
-            label={"Trade Now"}
-            size={"title-md-bold"}
-            color={"var(--text-color)"}
-          />
-        }
+        texto={"Trade Now"}
+        colorTexto={"var(--text-color)"}
         svg={<ArrowRight color={"var(--text-color)"} />}
         onClick={() => console.log("boton")}
       />
