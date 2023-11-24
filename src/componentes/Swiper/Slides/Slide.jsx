@@ -39,7 +39,7 @@ const Slide = ({
             alt="pancake"
             style={{ width: 132, height: 22 }}
           />
-          |{" "}
+          
           <img
             src={texto2EnPng}
             alt="asd"
@@ -58,8 +58,9 @@ const Slide = ({
         </div>
       </div>
 
-      {conejo && <animated.img  src={conejo} a alt="swiper" className={mappedClassname}  style={{translateY}}/>}
+      {conejo && <animated.img  src={conejo} alt="swiper" className={mappedClassname}  style={{translateY}}/>}
     </div>
   );
 };
+
 export default Slide;

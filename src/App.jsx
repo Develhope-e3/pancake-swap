@@ -4,14 +4,18 @@ import "./styles/index.scss";
 import "./App.css";
 import Home from "./pages/Home";
 import Dev from "./pages/Dev";
+import { WarningHeader } from "./componentes/WarningHeader/WarningHeader";
+import Navbar from "./componentes/Navbar/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/dev" element={<Dev />} />
-        </Routes>
+      <WarningHeader />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dev" element={<Dev />} />
+      </Routes>
     </BrowserRouter>
   );
 }
