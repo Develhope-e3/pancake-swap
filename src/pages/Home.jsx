@@ -27,6 +27,7 @@ import { CardCTA } from "../componentes/Cards/CardCTA";
 import SectionFourCoins from "../assets/imagenes/SectionFourCoins.png";
 import SectionSixCoins from "../assets/imagenes/SectionSixCoins.png";
 import Footer from "../componentes/Footer/Footer";
+import { LastSectionSVG } from "../assets/BackgroundSVG/LastSectionSVG";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -34,7 +35,7 @@ const Home = () => {
     <BasePage className={theme === "dark" ? "dark-mode" : "light-mode"}>
       <WarningHeader />
       <Navbar />
-      <Section gradient={"var(--background-image-main)"}>
+      <Section gradient={"var(--colors-gradientBubblegum)"}>
         <Box isFlexRow maxWidth={1200}>
           <Box isFlexColStart>
             <Texto
@@ -70,10 +71,10 @@ const Home = () => {
         </Box>
         <MainSectionSVG />
       </Section>
-      <Section gradient={"var(--color-gradient-section-1)"}>
+      <Section gradient={"var(--colors-gradientCake)"}>
         <Box isPaddingBottom isPaddingTop>
           <Box isFlexColCenter isMarginBottom>
-            <VioletBunny color={"var(--color-tertiary)"} />
+            <VioletBunny color={"var(--color-card-text)"} />
             <Texto
               size={"tittle-section-lg"}
               color={"var(--color-text)"}
@@ -107,9 +108,9 @@ const Home = () => {
             </Box>
           </Box>
         </Box>
-          <TertiarySectionSVG />
+        <TertiarySectionSVG />
       </Section>
-      <Section gradient={"var(--color-black)"}>
+      <Section gradient={"var(--background-color-card-title)"}>
         <Box isFlexRow={true}>
           <Box isFlexColStart={true} seccionTextOrder>
             <Box isFlexCol={true}>
@@ -265,7 +266,7 @@ const Home = () => {
         </Box>
         <SubImages size={35} />
       </Section>
-      <Section gradient={"var(--color-black)"}>
+      <Section gradient={"var(--background-color-card-title)"}>
         <Box isFlexColCenter>
           <Box isFlexRow={true}>
             <Box isFlexColStart={true} seccionTextOrder>
@@ -287,7 +288,7 @@ const Home = () => {
                     size={"text-section-ml"}
                     color={"var(--color-subtitulo-lila)"}
                     label={
-                      "CAKE tokens is at the heart of the PankakeSwap ecosystem. Buy it ,win it, farm it,spend it, stake it... heck, you can even vote with it!"
+                      "CAKE tokens is at the heart of the PancakeSwap ecosystem. Buy it , win it, farm it, spend it, stake it... heck, you can even vote with it!"
                     }
                   />
                 </Box>
@@ -332,10 +333,18 @@ const Home = () => {
           </Box>
         </Box>
       </Section>
+      <Section gradient={"var(--colors-gradientLastSection)"}>
+        <LastSectionSVG />
+        <Box isFlexColCenter maxWidth={1200} /* isPaddingBottom isPaddingTop */>
+          <Box isMarginBottom>
+            <Texto size={"title-card-bold"} color={"var(--text-color)"} label={"Join Everyone's Favorite DEX Now!"} />
+          </Box>
+          <Button isPrimary widthValue={"165.15px"} heightValue={"48px"} texto={"Connect Wallet"} colorTexto={"var(--color-button-primary)"} />
+        </Box>
+      </Section>
       <SlideBunny />
       <ButtonScroll />
       <Footer />
-
     </BasePage>
   );
 };
