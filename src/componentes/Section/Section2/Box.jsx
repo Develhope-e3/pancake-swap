@@ -19,6 +19,7 @@ export const Box = ({
   seccionTextOrder,
   seccionText,
   seccionImage,
+  isMarginRight,
 }) => {
   const boxSection = classNames({
     box: true,
@@ -38,6 +39,7 @@ export const Box = ({
     "text-order": seccionTextOrder,
     "seccion-text": seccionText,
     "seccion-image": seccionImage,
+    "margin-right": isMarginRight,
   });
   return (
     <div className={boxSection} style={{ maxWidth: `${maxWidth}px` }}>

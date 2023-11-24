@@ -1,6 +1,5 @@
 import "./Home.scss";
 import "../styles/variables.scss";
-import Navbar from "../componentes/Navbar/Navbar";
 import BasePage from "../componentes/Section/BasePage";
 import Texto from "../componentes/Texto/Texto";
 import Button from "../componentes/Button/Button";
@@ -8,7 +7,6 @@ import Link from "../componentes/Link/Link";
 import { MainSection, Section } from "../componentes/Section/Section";
 import { Box } from "../componentes/Section/Section2/Box";
 import { useTheme } from "../context/ThemeContext";
-import { WarningHeader } from "../componentes/WarningHeader/WarningHeader";
 import { ButtonScroll } from "../componentes/Button/ButtonScroll";
 import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny";
 import ImageMainSection from "../assets/iconos/MainSection";
@@ -19,22 +17,43 @@ import { PrimaryCard } from "../componentes/Cards/PrimaryCard";
 import SecondarySectionSVG from "../assets/BackgroundSVG/SecondarySectionSVG";
 import SectionthreeCoins from "../assets/imagenes/SectionthreeCoins.png";
 import TertiarySectionSVG from "../assets/BackgroundSVG/TertiarySectionSVG";
-import { GridComposer1, GridComposer2 } from "../componentes/GridComposer/GridComposer";
+import {
+  GridComposer1,
+  GridComposer2,
+} from "../componentes/GridComposer/GridComposer";
 import SubImages from "../../src/assets/iconos/SubImages";
 import SupImages from "../../src/assets/iconos/SupImages";
 import { dataCardCTA } from "../data/dataCardCTA";
 import { CardCTA } from "../componentes/Cards/CardCTA";
 import SectionFourCoins from "../assets/imagenes/SectionFourCoins.png";
 import SectionSixCoins from "../assets/imagenes/SectionSixCoins.png";
-import Footer from "../componentes/Footer/Footer";
+import SwiperScrollbar from "../componentes/Swiper/SwiperScrollbar"
+import { useSpring, animated } from "@react-spring/web";
 
 const Home = () => {
   const { theme } = useTheme();
+  const { scale } = useSpring({
+    from: { scale: 1 },
+    to: async (next) => {
+      while (true) {
+        await next({ scale: 1.1, config: { duration: 1000 } }); // Ajusta la duración aquí
+        await next({ scale: 1, config: { duration: 1000 } }); // Ajusta la duración aquí
+      }
+    },
+    reset: true,
+  });
+  const { translateY } = useSpring({
+    to: { translateY: 8 }, // Cambia este valor para ajustar la altura de flotación
+    from: { translateY: 0 },
+    loop: true, // Para que la animación se repita
+    config: { tension: 10, friction: 0 }, // cambiar tension para cambiar el efecto de flotar
+  });
   return (
     <BasePage className={theme === "dark" ? "dark-mode" : "light-mode"}>
-      <WarningHeader />
-      <Navbar />
       <Section gradient={"var(--background-image-main)"}>
+      <Box isMarginTop isFlexColCenter maxWidth={1200}>
+        <SwiperScrollbar />
+          </Box>
         <Box isFlexRow maxWidth={1200}>
           <Box isFlexColStart>
             <Texto
@@ -107,7 +126,7 @@ const Home = () => {
             </Box>
           </Box>
         </Box>
-          <TertiarySectionSVG />
+        <TertiarySectionSVG />
       </Section>
       <Section gradient={"var(--color-black)"}>
         <Box isFlexRow={true}>
@@ -162,7 +181,11 @@ const Home = () => {
             </Box>
           </Box>
           <Box seccionImage={true}>
-            <img src={SectionthreeCoins} alt="coins"></img>
+            <animated.img
+              src={SectionthreeCoins}
+              alt="coins"
+              style={{ transform: scale.to((s) => `scale(${s}`) }}
+            />
           </Box>
         </Box>
       </Section>
@@ -170,7 +193,11 @@ const Home = () => {
         <SecondarySectionSVG />
         <Box isFlexRow={true}>
           <Box seccionImage={true}>
-            <img src={SectionFourCoins} alt="data"></img>
+            <animated.img
+              src={SectionFourCoins}
+              alt="data"
+              style={{ translateY }}
+            />
           </Box>
           <Box isFlexColStart={true} seccionTextOrder>
             <Box isFlexCol={true}>
@@ -319,7 +346,11 @@ const Home = () => {
               </Box>
             </Box>
             <Box seccionImage={true}>
-              <img src={SectionSixCoins} alt="coins"></img>
+              <animated.img
+                src={SectionSixCoins}
+                alt="coins"
+                style={{ translateY }}
+              />
             </Box>
           </Box>
           <Box isMarginTop isMarginBottom isFlexColCenter>
@@ -334,8 +365,6 @@ const Home = () => {
       </Section>
       <SlideBunny />
       <ButtonScroll />
-      <Footer />
-
     </BasePage>
   );
 };

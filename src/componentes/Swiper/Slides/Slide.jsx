@@ -58,7 +58,7 @@ const Slide = ({
         </div>
       </div>
 
-      {conejo && <animated.img  src={conejo} a alt="swiper" className={mappedClassname}  style={{translateY}}/>}
+      {conejo && <animated.img  src={conejo} alt="swiper" className={mappedClassname}  style={{translateY}}/>}
     </div>
   );
 };
