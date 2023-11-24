@@ -19,6 +19,7 @@ export const Box = ({
   seccionTextOrder,
   seccionText,
   seccionImage,
+  gap,
 }) => {
   const boxSection = classNames({
     box: true,
@@ -40,7 +41,7 @@ export const Box = ({
     "seccion-image": seccionImage,
   });
   return (
-    <div className={boxSection} style={{ maxWidth: `${maxWidth}px` }}>
+    <div className={boxSection} style={{ maxWidth: `${maxWidth}px`, gap: `${gap}rem` }}>
       {children}
     </div>
   );

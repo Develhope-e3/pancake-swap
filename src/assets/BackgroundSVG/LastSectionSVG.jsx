@@ -28,6 +28,5 @@ export const LastSectionSVG = () => {
         </radialGradient>
       </defs>
     </svg>
-
   );
 };
