@@ -54,41 +54,43 @@ const Home = () => {
   return (
     <BasePage className={theme === "dark" ? "dark-mode" : "light-mode"}>
       <Section gradient={"var(--colors-gradientBubblegum)"}>
-        <Box isMarginTop isFlexColCenter maxWidth={1200}>
-          <SwiperScrollbar />
-        </Box>
-        <Box isFlexRow maxWidth={1200}>
-          <Box isFlexColStart>
-            <Texto
-              size={"title-lg-bold"}
-              color={"var(--color-titulo-lila)"}
-              label={"The moon is made of pancakes."}
-            />
-            <Texto
-              size={"title-ml-bold"}
-              color={"var(--color-text)"}
-              label={
-                "Trade, earn, and win crypto on the most popular decentralized platform in the galaxy."
-              }
-            />
-            <Box isFlexRowStart>
-              <Button
-                isPrimary
-                widthValue={"166px"}
-                heightValue={"46px"}
-                texto={"Connect Wallet"}
-                colorTexto={"var(--text-color-black)"}
-                onClick={() => console.log("click")}
-              />
-              <Button
-                isSecondary
-                texto={"Trade Now"}
-                colorTexto={"var(--color-primary)"}
-                onClick={() => console.log("click")}
-              />
-            </Box>
+        <Box maxWidth={1200} isFlexColCenter>
+          <Box isMarginTop isFlexColCenter maxWidth={1200}>
+            <SwiperScrollbar />
           </Box>
-          <ImageMainSection />
+          <Box isFlexRow maxWidth={1200}>
+            <Box isFlexColStart>
+              <Texto
+                size={"title-lg-bold"}
+                color={"var(--color-titulo-lila)"}
+                label={"The moon is made of pancakes."}
+              />
+              <Texto
+                size={"title-ml-bold"}
+                color={"var(--color-text)"}
+                label={
+                  "Trade, earn, and win crypto on the most popular decentralized platform in the galaxy."
+                }
+              />
+              <Box isFlexRowStart>
+                <Button
+                  isPrimary
+                  widthValue={"166px"}
+                  heightValue={"46px"}
+                  texto={"Connect Wallet"}
+                  colorTexto={"var(--text-color-black)"}
+                  onClick={() => console.log("click")}
+                />
+                <Button
+                  isSecondary
+                  texto={"Trade Now"}
+                  colorTexto={"var(--color-primary)"}
+                  onClick={() => console.log("click")}
+                />
+              </Box>
+            </Box>
+            <ImageMainSection />
+          </Box>
         </Box>
         <MainSectionSVG />
       </Section>
