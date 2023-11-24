@@ -1,6 +1,5 @@
 import "./Home.scss";
 import "../styles/variables.scss";
-import Navbar from "../componentes/Navbar/Navbar";
 import BasePage from "../componentes/Section/BasePage";
 import Texto from "../componentes/Texto/Texto";
 import Button from "../componentes/Button/Button";
@@ -8,7 +7,6 @@ import Link from "../componentes/Link/Link";
 import { MainSection, Section } from "../componentes/Section/Section";
 import { Box } from "../componentes/Section/Section2/Box";
 import { useTheme } from "../context/ThemeContext";
-import { WarningHeader } from "../componentes/WarningHeader/WarningHeader";
 import { ButtonScroll } from "../componentes/Button/ButtonScroll";
 import { SlideBunny } from "../componentes/Slide-Bunny/SlideBunny";
 import ImageMainSection from "../assets/iconos/MainSection";
@@ -29,7 +27,6 @@ import { dataCardCTA } from "../data/dataCardCTA";
 import { CardCTA } from "../componentes/Cards/CardCTA";
 import SectionFourCoins from "../assets/imagenes/SectionFourCoins.png";
 import SectionSixCoins from "../assets/imagenes/SectionSixCoins.png";
-import Footer from "../componentes/Footer/Footer";
 import SwiperScrollbar from "../componentes/Swiper/SwiperScrollbar"
 import { useSpring, animated } from "@react-spring/web";
 
@@ -53,13 +50,10 @@ const Home = () => {
   });
   return (
     <BasePage className={theme === "dark" ? "dark-mode" : "light-mode"}>
-      <WarningHeader />
-      <Navbar />
       <Section gradient={"var(--background-image-main)"}>
-        <Box isMarginTop isFlexColCenter maxWidth={1200}>
+      <Box isMarginTop isFlexColCenter maxWidth={1200}>
         <SwiperScrollbar />
           </Box>
-
         <Box isFlexRow maxWidth={1200}>
           <Box isFlexColStart>
             <Texto
@@ -371,7 +365,6 @@ const Home = () => {
       </Section>
       <SlideBunny />
       <ButtonScroll />
-      <Footer />
     </BasePage>
   );
 };
