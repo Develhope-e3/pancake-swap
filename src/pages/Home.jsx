@@ -31,6 +31,10 @@ import { LastSectionSVG } from "../assets/BackgroundSVG/LastSectionSVG";
 import SwiperScrollbar from "../componentes/Swiper/SwiperScrollbar";
 import { useSpring, animated } from "@react-spring/web";
 
+/**
+ * ToDo: Refactorizar tamaño letra footer (16px) y tamaño GridComposer2 (16px letra pequeña y 24px letra de los números)
+ */
+
 const Home = () => {
   const { theme } = useTheme();
   const { scale } = useSpring({
