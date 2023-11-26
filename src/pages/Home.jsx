@@ -271,7 +271,8 @@ const Home = () => {
           isItemCard
           marginTop={4}
           marginBottom={4}
-          maxWidth={1168}>
+          maxWidth={1168}
+          gap={2}>
           <Box isFlexRowCenter>
             <Texto
               size={"tittle-section-lg"}
