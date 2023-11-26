@@ -364,12 +364,14 @@ const Home = () => {
             </Box>
           </Box>
           <Box marginBottom={4} marginTop={4}>
-            <GridComposer1
-              className={"theme1"}
-              col={3}
-              remRowSpacing={2}
-              remColSpacing={9}
-            />
+            <Box isFlexColCenter>
+              <GridComposer1
+                className={"theme1"}
+                col={3}
+                remRowSpacing={2}
+                remColSpacing={9}
+              />
+            </Box>
           </Box>
         </Box>
       </Section>
