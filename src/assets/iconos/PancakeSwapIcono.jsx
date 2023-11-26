@@ -1,5 +1,4 @@
 import "../../styles/variables.scss";
-import asset from "../imagenes/asset 105.svg";
 
 const PancakeSwapIcono = () => {
   return (
