@@ -48,8 +48,9 @@ export const CardCTA = ({
           heightValue={"48px"}
           texto={button.text}
           colorTexto={button.color}
-          svg={<Icono icono={button.icon} />}
+          svg={button.icon}
           onClick={onClick}
+          gap={"7px"}
         />
       </div>
     </div>

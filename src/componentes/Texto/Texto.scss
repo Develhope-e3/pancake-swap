@@ -28,11 +28,13 @@
 .title-md {
   font-size: var(--font-size-md);
   font-weight: 400;
+  line-height: 110%;
 }
 
 .title-ml-bold {
   font-size: var(--font-size-ml);
   font-weight: 600;
+  line-height: 110%;
 }
 
 .title-ml {
@@ -117,7 +119,7 @@
 }
 
 .text-section-ml {
-  font-size: 20px;
+  font-size: var(--font-size-ml);
   font-weight: 600;
 
   line-height: 110%;

@@ -39,7 +39,7 @@ const Slide = ({
             alt="pancake"
             style={{ width: 132, height: 22 }}
           />
-          |{" "}
+          
           <img
             src={texto2EnPng}
             alt="asd"
@@ -62,4 +62,5 @@ const Slide = ({
     </div>
   );
 };
+
 export default Slide;

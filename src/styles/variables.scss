@@ -1,4 +1,3 @@
-
 :root {
   --font-normal: "Kanit", sans-serif;
   --font-mono: SFMono, ui-monospace, monospace;
@@ -41,7 +40,6 @@
   --radius-lg: 32px;
   --radius-circle: 50%;
 
-
   --font-size-xs: 10px;
   --font-size-sm: 12px;
   --font-size-ms: 14px;
@@ -53,7 +51,7 @@
 }
 
 .light-mode {
-  @media (max-width:1350px) {
+  @media (max-width: 1350px) {
     --font-size-xs: 8px;
     --font-size-sm: 10px;
     --font-size-ms: 12px;
@@ -74,16 +72,19 @@
   --color-primary: #1fc7d4;
   --color-success: #31d0aa;
   --color-failure: #ed4b9e;
-  --background-color-card-title: #faf9fa;
   --color-quaternary: #ffa920;
   --color-gradient-violet: linear-gradient(#8040ff 0%, #5121b1 100%);
   --color-gradient-yellow: linear-gradient(#fcac2d 0%, #fdcf5b 100%);
-  --color-gradient-text: linear-gradient(166.02deg, #ffb237 -5.1%, #ffeb37 75.24%);
+  --color-gradient-text: linear-gradient(
+    166.02deg,
+    #ffb237 -5.1%,
+    #ffeb37 75.24%
+  );
   --background-image-main: radial-gradient(
     103.12% 50% at 50% 50%,
     #d7caec 0%,
     #b8add2 100%
-    );
+  );
   --color-gold: #ffc700;
   --color-black: black;
 
@@ -96,13 +97,13 @@
   --color-warning-background: #27262c66;
   --background-color-secondary: #fff;
   --background-toggle: #666171;
-  --background-dropdown-hover: #faf9fa;
   --color-input: #eeeaf4;
   --color-text: #280d5f;
+  --background-dropdown-hover: #faf9fa;
   --color-linea-footer: #b8add2;
   --color-titulo-footer: #9a6aff;
-  --color-dropdown-network:#ffffff;
-  --color-gradient-section-1: linear-gradient(180deg,#fff 22%,#d7caec 100%);
+  --color-dropdown-network: #ffffff;
+  --color-gradient-section-1: linear-gradient(180deg, #fff 22%, #7a6eaa 100%);
   --color-inputSecondary: #d7caec;
 
   --colors-failure33: #ed4b9e33;
@@ -125,10 +126,8 @@
   --colors-backgroundAlt: #fff;
   --colors-backgroundAlt2: hsla(0, 0%, 100%, 0.7);
   --colors-cardBorder: #e7e3eb;
-  --colors-contrast: #191326;
   --colors-dropdown: #f6f6f6;
   --colors-dropdownDeep: #eee;
-  --colors-invertedContrast: #fff;
   --colors-input: #eeeaf4;
 
   --colors-tertiary: #eff4f5;
@@ -138,21 +137,34 @@
 
   --colors-disabled: #e9eaeb;
 
-  --colors-gradientInverseBubblegum: linear-gradient(139.73deg,
-      #f3efff,
-      #e5fdff);
-
   --colors-gradientCardHeader: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
   --colors-gradientBlue: linear-gradient(180deg, #6fb6f1, #eaf2f6);
   --colors-gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
   --colors-gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
   --colors-gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --colors-gradientBold: linear-gradient(#53dee9, #7645d9);
+
+  --colors-gradientBubblegum: linear-gradient(
+    139.73deg,
+    #e6fdff 0%,
+    #f3efff 100%
+  );
+  --colors-gradientInverseBubblegum: linear-gradient(
+    139.73deg,
+    #f3efff,
+    #e5fdff
+  );
+
+  --colors-gradientCake: linear-gradient(180deg, #fff 22%, #d7caec 100%);
+  --background-color-card-title: #faf9fa;
+  --colors-invertedContrast: #fff;
+  --colors-contrast: #191326; /* #09070c  */
+  --colors-gradientLastSection: linear-gradient(#7645d9 0%, #5121b1 100%);
 }
 
 /*
-  secondary80: '#9A6AFF80',
-  background: '#08060B',
+    secondary80: '#9A6AFF80',
+    background: '#08060B',
   backgroundDisabled: '#3c3742',
   backgroundAlt: '#27262c',
   backgroundAlt2: 'rgba(39, 38, 44, 0.7)',
@@ -203,13 +215,12 @@
   --colors-gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
   --color-warning-gradient-violet: linear-gradient(#8051d6 0%, #492286 100%);
   --colors-gradientBlue: linear-gradient(180deg, #0b4576 0%, #091115 100%);
+  --colors-gradientBold: linear-gradient(#53dee9, #7645d9);
   --color-PrimaryCard-background: linear-gradient(
-    rgb(7, 6, 10) -7%,
+    #07060a -7%,
     #191326 80%,
     #1b1429 90%
   );
-  --colors-gradientBold: linear-gradient(#53dee9, #7645d9);
-
 
   --color-warning-background: #27262c66;
   --color-button-footer-black: #191326;
@@ -217,26 +228,38 @@
   --color-linea-footer: #b8add2;
   --color-titulo-footer: #9a6aff;
   --color-dropdown-network: #3c3742;
-  --color-gradient-text: linear-gradient(166.02deg, #ffb237 -5.1%, #ffeb37 75.24%);
+  --color-gradient-text: linear-gradient(
+    166.02deg,
+    #ffb237 -5.1%,
+    #ffeb37 75.24%
+  );
   --color-gold: #ffc700;
   --color-black: black;
   --color-gradient-section-1: radial-gradient(
     300% 63% at 20% 10%,
     #040205 22%,
     #211839 100%
-    );
+  );
   --color-inputSecondary: black;
-
 
   --background-color-secondary: #27262c;
   --background-color-tertiary: #000000cc;
-  --background-color-card-title: #050307;
 
   --background-image-main: radial-gradient(
     103.12% 50% at 50% 50%,
     #211839 0%,
     #191326 100%
-    );
+  );
 
-
+  --colors-gradientBubblegum: linear-gradient(139.73deg, #21193a, #191326);
+  --colors-gradientInverseBubblegum: linear-gradient(
+    139.73deg,
+    #3d2a54 0%,
+    #313d5c 100%
+  );
+  --colors-gradientCake: linear-gradient(180deg, #09070c 22%, #201335 100%);
+  --background-color-card-title: #08060b;
+  --colors-invertedContrast: #09070c;
+  --colors-contrast: #ffffff;
+  --colors-gradientLastSection: linear-gradient(#7645d9 0%, #5121b1 100%);
 }

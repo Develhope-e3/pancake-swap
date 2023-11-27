@@ -202,8 +202,8 @@ export const dataSwiper = [
     textoPrimario: (
       <h3
         style={{
-          webkitTextFillColor: "var(--color-quaternary)",
-          webkitTextStroke: "2px var(--color-titulo-footer)",
+          WebkitTextFillColor: "var(--color-quaternary)",
+          WebkitTextStroke: "2px var(--color-titulo-footer)",
           fontSize: "24px",
         }}
       >
