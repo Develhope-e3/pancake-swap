@@ -37,7 +37,7 @@ export function ButtonScroll() {
 
   return (
     <div style={{ display: visible ? "inline" : "none", position: "relative" }}>
-      <Button isScroll isPrimary onClick={scroll} svg={<ArrowUp />} />
+      <Button isScroll isPrimary onClick={scroll} svg={<ArrowUp color={"var(--color-button-primary)"}/>} />
     </div>
   );
 }

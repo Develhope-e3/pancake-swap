@@ -1,6 +1,8 @@
 @import "../../styles/mixins.scss";
 
 .theme1 {
+  width: 100%;
+
   > div {
     display: flex;
     flex-direction: column;
@@ -19,6 +21,8 @@
 }
 
 .theme2 {
+  width: 100%;
+
   > .title-container {
     grid-column: 1 / 6;
     gap: 5px;
@@ -36,10 +40,6 @@
   }
 
   > div {
-    /* 
-    align-items: normal;
-    justify-content: center;
-     */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

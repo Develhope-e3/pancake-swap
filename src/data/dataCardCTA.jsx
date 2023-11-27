@@ -6,7 +6,7 @@ import CakeSum from "../componentes/Cake-sum/Cake-sum";
 export const dataCardCTA = [
   {
     style: "cta-card-yellow",
-    icon: <CrystallBall color={"var(--text-color-black)"} />,
+    icon: <CrystallBall color={"var(--color-black)"} />,
     prelude: { text: "Prediction", color: "var(--color-card-text)" },
     title: { text: "$880 million", color: "var(--color-card-text)" },
     subtitle: { text: "in BNB + CAKE won so far", color: "var(--color-card-text)" },
@@ -16,8 +16,8 @@ export const dataCardCTA = [
     },
     button: {
       text: "Play",
-      color: "#202020",
-      icon: <ArrowRight color={"#202020"} />,
+      color: "var(--color-button-primary)",
+      icon: <ArrowRight color="var(--color-button-primary)" />,
     },
     onClick: () => {
       console.log("Click on Play");
@@ -41,8 +41,8 @@ export const dataCardCTA = [
     },
     button: {
       text: "Buy Tickets",
-      color: "#202020",
-      icon: <ArrowRight color={"#202020"} />,
+      color: "var(--color-button-primary)",
+      icon: <ArrowRight color="var(--color-button-primary)" />,
     },
     onClick: () => {
       console.log("Click on Buy Tickets");

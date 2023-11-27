@@ -18,10 +18,7 @@
 
 .section {
   display: flex;
-  flex-flow: row wrap;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  flex-flow: column wrap;
 
   border: none;
   vertical-align: baseline;
