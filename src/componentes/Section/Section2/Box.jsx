@@ -33,6 +33,7 @@ export const Box = ({
   marginLeft,
   gap,
   zIndex,
+  lastSeccion,
 }) => {
   const boxSection = classNames({
     box: true,
@@ -54,6 +55,7 @@ export const Box = ({
     "text-order": seccionTextOrder,
     "seccion-text": seccionText,
     "seccion-image": seccionImage,
+    "seccion-last": lastSeccion,
   });
   return (
     <div
