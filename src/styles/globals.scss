@@ -283,8 +283,12 @@
 }
 .seccion-last {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   text-align: center;
   z-index: 1;
+  height: 445px;
   .last-section-svg {
     position: absolute;
     top: 0;

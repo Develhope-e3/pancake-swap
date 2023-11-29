@@ -26,11 +26,25 @@
 
 .last-section-svg {
   /* flex-shrink: 0; */
-
+  transform: scale3d(4, 4, 1);
   position: relative;
   z-index: 0;
+  transform-origin: center center;
+  // overflow: hidden;
 
-  overflow: hidden;
-
-  object-fit: cover;
+  // object-fit: cover;
+}
+.img-mov {
+  position: absolute;
+  width: 170px;
+  height: 140px;
+  top: 128px;
+  left: 2px;
+}
+.img-mov2 {
+  position: absolute;
+  width: 170px;
+  height: 140px;
+  top: 157px;
+  right: 2px;
 }
