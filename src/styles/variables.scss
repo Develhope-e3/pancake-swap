@@ -283,7 +283,6 @@
   --colors-contrast: #ffffff;
   --colors-gradientLastSection: linear-gradient(#7645d9 0%, #5121b1 100%);
   @media (max-width: 1350px) {
-    /* --border-radius-xxl: 72px; */
     --font-size-xs: 12px;
     --font-size-sm: 14px;
     --font-size-ms: 16px;
@@ -294,7 +293,6 @@
     --font-size-xxl: 80px;
   }
   @media (max-width: 768px) {
-    /* --border-radius-xxl: 0px; */
     --font-size-xs: 8px;
     --font-size-sm: 10px;
     --font-size-ms: 12px;
@@ -305,7 +303,6 @@
     --font-size-xxl: 48px;
   }
   @media (max-width: 390px) {
-    /* --border-radius-xxl: 0px; */
     --font-size-xs: 8px;
     --font-size-sm: 10px;
     --font-size-ms: 12px;
