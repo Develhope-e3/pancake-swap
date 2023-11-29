@@ -205,7 +205,7 @@ const Home = () => {
       </Section>
       <MainSection background={`var(--background-color-secondary)`}>
         <SecondarySectionSVG />
-        <Box isFlexColCenter maxWidth={1168}>
+        <Box isFlexColCenter maxWidth={1168} marginBottom={3}>
           <Box isFlexRow>
             <Box seccionImage>
               <animated.img
@@ -232,9 +232,7 @@ const Home = () => {
                   <Texto
                     size={"text-section-ml"}
                     color={"var(--color-subtitulo-lila)"}
-                    label={
-                      "PancakeSwap makes it easy to make your crypto work for you"
-                    }
+                    label={`PancakeSwap makes it easy to make your crypto work for you`}
                   />
                 </Box>
               </Box>
@@ -265,8 +263,10 @@ const Home = () => {
             </Box>
           </Box>
         </Box>
-        <Box isFlexColCenter marginTop={4} marginBottom={4} maxWidth={1168}>
-          <GridComposer2 className={"theme2"} col={5} remColSpacing={3} />
+        <Box
+          isFlexColCenter /* marginBottom={4} marginTop={4} maxWidth={1168} */
+        >
+          <GridComposer2 className={"theme2"} col={5} remColSpacing={2} />
         </Box>
       </MainSection>
       <Section gradient={"var(--colors-gradientBlue)"}>
@@ -334,9 +334,7 @@ const Home = () => {
                   <Texto
                     size={"text-section-ml"}
                     color={"var(--color-subtitulo-lila)"}
-                    label={
-                      "CAKE tokens is at the heart of the PancakeSwap ecosystem. Buy it , win it, farm it, spend it, stake it... heck, you can even vote with it!"
-                    }
+                    label={`CAKE tokens is at the heart of the PancakeSwap ecosystem. Buy it , win it, farm it, spend it, stake it... heck, you can even vote with it!`}
                   />
                 </Box>
               </Box>
