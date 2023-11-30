@@ -13,7 +13,21 @@
   padding-top: var(--space-xxl);
   padding-bottom: var(--space-xxl);
 
-  background-image: radial-gradient(103.12% 50% at 50% 50%,
-      rgb(33, 25, 58) 0%,
-      rgb(25, 19, 38) 100%);
+  background-image: var(--background-image-main);
 }
+
+.section {
+  display: flex;
+  flex-flow: column wrap;
+
+  border: none;
+  vertical-align: baseline;
+
+  overflow: hidden;
+
+  min-width: 100%;
+  height: auto;
+
+  position: relative;
+}
+

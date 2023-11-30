@@ -22,21 +22,24 @@
   font-size: var(--font-size-md);
   font-weight: 600;
   line-height: 1.5;
+  letter-spacing: 0.03em;
 }
 
 .title-md {
   font-size: var(--font-size-md);
   font-weight: 400;
+  line-height: 110%;
 }
 
 .title-ml-bold {
   font-size: var(--font-size-ml);
   font-weight: 600;
+  line-height: 110%;
 }
 
 .title-ml {
   font-size: var(--font-size-ml);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .title-s-bold {
@@ -47,6 +50,7 @@
 .title-s {
   font-size: var(--font-size-sm);
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .title-xs-bold {
@@ -70,7 +74,7 @@
 }
 
 .title-link-bold {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-xxl);
   font-weight: 600;
 }
 
@@ -110,14 +114,17 @@
   line-height: 110%;
 
   display: inline;
+
+  white-space: pre-line;
 }
 
 .text-section-ml {
-  font-size: 20px;
+  font-size: var(--font-size-ml);
   font-weight: 600;
-  
-  text-align: center;
+
   line-height: 110%;
+
+  white-space: pre-line;
 }
 
 a,

@@ -52,9 +52,10 @@
 
   font-size: var(--font-size-md);
   font-weight: 600;
-  color: var(--color-text);
+  color: var(--text-color);
   text-decoration: none;
 }
+
 .footer-anchor:hover {
   text-decoration: underline;
 }
@@ -69,32 +70,100 @@
   color: var(--color-secondary);
   text-decoration: none;
 }
+
 .footer-anchor-secondary:hover {
   text-decoration: underline;
+}
+
+.dropdown-secundario {
+  svg {
+    color: var(--color-linea-footer);
+  }
 }
 
 .slide-bunny {
   display: flex;
   align-items: center;
+
   width: fit-content;
+  width: 50px;
+  height: 50px;
+
+  z-index: 4;
 
   font-weight: 600;
 
   position: fixed;
+
   right: 18px;
-  transition: all 0.2s ease 0s;
+
   bottom: calc(146px + env(safe-area-inset-bottom));
+
+  transition: all 0.07s linear 0.07s;
+  -webkit-transition: all 0.07s linear 0.07s;
+  -moz-transition: all 0.07s linear 0.07s;
+  -ms-transition: all 0.07s linear 0.07s;
+  -o-transition: all 0.07s linear 0.07s;
 }
 
-.button-bunny{
+.button-bunny {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
 
   color: var(--color-subtitulo-lila);
+
   font-weight: bold;
-  .bunny{
+
+  padding: var(--space-md) var(--space-sm);
+
+  transition: all 0.07s linear 0.07s;
+  -webkit-transition: all 0.07s linear 0.07s;
+  -moz-transition: all 0.07s linear 0.07s;
+  -ms-transition: all 0.07s linear 0.07s;
+  -o-transition: all 0.07s linear 0.07s;
+
+  /* @media (max-width: 1200px) {
+    display: none;
+  } */
+  .bunny {
     display: flex;
     margin-right: 10px;
+  }
+}
+
+.modal-anchor {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  height: 48px;
+  padding: 0px 24px;
+
+  position: relative;
+  
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  
+  cursor: pointer;
+  
+  opacity: 1;
+  outline: 0px;
+
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  background-color: var(--color-subtitulo-lila);
+
+  text-decoration: none;
+
+  border: 0px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+
+  &:hover {
+    text-decoration: underline;
+    opacity: 0.65;
   }
 }

@@ -21,12 +21,10 @@
   --space-3xl: 56px;
   --space-4xl: 64px;
 
-  --text-color-black: #202020;
-  --text-color: #ffffff;
-
   --border-radius-sm: 5px;
   --border-radius-m: 10px;
   --border-radius-ml: 20px;
+  --border-radius-xl: 30px;
   --border-radius-xxl: 72px;
   --borderWidths-0: 0px;
   --borderWidths-1: 1px;
@@ -50,7 +48,171 @@
   --font-size-24px: 24px;
   --font-size-lg: 40px;
   --font-size-xxl: 64px;
+}
 
+.light-mode {
+  @media (max-width: 1350px) {
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-ms: 16px;
+    --font-size-md: 18px;
+    --font-size-ml: 20px;
+    --font-size-24px: 26;
+    --font-size-lg: 42px;
+    --font-size-xxl: 80px;
+  }
+  @media (max-width: 768px) {
+    --font-size-xs: 8px;
+    --font-size-sm: 10px;
+    --font-size-ms: 12px;
+    --font-size-md: 14px;
+    --font-size-ml: 16px;
+    --font-size-24px: 20px;
+    --font-size-lg: 32px;
+    --font-size-xxl: 48px;
+  }
+  @media (max-width: 390px) {
+    --font-size-xs: 8px;
+    --font-size-sm: 10px;
+    --font-size-ms: 12px;
+    --font-size-md: 14px;
+    --font-size-ml: 16px;
+    --font-size-24px: 20px;
+    --font-size-lg: 32px;
+    --font-size-xxl: 32px;
+  }
+}
+
+.light-mode {
+  --color-borde-text-swiper: #ff5100;
+  --color-card-text: #280d5f;
+  --text-color: #ffffff;
+  --color-titulo-lila: #7645d9;
+  --color-subtitulo-lila: #7a6eaa;
+  --color-primary: #1fc7d4;
+  --color-success: #31d0aa;
+  --color-failure: #ed4b9e;
+  --color-quaternary: #ffa920;
+  --color-gradient-violet: linear-gradient(#8040ff 0%, #5121b1 100%);
+  --color-gradient-yellow: linear-gradient(#fcac2d 0%, #fdcf5b 100%);
+  --color-gradient-text: linear-gradient(
+    166.02deg,
+    #ffb237 -5.1%,
+    #ffeb37 75.24%
+  );
+  --background-image-main: radial-gradient(
+    103.12% 50% at 50% 50%,
+    #d7caec 0%,
+    #b8add2 100%
+  );
+  --color-gold: #ffc700;
+  --color-black: black;
+
+  --color-secondary: #ffb237;
+  --color-bg-button-hover: #228f99;
+  --color-button-primary: #ffffff;
+  --color-button-footer-black: #191326;
+  --color-warning-text: #bdc2c4;
+  --color-warning-gradient-violet: linear-gradient(#8051d6 0%, #492286 100%);
+  --color-warning-background: #27262c66;
+  --background-color-secondary: #fff;
+  --background-toggle: #666171;
+  --color-input: #eeeaf4;
+  --color-text: #280d5f;
+  --background-dropdown-hover: #faf9fa;
+  --color-linea-footer: #b8add2;
+  --color-titulo-footer: #9a6aff;
+  --color-dropdown-network: #ffffff;
+  --color-gradient-section-1: linear-gradient(180deg, #fff 22%, #7a6eaa 100%);
+  --color-inputSecondary: #d7caec;
+
+  --colors-failure33: #ed4b9e33;
+  --colors-primary0f: #1fc7d40f;
+  --colors-primary3D: #1fc7d43d;
+  --colors-primaryBright: #53dee9;
+  --colors-primaryDark: #0098a1;
+  --colors-success19: #31d0aa19;
+  --colors-warning: #ffb237;
+  --colors-warning2D: #ed4b9e2d;
+  --colors-warning33: #ed4b9e33;
+  --colors-binance: #f0b90b;
+  --colors-overlay: #452a7a;
+  --colors-silver: #b2b2b2;
+  --colors-bronze: #e7974d;
+
+  --colors-secondary80: #7645d980;
+
+  --colors-backgroundDisabled: #e9eaeb;
+  --colors-backgroundAlt: #fff;
+  --colors-backgroundAlt2: hsla(0, 0%, 100%, 0.7);
+  --colors-cardBorder: #e7e3eb;
+  --colors-dropdown: #f6f6f6;
+  --colors-dropdownDeep: #eee;
+  --colors-input: #eeeaf4;
+
+  --colors-tertiary: #eff4f5;
+  --colors-text: #280d5f;
+  --colors-text99: #280d5f99;
+  --colors-textDisabled: #bdc2c4;
+
+  --colors-disabled: #e9eaeb;
+
+  --colors-gradientCardHeader: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
+  --colors-gradientBlue: linear-gradient(180deg, #6fb6f1, #eaf2f6);
+  --colors-gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
+  --colors-gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
+  --colors-gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
+  --colors-gradientBold: linear-gradient(#53dee9, #7645d9);
+
+  --colors-gradientBubblegum: linear-gradient(
+    139.73deg,
+    #e6fdff 0%,
+    #f3efff 100%
+  );
+  --colors-gradientInverseBubblegum: linear-gradient(
+    139.73deg,
+    #f3efff,
+    #e5fdff
+  );
+
+  --colors-gradientCake: linear-gradient(180deg, #fff 22%, #d7caec 100%);
+  --background-color-card-title: #faf9fa;
+  --colors-invertedContrast: #fff;
+  --colors-contrast: #191326; /* #09070c  */
+  --colors-gradientLastSection: linear-gradient(#7645d9 0%, #5121b1 100%);
+}
+
+/*
+    secondary80: '#9A6AFF80',
+    background: '#08060B',
+  backgroundDisabled: '#3c3742',
+  backgroundAlt: '#27262c',
+  backgroundAlt2: 'rgba(39, 38, 44, 0.7)',
+  cardBorder: '#383241',
+  contrast: '#FFFFFF',
+  dropdown: '#1E1D20',
+  dropdownDeep: '#100C18',
+  invertedContrast: '#191326',
+  input: '#372F47',
+  inputSecondary: '#262130',
+  primaryDark: '#0098A1',
+  tertiary: '#353547',
+  text: '#F4EEFF',
+  text99: '#F4EEFF99',
+  textDisabled: '#666171',
+  textSubtle: '#B8ADD2',
+  disabled: '#524B63',
+  gradientBubblegum: 'linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)',
+  gradientInverseBubblegum: 'linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)',
+  gradientCardHeader: 'linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)',
+  gradientBlue: 'linear-gradient(180deg, #00707F 0%, #19778C 100%)',
+  gradientViolet: 'linear-gradient(180deg, #6C4999 0%, #6D4DB2 100%)',
+  gradientVioletAlt: 'linear-gradient(180deg, #434575 0%, #66578D 100%)',
+  gradientGold: 'linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)',
+} */
+
+.dark-mode {
+  --text-color: #ffffff;
   --color-titulo-lila: #9a6aff;
   --color-subtitulo-lila: #b8add2;
   --color-text: #f4eeff;
@@ -68,11 +230,86 @@
   --color-gradient-violet: linear-gradient(#8040ff 0%, #5121b1 100%);
   --color-gradient-yellow: linear-gradient(#fcac2d 0%, #fdcf5b 100%);
   --background-dropdown-hover: #353547;
+  --background-toggle: #666171;
   --color-warning-text: #bdc2c4;
+  --colors-gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
   --color-warning-gradient-violet: linear-gradient(#8051d6 0%, #492286 100%);
+  --colors-gradientBlue: linear-gradient(180deg, #0b4576 0%, #091115 100%);
+  --colors-gradientBold: linear-gradient(#53dee9, #7645d9);
+  --color-PrimaryCard-background: linear-gradient(
+    #07060a -7%,
+    #191326 80%,
+    #1b1429 90%
+  );
+
   --color-warning-background: #27262c66;
+  --color-button-footer-black: #191326;
+  --color-input: #372f47;
+  --color-linea-footer: #b8add2;
+  --color-titulo-footer: #9a6aff;
+  --color-dropdown-network: #3c3742;
+  --color-gradient-text: linear-gradient(
+    166.02deg,
+    #ffb237 -5.1%,
+    #ffeb37 75.24%
+  );
+  --color-gold: #ffc700;
+  --color-black: black;
+  --color-gradient-section-1: radial-gradient(
+    300% 63% at 20% 10%,
+    #040205 22%,
+    #211839 100%
+  );
+  --color-inputSecondary: black;
 
   --background-color-secondary: #27262c;
   --background-color-tertiary: #000000cc;
+
+  --background-image-main: radial-gradient(
+    103.12% 50% at 50% 50%,
+    #211839 0%,
+    #191326 100%
+  );
+
+  --colors-gradientBubblegum: linear-gradient(139.73deg, #21193a, #191326);
+  --colors-gradientInverseBubblegum: linear-gradient(
+    139.73deg,
+    #3d2a54 0%,
+    #313d5c 100%
+  );
+  --colors-gradientCake: linear-gradient(180deg, #09070c 22%, #201335 100%);
   --background-color-card-title: #08060b;
+  --colors-invertedContrast: #09070c;
+  --colors-contrast: #ffffff;
+  --colors-gradientLastSection: linear-gradient(#7645d9 0%, #5121b1 100%);
+  @media (max-width: 1350px) {
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-ms: 16px;
+    --font-size-md: 18px;
+    --font-size-ml: 20px;
+    --font-size-24px: 26;
+    --font-size-lg: 42px;
+    --font-size-xxl: 80px;
+  }
+  @media (max-width: 768px) {
+    --font-size-xs: 8px;
+    --font-size-sm: 10px;
+    --font-size-ms: 12px;
+    --font-size-md: 14px;
+    --font-size-ml: 16px;
+    --font-size-24px: 20px;
+    --font-size-lg: 32px;
+    --font-size-xxl: 48px;
+  }
+  @media (max-width: 390px) {
+    --font-size-xs: 8px;
+    --font-size-sm: 10px;
+    --font-size-ms: 12px;
+    --font-size-md: 14px;
+    --font-size-ml: 16px;
+    --font-size-24px: 20px;
+    --font-size-lg: 32px;
+    --font-size-xxl: 32px;
+  }
 }

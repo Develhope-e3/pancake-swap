@@ -1,13 +1,12 @@
-import React from "react";
 import { BsThreeDots } from "react-icons/bs";
 import Dropdown from "../Dropdown/Dropdown";
 import Icono from "../Icono/Icono";
-import PancakeSwapIcono from "../Icono/PancakeSwapIcono";
+import PancakeSwapIcono from "../../assets/iconos/PancakeSwapIcono.jsx";
+import ResponsivePancakeSwapIcono from "../../assets/iconos/ResponsivePancakeSwapIcono.jsx";
 import Puntos from "../Puntos/Puntos";
 import BunnySmall from "../../assets/iconos/BunnySmall";
 import { IoSettingsSharp } from "react-icons/io5";
 import DropdownNetwork from "../../componentes/Dropdown/DropdownNetwork/DropdownNetwork.jsx";
-import BnbSmartChain from "../../assets/iconos/BnbSmartChain.jsx";
 import { IoIosArrowDown } from "react-icons/io";
 import { TbWorld } from "react-icons/tb";
 import "./Navbar.scss";
@@ -21,16 +20,40 @@ import {
   birthday,
   tresPuntos,
   idiomas,
-  bnb,
+  networkData,
 } from "../../data/dropdownItems";
+import { useEffect, useState } from "react";
+import { SwitchNetwork, connectWallet } from "../Button/utils.jsx";
+import { Modal } from "../Modals/Modal";
+import { PortalRoot } from "../PortalModal/PortalRoot";
+import useWindowSize from "../../customHooks/ConnectWallet/useWindowSize .jsx";
 
 const Navbar = () => {
+  const [selectedNetwork, setSelectedNetwork] = useState(networkData[0]);
+
+  const [wallet, setWallet] = useState("");
+
+  useEffect(() => {
+    if (wallet) {
+      SwitchNetwork(selectedNetwork);
+    }
+  }, [selectedNetwork, wallet]);
+
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const { width } = useWindowSize();
   return (
     <nav>
       <div className="navbar div1">
-      <div className="pancakeswap-icon">
-        <Icono icono={<PancakeSwapIcono />} />
-      </div>
+        <div className="pancakeswap-icon">
+          <Icono icono={<PancakeSwapIcono />} />
+        </div>
+        <div>
+          <Link
+            className={"pancakeswap-icon_responsive"}
+            svg={<ResponsivePancakeSwapIcono />}
+            href={"/"}
+          />
+        </div>
         <Dropdown
           label={"Trade"}
           dropdownItems={trade}
@@ -53,43 +76,50 @@ const Navbar = () => {
         />
       </div>
       <div className="navbar div2">
-        <Dropdown
-          label={<TbWorld />}
-          dropdownItems={idiomas}
-          className={"idiomas"}
-          isIdiomas={true}
-        />
-
-        <Button
-          isSetting={true}
-          className="button-setting"
-          svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
-          onClick={() => console.log("click en el boton setting")}
-        />
         <Link
           className={"button-bunny"}
           svg={<BunnySmall />}
           label={"$1.184"}
           href={"www.google.com"}
         />
-
+        <Dropdown
+          label={<TbWorld />}
+          dropdownItems={idiomas}
+          className={"idiomas"}
+          isIdiomas={true}
+        />
+        <Button
+          isSetting={true}
+          className="button-setting"
+          svg={<Icono className="setting" icono={<IoSettingsSharp />} />}
+          onClick={() => console.log("click en el boton setting")}
+        />
         <DropdownNetwork
-          icono1={<BnbSmartChain />}
-          label={"BNB Smart Chain"}
-          dropdownItems={bnb}
+          icono1={selectedNetwork.iconoinicio}
+          label={selectedNetwork.label}
+          dropdownItems={networkData}
           className={"bnb"}
           icono2={<IoIosArrowDown />}
           isNetwork={true}
+          selectedNetwork={selectedNetwork}
+          setSelectedNetwork={setSelectedNetwork}
         />
-
         <Button
+          id="connect-wallet"
           isPrimary={true}
           widthValue={"149px"}
           heightValue={"32px"}
-          texto={"Connect Wallet"}
+          texto={width > 980 ? "Connect Wallet" : "Connect"}
           colorTexto={"var(--text-color-black)"}
-          onClick={() => console.log("click en el boton primario")}
+          onClick={() => setIsModalVisible(true)}
         />
+        {isModalVisible && (
+          <Modal setIsModalVisible={setIsModalVisible}>
+            <PortalRoot
+              connectWallet={() => connectWallet(setWallet, selectedNetwork)}
+            />
+          </Modal>
+        )}
       </div>
     </nav>
   );
