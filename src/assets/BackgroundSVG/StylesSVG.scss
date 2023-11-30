@@ -37,14 +37,26 @@
 .img-mov {
   position: absolute;
   width: 170px;
-  height: 140px;
+  height: 165px;
   top: 128px;
   left: 2px;
+  @media (max-width: 390px) {
+    width: 103px;
+    height: 122px;
+    top: 150px;
+    left: -9px;
+  }
 }
 .img-mov2 {
   position: absolute;
-  width: 170px;
-  height: 140px;
+  width: 140px;
+  height: 121px;
   top: 157px;
-  right: 2px;
+  right: 38px;
+  @media (max-width: 390px) {
+    width: 92px;
+    height: 83px;
+    right: 4px;
+    top: 182px;
+  }
 }
