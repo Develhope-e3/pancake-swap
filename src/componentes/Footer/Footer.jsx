@@ -2,7 +2,6 @@ import "./Footer.scss";
 import Texto from "../Texto/Texto";
 import Link from "../Link/Link";
 import Button from "../Button/Button";
-/* import Dropdown from "../Dropdown/Dropdown"; */
 import Twitter from "../../assets/iconos/Twitter";
 import Telegram from "../../assets/iconos/Telegram";
 import Reddit from "../../assets/iconos/Reddit";
@@ -14,6 +13,9 @@ import Toggle from "../Button/Toggle";
 import BunnySmall from "../../assets/iconos/BunnySmall";
 import conejosvg from "../../assets/conejo.svg";
 import ArrowRight from "../../assets/iconos/ArrowRight";
+// import Dropdown from "../Dropdown/Dropdown";
+// import { TbWorld } from "react-icons/tb";
+// import { idiomas } from "../../data/dropdownItems";
 
 /**
  *  ToDo: Utilizar Dropdown para configurar los idiomas del Mundo
@@ -117,15 +119,18 @@ const Footer = () => {
             />
           </div>
         </div>
-        {/* iconos redes */}
         <div className="raya-divisora-padre">
           <div className="raya-divisora"></div>
         </div>
         <div className="parte-abajo-footer">
-          {/* parte de abajo footer */}
-
           <div className="parte-abajo-izq">
             <Toggle />
+            {/* <Dropdown
+              label={<TbWorld />}
+              dropdownItems={idiomas}
+              className={"idiomas2"}
+              isIdiomas={true}
+            /> */}
             <Link
               className={"dropdown-secundario"}
               svg={
@@ -138,8 +143,7 @@ const Footer = () => {
                   strokeLinejoin="round"
                   height="25px"
                   width="25px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                  xmlns="http://www.w3.org/2000/svg">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                   <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
                   <path d="M3.6 9h16.8"></path>
@@ -164,13 +168,10 @@ const Footer = () => {
               widthValue={"138px"}
               texto={"Buy CAKE"}
               colorTexto={"var(--color-button-footer-black)"}
-              svg={
-                <ArrowRight color="var(--color-button-footer-black)" />
-              }
+              svg={<ArrowRight color="var(--color-button-footer-black)" />}
             />
           </div>
         </div>
-        {/* parte de abajo footer */}
       </div>
     </footer>
   );

@@ -36,12 +36,14 @@ export const GridComposer1 = ({
       style={{
         display: "grid",
         gap: "1.5rem",
-        gridTemplateColumns: `repeat(${col}, 1fr)`,
+        gridTemplateColumns:
+          width > 390
+            ? `repeat(${col}, 1fr)`
+            : `repeat(2, 1fr)` /* `repeat(${col}, 1fr)` */,
         gripRowGap: width > 850 ? `${remRowSpacing}rem` : `${responsiveRow}rem`,
         gridColumnGap:
           width > 850 ? `${remColSpacing}rem` : `${responsiveCol}rem`,
-      }}
-    >
+      }}>
       <div className="border-none">
         <>
           <Texto
@@ -149,20 +151,20 @@ export const GridComposer2 = ({
           /* 
           @media (max-width: 980px)
 
-          quitar 'width: "100%";'
-          quitar dos elementos del grid y crear otro abajo con esos elementos
+           quitar 'width: "100%";'
+          quitar dos elementos del grid y crear otro abajo con esos elementos */
 
-          justifyItems: "center",
-          col={3}
-           */
-          width: "100%",
-          gridTemplateColumns: `repeat(${col}, 1fr)`,
+          /* justifyItems: "center", */
+          /* col: {3}, */
+
+          /* width: "100%", */
+          gridTemplateColumns:
+            width > 390 ? `repeat(${col}, 1fr)` : `repeat(2, 1fr)`,
           gripRowGap:
-            width > 850 ? `${remRowSpacing}rem` : `${responsiveRow}rem`,
+            width > 768 ? `${remRowSpacing}rem` : `${responsiveRow}rem`,
           gridColumnGap:
-            width > 850 ? `${remColSpacing}rem` : `${responsiveCol}rem`,
-        }}
-      >
+            width > 768 ? `${remColSpacing}rem` : `${responsiveCol}rem`,
+        }}>
         <div className="title-container border-none">
           <span className="text">
             <Texto

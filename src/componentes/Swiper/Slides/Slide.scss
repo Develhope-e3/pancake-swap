@@ -17,8 +17,8 @@
   z-index: 50;
   overflow: visible;
   @media (max-width: 850px) {
-    isplay: none;
-}
+    display: none;
+  }
 }
 
 .conejo2 {
@@ -30,8 +30,8 @@
   z-index: 50;
   transform: none !important;
   @media (max-width: 850px) {
-    isplay: none;
-}
+    display: none;
+  }
 }
 .conejo3 {
   width: 300px;
@@ -42,8 +42,8 @@
   z-index: 50;
   overflow: visible;
   @media (max-width: 850px) {
-    isplay: none;
-}
+    display: none;
+  }
 }
 
 .conejo4 {
@@ -55,8 +55,8 @@
   bottom: 0rem;
   z-index: 50;
   @media (max-width: 850px) {
-    isplay: none;
-}
+    display: none;
+  }
 }
 
 .conejo5 {
@@ -68,8 +68,8 @@
   bottom: 0rem;
   z-index: 50;
   @media (max-width: 850px) {
-    isplay: none;
-}
+    display: none;
+  }
 }
 
 .text-container {
@@ -109,7 +109,7 @@
   color: var(--text-color);
   font-size: 18px;
   font-weight: 700;
-  
+
   > svg {
     fill: var(--text-color);
   }

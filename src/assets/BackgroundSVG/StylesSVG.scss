@@ -26,11 +26,37 @@
 
 .last-section-svg {
   /* flex-shrink: 0; */
-
+  transform: scale3d(4, 4, 1);
   position: relative;
   z-index: 0;
-  
-  overflow: hidden;
+  transform-origin: center center;
+  // overflow: hidden;
 
-  object-fit: cover;
+  // object-fit: cover;
+}
+.img-mov {
+  position: absolute;
+  width: 170px;
+  height: 165px;
+  top: 128px;
+  left: 2px;
+  @media (max-width: 390px) {
+    width: 103px;
+    height: 122px;
+    top: 150px;
+    left: -9px;
+  }
+}
+.img-mov2 {
+  position: absolute;
+  width: 140px;
+  height: 121px;
+  top: 157px;
+  right: 38px;
+  @media (max-width: 390px) {
+    width: 92px;
+    height: 83px;
+    right: 4px;
+    top: 182px;
+  }
 }

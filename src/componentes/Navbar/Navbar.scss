@@ -1,14 +1,12 @@
 nav {
   display: inline-flex;
   /* padding: 0px 16px; */
-  justify-content: space-between;
   align-items: center;
-  
+  justify-content: space-between;
   width: 100%;
 
   background-color: var(--background-color-secondary);
 }
-
 .navbar {
   display: flex;
   align-items: center;
@@ -55,5 +53,28 @@ nav {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+  }
+}
+.link-navbar2 {
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar2 {
+  display: flex;
+  align-items: center;
+}
+
+.navbar2-container {
+  display: none;
+  @media (max-width: 850px) {
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+    position: sticky;
+    bottom: 0px;
   }
 }
