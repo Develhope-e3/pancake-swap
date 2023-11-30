@@ -26,11 +26,10 @@ export const dataSwiper = [
       <h3
         style={{
           color: "var(--color-quaternary)",
-          fontSize: "30px",
+          fontSize: "var(--font-size-swiper-tittle)",
           WebkitTextFillColor: "var(--color-quaternary)",
           WebkitTextStroke: "2px var(--color-borde-text-swiper)",
-        }}
-      >
+        }}>
         Traverse the Treasure Islands on Galxe now!
       </h3>
     ),
@@ -38,10 +37,9 @@ export const dataSwiper = [
       <h4
         style={{
           color: "var(--color-card-text)",
-          fontSize: "24px",
+          fontSize: "var(--font-size-swiper-text)",
           fontWeight: 700,
-        }}
-      >
+        }}>
         Exclusive NFTs and treasures await!
       </h4>
     ),
@@ -71,9 +69,8 @@ export const dataSwiper = [
       <h3
         style={{
           color: "var(--color-quaternary)",
-          fontSize: "30px",
-        }}
-      >
+          fontSize: "var(--font-size-swiper-tittle)",
+        }}>
         PancakeSwap Now Live on opBNB!
       </h3>
     ),
@@ -81,10 +78,9 @@ export const dataSwiper = [
       <h4
         style={{
           color: "var(--text-color)",
-          fontSize: "24px",
+          fontSize: "var(--font-size-swiper-text)",
           fontWeight: 700,
-        }}
-      >
+        }}>
         Swap and Provide Liquidity Nov!
       </h4>
     ),
@@ -110,11 +106,10 @@ export const dataSwiper = [
       <h3
         style={{
           color: "var(--color-quaternary)",
-          fontSize: "30px",
+          fontSize: "var(--font-size-swiper-tittle)",
           WebkitTextFillColor: "var(--color-quaternary)",
           WebkitTextStroke: "2px var(--color-borde-text-swiper)",
-        }}
-      >
+        }}>
         PancakeSwap Now Live on Polygon!
       </h3>
     ),
@@ -122,19 +117,20 @@ export const dataSwiper = [
       <h4
         style={{
           color: "var(--color-card-text)",
-          fontSize: "24px",
+          fontSize: "var(--font-size-swiper-text)",
           fontWeight: 700,
-        }}
-      >
+        }}>
         Swap and Provide Liquidity Now!
       </h4>
     ),
-    link: ( <Link
-      className={"link3"}
-      svg={<LinkLearn />}
-      label={"Get Started"}
-      href={"www.google.com"}
-    />),
+    link: (
+      <Link
+        className={"link3"}
+        svg={<LinkLearn />}
+        label={"Get Started"}
+        href={"www.google.com"}
+      />
+    ),
     botonPrimario: null,
     botonSecundario: null,
     conejo: conejo3,
@@ -149,9 +145,8 @@ export const dataSwiper = [
       <h3
         style={{
           color: "var(--text-color)",
-          fontSize: "25px",
-        }}
-      >
+          fontSize: "var(--font-size-swiper-text)",
+        }}>
         Trade to Earn Rewards!
       </h3>
     ),
@@ -159,10 +154,9 @@ export const dataSwiper = [
       <h4
         style={{
           color: "var(--text-color)",
-          fontSize: "40px",
+          fontSize: "var(--font-size-swiper-tittle2)",
           fontWeight: 700,
-        }}
-      >
+        }}>
         10% trading rebate to be earned!
       </h4>
     ),
@@ -204,9 +198,8 @@ export const dataSwiper = [
         style={{
           WebkitTextFillColor: "var(--color-quaternary)",
           WebkitTextStroke: "2px var(--color-titulo-footer)",
-          fontSize: "24px",
-        }}
-      >
+          fontSize: "var(--font-size-swiper-text)",
+        }}>
         Perpetual Futures
       </h3>
     ),
@@ -214,10 +207,9 @@ export const dataSwiper = [
       <h4
         style={{
           color: "var(--text-color)",
-          fontSize: "40px",
+          fontSize: "var(--font-size-swiper-tittle2)",
           fontWeight: 700,
-        }}
-      >
+        }}>
         UP TO 100x LAVERAGE!
       </h4>
     ),
