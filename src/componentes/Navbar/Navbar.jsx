@@ -63,9 +63,9 @@ const Navbar = () => {
       console.error(err.message);
     }
   };
-  fetchCoinData();
-  
+
   useEffect(() => {
+    fetchCoinData();
     const interval = setInterval(() => {
       fetchCoinData();
     }, 10000);
