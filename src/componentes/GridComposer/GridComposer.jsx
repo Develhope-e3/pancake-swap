@@ -148,7 +148,7 @@ export const GridComposer2 = ({
         style={{
           display: "grid",
           gap: "1.5rem",
-          /* 
+          /*
           @media (max-width: 980px)
 
            quitar 'width: "100%";'
@@ -187,12 +187,12 @@ export const GridComposer2 = ({
           <>
             <Texto
               size={"title-s"}
-              color={"var(--color-titulo-lila)"} // var(--color-titulo-lila)
+              color={"var(--color-titulo-lila)"}
               label={"EQB-BNB LP v3"}
             />
             <Texto
               size={"title-ml-bold"}
-              color={"var(--color-text)"} // var(--color-text)
+              color={"var(--color-text)"} 
               label={<CakeSum limite={259595} />}
             />
             <Texto
