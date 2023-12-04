@@ -42,7 +42,7 @@
   > .button-left {
     padding: 8px;
 
-    background-color: #372f47;
+    background-color: var(--color-input);
 
     cursor: pointer;
 
@@ -78,7 +78,7 @@
 
   position: absolute;
 
-  background: var(--colors-gradientCardHeader);
+  background: var(--color-input);
 
   border-radius: 32px;
   -webkit-border-radius: 32px;
@@ -91,7 +91,7 @@
 
     box-sizing: border-box;
 
-    background-color: #27262c;
+    background-color: var(--background-color-secondary);
 
     padding: 32px 0px;
 

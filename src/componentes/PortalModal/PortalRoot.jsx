@@ -63,7 +63,7 @@ export const PortalRoot = ({ connectWallet }) => {
               <Texto
                 label={"Connect Wallet"}
                 size={"title-ml-bold"}
-                color={"var(--text-color)"}
+                color={"var(--colors-contrast)"}
               />
               <Texto
                 label={

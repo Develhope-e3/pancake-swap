@@ -16,7 +16,7 @@ const Injected = ({ color }) => {
       color="textSubtle"
       fill={color}
       style={{
-        backgroundColor: "black",
+        backgroundColor: "var(--colors-invertedContrast)",
         borderRadius: "12px",
         marginBottom: "0.1rem",
         marginRight: "0.1rem",
