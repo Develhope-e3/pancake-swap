@@ -13,6 +13,8 @@ import Toggle from "../Button/Toggle";
 import BunnySmall from "../../assets/iconos/BunnySmall";
 import conejosvg from "../../assets/conejo.svg";
 import ArrowRight from "../../assets/iconos/ArrowRight";
+import { useEffect, useState } from "react";
+import axios from "axios";
 // import Dropdown from "../Dropdown/Dropdown";
 // import { TbWorld } from "react-icons/tb";
 // import { idiomas } from "../../data/dropdownItems";
@@ -22,6 +24,38 @@ import ArrowRight from "../../assets/iconos/ArrowRight";
  */
 
 const Footer = () => {
+  const API_ORIGINS_URL = "https://api.allorigins.win/get?url=";
+  const END_POINT = "https://api.coingecko.com/api/v3/coins";
+
+  const [priceInEuros, setPriceInEuros] = useState(null);
+
+  const fetchCoinData = async () => {
+    try {
+      const response = await axios.get(
+        `${API_ORIGINS_URL}${END_POINT}/pancakeswap-token`,
+      );
+      const coinData = response.data.contents;
+
+      const marketData = JSON.parse(coinData).market_data;
+
+      const price = marketData.current_price.usd;
+      setPriceInEuros(price);
+    } catch (err) {
+      console.error(err.message);
+    }
+  };
+
+  useEffect(() => {
+    fetchCoinData();
+    const interval = setInterval(() => {
+      fetchCoinData();
+    }, 10000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <footer>
       <div className="footer-container">
@@ -159,7 +193,7 @@ const Footer = () => {
             <Link
               className={"button-bunny"}
               svg={<BunnySmall />}
-              label={"$1.184"}
+              label={`$${priceInEuros}`}
               href={"www.google.com"}
             />
             <Button
