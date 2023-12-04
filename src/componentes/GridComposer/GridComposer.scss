@@ -64,7 +64,7 @@
 }
 
 .theme2 {
-  width: 90%;
+  width: 60%;
   > .title-container {
     grid-column: 1/6;
     gap: 5px;
@@ -103,6 +103,12 @@
       border-left: none;
     }
   }
+  @media (max-width: 1300px) {
+    display: grid;
+    gap: 1.5rem 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    width: 88%;
+  }
   @media (max-width: 900px) {
     display: grid;
     gap: 1.5rem 2rem;
@@ -120,7 +126,7 @@
     width: 60%;
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -151,7 +157,7 @@
     height: 90px;
   }
   @media screen and (max-width: 390px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     height: 490px;
   }
   > button {

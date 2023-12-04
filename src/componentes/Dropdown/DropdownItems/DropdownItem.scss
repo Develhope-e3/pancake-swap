@@ -7,7 +7,6 @@
   background-color: var(--background-color-secondary);
   border-radius: var(--radius-ms);
   overflow: hidden;
-
 }
 
 .dropdown-network {
@@ -20,7 +19,6 @@
 
   background-color: var(--background-color-secondary);
   border-radius: var(--radius-ms);
-
 }
 
 .dropdown-item {
@@ -34,7 +32,6 @@
 
   &:hover {
     background-color: var(--background-dropdown-hover);
-
   }
 }
 
@@ -43,7 +40,6 @@
   justify-content: flex-start;
 
   width: 200px;
-
 }
 
 .dropdown-idiomas {

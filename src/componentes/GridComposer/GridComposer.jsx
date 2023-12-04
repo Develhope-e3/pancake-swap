@@ -145,7 +145,7 @@ export const GridComposer2 = ({
         className={className}
         style={{
           display: "grid",
-          gap: "1.5rem",
+          /* gap: "1.5rem", */
           /*
           @media (max-width: 980px)
 

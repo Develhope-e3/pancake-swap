@@ -23,9 +23,8 @@ import useCoinPrice from "../../customHooks/useCoinPrice";
  */
 
 const Footer = () => {
-
   const priceInEuros = useCoinPrice();
-  
+
   return (
     <footer>
       <div className="footer-container">
@@ -68,7 +67,11 @@ const Footer = () => {
               label={"DEVELOPERS"}
               color={"var(--color-titulo-footer)"}
             />
-            <Link className={"footer-anchor"} label={"Github"} />
+            <Link
+              className={"footer-anchor"}
+              label={"Github"}
+              href={"https://github.com/Develhope-e3/pancake-swap"}
+            />
             <Link className={"footer-anchor"} label={"Documentation"} />
             <Link className={"footer-anchor"} label={"Bug Bounty"} />
             <Link className={"footer-anchor"} label={"Audits"} />
@@ -104,7 +107,7 @@ const Footer = () => {
           <div>
             <Link
               className={"iconos-redes"}
-              href={"https://github.com/pancakeswap/"}
+              href={"https://github.com/Develhope-e3/pancake-swap"}
               svg={<GitHub />}
             />
           </div>
