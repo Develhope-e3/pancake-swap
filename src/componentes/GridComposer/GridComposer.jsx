@@ -36,13 +36,11 @@ export const GridComposer1 = ({
       style={{
         display: "grid",
         gap: "1.5rem",
-        gridTemplateColumns:
-          width > 390
-            ? `repeat(${col}, 1fr)`
-            : `repeat(2, 1fr)` /* `repeat(${col}, 1fr)` */,
+        /*gridTemplateColumns:
+          width > 390 ? `repeat(${col}, 1fr)` : `repeat(2, 1fr)`,
         gripRowGap: width > 850 ? `${remRowSpacing}rem` : `${responsiveRow}rem`,
         gridColumnGap:
-          width > 850 ? `${remColSpacing}rem` : `${responsiveCol}rem`,
+          width > 850 ? `${remColSpacing}rem` : `${responsiveCol}rem`, */
       }}>
       <div className="border-none">
         <>
@@ -158,12 +156,12 @@ export const GridComposer2 = ({
           /* col: {3}, */
 
           /* width: "100%", */
-          gridTemplateColumns:
+          /* gridTemplateColumns:
             width > 390 ? `repeat(${col}, 1fr)` : `repeat(2, 1fr)`,
           gripRowGap:
             width > 768 ? `${remRowSpacing}rem` : `${responsiveRow}rem`,
           gridColumnGap:
-            width > 768 ? `${remColSpacing}rem` : `${responsiveCol}rem`,
+            width > 768 ? `${remColSpacing}rem` : `${responsiveCol}rem`, */
         }}>
         <div className="title-container border-none">
           <span className="text">
@@ -192,7 +190,7 @@ export const GridComposer2 = ({
             />
             <Texto
               size={"title-ml-bold"}
-              color={"var(--color-text)"} 
+              color={"var(--color-text)"}
               label={<CakeSum limite={259595} />}
             />
             <Texto
@@ -301,7 +299,7 @@ export const GridComposer3 = ({
       style={{
         display: "grid",
         justifyContent: "center",
-        gridTemplateColumns: `repeat(${col}, 1fr)`,
+        /* gridTemplateColumns: `repeat(${col}, 1fr)`, */
         gridRowGap: `${remRowSpacing}rem`,
         gridColumnGap: `${remColSpacing}rem`,
       }}>

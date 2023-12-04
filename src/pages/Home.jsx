@@ -263,10 +263,9 @@ const Home = () => {
             </Box>
           </Box>
         </Box>
-        <Box
-          isFlexColCenter /* marginBottom={4} marginTop={4} maxWidth={1168} */
-        >
-          <GridComposer2 className={"theme2"} col={5} remColSpacing={2} />
+        {/* GridComposer 2 */}
+        <Box isFlexColCenter>
+          <GridComposer2 className={"theme2"} /* col={5} remColSpacing={2} */ />
         </Box>
       </MainSection>
       <Section gradient={"var(--colors-gradientBlue)"}>
@@ -371,13 +370,15 @@ const Home = () => {
               />
             </Box>
           </Box>
+
           <Box marginBottom={4} marginTop={4}>
+            {/* GridComposer 1 */}
             <Box isFlexColCenter>
               <GridComposer1
                 className={"theme1"}
-                col={3}
+                /* col={3}
                 remRowSpacing={2}
-                remColSpacing={9}
+                remColSpacing={9} */
               />
             </Box>
           </Box>
