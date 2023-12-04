@@ -58,7 +58,7 @@ const Home = () => {
     <BasePage className={theme === "dark" ? "dark-mode" : "light-mode"}>
       <Section gradient={"var(--colors-gradientBubblegum)"}>
         <Box isFlexColCenter>
-          <Box isFlexColCenter maxWidth={1168}>
+          <Box isFlexColCenter maxWidth={1200}>
             <SwiperScrollbar />
           </Box>
           <Box isFlexRow maxWidth={1275} zIndex={1}>
