@@ -27,7 +27,7 @@ import { SwitchNetwork, connectWallet } from "../Button/utils.jsx";
 import { Modal } from "../Modals/Modal";
 import { PortalRoot } from "../PortalModal/PortalRoot";
 import useWindowSize from "../../customHooks/ConnectWallet/useWindowSize .jsx";
-import axios from "axios";
+import useCoinPrice from "../../customHooks/useCoinPrice.jsx";
 
 const Navbar = () => {
   const [selectedNetwork, setSelectedNetwork] = useState(networkData[0]);
@@ -43,38 +43,7 @@ const Navbar = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const { width } = useWindowSize();
 
-  const API_ORIGINS_URL = "https://api.allorigins.win/get?url=";
-  const END_POINT = "https://api.coingecko.com/api/v3/coins";
-
-  const [priceInEuros, setPriceInEuros] = useState(null);
-
-  const fetchCoinData = async () => {
-    try {
-      const response = await axios.get(
-        `${API_ORIGINS_URL}${END_POINT}/pancakeswap-token`,
-      );
-      const coinData = response.data.contents;
-
-      const marketData = JSON.parse(coinData).market_data;
-
-      const price = marketData.current_price.usd;
-      setPriceInEuros(price);
-    } catch (err) {
-      console.error(err.message);
-    }
-  };
-
-  useEffect(() => {
-    fetchCoinData();
-    const interval = setInterval(() => {
-      fetchCoinData();
-    }, 10000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
+  const priceInEuros = useCoinPrice();
   return (
     <nav>
       <div className="navbar div1">
